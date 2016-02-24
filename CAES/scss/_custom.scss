@@ -68,7 +68,7 @@
    margin-top: .2em;
    // Large screen left margin:
    @include breakpoint(large up) {
-      padding-left: 2em;
+      padding-left: .5em;
    }
    span {
       font-weight: 400;
