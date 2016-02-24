@@ -61,11 +61,15 @@
 
 // CAES Branding
 // -------------
-#siteTitle {
+#caesBranding {
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    line-height: 1;
    margin-top: .2em;
+   // Large screen left margin:
+   @include breakpoint(large up) {
+      padding-left: 2em;
+   }
    span {
       font-weight: 400;
       font-size: rem-calc(16);

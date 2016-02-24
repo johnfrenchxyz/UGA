@@ -3925,16 +3925,19 @@ table.hover tr:nth-of-type(even):hover {
     background-color: #950c2b;
     color: #fefefe; }
 
-#siteTitle {
+#caesBranding {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1;
   margin-top: .2em; }
-  #siteTitle span {
+  @media screen and (min-width: 64em) {
+    #caesBranding {
+      padding-left: 2em; } }
+  #caesBranding span {
     font-weight: 400;
     font-size: 1rem;
     text-transform: uppercase;
     display: block; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-      #siteTitle span {
+      #caesBranding span {
         font-size: 0.75rem; } }
