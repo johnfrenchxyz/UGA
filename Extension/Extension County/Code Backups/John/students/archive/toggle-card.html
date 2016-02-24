@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Em's test for toggle with CSS</title>
+	<script src="../assets/js/vendor/modernizr.js"></script>
+	<link rel="stylesheet" href="toggle-card.css" />
+</head>
+<body>
+	<section class="container">
+	  <div id="card">
+	    <figure class="front"><img src="../assets/img/majors/thumbs/ag-applied-econ-iStock_000004639625Medium-blur.jpg"></figure>
+	    <figure class="back"><p>Text about things</p></figure>
+	  </div>
+	</section>
+	
+	<ul>
+		<li>
+			<div class="toggle panel" data-equalizer-watch>
+				<div class="front">
+					<p class="image"><img src="../assets/img/majors/thumbs/ag-applied-econ-iStock_000004639625Medium-blur.jpg"></p>
+					<p class="title">Agricultural &amp; Applied Economics</p>
+				</div>
+				<div class="back">
+					<p class="title">Agricultural &amp; Applied Economics</p>
+					<p class="description">Combine business, economics and food science to move a product from processing all the way to the consumer.</p>
+					<p class="description"><a href="">Learn more about the Agricultural Communication major.</a></p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="toggle panel" data-equalizer-watch>
+				<div class="front">
+					<p class="image"><img src="../assets/img/majors/thumbs/ag-applied-econ-iStock_000004639625Medium-blur.jpg"></p>
+					<p class="title">Agricultural &amp; Applied Economics</p>
+				</div>
+				<div class="back">
+					<p class="title">Agricultural &amp; Applied Economics</p>
+					<p class="description">Combine business, economics and food science to move a product from processing all the way to the consumer.</p>
+					<p class="description"><a href="">Learn more about the Agricultural Communication major.</a></p>
+				</div>
+			</div>
+		</li>
+	</ul>
+	
+	<script src="../assets/js/vendor/jquery.js"></script>
+	<script>
+		$( ".toggle.panel" ).click(function() {
+		  $( this ).toggleClass( "flipped" );
+		});
+	</script>
+	
+	
+</body>
+</html>

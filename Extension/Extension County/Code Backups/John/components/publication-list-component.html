@@ -1,0 +1,432 @@
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>County Template | Publications List Component</title>
+        <link rel="stylesheet" href="../stylesheets/app.css" />
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+    </head>
+
+    <body>
+
+        <!-- Outer Wrapper for Entire Site - (used by the mobile off canvas menu to contain the entire page and hide overflow) -->
+        <div class="off-canvas-wrap" data-offcanvas>
+
+            <!-- Inner Wrapper for Off Canvas Animated Slide -->
+            <div class="inner-wrap">
+
+                <!-- Extension Top Bar & Search Section -->
+                <div class="extension-top-bar">
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <!-- UGA Extension Logo -->
+                            <img src="../img/extension-logo.svg" class="left extension-logo" alt="UGA Extension logo" />
+                            <!-- Small Screen Search Icon -->
+                            <a href="" class="mobile-search-icon hide-for-medium-up" data-reveal-id="mobile-search-modal"><i class="fi-magnifying-glass size-24" alt="Site Search Icon"></i></a>
+                            <!-- Small Screen Search Modal -->
+                            <div id="mobile-search-modal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+                                <div class="row" style="margin: 2.5em 0 0 0;">
+                                    <div class="large-12 columns">
+                                        <form>
+                                            <label>
+                                                <input type="text" placeholder=" Search..." style="" autofocus>
+                                            </label>
+                                            <a class="button round radius right">Go</a>
+                                        </form>
+                                    </div>
+                                </div>
+                                <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                            </div>
+                            <!-- Large & Medium Screen Search -->
+                            <div class="search-container right">
+                                <div class="row collapse">
+                                    <div class="large-9 medium-9 columns">
+                                        <label>
+                                            <input type="text" placeholder="Search this site" />
+                                        </label>
+                                    </div>
+                                    <div class="large-3 medium-3 end columns">
+                                        <a><span class="postfix" style="padding-top:.7em;"><i class="fi-magnifying-glass"></i></span></input></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Site Header Section -->
+                <header>
+                    <div class="row">
+                        <div class="large-12 medium-12 columns site-title">
+                            <!-- Site Title Goes Here -->
+                            County Name
+                            <!-- Contact Us & Events Icons-->
+                            <div class="right hamburger-icon hide-for-large-only">
+                                <a class="right-off-canvas-toggle show-for-medium-down" href="#"><img src="../img/hamburger-icon.png" alt="Icon to show and hide mobile navigation" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Main Section: Nav & Site Content -->
+                <main role="main">
+
+                    <div class="row" data-equalizer>
+
+                        <!-- Side Nav for Large Screens -->
+                        <div class="large-3 hide-for-medium-down columns" data-equalizer-watch>
+                            <ul class="side-nav" role="navigation" title="Main Navigation" onmouseover="this.title='';">
+                                <li class="divider" role="presentation"></li>
+                                <li role="menuitem" class="active"><a href="index.html">Home</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="menuitem"><a href="second-level.html">Agriculture & Natural Resources</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="menuitem"><a href="#">Family & Consumer Sciences</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="menuitem"><a href="4-h.html">4-H Youth</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="menuitem"><a href="#">Events</a></li>
+                                <li class="divider" role="presentation"></li>
+                                <li role="menuitem"><a href="#">Contact Us</a></li>
+                                <li class="divider" role="presentation"></li>
+                            </ul>
+                        </div>
+
+                        <!-- Main Page Content Section -->
+                        <div class="large-9 medium-12 small-12 columns" data-equalizer-watch>
+
+                            <!-- Page Title / Heading -->
+                            <h1 class="page-title">Publications List Component</h1>
+
+                            <p>The purpose of this component is to display titles, summary, image, etc of a list of publications from our database, probably sorted by keywords, topics, or characteristics.</p>
+
+                            <h2>Other Info/Rules:</h2>
+                            <ul>
+                                <li>How do we want to display the publication number?  In the plain list example below, the first piblication has the text "publication no" followed by the number, while the second publication only has the number.  I know this may seems specific, but I think it is worth a quick discussion.</li>
+                                <li>Should the <code>Read More</code> link be on a different line, or should it be on the same line?</li>
+                                <li>Should we have a max character limit for the description/summary section so that all of the publications blocks are mostly uniform?</li>
+                            </ul>
+
+                            <h2>Accessibility:</h2>
+                            <ul>
+                                <li>The the Foundation panels should be accessible by default since they are simply styled <code>divs</code>. So as long as we are sure to include an <code>alt</code> tag by default, we should be fine.</li>
+                            </ul>
+
+                            <div class="plain-list-container">
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <h3>Blueberry Publications:</h3>
+                                        <hr />
+                                    </div>
+                                </div>
+
+                                <!-- Item -->
+                                <div class="row" style="margin-bottom: 1em;">
+                                    <div class="large-12 columns">
+                                        <div class="plain-list-component">
+                                            <ul>
+                                                <!-- Image -->
+
+                                                <!-- Title / Name -->
+                                                <li class="title"><a>Home Garden Blueberries (C 946)</a></li>
+                                                <!-- Post Details, Program Area -->
+                                                <li class="details">Publushed 05/08/1931</li>
+                                                <!-- Description -->
+                                                <li>
+                                                    Blueberries are becoming increasingly popular due to their delicious and healthy fruit. Among other things, they are high in antioxidants, have anti-aging activity, promote healthy urinary tracts, improve vision and help fight heart disease. With a little effort, these "wonder berries" can be produced by home gardeners throughout Georgia. This brief publication gives a few helpful hints to get started.
+                                                </li>
+                                                <li><a class="right">Read More</a></li>
+                                            </ul>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item -->
+                                <div class="row" style="margin-bottom: 1em;">
+                                    <div class="large-12 columns">
+                                        <div class="plain-list-component">
+                                            <ul>
+                                                <!-- Image -->
+                                                <img src="http://www.blueberrycouncil.org/wp-content/uploads/handful-of-blueberries-1502-498x286.jpg" />
+                                                <!-- Title / Name -->
+                                                <li class="title"><a>Fertilizing Blueberries in Pine Bark Beds (B 1291)</a></li>
+                                                <!-- Post Details, Program Area -->
+                                                <li class="details">Publushed 05/08/1931</li>
+                                                <!-- Description -->
+                                                <li>
+                                                    Grower experiences have proven milled pine bark to be an excellent growing substrate for southern highbush blueberries. Although milled pine bark shares many characteristics with good blueberry soil, fundamental differences . . .
+                                                </li>
+                                                <li><a class="right">Read More</a></li>
+                                            </ul>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Item -->
+                                <div class="row" style="margin-bottom: 1em;">
+                                    <div class="large-12 columns">
+                                        <div class="plain-list-component">
+                                            <ul>
+                                                <!-- Image -->
+
+                                                <!-- Title / Name -->
+                                                <li class="title"><a>Southern Highbush Blueberry Marketing and Economics (B 1413)</a></li>
+                                                <!-- Post Details, Program Area -->
+                                                <li class="details">Publushed 05/08/1931</li>
+                                                <!-- Description -->
+                                                <li>
+                                                    In Georgia, three types of blueberries are grown: Rabbiteye (Vaccinium ashei), Northern Highbush (Vaccinium corymbosum L.) and Southern Highbush (Vaccinium corymbosum X Vaccinium darrowii). Rabbiteye is native to south Georgia, north Florida and southeast Alabama. It is the most commonly cultivated blueberry in Georgia. Northern Highbush is a species well adapted to northern Georgia due to its higher winter chilling requirement and lower heat tolerance. Southern Highbush is a hybrid between Northern Highbush and Darrow’s Evergreen blueberry. Both Southern Highbush and Rabbiteye have a low to moderate winter chilling . . .
+                                                </li>
+                                                <li><a class="right">Read More</a></li>
+                                            </ul>
+                                            <hr />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Read More Button Section -->
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <a href="#" class="button small right">See More Publications</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Tiled Personnel List -->
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <h3>Blueberry Publications:</h3>
+                                    <hr />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <div class="tiled-list-component">
+                                        <ul id="masonry-container" class="large-block-grid-3 medium-block-grid-2 small-block grid-1">
+
+                                            <li id="masonry-item">
+                                                <!-- Item -->
+                                                <div class="row" style="margin-bottom: 1em;">
+                                                    <div class="large-12 columns">
+                                                        <div class="panel">
+                                                            <ul>
+                                                                <!-- Image -->
+
+                                                                <!-- Title / Name -->
+                                                                <li class="title"><a>Home Garden Blueberries</a></li>
+                                                                <!-- Post Details, Program Area -->
+                                                                <li class="details">Publication No. C 946</li>
+                                                                <!-- Description -->
+                                                                <li>
+                                                                    Blueberries are becoming increasingly popular due to their delicious and healthy fruit. Among other things, they are high in antioxidants, have anti-aging activity, promote healthy urinary tracts, improve vision and help fight heart disease. With a little effort, these "wonder berries" can be produced by home gardeners throughout Georgia. This brief publication gives a few helpful hints to get started.
+                                                                </li>
+                                                                <li><a>Read More</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li id="masonry-item">
+                                                <!-- Item -->
+                                                <div class="row" style="margin-bottom: 1em;">
+                                                    <div class="large-12 columns">
+                                                        <div class="panel">
+                                                            <ul>
+                                                                <!-- Image -->
+
+                                                                <!-- Title / Name -->
+                                                                <li class="title"><a>Fertilizing Blueberries in Pine Bark Beds </a></li>
+                                                                <!-- Post Details, Program Area -->
+                                                                <li class="details">B 1291</li>
+                                                                <!-- Description -->
+                                                                <li>
+                                                                    Grower experiences have proven milled pine bark to be an excellent growing substrate for southern highbush blueberries. Although milled pine bark shares many characteristics with good blueberry soil, fundamental differences . . .
+                                                                </li>
+                                                                <li><a>Read More</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li id="masonry-item">
+                                                <!-- Item -->
+                                                <div class="row" style="margin-bottom: 1em;">
+                                                    <div class="large-12 columns">
+                                                        <div class="panel">
+                                                            <ul>
+                                                                <!-- Image -->
+
+                                                                <!-- Title / Name -->
+                                                                <li class="title"><a>Southern Highbush Blueberry Marketing and Economics</a></li>
+                                                                <!-- Post Details, Program Area -->
+                                                                <li class="details">B 1413</li>
+                                                                <!-- Description -->
+                                                                <li>In Georgia, three types of blueberries are grown: Rabbiteye (Vaccinium ashei), Northern Highbush (Vaccinium corymbosum L.) and Southern Highbush (Vaccinium corymbosum X Vaccinium darrowii). Rabbiteye is native to south Georgia, north Florida and southeast Alabama. It is the most commonly cultivated blueberry in Georgia. Northern Highbush is a species well adapted to northern Georgia due to its higher winter chilling requirement and lower heat tolerance. Southern Highbush is a hybrid between Northern Highbush and Darrow’s Evergreen blueberry. Both Southern Highbush and Rabbiteye have a low to moderate winter chilling . . .</li>
+                                                                <li><a>Read More</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <!-- See More Tile -->
+                                            <li id="masonry-item">
+                                                <div class="see-more-tile">
+                                                    <a href="" class="button large">See More From This Section</a>
+                                                </div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        <!-- End Main Page Content Section -->
+                        </div>
+
+                    </div>
+
+                </main>
+
+                <!-- Off Canvas Menu -->
+                <aside class="right-off-canvas-menu">
+                    <ul class="side-nav" role="navigation" title="Main Navigation" onmouseover="this.title='';">
+                        <li class="divider" role="presentation"></li>
+                        <li role="menuitem" class="active"><a href="index.html">Home</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="menuitem" class=""><a href="second-level.html">Agriculture & Natural Resources</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="menuitem"><a href="#">Family & Consumer Sciences</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="menuitem"><a href="4-h.html">4-H Youth</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="menuitem"><a href="#">Events</a></li>
+                        <li class="divider" role="presentation"></li>
+                        <li role="menuitem"><a href="#">Contact Us</a></li>
+                        <li class="divider" role="presentation"></li>
+                    </ul>
+                </aside>
+
+                <!-- Footer Section -->
+                <footer>
+                    <div class="footer-top">
+                        <div class="row">
+                            <!-- County Contact Information Section -->
+                            <div class="large-4 medium-6 columns">
+                                <h2 class="subheader">[County Name] Office Information:</h2>
+                                <ul>
+                                    <li><a><i class="fi-map"></i> 123 Easy Street | City, State 30607</a></li>
+                                    <li><a><i class="fi-telephone"></i> 706-867-5309</a></li>
+                                    <li><a><i class="fi-mail"></i> mail@emailaddress.com</a></li>
+                                </ul>
+                            </div>
+                            <!-- Affiliates & Partners Section-->
+                            <div class="large-4 medium-6 columns">
+                                <h2 class="subheader">Affiliates & Partners:</h2>
+                                <ul>
+                                    <li><a href="http://www.uga.edu" target="_blank">The University of Georgia</a></li>
+                                    <li><a href="http://www.caes.uga.edu" target="_blank">The College of Agricultural & Environmental Sciences</a></li>
+                                    <li><a href="http://www.fcs.uga.edu" target="_blank">The College of Family & Consumer Scnences</a></li>
+                                </ul>
+                            </div>
+                            <!-- Intranet Section -->
+                            <div class="large-4 medium-6 end columns">
+                                <h2 class="subheader">For Faculty/Staff:</h2>
+                                <a class="button small round">Staff Intranet</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <div class="row">
+                            <div class="large-12 columns">
+                                Last Updated: 10/8/15 by jwfrench | Other Information
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                <!-- When Off-Canvas is activated, this turns to main page into a close link -->
+                <a class="exit-off-canvas"></a>
+            </div>
+        </div>
+
+
+        <!-- Scripts -->
+        <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="../bower_components/foundation/js/foundation.min.js"></script>
+        <script src="../js/app.js"></script>
+        <script src="../js/masonry.pkgd.min.js"></script>
+
+        <!-- Autofocus Mobile Modal Search Input -->
+        <script>
+        $(document).foundation(function(){});
+
+        $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+            var modal = $(this);
+            modal.find('[autofocus]').focus();
+        });
+        </script>
+
+        <!-- Scroll Controls for Off Canvas Nav -->
+        <script>
+        $(document).foundation();
+
+        $(document)
+            .on('open.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('body').css('position', 'relative');
+            })
+            .on('open.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('html').css('position', 'relative');
+            })
+            .on('open.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('body').css('overflow', 'hidden');
+            })
+            .on('open.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('aside').css('overflow', 'auto');
+            })
+            .on('close.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('body').css('overflow', 'auto');
+            })
+            .on('close.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('body').css('position', '');
+            })
+            .on('close.fndtn.offcanvas', '[data-offcanvas]', function() {
+                $('html').css('position', '');
+            })
+
+        </script>
+
+        <!-- Dynamic Height Resizing for Off Canvas Nav -->
+        <script>
+        $(window).resize(function() {
+            $('.right-off-canvas-menu').height($(window).height());
+        });
+        $(window).trigger('resize');
+        </script>
+
+        <script>
+        $(window).load(function(){
+            $('#masonry-container').masonry({
+                itemSelector: '#masonry-container li#masonry-item'
+            });
+        });
+        </script>
+
+        <script>
+        $(window).load(function(){
+            $('#masonry-container-2').masonry({
+                itemSelector: '#masonry-container-2 li#masonry-item'
+            });
+        });
+        </script>
+
+    </body>
+</html>

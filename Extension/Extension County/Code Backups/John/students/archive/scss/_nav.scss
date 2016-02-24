@@ -1,0 +1,125 @@
+@mixin font-style {
+	font-size:rem-calc(12.25);
+}
+
+nav.sitewide {
+	background-color:$primary-color;
+}
+
+.nav {
+	z-index:100;
+	padding: 0em;
+	margin:0 auto;
+	font-weight: bold;
+	height: auto;
+	position:relative;
+	z-index:200;
+	@include font-style;
+	
+	li {
+		@include font-style;
+		position: relative;
+		float: left;
+		list-style:none;
+		ul {
+			position:absolute;
+			display: block;
+			left:-9999px;
+			width:rem-calc(200);
+			padding: 0em;
+			margin: 0em;
+		}
+		li {
+			@include font-style;
+			font-weight: normal;
+			display:block;
+			float:none;
+			background-color:darken($primary-color,5%);
+			font-weight:200 !important;
+			&:hover {
+				background-color:darken($primary-color,10%);
+			}
+		}
+		&:hover ul {
+			left:0;
+		}
+		a {
+			text-decoration: none;
+			padding: .8em;
+			display: block;
+			color:$white;
+		}
+	}
+	> li {
+		background-color:$primary-color;
+		font-weight:300 !important;
+		&:hover{
+			background-color:darken($primary-color,5%);
+		}
+	}
+	.has-dropdown > a::after {
+		font-family:FontAwesome;
+		content: " \f0d7";
+		font-size:rem-calc(10);
+		color:lighten($primary-color,50%);
+		padding-left:3px;
+	}
+	.is-home {
+		a {
+			span {
+				position:absolute;
+				left:-9999px;
+			}
+			&::after {
+				font-family:FontAwesome;
+				content: "\f015";
+				font-size:rem-calc(12 );
+			}
+		}
+	} 
+} 
+
+@media only screen and (max-width: 40em){
+	nav.sitewide {
+		background-color:darken($primary-color,10%);
+	}
+	.nav > li {
+		width:50%;
+		text-align:center;
+		margin-bottom:1px;
+	}
+	.nav > li:nth-of-type(odd){
+		border-right:1px solid darken($primary-color,10%);
+	}
+	.nav li:hover ul {
+		left:-9999px;
+	}
+	.nav .has-dropdown > a::after {
+		content: "";
+	}
+.nav .is-home a span {
+		position:relative;
+		left:0px;
+	}
+.nav .is-home a::after {
+		content: "";
+		font-size:rem-calc(10);
+	}
+}
+@media only screen and (max-width: 25em){
+	.mainbar, .sidebar {
+		padding:rem-calc(10) !important;
+	}
+	.subcolumns .columns {
+		padding:rem-calc(10) !important;
+	}
+	.description {
+		padding:rem-calc(0) !important;
+	}
+	.nav > li {
+		width:100%;
+	}
+	h1 {
+		background:none;
+	}
+}

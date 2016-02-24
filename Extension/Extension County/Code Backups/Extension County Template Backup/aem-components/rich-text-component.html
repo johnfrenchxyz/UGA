@@ -1,0 +1,99 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Rich Text Component</title>
+      <link rel="stylesheet" href="../css/app.css">
+   </head>
+
+   <body>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h1>Rich Text Component:</h1>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h2>Buttons</h2>
+            <p>Looks like anchor links work fine within <code>span</code> tags as long as you manually specify the color of the anchor link.</p>
+            <span class="button"><a style="color: white;">Red Button</a></span>
+            <span class="button large"><a style="color: white;">Large Red Button</a></span>
+
+            <br />
+            <br />
+
+            <span class="button secondary"><a style="color: #222222;">Gray Button</a></span>
+            <span class="button large secondary"><a style="color: #222222;">Large Gray Button</a></span>
+
+            <br />
+            <br />
+
+            <span class="button success"><a style="color: white;">Green Button</a></span>
+            <span class="button large success"><a style="color: white;">Large Green Button</a></span>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h2>Callout Panel / "Border"</h2>
+            <div class="callout">
+               <p>Just add a container div with a class of <code>callout</code>.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h2>Raised Panel / "Paper Element"</h2>
+            <div class="paper-element">
+               <p>Just add a container div with a class of <code>paper-element</code>.</p>
+            </div>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h2>Quotation</h2>
+            <blockquote>
+               Those people who think they know everything are a great annoyance to those of us who do.
+               <cite>Isaac Asimov</cite>
+            </blockquote>
+         </div>
+      </div>
+
+
+
+
+
+
+      <script src="../bower_components/jquery/dist/jquery.js"></script>
+      <script src="../bower_components/what-input/what-input.js"></script>
+      <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+      <script src="../js/app.js"></script>
+      <script src="../js/masonry.pkgd.min.js"></script>
+      <!-- New Scripts Below -->
+
+      <script>
+      $(window).load(function(){
+          $('#masonry-container').masonry({
+             itemSelector: '#masonry-container li#masonry-item'
+          });
+      });
+      </script>
+
+      <script>
+      $(window).load(function(){
+          $('#masonry-container-2').masonry({
+             itemSelector: '#masonry-container-2 li#masonry-item'
+          });
+      });
+      </script>
+
+
+   </body>
+
+</html>

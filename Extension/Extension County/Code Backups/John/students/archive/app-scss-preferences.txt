@@ -1,0 +1,40 @@
+
+// Or selectively include components
+@import
+//   "foundation/components/accordion",
+   "foundation/components/alert-boxes",
+   "foundation/components/block-grid", // list of items
+   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+   "foundation/components/buttons",
+//   "foundation/components/clearing", // goes with lightbox
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+   "foundation/components/flex-video", // rescales video to page
+   "foundation/components/forms",
+   "foundation/components/grid",
+//   "foundation/components/icon-bar", // no, more for app
+   "foundation/components/inline-lists", // may not be necessary
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes", // useful for documentation, maybe not external audiences
+   "foundation/components/labels", // useful when something is updated
+//   "foundation/components/magellan", // no
+//   "foundation/components/orbit", // no, will use 
+   "foundation/components/pagination", // for article listings
+   "foundation/components/panels", // sidebar? quotes?
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars", // not now
+// "foundation/components/range-slider", // form extra
+//   "foundation/components/reveal", // modal, not this one
+   "foundation/components/side-nav",
+//   "foundation/components/split-buttons", // not needed
+//   "foundation/components/sub-nav", // meant for on-page nav
+//   "foundation/components/switches", // form extra
+   "foundation/components/tables", // for now, may need to reconsider with jquery sort table
+//   "foundation/components/tabs", // meh
+//   "foundation/components/thumbs", // no, use lightbox jquery instead -- double check
+//   "foundation/components/tooltips", // not now
+//   "foundation/components/top-bar", // wth not? Because this isn't really the best nav scheme?
+   "foundation/components/type",
+   "foundation/components/offcanvas", // off-canvas menus, good for mobile?
+   "foundation/components/visibility"; // tbd, hide/show for media, size

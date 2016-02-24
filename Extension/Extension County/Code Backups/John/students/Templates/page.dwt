@@ -1,0 +1,350 @@
+<!-- basic page template to make development outside of AEM sustainable -->
+<!-- UI preheader, header, body area, footer templated for easy update, duplication -->
+
+<!-- PAGE: PAGE/PAGE.JSP -->
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>CAES Students</title>
+<!-- TemplateEndEditable -->
+<script src="../assets/js/vendor/modernizr.js"></script>
+<link rel="stylesheet" href="../assets/css/app.css" />
+<link rel="stylesheet" href="../assets/slick/slick.css" />
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+<!--<link rel="stylesheet" href="assets/css/respnav.css">-->
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+		<link rel="stylesheet" href="assets/css/ie.css">
+		<![endif]-->
+<!-- include Google Analytics snippet, SiteImprove snippet -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<!-- TemplateParam name="coverphoto" type="boolean" value="false" -->
+</head>
+
+<!-- PAGE: PAGE/BODY.JSP -->
+
+<body>
+<div id="outer-wrap">
+	<div id="inner-wrap">
+		<div class="preheader">
+			<section class="row">
+				<div class="small-12 medium-12 columns">
+					<p><a href="http://www.uga.edu">The University of Georgia</a> <span class="show-for-small"><br/>
+						</span><a href="http://www.caes.uga.edu">College of Agricultural &amp; Environmental Sciences</a></p>
+					<a class="nav-btn hide-for-large-up" id="nav-open-btn" href="#nav"><span>Menu</span></a> </div>
+			</section>
+		</div>
+		<header>
+			<section class="row" id="top">
+				<div class="small-12 large-7 columns block">
+					<p class="banner"><span class="nowrap">CAES Students</span></p>
+				</div>
+				<div class="small-12 large-5 columns block">
+					<form action="http://students.caes.uga.edu/search.html" id="cse-search-box" class="searchform">
+						<div class="row collapse">
+							<div class="small-10 columns">
+								<label for="searchstudents">Search CAES Students:</label>
+								<input type="hidden" name="cx" value="002731159468000846357:of2khsn3amc" />
+								<input type="hidden" name="cof" value="FORID:11" />
+								<input type="hidden" name="ie" value="UTF-8" />
+								<input type="text" name="q" />
+							</div>
+							<div class="small-2 columns">
+								<input type="submit" class="submit button postfix" name="sa" value="Search" />
+							</div>
+						</div>
+					</form>
+					<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script> 
+				</div>
+			</section>
+		</header>
+		<nav id="nav" class="row sitewide" role="navigation">
+			<ul>
+				<li class="close-btn"><a id="nav-close-btn" href="#top"><span>Close Menu</span></a></li>
+				<li class="has-dropdown"> <a href="/prospective.html"> Prospective Students</a>
+					<ul>
+						<li> <a href="/current/scholarships.html"> Scholarships </a> </li>
+						<li> <a href="/prospective/deans-promise.html"> The Deans&apos; Promise </a></li>
+						<li> <a href="/prospective/visit.html"> Schedule a Visit </a></li>
+						<li> <a href="/prospective/high-school-programs.html"> High School Programs </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/current.html"> Current Students</a>
+					<ul>
+						<li> <a href="/current/advising.html"> Advising </a></li>
+						<li> <a href="/current/counseling.html"> Counseling </a></li>
+						<li> <a href="/current/scholarships.html"> Scholarships </a></li>
+						<li> <a href="/current/internships-jobs.html"> Internships &amp; Jobs </a></li>
+						<li> <a href="/current/clubs.html"> Clubs </a></li>
+						<li> <a href="/current/service-learning.html"> Service Learning </a></li>
+						<li> <a href="/current/study-abroad.html"> Study Abroad </a></li>
+						<li> <a href="/current/research.html"> Research </a></li>
+						<li> <a href="/current/leadership.html"> Leadership </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown current"> <a href="/undergraduate.html"> Undergraduate Programs</a>
+					<ul>
+						<li> <a href="/undergraduate/majors.html"> Majors </a></li>
+						<li> <a href="/undergraduate/minors.html"> Minors </a></li>
+						<li> <a href="/undergraduate/certificates.html"> Certificates </a></li>
+						<li> <a href="/undergraduate/pre-professional.html"> Pre-professional Studies </a></li>
+						<li> <a href="/undergraduate/online-courses.html"> Online Courses </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/graduate.html"> Graduate Programs</a>
+					<ul>
+						<li> <a href="/graduate/programs.html"> Programs of Study </a></li>
+						<li> <a href="/graduate/certificates.html"> Certificates </a></li>
+						<li> <a href="/graduate/online-learning.html"> Online Learning </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/campus.html"> Extended Campuses</a>
+					<ul>
+						<li> <a href="/campus/griffin.html"> Griffin Campus </a></li>
+						<li> <a href="/campus/tifton.html"> Tifton Campus </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/news.html"> News &amp; Events</a>
+					<ul>
+						<li> <a href="/news/announcements.html"> Announcements </a></li>
+						<li> <a href="/news/features.html"> Feature Articles </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/contact-us.html"> Contact Us</a>
+					<ul>
+						<li> <a href="/contact-us/staff.html"> Meet Our Staff </a></li>
+						<li> <a href="/contact-us/employers.html"> For Employers </a></li>
+					</ul>
+				</li>
+				<li class="is-home"><a href="/"><span>Home</span></a></li>
+			</ul>
+		</nav>
+		<!-- PAGE: PAGE/CONTENT.JSP --><!-- TemplateBeginIf cond="coverphoto" --><!-- TemplateBeginEditable name="CoverPhoto-header" -->
+		<section class="row drop hide-for-small show-for-medium-up">
+			<div class="small-12 medium-12 large-12 columns">
+				<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+					<li role="menuitem" class="current">Undergraduate Programs</li>
+				</nav>
+				<h1>Undergraduate Programs</h1>
+			</div>
+			<i class="fa fa-caret-down"></i></section>
+		<!-- TemplateEndEditable --><!-- TemplateEndIf --> 
+		<main id="main" class="row"> <!-- EM temporarily removed ".feature" -->
+			
+			<div class="small-12 medium-12 large-9 columns mainbar"> 
+				
+				<!-- left side section, parsys 1 --><!-- TemplateBeginEditable name="left-par" -->
+				<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+					<li role="menuitem" class="current">Undergraduate Programs</li>
+				</nav>
+				<article>
+					<h1>Undergraduate Programs</h1>
+					<div class="parsys left-par">
+						<!-- STUDENTS/COMPONENTS/PARSYS -->
+						<div class="text parbase richtext section">
+							<p>University of Georgia’s College of Agricultural and Environmental Sciences is one rooted in tradition and providing the tools for success to our students. The second oldest of 18 colleges within the University of Georgia, CAES was founded in 1859 and has a rich history of making strides in the advancement of agricultural, environmental, and food sciences, as well as being up to date with modern, cutting edge technologies in those fields.</p>
+							<p>We’re a college of learning,doing, seeing, experiencing, helping and leading. The small class sizes allow students to get one-on-one attention from renowned faculty, optimizing their educational and professional experiences at UGA. Faculty within CAES have won UGA’s “Inventor of the Year” award eight out of the last 15 years, and nine out of 14 years CAES faculty members have been named UGA “Advisor of the Year.”</p>
+							<p>Pair the college’s 22 majors and 17 minors with the Deans’ Promise that all CAES students will be provided with enrichment opportunities like study abroad programs, service learning courses, internships, undergraduate research projects and leadership-building programs—and students have the capability to customize their educational experience in the College of Agricultural and Environmental Sciences to meet their academic and professional goals. The College of Agricultural and Environmental Sciences has the highest rate of graduates accepted into graduate and professional schools of all colleges at UGA.</p>
+							<p>Check out more information about what CAES has to offer on the following pages, or make the commitment to your success now and apply to study at UGA’s College of Agricultural and Environmental Sciences. </p>
+						</div>
+						<div class="text parbase richtext section">
+							<ul>
+								<li><a href="/undergraduate/majors.html">Majors</a></li>
+								<li><a href="/undergraduate/minors.html">Minors</a></li>
+								<li><a href="/undergraduate/certificates.html">Certificates</a></li>
+								<li><a href="/undergraduate/pre-professional.html">Pre-professional Studies</a></li>
+								<li><a href="/undergraduate/online-courses.html">Online Courses</a></li>
+							</ul>
+						</div>
+					</div>
+				</article>
+				<!-- TemplateEndEditable --></div>
+			<div class="small-12 medium-12 large-3 columns sidebar"> 
+				
+				<!-- right side section, parsys 2 --><!-- TemplateBeginEditable name="right-par" -->
+				<div class="parsys iparsys subnav-ipar">
+					<div class="subnav section">
+						<nav id="subnav" role="navigation">
+							<ul class="side-nav">
+								<li class="heading"> <a href="/undergraduate.html"> Undergraduate Programs</a>
+									<ul class="side-nav">
+										<li > <a href="/undergraduate/majors.html"> Majors </a></li>
+										<li > <a href="/undergraduate/minors.html"> Minors </a></li>
+										<li > <a href="/undergraduate/certificates.html"> Certificates </a></li>
+										<li > <a href="/undergraduate/pre-professional.html"> Pre-professional Studies </a></li>
+										<li > <a href="/undergraduate/online-courses.html"> Online Courses </a></li>
+									</ul>
+								</li>
+							</ul>
+						</nav>
+						<!--if ((currentPage.getParent(1) != null) && (child.getContentResource().adaptTo(Node.class).isSame(currentPage.getParent(1).getContentResource().adaptTo(Node.class)))) {-->
+					</div>
+					<div class="section">
+						<div class="new"></div>
+					</div>
+					<div class="iparys_inherited">
+						<div class="parsys iparsys subnav-ipar"></div>
+					</div>
+				</div>
+				<div class="parsys right-ipar iparsys">
+					<div class="parbase calltoactionbuttons section"><a href="https://www.admissions.uga.edu" class="button expand radius apply red">Apply to UGA</a> <a href="/prospective/visit.html" class="button expand radius plan green">Plan Your Visit</a> <a href="/contact-us.html" class="button expand radius request blue">Request More Info</a></div>
+					<div class="section">
+						<div class="new"></div>
+					</div>
+					<div class="iparys_inherited">
+						<div class="parsys right-ipar iparsys"></div>
+					</div>
+				</div>
+				<div class="parsys right-par">
+					<div class="parbase coverphoto section">
+						<div class="panel photo" data-equalizer-watch>
+							<p class="title">Cover Photo</p>
+							<p class="image"><a href="/content/dam/students/images/background-images/microscopessmall.jpg/_jcr_content/renditions/cq5dam.web.900.900.jpeg" data-lightbox="Undergraduate Programs" data-title="Undergraduate Programs"><img src="/content/dam/students/images/background-images/microscopessmall.jpg/_jcr_content/renditions/cq5dam.web.319.319.jpeg"></a></p>
+							<p class="description">Undergraduate Programs</p>
+						</div>
+					</div>
+				</div>
+				<!-- TemplateEndEditable --></div>
+		</main>
+		<main class="row headlines">
+			<div class="parsys bottom-par"><!-- STUDENTS/COMPONENTS/PARSYS --> 
+				
+			</div>
+		</main>
+		<!-- PAGE: PAGE/FOOTER.JSP --> 
+		
+		<!-- <footer>
+    <section class="row">
+        <div class="small-12 medium-12 columns">
+            <p><img src="/etc/clientlibs/students/images/CAES-logo-clear.png" alt="University of Georgia College of Agricultural and Environmental Sciences" /></p>
+        </div>
+    </section>
+</footer> -->
+		
+		<footer>
+			<section class="row">
+				<div class="small-12 medium-6 large-4 columns block">
+					<ul class="panel h-card vcard">
+						<li class="p-name fn u-url url">CAES Office of Academic Affairs</li>
+						<li class="p-street-address street-address">102 Conner Hall</li>
+						<li><span class="p-locality locality">Athens</span>, <span class="p-region region">Georgia</span> <span class="p-postal-code postal-code">30602</span></li>
+						<!--<li class="u-email email"><a href="mailto:discover@uga.edu">discover@uga.edu</a></li>-->
+						<li class="p-tel tel"><a href="tel:706-542-1611">706-542-1611</a></li>
+					</ul>
+				</div>
+				<div class="small-12 medium-6 large-4 columns social">
+					<p><a href="http://eepurl.com/tE17L" class="button blue radius">Subscribe to our newsletter.</a></p>
+					<p><a href="https://www.facebook.com/CAESstudents"><img src="../images/facebook-square-34.png"/></a> <a href="https://twitter.com/ugaCAESstudents"><img src="../images/twitter-square-34.png"/></a> <a href="https://instagram.com/ugacaesstudents"><img src="../images/instagram-34.png"/></a> </p>
+				</div>
+				<div class="small-12 medium-12 large-4 columns">
+					<p><a href="http://www.caes.uga.edu"><img src="../images/CAES-logo-clear.png" alt="University of Georgia College of Agricultural and Environmental Sciences"/></a></p>
+				</div>
+			</section>
+			<section class="row">
+				<div class="small-12 columns">
+					<p>The University of Georgia College of Agricultural and Environmental Sciences &copy; 2015. All Rights Reserved.</p>
+				</div>
+			</section>
+		</footer>
+		
+		
+		<div class="modal"></div>
+	</div>
+	<!--/#inner-wrap--> 
+</div>
+<!--/#outer-wrap--> 
+
+<!-- PAGE: PAGE/SCRIPTS.JSP --> 
+
+<script src="../assets/js/vendor/jquery.js"></script> 
+<script src="../assets/js/foundation.min.js"></script> 
+<script src="../assets/js/main.js"></script> 
+<script src="../assets/js/masonry.pkgd.min.js"></script> 
+<script src="../assets/js/jquery.backstretch.js"></script>  
+<script src="../assets/slick/slick.js"></script> 
+<script>
+    $(document).foundation({
+        equalizer: {
+            equalize_on_stack: true
+        }
+    });
+    $(document).ready(function(){
+        $('.par-slide').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:true
+       });
+        /*var $container = $('#grid');
+    	// initialize
+    	$container.masonry({
+    		itemSelector: '.item',
+    		transitionDuration: '.5s',
+            });*/
+    });
+    $(window).load(function(){
+        var container = document.querySelector('#grid');
+        var msnry = new Masonry( container, {
+            itemSelector: '.item',
+            transitionDuration: '.5s'
+        });
+    });
+
+    // flip toggle for pagelisting display
+    $( "#toggle .container" ).click(function() {
+        $( this ).toggleClass( "flipped" );
+    });
+
+    // show/hide for pagelisting filter
+
+    // VARIABLES DECLARED IN PAGELISTING.JSP
+    // var controlArray = ["athens","griffin","tifton"];
+    // var selectedArray = ["athens","griffin","tifton"];
+
+    function showselected() {
+		$(".tags").parent("div").unwrap().wrap("<p></p>");
+		for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+			var selected = selectedArray[i];
+			if(selected != "") {
+	     		$("p div div.tags:contains(" + selected + ")").parent("div").unwrap().wrap("<li></li>");
+			}
+		}
+	}
+
+    $('input:checkbox').change(function(){
+    	var filter = $(this).val();
+    	if($(this).is(':not(:checked)')){
+			for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+				if( filter == controlArray[i] ) {
+					selectedArray[i] = "";
+				}
+			}
+    	} else {
+	    	for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+	    		if( filter == controlArray[i] ) {
+	    			selectedArray[i] = controlArray[i];
+	    		}
+	    	}
+    	}
+    	showselected();
+     });
+</script><!-- TemplateBeginIf cond="coverphoto" -->
+<script type="text/javascript" src="../assets/scripts/backstretch.js"></script> 
+<script>
+            $("#main .breadcrumbs").addClass("hide-for-medium-up show-for-small");
+   			$("#main h1").addClass("hide-for-medium-up show-for-small");
+        	$.backstretch([ "assets/img/majors/1500/biosci-IMG_5268.jpg"], {fade: 0,duration: 4000});
+        </script><!-- TemplateEndIf --> 
+</body>
+</html>

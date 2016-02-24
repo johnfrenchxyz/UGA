@@ -1,0 +1,477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Newsletter Template</title>
+<!--<link rel="stylesheet" href="assets2/css/newsletter.css" />-->
+<style type="text/css">
+	 /* STYLES GO HERE */
+		 
+	body {
+		background: #eeeee3;
+		font-family: Arial,sans-serif;
+		font-size: 14px;
+		margin: 0 auto;
+		padding: 0;
+		color: #000;
+	}
+	.wrapper {
+		width: 100%;
+	}
+	.preheader table {
+		max-width: 600px;
+	}
+	.main table {
+		max-width: 640px;
+	}
+	.main table .header table, .main table .content table, .main table .footer table {
+		max-width: 600px;
+	}
+	table.wrapper table {
+		margin: 0 auto;
+	}
+	.preheader {
+		background: #cc0033;
+		color: #fff;
+	}
+	.preheader p {
+		margin: 0;
+		padding: 10px 0px;
+		font-size: 12px;
+	}
+	.preheader .title {
+		font-family: Arial Narrow,sans-serif; 
+		font-weight: 700;
+		font-size: 24px;
+	}
+	.header p {
+		font-size: 16px;
+		margin: 10px 0 0 0;
+		line-height: 16px;
+	}
+	.content img {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+	h1 {
+		font-family: Arial Narrow,sans-serif; 
+		font-weight: 700;
+		font-size: 50px;
+		margin: 0;
+		padding: 0;
+		line-height: 40px;
+		letter-spacing: -1px;
+	}
+	.subtitle {
+		font-family: Arial Narrow,sans-serif; 
+		font-weight: 200;
+		font-size: 30px;
+		letter-spacing: 0px;
+		margin-top: 10px;
+		text-align: right;
+	}
+	h2 {
+		font-family: Arial Narrow, sans-serif; 
+		font-weight: 700;
+		font-size: 24px;
+		color: #c03;
+		margin-bottom:5px;
+	}
+	.panel {
+		padding-bottom: 10px;
+		margin-bottom: 14px;
+		border: 1px solid #ccc;
+	}
+	.panel h2 {
+		margin-bottom: 0;
+		line-height:24px;
+		padding: 0 14px;
+	}
+	.panel p {
+		margin: 8px 0;
+		padding: 0 14px;
+	}
+	.panel.dark h2, .panel.dark p {
+		color: #fff;
+	}
+	.panel.dark a {
+		color: yellow;
+	}
+	.panel.red {
+		background: #c03;
+	}
+	.panel.gray {
+		background: #666;
+	}
+	.panel.black {
+		background: #000;
+	}
+	ul p {
+		line-height: 7px;
+	}
+	ul {
+	    margin: 0 0 10px 20px !important;
+	    padding: 0;
+	    list-style-position: outside;
+	}
+	ul li {
+	    padding:5px 0 0 0;
+	}
+	tr.content {
+		background: #fff;
+		padding: 0;
+		margin: 10px;
+		color: #000;
+	}
+	a {
+		color: #33c;
+	}
+	a.button {
+		background: #33c;
+		color: #fff;
+		font-weight: bold;
+		text-decoration: none;
+		display: block;
+		padding: 5px;
+		width: auto;
+		min-width: 170px;
+		margin-bottom: 5px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+	}
+	a.button img {
+		position: default;
+		width: auto;
+		float: left;
+		/*margin-top: -4px;*/
+		padding-right: 4px;
+	}
+	a.button span {
+		margin: 5px;
+		display: inline-block;
+	}
+	.footer {
+		padding: 0 20px;
+	}
+	.footer {
+		font-size: 11px;
+		padding: 0;
+		margin: 0;
+	}
+	.social {
+		background: #000;
+		color: #fff;
+		text-align: center;
+	}
+	.social td h2 {
+		display: inline-block;
+		margin: 0;
+		padding-left: 10px;
+		color: #fff;
+		line-height: 40px;
+		margin-bottom: -5px;
+	}
+	.social td span {
+		display: block;
+		float: right;
+		padding: 0 5px;
+	}
+	.logo {
+		background: #c03;
+		color: #fff;
+		text-align: center;
+	}
+	.nobr {
+		white-space: nowrap;
+	}
+	@media only screen and (max-width: 480px){
+		body,table,td,p,a,li,blockquote{
+			-webkit-text-size-adjust:none !important;
+		}
+		.preheader, .header {
+			text-align: center !important;
+		}
+		/*.content, .social, .logo {
+			text-align: left;
+		}*/
+		.social td span {
+			float: none !important;
+			margin-top: -10px !important;
+		}
+		.header td td {
+			padding-top: 10px !important;
+		}
+		h1 {
+			font-size: 40px !important;
+		}
+		h2, .panel h2 {
+			font-size: 20px !important;
+			line-height: 22px !important;
+		}
+		.social h2{
+			line-height: 40px !important;
+		}
+		.header p {
+			margin: 10px 50px !important;
+		}
+		h1.subtitle {
+			font-size: 30px !important;
+			line-height: 30px !important;
+			margin:0 0 20px 0 !important;
+			text-align: center !important;
+		}
+		
+		.colwidth-186 img, .colwidth-290 img, .colwidth-392 img {
+			max-width: 100%;
+			height: auto;
+		}
+		.logo td img {
+			max-width: 280px !important;
+		}
+		table, tr, td, tbody {
+			display: block;
+			width: 100% !important;
+			padding: 0 !important;
+			margin: 0 !important;
+			overflow: hidden !important;
+		}
+		.content, .logo {
+			padding: 10px 0 !important;
+			/*margin: 0 !important;
+			padding: 0 !important;*/
+		}
+		.social {
+			padding:0 !important;
+		}
+		.footer {
+			margin: 10px !important;
+		}
+		table .content {
+			width: 100% !important;
+			margin: 0 !important;
+			padding: 15px 0 !important;
+		}
+		table .content .parbase {
+			padding: 0 15px !important;
+		}
+		table .content .parbase .parbase {
+			padding: 0 !important;
+		}
+	}
+</style>
+</head>
+
+<body>
+<table class="wrapper" width="100%" border="0" cellpadding="0" cellspacing="0">
+	<!--<tr class="preheader">
+		<td>
+			<table width="640" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td valign="top" class="sitetitle" width="320"><p class="title">Students @ CAES</p></td>
+					<td valign="top" class="sitelogo" width="320"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/arch-24-wh.png" align="left" vspace="8" /><p>The University of Georgia <br/>College of Agricultural and Environmental Sciences</p></td>
+				</tr>
+			</table>
+		</td>
+	</tr>-->
+	
+	<tr class="preheader">
+		<td>
+			<table width="600" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<!--<td valign="top"><p>*|SUBJECT|*</p></td>-->
+					<td valign="top"><p style="text-align:center"><a href="*|ARCHIVE|*" style="color: white;">View this email in a browser.</a></p></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="main">
+		<td>
+			<table width="640" border="0" cellpadding="20" cellspacing="0">
+				<tr class="header">
+					<td>
+						<table width="600" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td width="400" valign="top">
+									<h1><span class="nobr">This Week</span> <span class="nobr">in CAES</span></h1>
+									<p><span class="nobr">The Official Weekly News</span> <span class="nobr">of UGA CAES Students</span></p>
+								</td>
+								<td width="200" valign="top">
+									<p class="subtitle"><span class="nobr">April 21-27, 2015</span></p>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				
+				<tr class="content">
+					<td>
+						<table class="parsys_column" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" class="parsys_column colwidth-290" width="290"><div class="text parbase richtext section">
+							<div class="panel dark red">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Brush up on your Italian!</h2>
+								<p>Our friends at the University of Udine in Northern Italy are offering an intensive summer course in Italian language and culture. June 30 – July 18. <a href="#">More details here.</a></p> 
+							</div>
+						</div>
+						</td><td width="20"></td><td valign="top" class="parsys_column colwidth-290" width="290"><div class="text parbase richtext section">
+							<div class="panel dark black">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Ag Day at Tate April 16</h2>
+								<p>Come to Tate to share your passion for agriculture with other UGA students.</p>
+							</div>
+						</div>
+						</td></tr></table><table class="parsys_column" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" class="parsys_column colwidth-392" width="392"><div class="text parbase richtext section">
+							<div class="panel dark gray">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>CAES Spring Fling is Tues., April 14</h2>
+								<p>Free dinner, popcorn, cotton candy, and more. 5-7PM off of S. Milledge.</p>
+							</div>
+							<div class="panel dark black">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Instagram of the Week</h2>
+								<p>"[At] the greatest show on dirt, the UGA Great Southland Stampede Rodeo, [where I played with] a baby goatlet!!!"</p>
+								<p>Post what you are doing with the College and hashtag #AgDawg for a chance to be featured as our Instagram of the Week! 
+								</p>
+							</div>
+						</div>
+						
+						</div>
+						</td><td width="20"></td><td valign="top" class="parsys_column colwidth-186" width="186"><div class="text parbase richtext section">
+						<a href="*|FORWARD|*" class="button"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/envelope-square-24.png" /><span>Forward to friend</span></a>
+						<a href="http://www.facebook.com/sharer/sharer.php?u=*|URL:ARCHIVE_LINK_SHORT|*" class="button"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/facebook-square-24.png" /><span>Share on Facebook</span></a>
+						<a href="http://twitter.com/intent/tweet?text=*|URL:MC_SUBJECT|*: *|URL:ARCHIVE_LINK_SHORT|*" class="button"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/twitter-square-24.png" /><span>Share on Twitter</span></a>
+						<h2>Upcoming Events</h2>
+						<p><strong>Date</strong><br/>
+							Event a<br/>
+							Event b<p>
+						<p><strong>Date</strong><br/>
+							Event a<br/>
+							Event b<p>
+						<p><strong>Date</strong><br/>
+							Event a<br/>
+							Event b<p>
+						<p>Go to our <a href="#">Calendar</a></p>
+						<h2>Announcements</h2>
+						<ul>
+							<li>item 1</li>
+							<li>item 2</li>
+							<li>item 3</li>
+						</ul>
+						<p>Go to our <a href="#">News &amp; Events</a></p>
+						<h2>Jobs &amp; Internships</h2>
+						<ul>
+							<li>item 1</li>
+							<li>item 2</li>
+							<li>item 3</li>
+						</ul>
+						<p>Sign into <a href="#">DawgLink</a> to view UGA CAreer Center postings:</p>	
+						<ul>
+							<li>item 1</li>
+							<li>item 2</li>
+							<li>item 3</li>
+						</ul>
+						<p>See more <a href="#">Jobs &amp; Internships</a></p>
+						
+						</div>
+						</td></tr></table><table class="parsys_column" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" class="parsys_column colwidth-186" width="186"><div class="text parbase richtext section">
+						
+							<div class="panel dark black">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Instagram of the week</h2>
+								<p>"[At] the greatest show on dirt, the UGA Great Southland Stampede Rodeo, [where I played with] a baby goatlet!!!"</p>
+								<p>Post what you are doing with the College and hashtag #AgDawg for a chance to be featured as our Instagram of the Week!</p>
+							</div>
+							
+						</div>
+						</td><td width="20"></td><td valign="top" class="parsys_column colwidth-392" width="392"><div class="text parbase richtext section">
+						
+							<div class="panel dark red">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Kudos to Hort Students!</h2>
+								<p>Students Kaylee South and Chase Ducharme of the Horticultural Department detail the use of science to make plant production decision at the CEFGA conference in Atlanta on March 26th and 27th. <a href="#">Read more about their experience.</a></p>
+							</div>		
+											
+						</div>
+						</td></tr></table><table class="parsys_column" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" class="parsys_column colwidth-186" width="186"><div class="text parbase richtext section">
+							<div class="panel">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Sign up for the European Garden Tour</h2>
+								<p>This is a fantastic tour. Everyone wants to take it. Come to Europe with us! <a href="#">link</a></p>
+							</div>
+						</div>
+						</td><td width="20"></td><td valign="top" class="parsys_column colwidth-186" width="186"><div class="text parbase richtext section">
+							<div class="panel">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Sign up for the European Garden Tour</h2>
+								<p>This is a fantastic tour. Everyone wants to take it. Come to Europe with us! <a href="#">link</a></p>
+							</div>
+						</div>
+						</td><td width="20"></td><td valign="top" class="parsys_column colwidth-186" width="186"><div class="text parbase richtext section">
+							<div class="panel">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Sign up for the European Garden Tour</h2>
+								<p>This is a fantastic tour. Everyone wants to take it. Come to Europe with us! <a href="#">link</a></p>
+							</div>
+						</div>
+						</td></tr></table><table class="parsys_column" border="0" cellpadding="0" cellspacing="0"><tr><td valign="top" class="parsys_column colwidth-392" width="392"><div class="text parbase richtext section">
+							<div class="panel">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Sign up for the European Garden Tour</h2>
+								<p>This is a fantastic tour. Everyone wants to take it. Come to Europe with us! <a href="#">link</a></p>
+							</div>
+						</div>
+						</td><td width="20"></td><td valign="top" class="parsys_column colwidth-186" width="186"><div class="text parbase richtext section">
+							<div class="panel">
+								<img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/ag-day-tate.png" />
+								<h2>Sign up for the European Garden Tour</h2>
+								<p>This is a fantastic tour. Everyone wants to take it. Come to Europe with us! <a href="#">link</a></p>
+							</div>
+						</div>
+						</td></tr></table>
+					</td>
+				</tr>
+				<tr class="social">
+					<td valign="top">
+						<h2>Follow CAES Students on:
+						<span> 
+							<a href="#"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/facebook-square-34.png" /></a>
+							<a href="#"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/twitter-square-34.png" /></a>
+							<a href="#"><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/instagram-34.png" /></a>
+						</span>
+						</h2>
+					</td>
+				</tr>
+				<tr class="logo">
+					<td><img src="http://devcaes.caes.uga.edu/team/web/students2014/publicA/images/CAES-logo-clear.png" /></td>
+				</tr>
+				<tr class="footer">
+					<td>
+						<table width="600" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td valign="top" width="290"><p>Office of Academic Affairs<br/>
+								College of Agricultural &amp; Environmental Sciences<br/>
+								Dr. Jean Bertrand jeanbert@uga.edu<br/>
+								102 Conner Hall University of Georgia<br/>
+								Athens, GA 3060</p>
+								*|IFNOT:ARCHIVE_PAGE|**|HTML:LIST_ADDRESS_HTML|**|END:IF|*<br/>
+								*|IF:REWARDS|* *|HTML:REWARDS|* *|END:IF|*
+								</td>
+								<td width="20"></td>
+								<td valign="top" width="290"><p>*|LIST:DESCRIPTION|*<br/>
+								<a href="*|UNSUB|*">unsubscribe</a> | <a href="*|UPDATE_PROFILE|*">update subscription</a></p></td>
+							</tr>
+							<tr>
+								<td valign="top" width="600" colspan="3"><p>Copyright &copy;*|CURRENT_YEAR|* *|LIST:COMPANY|*, 
+								All rights reserved.<br/>
+								The University of Georgia is an Equal Opportunity / Affirmative Action Institution.</p></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>

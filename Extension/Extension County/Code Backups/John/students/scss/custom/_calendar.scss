@@ -1,0 +1,238 @@
+// CALENDAR CSS
+
+x.agenda-view {
+	.row:nth-child(2n+1) {
+		//background:lighten($secondary-color,95%);
+	}
+	.row {
+		// vertical alignment from http://foundation.zurb.com/forum/posts/526-how-to-center-grid-row-vertically
+		display: table;
+		    > .columns {
+		        display: table-cell;
+		        vertical-align: middle;
+		    }
+		    > .columns, > [class*="column"] + [class*="column"]:last-child {
+		        float: none;
+		    }
+	}
+}
+.agenda-view {
+	.row {
+		border-bottom:1px solid lighten($secondary-color,85%);
+		margin:0;
+	}
+	h2 {
+		text-align:center;
+		background:lighten($secondary-color,95%);
+		line-height:1.5;
+		margin:0;
+		padding:0;
+		max-height:1.75em;
+		i {
+			position:relative;
+			color: lighten($secondary-color,85%);
+			display:inline-block;
+			clear:left !important;
+			font-size:rem-calc(24);
+			top:-.325em;
+		}
+	}
+	/* h2::after {
+		font-family:FontAwesome;
+		content: "\f0d7";
+		position:absolute;
+		color: lighten($secondary-color,85%);
+		clear:left;
+		bottom:0;
+	} */
+}
+.h-event {
+	padding:rem-calc(20 0 5 0);
+	h3 {
+		margin-bottom:0;
+	}
+	p {
+		font-size:.9rem;
+		&.p-name {
+			font-size:1rem;
+			margin-bottom:0;
+		}
+	}
+	.time {
+		font-weight:600;
+		margin-bottom:0;
+	}
+	.h-adr {
+		font-style:italic;
+		line-height:1.3em;
+	}
+	.share {
+		font-size:rem-calc(14);
+		line-height:1em;
+	}
+	i {
+		padding:0 .25em;
+	}
+}
+
+// Datepicker
+
+/* Calendar.min.css */
+
+/* Calendar.min.css */
+
+.calendar-detail-aside {}
+.calendar-event {}
+.fc {}
+.fc-content {
+	margin-bottom:rem-calc(24);
+}
+.fc table {
+	margin-bottom:rem-calc(-1);
+	border:none;
+}
+.fc td, .fc th {
+	padding: 0;
+	vertical-align: middle;
+	text-align: center
+}
+.fc-header td {
+//	height: 40px;
+	white-space: nowrap;
+	color: #fff;
+	background-color: #4d4d4d
+}
+.fc-header-left {
+	text-align: left
+}
+.fc-header-right {
+	text-align: right
+}
+.fc-header-title {
+//	padding-top: 5px;
+	padding:5px;
+	display: inline-block;
+	vertical-align: middle;
+	font-weight:600;
+}
+.fc-header-title h2 {
+	font-size: 16px;
+	font-weight: 100;
+	margin: 0;
+	white-space: nowrap
+}
+.fc-header .fc-button {
+	margin: 0;
+	vertical-align: middle
+}
+.fc-view {
+	overflow: hidden
+}
+.fc-widget-header {
+//	border-bottom: 1px solid #c1bfbf;
+	font-size: 12px;
+	font-weight: 100;
+}
+.fc-widget-header, .fc-widget-content {
+	height: 35px!important;
+	width: 35px!important;
+	vertical-align: middle;
+	text-align: center
+}
+.fc-widget-content {
+	background-color: #f0f0f0;
+//	border-top: 1px solid #fff;
+//	border-right: 1px solid #c1bfbf;
+//	border-bottom: 1px solid #c1bfbf;
+//	border-left: 1px solid #fff
+}
+.fc-widget-content>div {
+	line-height: 35px
+}
+.fc-widget-content:hover {
+	background: #e0e0e0;
+	cursor: pointer
+}
+.fc-widget-content.pressed>div {
+	background: #4d4d4d;
+	color: #fff;
+//	border-top: 1px solid #4d4d4d;
+//	border-right: 1px solid #231f20;
+//	border-bottom: 1px solid #4d4d4d;
+//	border-left: 1px solid #231f20;
+	margin: -1px
+}
+.fc-widget-content.fc-first {
+	border-left: none
+}
+.fc-widget-content.fc-last {
+	border-right: 0
+}
+.fc-widget-content.fc-first>div {
+	min-height: 0!important
+}
+.fc-state-highlight { /* similar to fc-today? */
+	background: #fff;	
+	font-weight:600;
+}
+.fc-state-default .fc-button-inner {
+	border: 0
+}
+.fc-state-default .fc-button-effect span {
+	border: 0 none;
+	background: 0
+}
+.fc-state-default, .fc-state-default .fc-button-inner {
+	background: 0;
+	border: 0 none;
+	color: 000
+}
+.fc-state-down, .fc-state-down .fc-button-inner {
+	border: 0 none;
+	background: 0
+}
+.fc-state-active, .fc-state-active .fc-button-inner {
+	border: 0 none;
+	background: 0;
+	color: #fff
+}
+table.fc-border-separate {
+	border-collapse: separate;
+	border-spacing: 1px
+}
+.fc-border-separate th, .fc-border-separate td {
+	border-width: 0
+}
+.fc-grid th {
+	text-align: center;
+	border: 0
+}
+.fc-grid .fc-day-number {
+	float: none;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0
+}
+.fc-grid .fc-other-month .fc-day-number {
+	color: #c1bfbf;
+	opacity: 1
+}
+.fc-grid .fc-day-content {
+	display: none
+}
+.fc-widget-content.highlight>div {
+	background: #f26522;
+	color: #fff;
+	border-top: 1px solid #4d4d4d;
+	border-right: 1px solid #231f20;
+	border-bottom: 1px solid #4d4d4d;
+	border-left: 1px solid #231f20;
+	margin: -1px
+}
+
+
+.highlight .fc-day-content div::after {
+	display:block;
+	clear:both;
+	content: "•";
+}

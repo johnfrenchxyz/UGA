@@ -1,0 +1,626 @@
+// MIXINS
+
+@mixin vendor-prefix($name, $argument) {
+  -webkit-#{$name}: #{$argument};
+  -ms-#{$name}: #{$argument};
+  -moz-#{$name}: #{$argument};
+  -o-#{$name}: #{$argument};
+  #{$name}: #{$argument};
+}
+
+// PAGE STYLES
+
+.preheader {
+	position:relative;
+	background-color:$black;
+	color:$white;
+	width:100%;
+	padding:0;
+	height:auto;
+}
+.preheader p {
+	margin-bottom:0;
+	padding: rem-calc(15) rem-calc(20);
+	font-size:rem-calc(12);
+	line-height:1em;
+	background:url("../../images/arch-24-wh.png") no-repeat left 8px;
+	// /etc/clientlibs/students/images/arch-24-wh.png
+	padding-left:rem-calc(24);
+}
+header {
+	position:relative;
+	background-color:$white;
+	border-bottom:$primary-color rem-calc(10) solid;
+	width:100%;
+	padding:0;
+//	margin-bottom:-1.5em;
+}
+header p.banner {
+	font-family:$font-family-heading;
+	font-size:rem-calc(60);
+	font-weight:800;
+	line-height:1em;
+	padding: rem-calc(16);
+	margin:0;
+//	margin-top:-1em;
+//	margin-bottom:-.5em;
+//	margin-top:-.5em;
+	a {
+		text-decoration:none;
+		color:$black;
+	}
+}
+.searchform {
+	padding-top:1.5em;
+	padding-right:1em;
+	#searchstudents {
+		@include side-radius(left, 5px);
+	}
+	.button {
+		@include side-radius(right, 5px);
+	}
+}
+header .searchform label {
+	position:absolute;
+	left:-9999px;
+}
+main {
+	background-color:$white;
+}
+.headlines {
+	background-color:$silver;
+}
+.headlines .large-9 {
+	background-color:$white;
+}
+main.drop {
+	top: 22em !important;
+	margin-top: 22em !important;	
+}
+.mainbar {
+	padding:rem-calc(30) !important;
+	// need mixin for reducing padding on small
+}
+.sidebar {
+	padding:rem-calc(30);
+	padding-left:0;
+}
+
+.sidebar {
+	//background-color:$silver;
+}
+/* .subcolumns .columns {
+	border-right:1px solid #666;
+} */
+.subcolumns .columns img {
+	width:100%;
+}
+.subcolumns .columns {
+	padding:rem-calc(0 20) !important;
+	// need mixin for reducing padding on small
+}
+.sidebar .section {
+	margin-bottom:1em;
+}
+.multicol {
+	-moz-column-count: 3;
+	-webkit-column-count: 3;
+	column-count:3;
+}
+ul.no-bullet li {
+	padding-left:.35em;
+	text-indent:-.35em;
+	display: table;
+}
+.description {
+//	font-family:$font-family-avenir;
+	font-size:rem-calc(18);
+	padding:rem-calc(10) !important;
+//	font-weight:100;
+}
+footer {
+	background-color:darken($primary-color,10);
+}
+footer .row {
+	background-color:$primary-color;
+	margin:0 auto;
+	padding:rem-calc(20);
+}
+h1, h2 {
+	font-family: $font-family-heading;
+}
+h1 {
+	font-weight: 700;
+	margin-bottom:.5em;
+	letter-spacing:-.5px;
+}
+h2 {
+	border-bottom:1px solid #cdcdcd;
+	font-weight:700 !important;
+	margin-top:1.5em;
+	margin-bottom:.75em;
+	padding-bottom:rem-calc(6);
+}
+h3 {
+	padding-bottom:rem-calc(6);
+	padding:rem-calc(8 0 0 0);
+	font-weight:$font-weight-bold;
+	line-height:1.5rem;
+}
+p {
+	line-height:1.5rem;
+//	max-width:40rem;
+}
+small, .small {
+	font-size:rem-calc(14);
+	line-height:1.3em;
+	color:lighten($secondary-color,25%);
+}
+// include .breadcrumbs, .tags, if want to make bold
+.sidebar h2, .button {
+	font-family: $font-family-sans-serif;
+	font-weight:600 !important;
+}
+.headlines .sidebar h2 {
+	font-family: $font-family-heading;
+	font-weight:700 !important;
+	font-size:rem-calc(22) !important;
+}
+header, header a {
+	color:$black;
+}
+.tags {
+	font-size:rem-calc(14);
+	a {
+		background:$silver;
+		padding:rem-calc(4);
+		@include side-radius(left, 3px);
+		@include side-radius(right, 3px);
+		text-decoration:none;
+		cursor:default;
+		&[href]:hover {
+			background:darken($silver,20%);
+			text-decoration:none;
+			color:$white;
+		}
+	}
+}
+#subnav > .side-nav {
+	margin-bottom:2em;
+}
+.side-nav {
+	ul > ul {background-color:white;}
+}
+.button.seemore {
+	background-color:$white;
+	color:$primary-color;
+	border:1px solid $primary-color;
+	margin-bottom:2em;
+}
+.button, .button.apply, .button.plan, .button.request {
+	text-align:left;
+	font-weight:300;
+	padding:rem-calc(12 16);
+}
+.button.disabled {
+	background:lighten($secondary-color,60%);
+	&:hover {
+		text-decoration:none;
+		transform: none;
+		background:lighten($secondary-color,60%)
+	}
+}
+.panel .button {
+	margin:rem-calc(8 0);
+}
+a {
+	&.apply::after {
+		font-family:FontAwesome;
+		content: " \f14a";
+		float:right;
+	}
+	&.plan::after {
+		font-family:FontAwesome;
+		content: " \f017";
+		float:right;
+	}
+	&.request::after {
+		font-family:FontAwesome;
+		content: " \f059";
+		float:right;
+	}
+}
+.sidebar h2 {
+	font-weight:300;
+	font-size:rem-calc(16);
+	padding:rem-calc(6 15);
+}
+
+table ul {
+	font-size:0.875rem;
+	margin-bottom:0;
+}
+
+// LISTS
+
+.richtext ul {
+	line-height:1.5em;
+}
+.richtext li {
+	margin:rem-calc(0 12);
+}
+
+// FORMS
+
+.form_row input {
+	margin:0;
+}
+.section label.inline {
+	padding:0;
+}
+.section {
+	// margin-bottom:rem-calc(16);
+}
+form .description {
+	font-size:rem-calc(12);
+	padding:rem-calc(6) !important;
+}
+small.error {
+	padding:rem-calc(6);
+	margin-bottom:0;
+}
+
+@import "custom/microformats";
+
+
+// HOME PAGE STYLES
+.headlines  {
+//	section {
+//		padding:0;
+//		background:white;
+//	}
+	h2 {
+		margin-top:0;
+		width:100%;
+		border:none;
+		padding:.5em;
+		color:#fff;
+		background:$primary-color;
+		text-align:center;
+		&:after {
+			font-family:FontAwesome;
+			content: "\f0d7";
+			position:relative;
+			color:$primary-color;
+			display:block;
+			clear:left !important;
+			font-size:rem-calc(24);
+			top:-.4em;
+		}
+		&.secondary-color {
+			background:lighten($secondary-color,30%);
+			&:after {
+				color:lighten($secondary-color,30%);
+			}
+		}
+		line-height:1.5;
+		margin:0;
+		padding:0;
+		max-height:1.75em;
+	}
+	.sidebar, .mainbar {
+		h2 {
+			font-size:rem-calc(20);
+		}
+		padding:0;
+		background:none;
+	}
+}
+section.drop {
+	padding:0;
+	text-align:center;
+	margin-top:rem-calc(400);
+	background: rgba(black, 0.4);
+	background:$primary-color;
+	.columns {
+		padding:rem-calc(30) !important;
+	}
+	h1, .breadcrumbs, .breadcrumbs a, .breadcrumbs .current {
+		color:white !important;
+		background:none;
+	}
+  	h1, .breadcrumbs {
+  		max-width:rem-calc(700);
+  	}
+	h1 {
+		margin-bottom:rem-calc(15);
+		text-align:left;
+	}
+	.tags {margin-bottom:rem-calc(0);}
+	i {
+		position:relative;
+		color: rgba(black, 0.4);
+		color:$primary-color;
+		display:inline-block;
+		clear:left !important;
+		font-size:rem-calc(40);
+		top:-.75em;
+	}
+	img {
+		float:right;position: absolute;right: 20px;bottom: -30px;
+	}
+	margin-bottom:-3.3em;
+}
+.studyabroadstamp {
+	position: absolute;right: 20px;top:-200px;
+}
+
+@import "custom/panels";
+
+
+// MASONRY STYLES
+
+// 1 col { width: 100%; }
+// 2 col { width: 50%; }
+// 3 col { width: 33.333%; }
+// 4 col { width: 25%; }
+
+.headlines #grid {
+	margin:rem-calc(20);
+	margin-right:rem-calc(5);
+}
+
+#grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+#grid .item {
+	float: left;
+	width: 95%;
+	margin: 1%;
+}
+
+#grid .item a {
+	display: block;
+}
+#grid .item.gray a {
+	color:#fff;
+}
+#grid .item:hover {
+	border-color: lighten($secondary-color,70%);
+}
+#grid .item img {
+	display: block;
+	max-width: 100%;
+}
+
+@media #{$small-only} {
+	main.drop {
+		margin-top:rem-calc(150);
+		margin-bottom:-rem-calc(150);
+	}
+	.headlines #grid, #grid{
+		margin:0;
+	}
+	#grid .item { 
+		width:100%;
+		margin:0% !important;
+		float:none;
+	}
+	.headlines { // is this really only for the home page?
+		.panel {
+			margin-top:rem-calc(15);
+			border:0;
+			background:none;
+			.image {
+				padding:rem-calc(15);
+				padding-bottom:0;
+				float:left;
+				max-width:40%;
+			}
+			&.gray {
+				@include panel(
+					$padding:rem-calc(0 0 16 0),
+					$bg:$white,
+					$adjust:true
+				);
+				border:0;
+				border-top:1px solid $silver;
+			}
+			border:0;
+			.video {
+				padding:rem-calc(15);
+				padding-bottom:0;
+			}
+			border-top:1px solid $silver;
+		}
+		.event.panel {
+			margin-top:0;
+		}
+	}
+	#grid .item:hover {
+		border-color:$silver;
+		background:$silver;
+	}
+	#grid .item.gray a {
+		color:#000;
+	}
+}
+@media #{$medium} {
+	#grid .item {
+		max-width: 47%;
+	}
+}
+@media #{$large-up} {
+	#grid .item {
+		max-width: 31%;
+	}
+	main.headlines .large-12 {
+		width:750px;
+//		border-right:250px solid $silver !important;
+//		margin-right:-250px;
+//		overflow-y:hidden;
+	}
+	#top {
+		height:110px;
+	}
+	.banner {
+		position:absolute;
+	}
+	#nav {
+		margin-top:rem-calc(-30);
+	}
+}
+// IF GOING LARGER: adjust @media large-up to large, adjust grid.scss file, adjust row-width in settings.scss
+//@media #{$xlarge-up} {
+//	#grid .item {
+//		max-width: 30.6%;
+//	}
+//	.drop .large-12 {
+//		width:75%;
+//		border-right:none !important;
+//		margin-right:0;
+//	}
+//}
+
+/* NEED
+
+CHECK - better line-height for small, see breadcrumb and h1
+CHECK - reduced padding on small for main columns, subcolumns
+- formatting for location "tags"
+- sidebar show/hide (submenu in alternate location)
+*/
+
+@media #{$medium-down} {
+
+	.headlines .sidebar {
+		padding:0 !important;
+		width:100%;
+	}
+	.subcolumns .columns {
+		padding:rem-calc(2 15) !important;
+		padding-bottom:0 !important;
+	}
+	.description {
+		padding:rem-calc(5) !important;
+	}
+	.searchform {
+		padding:0 1em;
+	}
+	h1 {
+		background:none;
+	}
+	h2 {
+		background:#eee;
+		margin-left:rem-calc(-5);
+		margin-right:rem-calc(-5);
+		padding:rem-calc(5 10);
+	}
+	#search {
+		padding-top:0;
+	}
+	
+	.button.apply, .button.plan, .button.request {
+		margin:rem-calc(8 16);
+		width:93%;
+	}
+	.multicol {
+		@include vendor-prefix(column-count,"2");
+	}
+	.headlines .panel.photo {
+		margin-top:rem-calc(15);
+		border:0;
+		background:none;
+		.image {
+			padding:rem-calc(15);
+			padding-bottom:0;
+			float:left;
+			max-width:40%;
+		}
+		border:0;
+		border-top:1px solid $silver;
+	}
+	.breadcrumbs .current {
+		display:none;
+	}
+}
+@media #{$small-only} {
+	.preheader p {
+		padding: rem-calc(10 0);
+		line-height:.6em;
+		padding-left:rem-calc(24);
+		background:url("../../images/arch-24-wh.png") no-repeat left 9px;
+		// /etc/clientlibs/students/images/arch-24-wh.png
+	}
+	header .columns p {
+		padding:rem-calc(8 0);
+	}
+	header p.banner {
+		font-size:rem-calc(44);
+	}
+	.mainbar, .sidebar {
+		padding:rem-calc(15) !important;
+	}
+	.searchform {
+		padding:0;
+	}
+}
+.nowrap {white-space: nowrap;}
+
+.weblisting {
+	font-size:rem-calc(14);
+//	.website a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.flickr a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.facebook a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.twitter a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.linkedin a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.instagram a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.googleplus a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+//	.pinterest a::before {
+//		font-family:FontAwesome;
+//		content: "\f015";
+//		padding-right:.25rem;
+//	}
+}
+main.headlines .columns {
+	padding:0 !important;
+}
+.headlines .sidebar h2 {
+	background: #4D4D4D;
+}
+.headlines .sidebar h2:after  {
+	color: #4D4D4D;
+}
+#grid .panel, .feature .panel {
+	border: 1px #D5D5D5 solid;
+}

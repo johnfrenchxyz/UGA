@@ -1,0 +1,68 @@
+For those interested, here's an adjustment to make the nav load and fly-out from the right. 
+
+1. Reposition the open/close buttons
+
+Change the positioning of the .nav-btn to align right in the top nav. I use .nav-btn to open and close the nav and have deleted all references to .close-btn.
+
+<code>
+	.nav-btn {
+		position: relative;
+		top: 1em;
+		right: 1em;
+		text-align: right;
+		color: #fff;
+	}
+</code>
+
+2. Reposition #nav and edit values for #nav and #inner-wrap animation
+
+The edits below are made inside <code>@media screen and (max-width: 45em)</code>. 
+
+<code>
+	.js-ready #nav {
+		height: 100%;
+		/* no change, note width is equal to distance moved on x-axis */
+		width: 70%;
+		background: #333333;
+		/* CHANGE h-shadow to positive value */
+		box-shadow: inset 1.5em 0 1.5em 1em rgba(0, 0, 0, 0.25);
+	}
+	.js-ready #nav {
+		 /* CHANGE: loads #nav right of window */
+	 	right:0;
+	}
+	.js-ready #inner-wrap {
+		/* no change, loads #inner-wrap flush left */
+		left:0; 
+	}
+	.js-nav #inner-wrap {
+		/* CHANGE: position #inner-wrap -70% on x-axis, left of window */
+		left:-70%; 
+	}
+	
+	/* transforms below changed to 2d values, 
+	vendor prefixes removed for example only */
+	
+	.csstransforms3d.csstransitions.js-ready #nav {
+		/* CHANGE x-axis to positive value, 
+		sets to far right-edge of frame */
+		transform: translate(100%, 0); 
+		backface-visibility: hidden;
+	}
+	.csstransforms3d.csstransitions.js-ready #inner-wrap {
+		left: 0 !important;
+		transform: translate(0, 0);
+		transition: transform 500ms ease;
+		backface-visibility: hidden;
+	}
+	.csstransforms3d.csstransitions.js-nav #inner-wrap {
+		/* CHANGE x-axis to negative value, 
+		animates #inner-wrap to move to left */
+		transform: translate(-70%, 0);
+	}
+	
+	/* Remove these styles if you do not want the nav to scale when it opens
+		.csstransforms3d.csstransitions.js-ready #nav .block
+		.csstransforms3d.csstransitions.js-nav #nav .block
+	*/
+</code>

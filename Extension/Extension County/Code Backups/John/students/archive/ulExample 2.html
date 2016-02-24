@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Simple jQuery filter – unordered list</title> 
+<style> 
+	body {
+		background:#fff;
+		color:#000;
+		font:75%/1.5em Arial, Helvetica, "DejaVu Sans", "Liberation sans", "Bitstream Vera Sans", sans-serif;
+	}
+	#wrap {
+		width: 500px;
+		position: relative;
+		left: 50%;
+		margin-left: -250px;
+	}
+	#header {
+		position:relative;
+		line-height:1em;
+	}
+	input {
+		border:1px solid #ccc;
+		border-bottom-color:#eee;
+		border-right-color:#eee;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-ms-box-sizing:border-box;
+		font-size:1em;
+		height:2.25em;
+		*height:1.5em;
+		line-height:1.5em;
+		padding:0.29em 0;
+		width:100%;
+		margin:0 0 0.75em;
+	}
+	.filterform {
+		width:220px;
+		font-size:12px;
+		display:block;
+	}
+	.filterform input {
+		-moz-border-radius:5px;
+		border-radius:5px;
+		-webkit-border-radius:5px;
+	}
+	code {
+		font:"Courier New", Courier, monospace;
+		font-size:12px;
+	}
+
+</style> 
+<script src="http://code.jquery.com/jquery-1.4.2.min.js"></script> 
+<script> 
+ 
+(function ($) {
+  jQuery.expr[':'].Contains = function(a,i,m){
+      return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+  };
+  
+  function listFilter(header, list) {
+    var form = $("<form>").attr({"class":"filterform","action":"#"}),
+        input = $("<input>").attr({"class":"filterinput","type":"text"});
+    $(form).append(input).appendTo(header);
+ 
+    $(input)
+      .change( function () {
+        var filter = $(this).val();
+        if(filter) {
+          $(list).find("tags:not(:Contains(" + filter + "))").parent("div").unwrap().wrap("<p></p>").css("background-color", "red");
+          $(list).find("tags:Contains(" + filter + ")").parent("div").unwrap().wrap("<li></li>").css("background-color", "yellow");
+          } else {
+            $(list).find("li").css("background-color", "green");
+        }
+        return false;
+      })
+    .keyup( function () {
+        $(this).change();
+    });
+  }
+ 
+  $(function () {
+    listFilter($("#header"), $("#list"));
+    // $(list).find("li").css("background-color", "yellow");
+     //$(list).find("div.tifton").parent().css("background-color", "red");
+  });
+}(jQuery));
+ 
+  </script> 
+ 
+</head> 
+<body> 
+<div id="wrap"> 
+    <h1 id="header">DVD Collection</h1> 
+    <ul id="list"> 
+        <li class="griffin athens tifton">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/agribusiness/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Agribusiness</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Agribusiness</p>
+        			<p class="description">Combine a business degree with agricultural science knowledge.</p>
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/agribusiness.html">Learn more about the Agribusiness major.</a></p>
+				</div>
+                <tags class="hide">griffin athens tifton</tags>
+			</div>
+		</li>
+		<li class="athens">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/agricultural-applied-economics/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Agricultural & Applied Economics</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Agricultural & Applied Economics</p>
+        			<p class="description">Learn how to analyze issues and solve problems in agriculture, food and related business-
+es.</p>
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/agricultural-applied-economics.html">Learn more about the Agricultural & Applied Economics major.</a></p>
+				</div>
+                <tags class="hide">athens</tags>
+			</div>
+		</li>
+		<li class="athens">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/agricultural-communication/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Agricultural Communication</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Agricultural Communication</p>
+        			<p class="description">Agricultural Communication is about communication with a focus, your focus. With this major, you can study broadcast, public relations, advertising, photography and graphic design.</p>
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/agricultural-communication.html">Learn more about the Agricultural Communication major.</a></p>
+				</div>
+                <tags class="hide">athens</tags>
+			</div>
+		</li>
+		<li class="griffin athens tifton">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/agricultural-education/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Agricultural Education</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Agricultural Education</p>
+        			<p class="description">Reveal the world of science to students through agriculture.</p>
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/agricultural-education.html">Learn more about the Agricultural Education major.</a></p>
+				</div>
+                <tags class="hide">griffin athens tifton</tags>
+			</div>
+		</li>
+		<li class="athens tifton">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/agriscience-environmental-systems/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Agriscience & Environmental Systems</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Agriscience & Environmental Systems</p>
+        			
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/agriscience-environmental-systems.html">Learn more about the Agriscience & Environmental Systems major.</a></p>
+				</div>
+                <tags class="hide">athens tifton</tags>
+			</div>
+		</li>
+		<li class="athens">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/animal-health/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Animal Health</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Animal Health</p>
+        			
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/animal-health.html">Learn more about the Animal Health major.</a></p>
+				</div>
+                <tags class="hide">athens</tags>
+			</div>
+		</li>
+		<li class="athens">
+			<div class="container" data-equalizer-watch>
+				<div class="panel front"><p class="image"><img src="/content/students/undergraduate/majors-minors-certificates/animal-science/_jcr_content/image/file.thumb.319.319.png"></p>
+        			
+        			<p class="title">Animal Science</p>
+                </div>
+                <div class="panel back">
+                    <p class="title">Animal Science</p>
+        			
+        			<p class="description"><a href="/content/students/undergraduate/majors-minors-certificates/animal-science.html">Learn more about the Animal Science major.</a></p>
+				</div>
+                <tags class="hide">athens</tags>
+			</div>
+		</li>
+    </ul> 
+</div> 
+</body> 
+</html> 
+ 

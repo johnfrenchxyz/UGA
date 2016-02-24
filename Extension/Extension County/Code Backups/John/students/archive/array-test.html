@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" >
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Array test</title>
+	
+	<style> 
+		#toggle > p {
+			background: red;
+			width: 100px;
+			display: none;
+		}
+		#toggle > li {
+			background: yellow;
+			width: 100px;
+			display: inline-block;
+		}
+	
+	</style> 
+	
+</head>
+
+<body>
+
+<ul class="inline-list">
+	<li><label for="athens"><input checked value="athens" id="athens" type="checkbox"> Athens</label></li>
+	<li><label for="griffin"><input checked value="griffin" id="griffin" type="checkbox"> Griffin</label></li>
+	<li><label for="tifton"><input checked value="tifton" id="tifton" type="checkbox"> Tifton</label></li>
+</ul>
+
+    	<ul id="toggle" class="large-block-grid-4 medium-block-grid-3 small-block-grid-1" data-equalizer>
+    		<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">griffin athens tifton</div>
+				</div>
+			</li>
+			<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">griffin athens</div>
+				</div>
+			</li>
+			<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">athens</div>
+				</div>
+			</li>
+			<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">tifton athens</div>
+				</div>
+			</li>
+			<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">tifton griffin</div>
+				</div>
+			</li>
+			<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">griffin</div>
+				</div>
+			</li>
+			<li>
+				<div class="container" data-equalizer-watch>
+					<div class="tags">tifton</div>
+				</div>
+			</li>
+		</ul>	
+
+<script src="assets/js/vendor/jquery.js"></script>
+<script>
+    $(document).ready();
+    
+    var controlArray = ["athens","griffin","tifton"]
+    var selectedArray = ["athens","griffin","tifton"]
+    
+	function showselected() {
+		$(".tags").parent("div").unwrap().wrap("<p></p>");
+		for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+			var selected = selectedArray[i];
+			if(selected != "") {
+//				alert(selected);
+	//     		$(".tags:not(:contains(" + selected + "))").parent("div").unwrap().wrap("<p></p>");
+	     		$("p div div.tags:contains(" + selected + ")").parent("div").unwrap().wrap("<li></li>");
+	//     		console.log("selected var is " + selected);
+			} else {
+	//			alert("this has no value");
+			}
+		}
+	}
+    
+    $('input:checkbox').change(function(){
+    	var filter = $(this).val();
+    	console.log(filter);
+    	if($(this).is(':not(:checked)')){
+    		console.log(filter + " was unchecked");
+			for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+				if( filter == controlArray[i] ) {
+					selectedArray[i] = "";
+						console.log(filter);
+				}
+			}
+    	} else {
+	    	console.log(filter + " was checked");
+	    	for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+	    		if( filter == controlArray[i] ) {
+	    			selectedArray[i] = controlArray[i];
+	    				console.log(filter);
+	    		}
+	    	}
+    	}
+    	console.log("control is " + controlArray.join (" "));
+    	console.log("selected is " + selectedArray.join (" "));
+    	console.log("------");
+    	showselected();
+//    	for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+//    		var selected = selectedArray[i];
+//    		$(".tags:not(:contains(" + selected + "))").parent("div").unwrap().wrap("<p></p>");
+//    		$(".tags:contains(" + selected + ")").parent("div").unwrap().wrap("<li></li>");
+//    		console.log("selected var is " + selected);
+//    	}
+    	//console.log(campusArray.join(" " ));
+    
+//        var filter = $(this).val();
+//        if($(this).is(':not(:checked)')){
+//            $(this).parent().toggleClass(filter);
+//            $(".tags:contains(" + filter + ")").parent("div").unwrap().wrap("<p></p>");
+//        } else {
+//            $(this).parent().toggleClass(filter);
+//            $(".tags:contains(" + filter + ")").parent("div").unwrap().wrap("<li></li>");
+//        }
+        //$("tags:contains('athens')").css( "text-decoration", "underline" );
+     });
+	
+	
+</script>
+  
+</body>
+</html>

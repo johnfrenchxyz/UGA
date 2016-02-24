@@ -1,0 +1,418 @@
+/*
+
+UGA Extension County Site Template 2015/2016
+Custom Variable, Mixins, and Styles by John French
+
+Table of Contents:
+
+1. Custom Imports
+2. Global Styles
+3. Typography
+4. Template
+   4.1 Extension Top Bar
+   4.2 Header
+   4.3 Navigation (Side / Off Canvas Custom Styles)
+   4.4 Custom 4-H Styles
+   4.5 Main Content Area
+   4.6 Footer
+
+*/
+
+
+// Allows the use of rem-calc() or lower-bound() in your settings
+@import 'foundation/functions';
+
+
+// 1. Custom Imports
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Controls what other scss files or elements are imported into these custom styles.
+
+   // Roboto Font Import
+   // This font is imported to be used as the default font family in the typography section below.
+   @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+   // Foundation Icon Font Import
+   @import "../fonts/foundation-icons/foundation-icons.css";
+
+
+
+
+
+// 2. Global Styles
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Controls what other scss files or elements are imported into these custom styles.
+
+   // Variables:
+
+      // Grid Variables
+      $row-width: rem-calc(1200);
+
+      $screen: "only screen";
+      $medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+
+      // Colors:
+      $primary-color: #c41039;
+      $secondary-color: #e7e7e7;
+      $alert-color: #008CBA;
+      $success-color: #43AC6A;
+      $warning-color: #f08a24;
+      $info-color: #a0d3e8;
+      $four-h-color: rgb(51, 153, 102);
+      $white: #FFFFFF;
+      $jet: #222222;
+      $black: #000000;
+
+
+      // Side Nav
+      $side-nav-link-bg-active: $primary-color;
+      $side-nav-top-link-size: rem-calc(24);
+
+      // Box Shadows
+      $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      $bottom-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+      $side-nav-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+
+   // Main Body Styles
+   html, body {
+      height: 100%;
+      position: relative;
+   }
+
+
+
+
+// 3. Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Controls the typography settings for the site.
+
+// Headings
+$header-font-color: darken($secondary-color, 60%);   // John French 2015
+$h1-font-size: rem-calc(35);
+$h2-font-size: rem-calc(25);
+$h3-font-size: rem-calc(22);
+$h4-font-size: rem-calc(18);
+$h5-font-size: rem-calc(15);
+$h6-font-size: rem-calc(13);
+
+$h2-font-reduction: rem-calc(6);    // John French 2015
+$h3-font-reduction: rem-calc(2);    // John French 2015
+
+// We use these to define default font weights
+   $font-weight-normal: normal;
+// $font-weight-bold: bold;
+   $font-weight-thin: 300;  // John French 2015
+   $font-weight-medium: 500; // John French 2015
+
+$subheader-font-weight: $font-weight-thin;   // John French 2015
+
+// Body Font Size
+$body-font-size: rem-calc(13);
+
+$body-font-color: darken($secondary-color, 60%);   // John French 2015
+
+$font-family-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;  // John French 2015
+
+// Anchors
+// We use these to style anchors
+// $anchor-text-decoration: underline;
+// $anchor-text-decoration-hover: underline;
+   $anchor-font-color: $primary-color;  // John French 2015
+   $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -20%); // John French 2015
+
+
+   $hr-margin: rem-calc(15);    // John French 2015
+
+
+
+// 4. Template
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// All styles that control the various elements of the template.
+
+   // 4.1 Extension Top Bar & Site Search
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   .extension-top-bar {
+      width: 100%;
+      height: 5em;
+      background: $secondary-color;
+      padding: 1em 1em 1em 0em;
+
+      // Extension Logo
+      .extension-logo {
+           width: 150px;
+           height: 53px;
+      }
+
+      // Large & Medium Screen Search
+      .search-container {
+           width:300px;
+      }
+
+      // Removes the Search Container for Small Screens
+      @media only screen and (max-width: 40em) {
+           .search-container {
+               visibility: hidden;
+               width: 0;
+           }
+      }
+
+      // Mobile Search Icon
+      .mobile-search-icon {
+           color: $body-font-color;
+           float: right;
+           padding: .6em 0 0 0;
+      }
+
+   }
+
+
+   // 4.2 Header
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   // Variables:
+   $site-title-font-size: $h1-font-size + rem-calc(4);
+   $site-title-font-reduction: rem-calc(10);
+
+   // Header Container
+   header {
+      background: $primary-color;
+      padding: 1em 0 1em 0em;
+      box-shadow: $bottom-shadow;
+
+      // Site Title
+      .site-title {
+           color: $white;
+           font-size: $site-title-font-size - $site-title-font-reduction;
+
+           .header-icon {
+               float: right;
+               margin: .4em .2em 0 .5em;
+           }
+
+      }
+
+      // Site Title Small Screen Font Reduction
+      @media #{$medium-up} {
+           .site-title {
+               line-height: $header-line-height;
+               font-size: $site-title-font-size;
+           }
+      }
+
+      // Hamburger Menu Icon
+      .hamburger-icon {
+           margin: .35em .35em 0 0;
+      }
+
+   }
+
+   // 4.3 Navigation (Side / Off Canvas Custom Styles)
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   // Side Nav Variables
+      // Top Level Background Color:
+      $side-nav-top-level-bg-color: $white;
+      // Top Level Active Background Color:
+      $side-nav-top-level-active-bg-color: $primary-color;
+      // Second Level Background Color:
+      $side-nav-second-level-bg-color: lighten($secondary-color, 5%);
+      // Second Level Active Background Color:
+      $side-nav-second-level-active-bg-color: $primary-color;
+      // Third Level Background Color:
+      $side-nav-third-level-bg-color: lighten($secondary-color, 5%);
+
+
+   // Side Nav Styles
+   .side-nav {
+
+      // Global styles for side nav
+      box-shadow: $side-nav-shadow;
+      min-height: 100%;
+      height: auto;
+      border-left: solid 1px darken($secondary-color, 1%);
+      border-right: solid 1px darken($secondary-color, 1%);
+
+      // Top Level:
+      li {
+           // Top Level Normal State:
+           background: $side-nav-top-level-bg-color;
+
+           // Top Level Active State:
+           &.active > a {
+               background: $side-nav-top-level-active-bg-color;
+
+               // Top Level Active Hover State (Keep Color the Same):
+               &:hover {background: $side-nav-top-level-active-bg-color !important;}
+           }
+      }
+
+      // Top Level Secondary Active State For When It's Children Are Active:
+      .active-parent {background: $side-nav-second-level-bg-color;}
+
+      // Second Level:
+      ul li {
+           // Second Level Normal:
+           background: $side-nav-second-level-bg-color;
+           font-size: rem-calc(14);
+           list-style: none;
+
+           // Second Level Hover:
+           &:hover, &:focus, &:active {background: $secondary-color;}
+           a:hover, , &:focus, &:active {background: $secondary-color !important;}
+
+
+           // Second Level Active:
+           &.active {background: $primary-color !important;}
+           &.active > a {background: $side-nav-second-level-active-bg-color;}
+           &.active > a:hover {background: $side-nav-second-level-active-bg-color !important;}
+
+      }
+
+      //li ul li a:focus {background: $jet !important; padding-left: 1em;}
+      //li ul li:focus {background: $jet !important; margin: 0 0 0 -20px !important;}
+
+      li ul {
+           // Controls the Margin of Second Level Children
+           margin: 0 0 0 0;
+
+           // Third Level
+           ul li {
+               //margin: 0 0 0 1em;
+               padding-left: 3em;
+               background: $side-nav-third-level-bg-color;
+               &:hover {background: $side-nav-third-level-bg-color;}
+               &.active {
+                   background: $side-nav-third-level-bg-color;
+                   a {border-left: solid 3px $primary-color;}
+               }
+               a {
+                   border-left: solid 3px $secondary-color;
+               }
+
+           }
+      }
+
+      // Edits to the Foundation Side Nav Mixin
+      @include side-nav(
+      // Border color of divider
+      $divider-color: darken($side-nav-top-level-bg-color, 10%),
+      // Font size of nav items
+      $font-size: 1.2em,
+      // Color of navigation links
+      $link-color: $body-font-color,
+      // Color of navigation links on active
+      $link-color-active: $body-font-color,
+      // Color of navigation links on hover
+      $link-color-hover: $body-font-color,
+      // Background color for hover state
+      $link-bg-hover: $secondary-color
+      );
+
+   }
+
+   // Off Canvas
+   // - - - - - - - - - - - - - - - - - - - - - - -
+
+   .right-off-canvas-menu {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+      position: fixed;
+      position: absolute; /*ie6 and above*/
+      top: 0;
+      right: 0;
+   }
+
+   @media #{$large-up} {
+      .right-off-canvas-menu {
+           display: none;
+      }
+   }
+
+   // 4.4 Custom 4-H Styles
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   // 4-H Page Banner
+   .four-h-header {
+      width: 100%;
+      height: 2em;
+      background: $four-h-color;
+      margin-bottom: 2em;
+
+      img {
+           display: block;
+           margin-left: auto;
+           margin-right: auto;
+           margin-top: 1em;
+           padding: .5em .5em .5em .5em;
+           width: 100px;
+           height: 100px;
+      }
+   }
+
+   // 4.5 Main Content Area
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   // Page Title (h1 & main page name)
+   .page-title {margin-top: .6em;}
+
+   // Mobile Search Modal
+   #mobile-search-modal {
+      input {
+         font-size: rem-calc(36);
+         height: auto;
+         line-height: rem-calc(36);
+         border: none;
+         box-shadow: none;
+         border-bottom: solid 5px $secondary-color;
+         &:focus {background: $white;}
+      }
+   }
+
+   .page-content {
+      margin: 0 0 2em 0;
+   }
+
+
+   // 4.6 Footer
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   .footer-top {
+     background: $secondary-color;
+     color: darken($secondary-color, 40%);
+     padding: 1em 1em 1em 1em;
+      border-top: solid 2em darken($secondary-color, 40%);
+      z-index: 999;
+      /* IE 8 */
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+      /* IE 5-7 */
+      filter: alpha(opacity=100);
+
+      /* Netscape */
+      -moz-opacity: 1;
+
+      /* Safari 1.x */
+      -khtml-opacity: 1;
+
+      /* Good browsers */
+      opacity: 1;
+
+     ul {
+           list-style: none;
+           font-size: $body-font-size;
+           margin-left: 0;
+      }
+
+      i {margin-right: .2em; }
+
+  }
+
+   .footer-bottom {
+      padding: 1em 0 0 0;
+      margin: 0 0 3em 0;
+      font-size: $body-font-size;
+      color: darken($secondary-color, 40%);
+   }

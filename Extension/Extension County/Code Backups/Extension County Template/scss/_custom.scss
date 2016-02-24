@@ -1,0 +1,553 @@
+/*
+
+UGA Extension County Site Template 2015/2016
+Custom Variable, Mixins, and Styles by John French
+
+Table of Contents:
+
+1. Custom Imports
+2. Global Styles
+3. Typography
+4. Template
+   4.1 Extension Top Bar
+   4.2 Header
+   4.3 Navigation (Side / Off Canvas Custom Styles)
+   4.4 Custom 4-H Styles
+   4.5 Main Content Area
+   4.6 Footer
+
+*/
+
+
+
+// 1. Custom Imports
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Controls what other scss files or elements are imported into these custom styles.
+
+   // Roboto Font Import
+   // This font is imported to be used as the default font family in the typography section below.
+   @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+   // Foundation Icon Font Import
+   @import "../foundation-icons/foundation-icons.css";
+
+   // We use this to control whether or not CSS classes come through in the gem files.
+   $include-html-classes: true;
+   // $include-print-styles: true;
+   $include-html-global-classes: $include-html-classes;
+
+// 2. Global Styles
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Controls what other scss files or elements are imported into these custom styles.
+
+      // Main Body Styles
+      html, body {
+         height: 100%;
+         position: relative;
+         background: $white;
+         // overflow: hidden;
+      }
+
+      .hide-overflow {
+         overflow: hidden;
+      }
+
+      .overflow-scroll {
+         overflow: scroll !important;
+      }
+
+      // Box Shadows
+      $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+      $bottom-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+
+      // Classes for Floating Images
+      .picLeft {
+         float: left;
+         padding: .5em;
+      }
+
+      .picRight {
+         float: right;
+         padding: .5em;
+      }
+
+// 3. Typography
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Controls the typography settings for the site.
+
+   // Body Font Size
+   $body-font-size: rem-calc(13);
+
+
+
+
+// 4. Template
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// All styles that control the various elements of the template.
+
+   // 4.0 Skip Links (For Accessibility)
+   #skipToContent {
+      position:absolute;
+      left:-10000px;
+      top:auto;
+      width:1px;
+      height:1px;
+      overflow:hidden;
+   }
+
+   // 4.1 Extension Top Bar & Site Search
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   .extension-top-bar {
+      width: 100%;
+      height: 5em;
+      background: $secondary-color;
+      padding: 1em 1em 1em 0em;
+
+      // Extension Logo
+      .extension-logo {
+           width: 150px;
+           height: 53px;
+           position: absolute;
+      }
+
+      // Large & Medium Screen Search
+      .search-container {
+         width:300px;
+         position: relative;
+         float: right;
+         height: 4em;
+         overflow: hidden;
+
+         @include breakpoint(small only) {
+            display: none;
+         }
+
+         .input-group-button {
+            button {
+               margin: 0;
+               height: 2.4375rem;
+            }
+         }
+
+      }
+
+      // Small Expanding Search
+
+      .searchbox {
+         position:relative;
+         min-width:38px;
+         width:0%;
+         height:45px;
+         float:right;
+         z-index: 999;
+         overflow:hidden;
+         margin-right: -10px;
+
+         -webkit-transition: width 0.3s;
+         -moz-transition: width 0.3s;
+         -ms-transition: width 0.3s;
+         -o-transition: width 0.3s;
+         transition: width 0.3s;
+      }
+
+      .searchbox-input{
+         top:0;
+         right:0;
+         border:0;
+         outline:0;
+         width:100%;
+         height:38px;
+         margin:0;
+         padding:0px 38px 0px 20px;
+         font-size:16px;
+         z-index: 999;
+      }
+
+      .searchbox-icon,
+      .searchbox-submit{
+         width:38px;
+         height:38px;
+         display:block;
+         position:absolute;
+         top:0;
+         font-size: rem-calc(14);
+         right:0;
+         padding:0;
+         margin:0;
+         border:0;
+         outline:0;
+         line-height:38px;
+         text-align:center;
+         cursor:pointer;
+         color: $white;
+         background: $primary-color;
+         z-index: 999;
+      }
+
+      .searchbox-open{
+         width:100%;
+         z-index: 999;
+      }
+
+      // Search Results Page
+      // Class/Id Names for GCS:
+      // .gs-title (Link titles) - make it $primary-color
+      // .gsc-url-top (Link URL) - make it $four-h-color
+      .gsc-adBlockNoHeight {
+         display: none;
+      }
+
+   }
+
+   // 4.2 Header
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   // Variables:
+   $site-title-font-size: rem-calc(44);
+   $site-title-font-reduction: rem-calc(34);
+
+   // Header Container
+   header {
+      background: $primary-color;
+      padding: 1em .9em 1em 0em;
+      box-shadow: $bottom-shadow;
+      z-index: 999;
+      position: relative;
+
+      // Site Title
+      .site-title {
+         color: $white;
+         font-size: $site-title-font-size;
+         float: left;
+         // Font Reduction for Site Title
+         @include breakpoint(small only) {
+            font-size: $site-title-font-reduction;
+         }
+      }
+
+
+
+         // Hamburger Icon Variables
+         $button-width: 20px;                    // The width of the button area
+         $button-height: 20px;                   // The height of the button area
+         $bar-thickness: 3px;                    // The thickness of the button bars
+         $button-pad: 0px;                      // The left/right padding between button area and bars.
+         $button-bar-space: 3px;                // The spacing between button bars
+         $button-transistion-duration: 0.2s;     // The transition duration
+
+         .c-hamburger {
+            position: relative;
+            overflow: hidden;
+            margin: 0;
+            margin-top: 15px;
+
+            @include breakpoint(medium) {
+               margin-top: 23px;
+               margin-right: 10px;
+            }
+            float: right;
+            padding: 0;
+            width: $button-width;
+            height: $button-height;
+            font-size: 0;
+            text-indent: -9999px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            box-shadow: none;
+            border-radius: none;
+            border: none;
+            cursor: pointer;
+            transition: background $button-transistion-duration;
+            &:focus {
+               outline: none;
+            }
+         }
+
+         .c-hamburger span {
+            display: block;
+            position: absolute;
+            top: ($button-height / 2) - ($bar-thickness / 2);
+            left: $button-pad;
+            right: $button-pad;
+            height: $bar-thickness;
+            background: rgb(255,255,255);
+         }
+
+         .c-hamburger span::before,
+         .c-hamburger span::after {
+            position: absolute;
+            display: block;
+            left: 0;
+            width: 100%;
+            height: $bar-thickness;
+            background-color: #fff;
+            content: "";
+         }
+
+         .c-hamburger span::before {
+            top: -$bar-thickness - $button-bar-space;
+         }
+
+         .c-hamburger span::after {
+            bottom: -$bar-thickness - $button-bar-space;
+         }
+
+         .c-hamburger--htx {
+            background-color: none;
+         }
+
+         .c-hamburger--htx span {
+            transition: background 0s $button-transistion-duration;
+         }
+
+         .c-hamburger--htx span::before,
+         .c-hamburger--htx span::after {
+            transition-duration: $button-transistion-duration, $button-transistion-duration;
+            transition-delay: $button-transistion-duration, 0s;
+         }
+
+         .c-hamburger--htx span::before {
+            transition-property: top, transform;
+         }
+
+         .c-hamburger--htx span::after {
+            transition-property: bottom, transform;
+         }
+
+         /* active state, i.e. menu open */
+
+         .c-hamburger--htx.is-active {
+            background-color: none;
+         }
+
+         .c-hamburger--htx.is-active span {
+            background: none;
+         }
+
+         .c-hamburger--htx.is-active span::before {
+            top: 0;
+            transform: rotate(45deg);
+         }
+
+         .c-hamburger--htx.is-active span::after {
+            bottom: 0;
+            transform: rotate(-45deg);
+         }
+
+         .c-hamburger--htx.is-active span::before,
+         .c-hamburger--htx.is-active span::after {
+            transition-delay: 0s, $button-transistion-duration;
+         }
+
+         /* active state, i.e. menu open */
+
+         .c-hamburger--htra.is-active {
+            background-color: darken(rgb(255,150,80), 20%);
+         }
+
+         .c-hamburger--htra.is-active span {
+            transform: rotate(180deg);
+         }
+
+         .c-hamburger--htra.is-active span::before,
+         .c-hamburger--htra.is-active span::after {
+            width: 50%;
+         }
+
+         .c-hamburger--htra.is-active span::before {
+            top: 0;
+            transform: translateX(-$bar-thickness) translateY($bar-thickness/2) rotate(-45deg);
+         }
+
+         .c-hamburger--htra.is-active span::after {
+            bottom: 0;
+            transform: translateX(-$bar-thickness) translateY(-$bar-thickness/2) rotate(45deg);
+         }
+      //}
+   }
+
+   // 4.3 Navigation (Side / Off Canvas Custom Styles)
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+   // Navigation Variables:
+
+      // Side Nav Box Shadow:
+      $side-nav-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.16), 0 0px 10px 0 rgba(0, 0, 0, 0.12);
+
+   // Navigation Styles
+
+   .side-nav {
+      // Global Navigation Styles
+      height: 100%;
+      min-height: 100%;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      border-left: solid 1px darken($secondary-color, 1%);
+      border-right: solid 1px darken($secondary-color, 1%);
+      background: $white;
+
+      @mixin nav-states {
+         // Hover State:
+         &:hover { background: lighten($secondary-color, 5%); }
+         // Active State (Page Indication):
+         &.active { background: $primary-color !important; color: $white; }
+         &:active, &:focus { background: $secondary-color; }
+      }
+
+      // First Level
+      .first-level {
+         display: block;
+         color: $dark-gray-color;
+         font-size: rem-calc(20);
+         padding: .5em;
+         border-top: solid 1px darken($secondary-color, 1%);
+
+         @include nav-states;
+
+         // Creates a bottom border for the last first level menu item:
+         &:last-child {
+            border-bottom: solid 1px darken($secondary-color, 1%);
+         }
+
+      }
+
+      // Second Level
+      .second-level {
+         //background: $secondary-color;
+         display: block;
+         color: $dark-gray-color;
+         font-size: rem-calc(16);
+         padding: .4em;
+         padding-left: 2em;
+
+         @include nav-states;
+      }
+
+      // Third Level
+      .third-level {
+         display: block;
+         //background: $secondary-color;
+         color: $dark-gray-color;
+         padding: .4em;
+         margin-left: 3em;
+         padding-left: 1em;
+         font-size: rem-calc(14);
+         border-left: solid 1px darken($secondary-color, 1%);
+
+         @include nav-states;
+         &.active {border-left: solid 1px $primary-color;}
+      }
+   }
+
+
+   // Fixing Navigation Scrollbar Issues:
+
+      // For Webkit (Chrome, Safari):
+      #offCanvas::-webkit-scrollbar, .side-nav::-webkit-scrollbar {
+         display: none;
+      }
+
+      // Firefox:
+      #offCanvas {
+         overflow-x: hidden;
+      }
+      * { margin: 0; }
+      #nav-outer-container {
+         height: 100%;
+         width: 100%;
+         overflow: hidden;
+         box-shadow: $side-nav-shadow;
+      }
+
+      #nav-inner-container {
+         width: 100%;
+         height: 99%;
+         overflow: auto;
+         overflow-y: scroll;
+      }
+
+
+
+
+   // Off Canvas
+   // - - - - - - - - - - - - - - - - - - - - - - -
+
+   .off-canvas {
+      background: $white;
+      height: 100%;
+      // overflow: scroll !important;
+   }
+
+   .off-canvas-content {
+      box-shadow: 5px 0 10px -5px #333;
+      background: $white;
+   }
+
+   .off-canvas-wrapper-inner {
+      z-index: 1;
+      background: $white;
+   }
+
+   .js-off-canvas-exit {
+      background: rgba($white, .7);
+      &:hover { background: rgba($white, .9); }
+   }
+
+   .off-canvas-active {
+      overflow: hidden;
+      background: $white;
+   }
+
+
+   // 4.4 Custom 4-H Styles
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+   // 4.5 Main Content Area
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+   // Main Content Buffer
+   // A div that gives the fotter some extra padding on medium and small screens
+   .main-content-buffer {
+      //@include breakpoint(medium down) { padding-bottom: 4em; }
+      padding-bottom: 4em;
+   }
+
+   // Page Title (h1 & main page name)
+   .page-title {margin-top: .55em;}
+
+   .page-content {
+      margin: 0 0 2em 0;
+   }
+
+
+   // 4.6 Footer
+   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+
+   .footer-top {
+      background: $secondary-color;
+      color: darken($secondary-color, 40%);
+      padding: 1em 1em 1em 1em;
+      border-top: solid 2em darken($secondary-color, 40%);
+      //z-index: 999;
+
+      ul {
+         list-style: none;
+         font-size: $body-font-size;
+         margin-left: 0;
+      }
+
+      i { margin-right: .2em; }
+
+   }
+
+   .footer-bottom {
+      padding: 1em 0 0 0;
+      margin: 0 0 3em 0;
+      font-size: $body-font-size;
+      color: darken($secondary-color, 40%);
+   }

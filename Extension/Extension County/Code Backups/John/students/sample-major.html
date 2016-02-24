@@ -1,0 +1,389 @@
+<!-- basic page template to make development outside of AEM sustainable -->
+<!-- UI preheader, header, body area, footer templated for easy update, duplication -->
+
+<!-- PAGE: PAGE/PAGE.JSP -->
+
+<!DOCTYPE html>
+<!--[if IE 8]> 				 <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" ><!-- InstanceBegin template="/Templates/page.dwt" codeOutsideHTMLIsLocked="false" -->
+<!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>CAES Students</title>
+<!-- InstanceEndEditable -->
+<script src="assets/js/vendor/modernizr.js"></script>
+<link rel="stylesheet" href="assets/css/app.css" />
+<link rel="stylesheet" href="assets/slick/slick.css" />
+<!--[if (gt IE 8) | (IEMobile)]><!-->
+<!--<link rel="stylesheet" href="assets/css/respnav.css">-->
+<!--<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+		<link rel="stylesheet" href="assets/css/ie.css">
+		<![endif]-->
+<!-- include Google Analytics snippet, SiteImprove snippet -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<!-- InstanceParam name="coverphoto" type="boolean" value="true" -->
+</head>
+
+<!-- PAGE: PAGE/BODY.JSP -->
+
+<body>
+<div id="outer-wrap">
+	<div id="inner-wrap">
+		<div class="preheader">
+			<section class="row">
+				<div class="small-12 medium-12 columns">
+					<p><a href="http://www.uga.edu">The University of Georgia</a> <span class="show-for-small"><br/>
+						</span><a href="http://www.caes.uga.edu">College of Agricultural &amp; Environmental Sciences</a></p>
+					<a class="nav-btn hide-for-large-up" id="nav-open-btn" href="#nav"><span>Menu</span></a> </div>
+			</section>
+		</div>
+		<header>
+			<section class="row" id="top">
+				<div class="small-12 large-7 columns block">
+					<p class="banner"><span class="nowrap">CAES Students</span></p>
+				</div>
+				<div class="small-12 large-5 columns block">
+					<form action="http://students.caes.uga.edu/search.html" id="cse-search-box" class="searchform">
+						<div class="row collapse">
+							<div class="small-10 columns">
+								<label for="searchstudents">Search CAES Students:</label>
+								<input type="hidden" name="cx" value="002731159468000846357:of2khsn3amc" />
+								<input type="hidden" name="cof" value="FORID:11" />
+								<input type="hidden" name="ie" value="UTF-8" />
+								<input type="text" name="q" />
+							</div>
+							<div class="small-2 columns">
+								<input type="submit" class="submit button postfix" name="sa" value="Search" />
+							</div>
+						</div>
+					</form>
+					<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script> 
+				</div>
+			</section>
+		</header>
+		<nav id="nav" class="row sitewide" role="navigation">
+			<ul>
+				<li class="close-btn"><a id="nav-close-btn" href="#top"><span>Close Menu</span></a></li>
+				<li class="has-dropdown"> <a href="/prospective.html"> Prospective Students</a>
+					<ul>
+						<li> <a href="/current/scholarships.html"> Scholarships </a> </li>
+						<li> <a href="/prospective/deans-promise.html"> The Deans&apos; Promise </a></li>
+						<li> <a href="/prospective/visit.html"> Schedule a Visit </a></li>
+						<li> <a href="/prospective/high-school-programs.html"> High School Programs </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/current.html"> Current Students</a>
+					<ul>
+						<li> <a href="/current/advising.html"> Advising </a></li>
+						<li> <a href="/current/counseling.html"> Counseling </a></li>
+						<li> <a href="/current/scholarships.html"> Scholarships </a></li>
+						<li> <a href="/current/internships-jobs.html"> Internships &amp; Jobs </a></li>
+						<li> <a href="/current/clubs.html"> Clubs </a></li>
+						<li> <a href="/current/service-learning.html"> Service Learning </a></li>
+						<li> <a href="/current/study-abroad.html"> Study Abroad </a></li>
+						<li> <a href="/current/research.html"> Research </a></li>
+						<li> <a href="/current/leadership.html"> Leadership </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown current"> <a href="/undergraduate.html"> Undergraduate Programs</a>
+					<ul>
+						<li> <a href="/undergraduate/majors.html"> Majors </a></li>
+						<li> <a href="/undergraduate/minors.html"> Minors </a></li>
+						<li> <a href="/undergraduate/certificates.html"> Certificates </a></li>
+						<li> <a href="/undergraduate/pre-professional.html"> Pre-professional Studies </a></li>
+						<li> <a href="/undergraduate/online-courses.html"> Online Courses </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/graduate.html"> Graduate Programs</a>
+					<ul>
+						<li> <a href="/graduate/programs.html"> Programs of Study </a></li>
+						<li> <a href="/graduate/certificates.html"> Certificates </a></li>
+						<li> <a href="/graduate/online-learning.html"> Online Learning </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/campus.html"> Extended Campuses</a>
+					<ul>
+						<li> <a href="/campus/griffin.html"> Griffin Campus </a></li>
+						<li> <a href="/campus/tifton.html"> Tifton Campus </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/news.html"> News &amp; Events</a>
+					<ul>
+						<li> <a href="/news/announcements.html"> Announcements </a></li>
+						<li> <a href="/news/features.html"> Feature Articles </a></li>
+					</ul>
+				</li>
+				<li class="has-dropdown"> <a href="/contact-us.html"> Contact Us</a>
+					<ul>
+						<li> <a href="/contact-us/staff.html"> Meet Our Staff </a></li>
+						<li> <a href="/contact-us/employers.html"> For Employers </a></li>
+					</ul>
+				</li>
+				<li class="is-home"><a href="/"><span>Home</span></a></li>
+			</ul>
+		</nav>
+		<!-- PAGE: PAGE/CONTENT.JSP --><!-- InstanceBeginEditable name="CoverPhoto-header" -->
+		<section class="row drop hide-for-small show-for-medium-up">
+			<div class="small-12 medium-12 large-12 columns">
+				<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+					<li role="menuitem"><a href="#">breadcrumb</a></li>
+					<li role="menuitem" class="current">breadcrumb</li>
+				</nav>
+				<h1>Food Industry Marketing &amp; Administration Major</h1>
+			</div>
+			<i class="fa fa-caret-down"></i></section>
+		<!-- InstanceEndEditable --> 
+		<main id="main" class="row"> <!-- EM temporarily removed ".feature" -->
+			
+			<div class="small-12 medium-12 large-9 columns mainbar"> 
+				
+				<!-- left side section, parsys 1 --><!-- InstanceBeginEditable name="left-par" -->
+				<nav class="breadcrumbs" role="menubar" aria-label="breadcrumbs">
+					<li role="menuitem"><a href="#">breadcrumb</a></li>
+					<li role="menuitem" class="current">breadcrumb</li>
+				</nav>
+				<article>
+					<h1>Food Industry Marketing &amp; Administration Major</h1>
+				<p class="tags">Available at: <a href="">Athens</a> <a href="">Tifton</a> <a href="">Griffin</a></p> 
+				<p class="description">Entomology is a flexible major that serves as an excellent base for an advanced degree in many other fields, like environmental health, public health and environmental engineering, and also satisfies admittance requirements for professional degree programs like medicine, veterinary medicine, dentistry, optometry and pharmacy. Students should acquire a basic knowledge of agricultural production principles and how insects influence crop production.</p>
+				<h2>What does an Entomology major study?</h2>
+					<div class="row subcolumns">
+						<div class="medium-6 large-6 columns">
+							<h3>Coursework</h3>
+							<p>View the course plan below for typical course sequences of an Entomology major. You will determine the right courses to match your interests with assistance from your advisor.</p>
+							<ul><li><a href="#">Sample 4-Year plan</a></li></ul>
+							<p>See required Entomology classes and available electives in the <a href="#">UGA Bulletin</a>.</p>
+						</div>
+						<div class="medium-6 large-6 columns">
+							<h3>Prepare</h3>
+							<p>To prepare for courses to earn a degree in Entomology we recommend you:</p>
+							<ul>
+								<li>Participate in traditional agricultural extracurricular activities, such as 4-H and FFA.</li>
+								<li>Participate in available Scout organizations.</li>
+								<li>Attend camp or participate as a camp counselor.</li>
+								<li>Participate in science related pre-collegiate programs or youth leadership programs.</li>
+								<li>Present research at the Science and Engineering Festival</li>
+							</ul>
+						</div>
+					</div>
+				<h2>What can an Entomology student do outside of class?</h2>
+					<div class="row subcolumns">
+						<div class="medium-6 large-6 columns">
+							<h3>Hands-on learning</h3>
+							<ul>
+								<li>Labs in the classroom and in the field</li>
+								<li>Undergraduate research opportunities</li>
+								<li>Service learning courses</li>
+								<li>Outreach programs</li>
+								<li>Internships</li>
+								<li><a href="#">Study abroad opportunities</a></li>
+							</ul>
+						</div>
+						<div class="medium-6 large-6 columns">
+							<h3>Get involved</h3>
+							<ul>
+								<li>UGA Collegiate FFA Club</li>
+								<li>H.O Lund Entomology Club</li>
+								<li>MANNRS</li>
+							</ul>
+							<p>See complete list of <a href="#">CAES student clubs and organizations</a>.</p>
+						</div>
+					</div>	
+				<h2>What jobs can I get with an Entomology degree?</h2>
+					<div class="row subcolumns">
+						<div class="medium-6 large-6 columns">
+							<h3>Possible careers with this degree:</h3>
+							<ul>
+								<li>Entomologist</li>
+								<li>Governmental Specialist</li>
+								<li>Horticultural Crop Entomologist</li>
+								<li>Public Health Specialist</li>
+								<li>Environmental Conservation</li>
+								<li>Veterinary/Professional School</li>
+								<li>K-12 Education</li>
+								<li>Informal Education (Museums/Nature Centers/Zoos)</li>
+							</ul>
+						</div>
+						<div class="medium-6 large-6 columns">
+							<h3>Entry-level salary</h3>
+							<p>$35,000-$49,000</p>
+							<p>See <a href="#">2013/2014 Entry-Level Salary Information for Recent Graduates in Agriculture and Related Disciplines</a></p>
+						</div>
+					</div>
+				<h2>Paying for College</h2>
+					<div class="row subcolumns">
+						<div class="medium-6 large-6 columns">
+							<h3>Scholarships</h3>
+							<p>Each year the College of Agricultural and Environmental Sciences (CAES) awards scholarships to students enrolled in our majors. Go to <a href="#">CAES Scholarships</a>.</p>
+						</div>
+						<div class="medium-6 large-6 columns">
+							<h3>Financial aid</h3>
+							<p>To find out about deadlines and eligibility requirements, visit the <a href="#">University of Georgia Office of Student Financial Aid</a>.</p>
+						</div>
+					</div>	
+				</article>
+				<!-- InstanceEndEditable --></div>
+			<div class="small-12 medium-12 large-3 columns sidebar"> 
+				
+				<!-- right side section, parsys 2 --><!-- InstanceBeginEditable name="right-par" -->
+					<nav id="subnav" role="navigation" class="hide-for-medium hide-for-small">
+				<ul class="side-nav">
+					<li class="heading"><a>Undergraduate Programs</a>
+						<ul class="side-nav">
+							<li><a>Majors, minors &amp; certificates</a></li>
+							<li><a>Pre-professional studies</a></li>
+							<li><a>Online courses</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<a href="" class="button expand radius apply">Apply to UGA</a>
+			<a href="" class="button expand radius plan success">Plan Your Visit</a>
+			<a href="" class="button expand radius request info">Request More Info</a>
+			<img src="images/studyabroadstamp.png" class="studyabroadstamp" />
+			<div class="panel photo" data-equalizer-watch>
+				<p class="title">Cover photo</p>
+				<p class="image"><a href="assets/img/entomology_J9K3955_1.jpg" data-lightbox="image-1" data-title="Description of the picture."><img src="assets/img/thumb-entomology_J9K3955_1.jpg"></a></p>
+				<p class="description">Description of the picture.</p>
+			</div>
+				<!-- InstanceEndEditable --></div>
+		</main>
+		<main class="row headlines">
+			<div class="parsys bottom-par"><!-- STUDENTS/COMPONENTS/PARSYS --> 
+				
+			</div>
+		</main>
+		<!-- PAGE: PAGE/FOOTER.JSP --> 
+		
+		<!-- <footer>
+    <section class="row">
+        <div class="small-12 medium-12 columns">
+            <p><img src="/etc/clientlibs/students/images/CAES-logo-clear.png" alt="University of Georgia College of Agricultural and Environmental Sciences" /></p>
+        </div>
+    </section>
+</footer> -->
+		
+		<footer>
+			<section class="row">
+				<div class="small-12 medium-6 large-4 columns block">
+					<ul class="panel h-card vcard">
+						<li class="p-name fn u-url url">CAES Office of Academic Affairs</li>
+						<li class="p-street-address street-address">102 Conner Hall</li>
+						<li><span class="p-locality locality">Athens</span>, <span class="p-region region">Georgia</span> <span class="p-postal-code postal-code">30602</span></li>
+						<!--<li class="u-email email"><a href="mailto:discover@uga.edu">discover@uga.edu</a></li>-->
+						<li class="p-tel tel"><a href="tel:706-542-1611">706-542-1611</a></li>
+					</ul>
+				</div>
+				<div class="small-12 medium-6 large-4 columns social">
+					<p><a href="http://eepurl.com/tE17L" class="button blue radius">Subscribe to our newsletter.</a></p>
+					<p><a href="https://www.facebook.com/CAESstudents"><img src="images/facebook-square-34.png"/></a> <a href="https://twitter.com/ugaCAESstudents"><img src="images/twitter-square-34.png"/></a> <a href="https://instagram.com/ugacaesstudents"><img src="images/instagram-34.png"/></a> </p>
+				</div>
+				<div class="small-12 medium-12 large-4 columns">
+					<p><a href="http://www.caes.uga.edu"><img src="images/CAES-logo-clear.png" alt="University of Georgia College of Agricultural and Environmental Sciences"/></a></p>
+				</div>
+			</section>
+			<section class="row">
+				<div class="small-12 columns">
+					<p>The University of Georgia College of Agricultural and Environmental Sciences &copy; 2015. All Rights Reserved.</p>
+				</div>
+			</section>
+		</footer>
+		
+		
+		<div class="modal"></div>
+	</div>
+	<!--/#inner-wrap--> 
+</div>
+<!--/#outer-wrap--> 
+
+<!-- PAGE: PAGE/SCRIPTS.JSP --> 
+
+<script src="assets/js/vendor/jquery.js"></script> 
+<script src="assets/js/foundation.min.js"></script> 
+<script src="assets/js/main.js"></script> 
+<script src="assets/js/masonry.pkgd.min.js"></script> 
+<script src="assets/js/jquery.backstretch.js"></script>  
+<script src="assets/slick/slick.js"></script> 
+<script>
+    $(document).foundation({
+        equalizer: {
+            equalize_on_stack: true
+        }
+    });
+    $(document).ready(function(){
+        $('.par-slide').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:true
+       });
+        /*var $container = $('#grid');
+    	// initialize
+    	$container.masonry({
+    		itemSelector: '.item',
+    		transitionDuration: '.5s',
+            });*/
+    });
+    $(window).load(function(){
+        var container = document.querySelector('#grid');
+        var msnry = new Masonry( container, {
+            itemSelector: '.item',
+            transitionDuration: '.5s'
+        });
+    });
+
+    // flip toggle for pagelisting display
+    $( "#toggle .container" ).click(function() {
+        $( this ).toggleClass( "flipped" );
+    });
+
+    // show/hide for pagelisting filter
+
+    // VARIABLES DECLARED IN PAGELISTING.JSP
+    // var controlArray = ["athens","griffin","tifton"];
+    // var selectedArray = ["athens","griffin","tifton"];
+
+    function showselected() {
+		$(".tags").parent("div").unwrap().wrap("<p></p>");
+		for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+			var selected = selectedArray[i];
+			if(selected != "") {
+	     		$("p div div.tags:contains(" + selected + ")").parent("div").unwrap().wrap("<li></li>");
+			}
+		}
+	}
+
+    $('input:checkbox').change(function(){
+    	var filter = $(this).val();
+    	if($(this).is(':not(:checked)')){
+			for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+				if( filter == controlArray[i] ) {
+					selectedArray[i] = "";
+				}
+			}
+    	} else {
+	    	for ( var i = 0; i < controlArray.length; i = i + 1 ) {
+	    		if( filter == controlArray[i] ) {
+	    			selectedArray[i] = controlArray[i];
+	    		}
+	    	}
+    	}
+    	showselected();
+     });
+</script>
+<script type="text/javascript" src="assets/scripts/backstretch.js"></script> 
+<script>
+            $("#main .breadcrumbs").addClass("hide-for-medium-up show-for-small");
+   			$("#main h1").addClass("hide-for-medium-up show-for-small");
+        	$.backstretch([ "assets/img/majors/1500/biosci-IMG_5268.jpg"], {fade: 0,duration: 4000});
+        </script> 
+</body>
+<!-- InstanceEnd --></html>
