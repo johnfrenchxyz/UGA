@@ -2164,7 +2164,8 @@ select {
   position: absolute;
   visibility: hidden;
   width: 300px;
-  z-index: 10; }
+  z-index: 10;
+  left: 0;}
   .dropdown-pane.is-open {
     visibility: visible; }
 
