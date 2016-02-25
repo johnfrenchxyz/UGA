@@ -15,14 +15,18 @@
 
 // UGA Branding
 // ------------
-#ugaBranding {
+.uga-button {
+   @include button-style($caes-red, darken($caes-red, 10%), $white);
    height: 40px;
-   background: $caes-red;
    font-size: rem-calc(14);
    font-weight: bold;
    text-transform: uppercase;
-   padding: .4em .4em .4em .6em;
+   padding-top: 5px;
+   text-align: left;
    border-bottom-right-radius: 1em;
+   border-bottom: solid 5px darken($caes-red, 5%);
+   transition: border 0.25s ease-out, color 0.25s ease-out;
+   &:hover { border-bottom: solid 5px darken($caes-red, 15%); }
    // Small Screen Width
    @include breakpoint(small) {
       width: 30%;
@@ -36,12 +40,6 @@
    @include breakpoint(large) {
       width: 25%;
    }
-   // Anchor Color
-   a #ugaText {
-      padding-top: 3px;
-      color: $white;
-      vertical-align: middle;
-   }
 }
 
 // People Menu & Search
@@ -50,51 +48,18 @@
 .people-button {
    @include button-style($caes-blue, darken($caes-blue, 10%), $white);
    border-bottom-left-radius: 1em;
+   border-bottom: solid 5px darken($caes-blue, 5%);
+   transition: border 0.25s ease-out, color 0.25s ease-out;
+   &:hover { border-bottom: solid 5px darken($caes-blue, 15%); }
    height: 40px;
 }
-
-#revealPeopleDropdown {
-
-
-}
-
-/* The dropdown content itself */
-#peopleDropdown {
-	background: $caes-blue;
-	border-radius: 5px;
-	clear: both;
-	margin: 60px auto 0 -80px;
-	padding: 10px;
-	width: 200px;
-	position: fixed;
-	display:none;
-   color: $white;
-}
-
-/* The drpdown's arrow */
-#peopleDropdown:after {
-	bottom: 100%;
-	left: 80%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(0, 131, 170, 0);
-	border-bottom-color: $caes-blue;
-	border-width: 10px;
-	margin-left: -10px;
-}
-
-
-
-
-
 
 // Search Button:
 .search-button {
    @include button-style($caes-red, darken($caes-red, 10%), $white);
+   border-bottom: solid 5px darken($caes-red, 5%);
+   transition: border 0.25s ease-out, color 0.25s ease-out;
+   &:hover { border-bottom: solid 5px darken($caes-red, 15%); }
    height: 40px;
 }
 
