@@ -74,7 +74,7 @@
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    line-height: 1;
-   margin-top: .2em;
+   margin-top: 0em;
    // Large screen left margin:
    @include breakpoint(large up) {
       padding-left: .5em;

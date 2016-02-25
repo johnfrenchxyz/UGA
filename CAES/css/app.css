@@ -3945,7 +3945,7 @@ table.hover tr:nth-of-type(even):hover {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1;
-  margin-top: .2em; }
+  margin-top: 0em; }
   @media screen and (min-width: 64em) {
     #caesBranding {
       padding-left: .5em; } }
