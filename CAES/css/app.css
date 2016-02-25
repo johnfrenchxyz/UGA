@@ -3909,13 +3909,40 @@ table.hover tr:nth-of-type(even):hover {
     vertical-align: middle; }
 
 .people-button {
-  background-color: #0083a9;
+  background-color: #0083aa;
   color: #fefefe;
   border-bottom-left-radius: 1em;
   height: 40px; }
   .people-button:hover, .people-button:focus {
-    background-color: #005b76;
+    background-color: #005c77;
     color: #fefefe; }
+
+/* The dropdown content itself */
+#peopleDropdown {
+  background: #0083aa;
+  border-radius: 5px;
+  clear: both;
+  margin: 60px auto 0 -80px;
+  padding: 10px;
+  width: 200px;
+  position: fixed;
+  display: none;
+  color: #fefefe; }
+
+/* The drpdown's arrow */
+#peopleDropdown:after {
+  bottom: 100%;
+  left: 80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(0, 131, 170, 0);
+  border-bottom-color: #0083aa;
+  border-width: 10px;
+  margin-left: -10px; }
 
 .search-button {
   background-color: #c41039;

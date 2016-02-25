@@ -23,3 +23,11 @@ window.onresize = function() {
       ugaBranding.innerHTML = "University of Georgia";
    }
 };
+
+
+
+// People Dropdown
+// -------------------------
+$("#revealPeopleDropdown").click(function(){
+  $("#peopleDropdown").toggle();
+});
