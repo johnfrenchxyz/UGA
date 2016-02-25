@@ -25,7 +25,6 @@ window.onresize = function() {
 };
 
 
-
 // People Dropdown
 // -------------------------
 $("#revealPeopleDropdown").click(function(){

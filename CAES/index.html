@@ -15,29 +15,38 @@
             <div class="large-12 columns">
 
                <!-- UGA Branding Section -->
-               <div class="float-left" id="ugaBranding">
-                  <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <a href=""><span id="ugaText">University of Georgia</span></a>
-               </div>
+               <a class="button uga-button float-left">
+                  <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
+               </a>
 
                <!-- "People" Menu & Search Section -->
                <div class="float-right">
                   <!-- Search and People Buttons -->
                   <div class="button-group">
-                     <button class="button dropdown people-button" type="button" id="revealPeopleDropdown">People</button>
-
-                     <!-- People Dropdown Menu -->
-                     <div id="peopleDropdown">
-                        <ul class="vertical menu">
-        <li>
-          <a href="#">Item 1</a>
-          <ul class="vertical menu">
-            <li><a href="#">Item 1A</a></li>
-            <!-- ... -->
-          </ul>
-        </li>
-        <li><a href="#">Item 2</a></li>
-      </ul>
-                  	</div>
+                     <!-- People Dropdown Button -->
+                     <button class="button people-button dropdown" type="button" data-toggle="peopleDropdown">Information for...</button>
+                     <!-- People Dropdown Container -->
+                     <div class="dropdown-pane" id="peopleDropdown" data-dropdown data-auto-focus="true" data-options="vOffset: 5; closeOnClick: true;">
+                        <!-- People Drilldown Menu -->
+                        <ul class="vertical menu" data-drilldown>
+                           <li><a href="#">Students</a></li>
+                           <li><a href="#">Alumni</a></li>
+                           <li>
+                              <a href="#">Visitors</a>
+                              <ul class="vertical menu">
+                                 <li><a href="#">Visitors 1A</a></li>
+                                 <li><a href="#">Visitors 2A</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#">Faculty/Staff</a>
+                              <ul class="vertical menu">
+                                 <li><a href="#">Faculty 1A</a></li>
+                                 <li><a href="#">Staff 1A</a></li>
+                              </ul>
+                           </li>
+                        </ul>
+                     </div>
 
                      <a class="button search-button">
                         <span class="show-for-sr">Search</span>
@@ -62,11 +71,7 @@
       <div class="row">
          <div class="large-12 columns">
 
-            <div style="width: 400px;">
-               <button class="button" id="revealPeopleDropdown">People</button>
 
-
-            </div>
 
 
          </div>

@@ -3887,70 +3887,56 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
-#ugaBranding {
+.uga-button {
+  background-color: #c41039;
+  color: #fefefe;
   height: 40px;
-  background: #c41039;
   font-size: 0.875rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding: .4em .4em .4em .6em;
+  padding-top: 5px;
+  text-align: left;
   border-bottom-right-radius: 1em;
+  border-bottom: solid 5px #ac0e32;
+  transition: border 0.25s ease-out, color 0.25s ease-out;
   width: 30%;
   min-width: 80px; }
+  .uga-button:hover, .uga-button:focus {
+    background-color: #950c2b;
+    color: #fefefe; }
+  .uga-button:hover {
+    border-bottom: solid 5px #7d0a24; }
   @media screen and (min-width: 40em) {
-    #ugaBranding {
+    .uga-button {
       width: 40%; } }
   @media screen and (min-width: 64em) {
-    #ugaBranding {
+    .uga-button {
       width: 25%; } }
-  #ugaBranding a #ugaText {
-    padding-top: 3px;
-    color: #fefefe;
-    vertical-align: middle; }
 
 .people-button {
   background-color: #0083aa;
   color: #fefefe;
   border-bottom-left-radius: 1em;
+  border-bottom: solid 5px #006f91;
+  transition: border 0.25s ease-out, color 0.25s ease-out;
   height: 40px; }
   .people-button:hover, .people-button:focus {
     background-color: #005c77;
     color: #fefefe; }
-
-/* The dropdown content itself */
-#peopleDropdown {
-  background: #0083aa;
-  border-radius: 5px;
-  clear: both;
-  margin: 60px auto 0 -80px;
-  padding: 10px;
-  width: 200px;
-  position: fixed;
-  display: none;
-  color: #fefefe; }
-
-/* The drpdown's arrow */
-#peopleDropdown:after {
-  bottom: 100%;
-  left: 80%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-color: rgba(0, 131, 170, 0);
-  border-bottom-color: #0083aa;
-  border-width: 10px;
-  margin-left: -10px; }
+  .people-button:hover {
+    border-bottom: solid 5px #00485e; }
 
 .search-button {
   background-color: #c41039;
   color: #fefefe;
+  border-bottom: solid 5px #ac0e32;
+  transition: border 0.25s ease-out, color 0.25s ease-out;
   height: 40px; }
   .search-button:hover, .search-button:focus {
     background-color: #950c2b;
     color: #fefefe; }
+  .search-button:hover {
+    border-bottom: solid 5px #7d0a24; }
 
 #caesBranding {
   font-family: 'Roboto', sans-serif;
