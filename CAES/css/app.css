@@ -3957,3 +3957,17 @@ table.hover tr:nth-of-type(even):hover {
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       #caesBranding span {
         font-size: 0.75rem; } }
+
+nav {
+  margin-top: 1em; }
+
+#mainNav {
+  font-weight: bold;
+  font-size: 0.875rem;
+  border-bottom: solid 5px #cacaca;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em; }
+  @media screen and (max-width: 74.9375em) {
+    #mainNav {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0; } }

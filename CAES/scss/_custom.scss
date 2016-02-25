@@ -90,3 +90,19 @@
       }
    }
 }
+
+// Main Navigation
+// ---------------
+nav { margin-top: 1em; }
+
+#mainNav {
+   font-weight: bold;
+   font-size: rem-calc(14);
+   border-bottom: solid 5px $medium-gray;
+   border-bottom-left-radius: 1em;
+   border-bottom-right-radius: 1em;
+   @include breakpoint(large down) {
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+   }
+}
