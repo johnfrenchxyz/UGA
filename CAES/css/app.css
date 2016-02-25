@@ -3926,6 +3926,9 @@ table.hover tr:nth-of-type(even):hover {
   .people-button:hover {
     border-bottom: solid 5px #00485e; }
 
+.dropdown-pane {
+  left: 0; }
+
 .search-button {
   background-color: #c41039;
   color: #fefefe;

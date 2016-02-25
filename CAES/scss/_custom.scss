@@ -54,6 +54,11 @@
    height: 40px;
 }
 
+// Dropdown margin fix:
+.dropdown-pane {
+   left: 0;
+}
+
 // Search Button:
 .search-button {
    @include button-style($caes-red, darken($caes-red, 10%), $white);
