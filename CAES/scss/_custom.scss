@@ -12,17 +12,29 @@
 // Foundation Icons
 @import "../fonts/foundation-icons/foundation-icons.css";
 
+// Global Mixins
+// -------------
+@mixin headerLinks() {
+   font-size: rem-calc(14);
+   font-weight: bold;
+   a {
+      font-size: rem-calc(14);
+      font-weight: bold;
+   }
+}
+
 
 // UGA Branding
 // ------------
 .uga-button {
    @include button-style($caes-red, darken($caes-red, 10%), $white);
    height: 40px;
-   font-size: rem-calc(14);
-   font-weight: bold;
+   // Typography
+   @include headerLinks;
    text-transform: uppercase;
    text-align: left;
    padding-top: 5px;
+   // Borders
    border-bottom-right-radius: 1em;
    border-bottom: solid 5px darken($caes-red, 5%);
    transition: border 0.25s ease-out, color 0.25s ease-out;
@@ -42,21 +54,62 @@
    }
 }
 
-// People Menu & Search
+// People Menu
 // --------------------
 // People Button:
 .people-button {
+   // Button Style
    @include button-style($light-gray, darken($light-gray, 10%), $body-font-color);
-   font-size: rem-calc(14);
-   font-weight: bold;
+   height: 40px;
+   // Typography
+   @include headerLinks;
+   // Borders
    border-bottom-left-radius: 1em;
    border-bottom: solid 5px darken($light-gray, 10%);
    transition: border 0.25s ease-out, color 0.25s ease-out;
-   height: 40px;
    // Button Hover
    &:hover { border-bottom: solid 5px darken($light-gray, 15%); }
    // Custom Arrow Color
    &::after { border-color: $body-font-color transparent transparent !important; }
+}
+
+// People Dropdown Pane
+#peopleDropdown {
+   padding-left: 0;
+   padding-right: 0;
+   
+   // Typography
+   @include headerLinks;
+
+   // On Small:
+   @include breakpoint(small only) {
+      width: 100%;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+   }
+   // On Medium:
+   @include breakpoint(medium only) {
+      top: 45px !important;
+      left: 68% !important;
+      width: 206px;
+      border-top-left-radius: 1em;
+   }
+
+   // Custom Breakpoint
+   @media (min-width: 1024px) and (max-width: 1200px) {
+      top: 45px !important;
+      left: 80% !important;
+      border-top-left-radius: 1em;
+   }
+
+   // On Large:
+   @include breakpoint(large up) {
+      width: 206px;
+      border-top-left-radius: 1em;
+   }
+
+   // People Drilldown Menu:
+   .is-drilldown { width: 100%; li:hover { background: $light-gray; } }
+
 }
 
 // Dropdown margin fix (Prevents blank overflow on page before people dropdown is activated):
@@ -64,6 +117,8 @@
    left: 0;
 }
 
+// Site Search
+// --------------------
 // Search Button:
 .search-button {
    @include button-style($caes-red, darken($caes-red, 10%), $white);
@@ -147,7 +202,7 @@ nav { margin-top: 1em; }
    .medium-horizontal{
       .is-dropdown-submenu{
          top: 100%;
-         left: 0
+         left: 0;
       }
       .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu{
          right: 0
@@ -173,6 +228,7 @@ nav { margin-top: 1em; }
       .is-dropdown-submenu-parent.is-right-arrow > a::after {
          border-width: 4px;
          margin-left: 5px;
+         margin-top: 5px;
       }
    }
 }

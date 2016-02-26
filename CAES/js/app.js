@@ -30,7 +30,3 @@ window.onresize = function() {
 $("#revealPeopleDropdown").click(function(){
   $("#peopleDropdown").toggle();
 });
-
-
-// Main Nav Class Toggle
-// -------------------------
