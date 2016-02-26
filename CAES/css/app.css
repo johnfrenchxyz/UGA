@@ -3894,8 +3894,8 @@ table.hover tr:nth-of-type(even):hover {
   font-size: 0.875rem;
   font-weight: bold;
   text-transform: uppercase;
-  padding-top: 5px;
   text-align: left;
+  padding-top: 5px;
   border-bottom-right-radius: 1em;
   border-bottom: solid 5px #ac0e32;
   transition: border 0.25s ease-out, color 0.25s ease-out;
@@ -3914,17 +3914,21 @@ table.hover tr:nth-of-type(even):hover {
       width: 25%; } }
 
 .people-button {
-  background-color: #0083aa;
-  color: #fefefe;
+  background-color: #e6e6e6;
+  color: #3e3e3e;
+  font-size: 0.875rem;
+  font-weight: bold;
   border-bottom-left-radius: 1em;
-  border-bottom: solid 5px #006f91;
+  border-bottom: solid 5px #cdcdcd;
   transition: border 0.25s ease-out, color 0.25s ease-out;
   height: 40px; }
   .people-button:hover, .people-button:focus {
-    background-color: #005c77;
-    color: #fefefe; }
+    background-color: #cdcdcd;
+    color: #3e3e3e; }
   .people-button:hover {
-    border-bottom: solid 5px #00485e; }
+    border-bottom: solid 5px silver; }
+  .people-button::after {
+    border-color: #3e3e3e transparent transparent !important; }
 
 .dropdown-pane {
   left: 0; }
