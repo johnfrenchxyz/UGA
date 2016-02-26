@@ -386,7 +386,7 @@ body {
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
-  color: #0a0a0a;
+  color: #3e3e3e;
   background: #fefefe;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
@@ -1324,7 +1324,7 @@ cite {
     content: '\2014 \0020'; }
 
 abbr {
-  color: #0a0a0a;
+  color: #3e3e3e;
   cursor: help;
   border-bottom: 1px dotted #0a0a0a; }
 
@@ -2058,7 +2058,7 @@ select {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   position: relative;
-  color: #0a0a0a;
+  color: #3e3e3e;
   background-color: white; }
   .callout > :first-child {
     margin-top: 0; }
@@ -2966,7 +2966,7 @@ table {
   table thead,
   table tfoot {
     background: #f8f8f8;
-    color: #0a0a0a; }
+    color: #3e3e3e; }
     table thead tr,
     table tfoot tr {
       background: transparent; }
@@ -3962,12 +3962,48 @@ nav {
   margin-top: 1em; }
 
 #mainNav {
-  font-weight: bold;
-  font-size: 0.875rem;
-  border-bottom: solid 5px #cacaca;
+  background: #3e3e3e;
   border-bottom-left-radius: 1em;
-  border-bottom-right-radius: 1em; }
+  border-bottom-right-radius: 1em;
+  border-bottom: solid 5px #2c2c2c;
+  padding-left: .8em; }
   @media screen and (max-width: 74.9375em) {
     #mainNav {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0; } }
+      border-bottom-left-radius: 0em;
+      border-bottom-right-radius: 0em;
+      border-bottom: solid 5px #313131;
+      padding-left: 0em; } }
+  #mainNav li {
+    background: #3e3e3e;
+    padding-top: .5em;
+    padding-bottom: .5em; }
+    #mainNav li:hover {
+      background: #575757; }
+    #mainNav li a {
+      color: #e6e6e6;
+      font-size: 0.875rem;
+      font-weight: bold; }
+      @media screen and (max-width: 63.9375em) {
+        #mainNav li a {
+          font-size: 0.75rem; } }
+  #mainNav .is-drilldown-submenu-parent > a::after {
+    border-color: transparent transparent transparent #e6e6e6; }
+
+@media screen and (min-width: 40em) {
+  .medium-horizontal .is-dropdown-submenu {
+    top: 100%;
+    left: 0; }
+  .medium-horizontal .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu {
+    right: 0; } }
+
+@media screen and (min-width: 40em) {
+  .medium-horizontal .is-dropdown-submenu-parent.is-right-arrow > a::after {
+    border-width: 5px;
+    margin-top: 6px;
+    border-style: solid solid inset inset;
+    border-color: #e6e6e6 transparent transparent; } }
+
+@media screen and (max-width: 63.9375em) {
+  .medium-horizontal .is-dropdown-submenu-parent.is-right-arrow > a::after {
+    border-width: 4px;
+    margin-left: 5px; } }

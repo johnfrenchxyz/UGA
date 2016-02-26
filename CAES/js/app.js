@@ -34,18 +34,3 @@ $("#revealPeopleDropdown").click(function(){
 
 // Main Nav Class Toggle
 // -------------------------
-function navToggle() {
-   if (window.innerWidth <= 640) {
-      document.getElementById('ul').classList.remove('horizontal');
-      document.getElementById('ul').classList.add('vertical');
-   } else {
-      document.getElementById('ul').classList.remove('vertical');
-      document.getElementById('ul').classList.add('horizontal');
-   }
-}
-
-navToggle();
-
-$(window).on('changed.zf.mediaquery', function(event, newSize, oldSize){
-   navToggle();
-});
