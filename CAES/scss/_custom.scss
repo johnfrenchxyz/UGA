@@ -21,8 +21,8 @@
    font-size: rem-calc(14);
    font-weight: bold;
    text-transform: uppercase;
-   padding-top: 5px;
    text-align: left;
+   padding-top: 5px;
    border-bottom-right-radius: 1em;
    border-bottom: solid 5px darken($caes-red, 5%);
    transition: border 0.25s ease-out, color 0.25s ease-out;
@@ -46,15 +46,20 @@
 // --------------------
 // People Button:
 .people-button {
-   @include button-style($caes-blue, darken($caes-blue, 10%), $white);
+   @include button-style($light-gray, darken($light-gray, 10%), $body-font-color);
+   font-size: rem-calc(14);
+   font-weight: bold;
    border-bottom-left-radius: 1em;
-   border-bottom: solid 5px darken($caes-blue, 5%);
+   border-bottom: solid 5px darken($light-gray, 10%);
    transition: border 0.25s ease-out, color 0.25s ease-out;
-   &:hover { border-bottom: solid 5px darken($caes-blue, 15%); }
    height: 40px;
+   // Button Hover
+   &:hover { border-bottom: solid 5px darken($light-gray, 15%); }
+   // Custom Arrow Color
+   &::after { border-color: $body-font-color transparent transparent !important; }
 }
 
-// Dropdown margin fix:
+// Dropdown margin fix (Prevents blank overflow on page before people dropdown is activated):
 .dropdown-pane {
    left: 0;
 }
@@ -101,7 +106,6 @@ $nav-arrow-color: $nav-link-color;
 nav { margin-top: 1em; }
 
 #mainNav {
-
    background: $nav-bg-color;
    border-bottom-left-radius: 1em;
    border-bottom-right-radius: 1em;
@@ -138,8 +142,6 @@ nav { margin-top: 1em; }
 
 }
 
-
-
 // Fix for dropdown direction
 @include breakpoint(medium up){
    .medium-horizontal{
@@ -170,10 +172,7 @@ nav { margin-top: 1em; }
    .medium-horizontal{
       .is-dropdown-submenu-parent.is-right-arrow > a::after {
          border-width: 4px;
-         //margin-top: 6px;
          margin-left: 5px;
-         //border-style: solid solid inset inset;
-         //border-color: $primary-color transparent transparent;
       }
    }
 }
