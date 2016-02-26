@@ -93,16 +93,87 @@
 
 // Main Navigation
 // ---------------
+
+$nav-bg-color: darken($dark-gray, 30%);
+$nav-link-color: $light-gray;
+$nav-arrow-color: $nav-link-color;
+
 nav { margin-top: 1em; }
 
 #mainNav {
-   font-weight: bold;
-   font-size: rem-calc(14);
-   border-bottom: solid 5px $medium-gray;
+
+   background: $nav-bg-color;
    border-bottom-left-radius: 1em;
    border-bottom-right-radius: 1em;
+   border-bottom: solid 5px darken($nav-bg-color, 7%);
+   padding-left: .8em;
    @include breakpoint(large down) {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0em;
+      border-bottom-right-radius: 0em;
+      border-bottom: solid 5px darken($nav-bg-color, 5%);
+      padding-left: 0em;
+   }
+
+   li {
+      background: $nav-bg-color;
+      padding-top: .5em;
+      padding-bottom: .5em;
+
+      &:hover { background: lighten($nav-bg-color, 10%); }
+      // NEED FOCUS & ACTIVE STATES
+      a {
+         color: $nav-link-color;
+         font-size: rem-calc(14);
+         font-weight: bold;
+         @include breakpoint(medium down) {
+            font-size: rem-calc(12);
+         }
+      }
+   }
+
+   // Drilldown arrow styling
+   .is-drilldown-submenu-parent > a::after {
+      border-color: transparent transparent transparent $nav-arrow-color;
+   }
+
+}
+
+
+
+// Fix for dropdown direction
+@include breakpoint(medium up){
+   .medium-horizontal{
+      .is-dropdown-submenu{
+         top: 100%;
+         left: 0
+      }
+      .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu{
+         right: 0
+      }
+   }
+}
+
+// Fix for arrow direction
+@include breakpoint(medium up){
+   .medium-horizontal{
+      .is-dropdown-submenu-parent.is-right-arrow > a::after {
+         border-width: 5px;
+         margin-top: 6px;
+         border-style: solid solid inset inset;
+         border-color: $nav-arrow-color transparent transparent;
+      }
+   }
+}
+
+// Fix for arrow direction
+@include breakpoint(medium down){
+   .medium-horizontal{
+      .is-dropdown-submenu-parent.is-right-arrow > a::after {
+         border-width: 4px;
+         //margin-top: 6px;
+         margin-left: 5px;
+         //border-style: solid solid inset inset;
+         //border-color: $primary-color transparent transparent;
+      }
    }
 }
