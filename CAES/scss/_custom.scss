@@ -23,7 +23,6 @@
    }
 }
 
-
 // UGA Branding
 // ------------
 .uga-button {
@@ -37,8 +36,13 @@
    // Borders
    border-bottom-right-radius: 1em;
    border-bottom: solid 5px darken($caes-red, 5%);
-   transition: border 0.25s ease-out, color 0.25s ease-out;
-   &:hover { border-bottom: solid 5px darken($caes-red, 15%); }
+
+   &:hover {
+      border-bottom: solid 5px darken($caes-red, 15%);
+      background: darken($caes-red, 10%);
+      transition: all 250ms ease;
+   }
+
    // Small Screen Width
    @include breakpoint(small) {
       width: 30%;
@@ -66,9 +70,11 @@
    // Borders
    border-bottom-left-radius: 1em;
    border-bottom: solid 5px darken($light-gray, 10%);
-   transition: border 0.25s ease-out, color 0.25s ease-out;
    // Button Hover
-   &:hover { border-bottom: solid 5px darken($light-gray, 15%); }
+   &:hover {
+      border-bottom: solid 5px darken($light-gray, 15%);
+      transition: all 250ms ease;
+   }
    // Custom Arrow Color
    &::after { border-color: $body-font-color transparent transparent !important; }
 }
@@ -77,28 +83,49 @@
 #peopleDropdown {
    padding-left: 0;
    padding-right: 0;
-   
+   border-color: $medium-gray;
+
    // Typography
    @include headerLinks;
 
    // On Small:
    @include breakpoint(small only) {
       width: 100%;
+      padding-right: 2px;
       box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-   }
-   // On Medium:
-   @include breakpoint(medium only) {
-      top: 45px !important;
-      left: 68% !important;
-      width: 206px;
-      border-top-left-radius: 1em;
+      .is-drilldown { min-width: 100%; }
    }
 
-   // Custom Breakpoint
+   // Custom Breakpoint Medium
+   @media (min-width: 640px) and (max-width: 800px) {
+      top: 45px !important;
+      left: 65% !important;
+      border-top-left-radius: 1em;
+      width: 206px;
+   }
+
+   // Custom Breakpoint Medium
+   @media (min-width: 800px) and (max-width: 950px) {
+      top: 45px !important;
+      left: 73% !important;
+      border-top-left-radius: 1em;
+      width: 206px;
+   }
+
+   // Custom Breakpoint Medium
+   @media (min-width: 950px) and (max-width: 1024px) {
+      top: 45px !important;
+      left: 76% !important;
+      border-top-left-radius: 1em;
+      width: 206px;
+   }
+
+   // Custom Breakpoint Upper Medium
    @media (min-width: 1024px) and (max-width: 1200px) {
       top: 45px !important;
       left: 80% !important;
       border-top-left-radius: 1em;
+      width: 206px;
    }
 
    // On Large:
@@ -108,7 +135,7 @@
    }
 
    // People Drilldown Menu:
-   .is-drilldown { width: 100%; li:hover { background: $light-gray; } }
+   .is-drilldown { width: 100%; li:hover { background: $light-gray; transition: all 250ms ease; } }
 
 }
 
