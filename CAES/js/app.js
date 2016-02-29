@@ -25,8 +25,12 @@ window.onresize = function() {
 };
 
 
-// People Dropdown
+// People Dropdown Size Calculation\
 // -------------------------
-$("#revealPeopleDropdown").click(function(){
-  $("#peopleDropdown").toggle();
+$(window).resize(function(){
+   // Closes the peopleDropdown on window resize
+   $('#peopleDropdown').foundation('close');
+   // Recalculates the width as the container changes
+   var width = $('#peopleDropdown').css('width');
+   $('.is-drilldown').css('width', width);
 });

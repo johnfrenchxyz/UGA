@@ -3898,7 +3898,6 @@ table.hover tr:nth-of-type(even):hover {
   padding-top: 5px;
   border-bottom-right-radius: 1em;
   border-bottom: solid 5px #ac0e32;
-  transition: border 0.25s ease-out, color 0.25s ease-out;
   width: 30%;
   min-width: 80px; }
   .uga-button:hover, .uga-button:focus {
@@ -3908,7 +3907,9 @@ table.hover tr:nth-of-type(even):hover {
     font-size: 0.875rem;
     font-weight: bold; }
   .uga-button:hover {
-    border-bottom: solid 5px #7d0a24; }
+    border-bottom: solid 5px #7d0a24;
+    background: #950c2b;
+    transition: all 250ms ease; }
   @media screen and (min-width: 40em) {
     .uga-button {
       width: 40%; } }
@@ -3923,8 +3924,7 @@ table.hover tr:nth-of-type(even):hover {
   font-size: 0.875rem;
   font-weight: bold;
   border-bottom-left-radius: 1em;
-  border-bottom: solid 5px #cdcdcd;
-  transition: border 0.25s ease-out, color 0.25s ease-out; }
+  border-bottom: solid 5px #cdcdcd; }
   .people-button:hover, .people-button:focus {
     background-color: #cdcdcd;
     color: #3e3e3e; }
@@ -3932,13 +3932,15 @@ table.hover tr:nth-of-type(even):hover {
     font-size: 0.875rem;
     font-weight: bold; }
   .people-button:hover {
-    border-bottom: solid 5px silver; }
+    border-bottom: solid 5px silver;
+    transition: all 250ms ease; }
   .people-button::after {
     border-color: #3e3e3e transparent transparent !important; }
 
 #peopleDropdown {
   padding-left: 0;
   padding-right: 0;
+  border-color: #cacaca;
   font-size: 0.875rem;
   font-weight: bold; }
   #peopleDropdown a {
@@ -3947,18 +3949,34 @@ table.hover tr:nth-of-type(even):hover {
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     #peopleDropdown {
       width: 100%;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); } }
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      padding-right: 2px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+      #peopleDropdown .is-drilldown {
+        min-width: 100%; } }
+  @media (min-width: 640px) and (max-width: 800px) {
     #peopleDropdown {
       top: 45px !important;
-      left: 68% !important;
-      width: 206px;
-      border-top-left-radius: 1em; } }
+      left: 65% !important;
+      border-top-left-radius: 1em;
+      width: 206px; } }
+  @media (min-width: 800px) and (max-width: 950px) {
+    #peopleDropdown {
+      top: 45px !important;
+      left: 73% !important;
+      border-top-left-radius: 1em;
+      width: 206px; } }
+  @media (min-width: 950px) and (max-width: 1024px) {
+    #peopleDropdown {
+      top: 45px !important;
+      left: 76% !important;
+      border-top-left-radius: 1em;
+      width: 206px; } }
   @media (min-width: 1024px) and (max-width: 1200px) {
     #peopleDropdown {
       top: 45px !important;
       left: 80% !important;
-      border-top-left-radius: 1em; } }
+      border-top-left-radius: 1em;
+      width: 206px; } }
   @media screen and (min-width: 64em) {
     #peopleDropdown {
       width: 206px;
@@ -3966,7 +3984,8 @@ table.hover tr:nth-of-type(even):hover {
   #peopleDropdown .is-drilldown {
     width: 100%; }
     #peopleDropdown .is-drilldown li:hover {
-      background: #e6e6e6; }
+      background: #e6e6e6;
+      transition: all 250ms ease; }
 
 .dropdown-pane {
   left: 0; }
