@@ -25,7 +25,7 @@ window.onresize = function() {
 };
 
 
-// People Dropdown Size Calculation\
+// People Dropdown Size Calculation
 // -------------------------
 $(window).resize(function(){
    // Closes the peopleDropdown on window resize
