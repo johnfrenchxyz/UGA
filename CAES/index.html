@@ -9,8 +9,12 @@
    </head>
    <body>
 
-      <header>
+      <!-- Skip Links -->
+      <a tabindex="1" class="show-on-focus" href="#mainNav">Skip to Main Menu</a>
+      <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
 
+      <!-- Header Section -->
+      <header>
          <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
             <div class="large-12 columns">
 
@@ -24,20 +28,13 @@
                   <!-- Search and People Buttons -->
                   <div class="button-group">
                      <!-- People Dropdown Button -->
-                     <button class="button people-button dropdown" type="button" data-toggle="peopleDropdown">Information for&#8230;</button>
+                     <button tabindex="3" class="button people-button dropdown" type="button" data-toggle="peopleDropdown">Information for&#8230;</button>
                      <!-- People Dropdown Container -->
-                     <div class="dropdown-pane" id="peopleDropdown" data-dropdown data-auto-focus="true" data-options="vOffset: 5; closeOnClick: true;">
+                     <div class="dropdown-pane" id="peopleDropdown" data-dropdown data-auto-focus="false" data-options="vOffset: 5; closeOnClick: true;">
                         <!-- People Drilldown Menu -->
                         <ul class="vertical menu" data-drilldown>
                            <li><a href="#">Students</a></li>
                            <li><a href="#">Alumni</a></li>
-                           <li>
-                              <a href="#">Visitors</a>
-                              <ul class="vertical menu">
-                                 <li><a href="#">Visitors 1A</a></li>
-                                 <li><a href="#">Visitors 2A</a></li>
-                              </ul>
-                           </li>
                            <li>
                               <a href="#">Faculty/Staff</a>
                               <ul class="vertical menu">
@@ -47,7 +44,7 @@
                            </li>
                         </ul>
                      </div>
-
+                     <!-- Search Button -->
                      <a class="button search-button">
                         <span class="show-for-sr">Search</span>
                         <span aria-hidden="true"><i class="fi-magnifying-glass"></i></span>
@@ -62,11 +59,88 @@
          <!-- Main Branding Section -->
          <div class="row">
            <div class="large-12 columns">
-             <h1 id="caesBranding"><span>College Of </span>Agricultural & Environmental Sciences</h1>
+             <h1 id="caesBranding"><span>College Of </span>Agricultural &#38; Environmental Sciences</h1>
            </div>
          </div>
 
       </header>
+
+      <!-- Main Navigation -->
+      <nav>
+         <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
+            <div class="large-12 columns">
+
+               <div class="title-bar" data-responsive-toggle="mainNav" data-hide-for="medium">
+                  <button class="menu-icon" type="button" data-toggle></button>
+                  <div class="title-bar-title">Menu</div>
+               </div>
+
+               <!--<div class="top-bar" id="mainNav">-->
+                  <!--<div class="top-bar-left">-->
+                     <ul class="vertical medium-horizontal menu" id="mainNav" data-responsive-menu="drilldown medium-dropdown" data-toptions="closingTime:100; closeOnClick: true;">
+                        <!-- Academics -->
+                        <li>
+                          <a href="#">Academics</a>
+                          <ul class="menu vertical">
+                             <li><a href="#">One</a></li>
+                             <li><a href="#">Two</a></li>
+                             <li><a href="#">Three</a></li>
+                          </ul>
+                       </li>
+                       <!-- Departments -->
+                       <li>
+                          <a href="#">Departments</a>
+                          <ul class="menu vertical">
+                             <li><a href="#">One</a></li>
+                             <li><a href="#">Two</a></li>
+                             <li><a href="#">Three</a></li>
+                          </ul>
+                       </li>
+                       <!-- Research -->
+                       <li>
+                          <a href="#">Research</a>
+                          <ul class="menu vertical">
+                             <li><a href="#">One</a></li>
+                             <li><a href="#">Two</a></li>
+                             <li><a href="#">Three</a></li>
+                          </ul>
+                       </li>
+                       <!-- Extension & Outreach -->
+                       <li>
+                          <a href="#">Extension &#38; Outreach</a>
+                          <ul class="menu vertical">
+                             <li><a href="#">One</a></li>
+                             <li><a href="#">Two</a></li>
+                             <li><a href="#">Three</a></li>
+                          </ul>
+                       </li>
+                       <!-- Global -->
+                       <li>
+                          <a href="#">Global</a>
+                          <ul class="menu vertical">
+                             <li><a href="#">One</a></li>
+                             <li><a href="#">Two</a></li>
+                             <li><a href="#">Three</a></li>
+                          </ul>
+                       </li>
+                       <!-- About -->
+                       <li>
+                          <a href="#">About</a>
+                          <ul class="menu vertical">
+                             <li><a href="#">One</a></li>
+                             <li><a href="#">Two</a></li>
+                             <li><a href="#">Three</a></li>
+                          </ul>
+                       </li>
+                    </ul>
+                 <!--</div>-->
+             <!-- </div><-->
+
+           </div>
+        </div>
+      </nav>
+
+
 
       <div class="row">
          <div class="large-12 columns">
