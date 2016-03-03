@@ -4049,6 +4049,25 @@ nav {
           font-size: 0.75rem; } }
   #mainNav .is-drilldown-submenu-parent > a::after {
     border-color: transparent transparent transparent #e6e6e6; }
+  #mainNav ul {
+    background: #3e3e3e;
+    border-top: solid 5px #242424;
+    border-left: none;
+    border-right: none; }
+  #mainNav .is-dropdown-submenu-item {
+    background: #3e3e3e;
+    padding: .2em; }
+
+.title-bar {
+  background: #3e3e3e; }
+  .title-bar .title-bar-title {
+    font-size: 0.875rem;
+    font-weight: bold; }
+    .title-bar .title-bar-title a {
+      font-size: 0.875rem;
+      font-weight: bold; }
+  .title-bar .menu-icon::after {
+    box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 
 @media screen and (min-width: 40em) {
   .medium-horizontal .is-dropdown-submenu {
