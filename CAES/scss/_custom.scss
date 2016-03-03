@@ -223,7 +223,13 @@ nav { margin-top: 1em; }
    }
 
    // Dropdown Submenu li container
-   ul { background: $nav-bg-color; border-top: solid 5px darken($nav-bg-color, 10%); border-left: none; border-right: none;}
+   ul {
+      background: $nav-bg-color;
+      //border-top: solid 5px darken($nav-bg-color, 10%);
+      //border-left: none;
+      //border-right: none;
+      border: none;
+   }
    // Dropdown Submenus li
    .is-dropdown-submenu-item {
       background: $nav-bg-color;
