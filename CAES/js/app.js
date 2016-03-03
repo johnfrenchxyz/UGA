@@ -38,3 +38,6 @@ $(window).resize(function(){
 
 // Drilldown Height Fix -- Not sure why this fix is needed, but it is.
 $('.is-drilldown').css('height', 'auto');
+window.onresize = function() {
+   $('.is-drilldown').css('height', 'auto');
+};

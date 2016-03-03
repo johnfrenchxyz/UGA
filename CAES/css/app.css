@@ -4051,9 +4051,7 @@ nav {
     border-color: transparent transparent transparent #e6e6e6; }
   #mainNav ul {
     background: #3e3e3e;
-    border-top: solid 5px #242424;
-    border-left: none;
-    border-right: none; }
+    border: none; }
   #mainNav .is-dropdown-submenu-item {
     background: #3e3e3e;
     padding: .2em; }
