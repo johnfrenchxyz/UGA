@@ -1,181 +1,197 @@
 <!doctype html>
 <html class="no-js" lang="en">
-   <head>
-      <meta charset="utf-8">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>CAES Home Template</title>
-      <link rel="stylesheet" href="css/app.css">
-   </head>
-   <body>
 
-      <!-- Skip Links -->
-      <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
-      <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CAES Home Template</title>
+   <link rel="stylesheet" href="css/app.css">
+</head>
 
-      <!-- Header Section -->
-      <header>
-         <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
-            <div class="large-12 columns">
+<body>
 
-               <!-- UGA Branding Section -->
-               <a class="button uga-button float-left">
-                  <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
-               </a>
+   <!-- Skip Links -->
+   <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
+   <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
 
-               <!-- "People" Menu & Search Section -->
-               <div class="float-right">
-                  <!-- Search and People Buttons -->
-                  <div class="button-group">
-                     <!-- People Dropdown Button -->
-                     <button tabindex="3" class="button people-button dropdown" type="button" data-toggle="peopleDropdown">Information for&#8230;</button>
-                     <!-- People Dropdown Container -->
-                     <div class="dropdown-pane" id="peopleDropdown" data-dropdown data-auto-focus="false" data-options="vOffset: 5; closeOnClick: true;">
-                        <!-- People Drilldown Menu -->
-                        <ul class="vertical menu" data-drilldown>
-                           <li><a href="#">Students</a></li>
-                           <li><a href="#">Alumni</a></li>
-                           <li>
-                              <a href="#">Faculty/Staff</a>
-                              <ul class="vertical menu">
-                                 <li><a href="#">Faculty 1A</a></li>
-                                 <li><a href="#">Staff 1A</a></li>
-                              </ul>
-                           </li>
-                        </ul>
-                     </div>
-                     <!-- Search Button -->
-                     <a class="button search-button">
-                        <span class="show-for-sr">Search</span>
-                        <span aria-hidden="true"><i class="fi-magnifying-glass"></i></span>
-                     </a>
-                  </div>
-
-               </div>
-
-            </div>
-         </div>
-
-         <!-- Main Branding Section -->
-         <div class="row">
-           <div class="large-12 columns">
-             <h1 id="caesBranding"><span>College Of </span>Agricultural &#38; Environmental Sciences</h1>
-           </div>
-         </div>
-
-      </header>
-
-      <!-- Main Navigation -->
-      <nav>
-         <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
-            <div class="large-12 columns">
-
-               <div class="title-bar" data-responsive-toggle="mainNav" data-hide-for="medium">
-                  <button class="menu-icon" type="button" data-toggle></button>
-                  <div class="title-bar-title">Menu</div>
-               </div>
-
-               <!--<div class="top-bar" id="mainNav">-->
-                  <!--<div class="top-bar-left">-->
-                     <ul class="vertical medium-horizontal menu" id="mainNav" data-responsive-menu="drilldown medium-dropdown" data-toptions="closingTime:100; closeOnClick: true;">
-                        <!-- Academics -->
-                        <li>
-                          <a id="jumpToMenu" href="#">Academics</a>
-                          <ul class="menu vertical">
-                             <li><a href="#">Prospective Students</a></li>
-                             <li><a href="#">Current Students</a></li>
-                             <li><a href="#">Undergraduate Programs</a></li>
-                             <li><a href="#">Graduate Programs</a></li>
-                             <li><a href="#">Extended Campuses</a></li>
-                             <li><a href="#">News &#38; Events</a></li>
-                             <li><a href="#">Contact Academics</a></li>
-                          </ul>
-                       </li>
-                       <!-- Departments -->
-                       <li>
-                          <a href="#">Departments</a>
-                          <ul class="menu vertical">
-                             <li><a href="#">Agricultural &#38; Applied Economics</a></li>
-                             <li><a href="#">Agricultural Leadership, Education &#38; Communication</a></li>
-                             <li><a href="#">Animal &#38; Dairy Science</a></li>
-                             <li><a href="#">Crop &#38; Soil Sciences</a></li>
-                             <li><a href="#">Entomology</a></li>
-                             <li><a href="#">Food Science &#38; Technology</a></li>
-                             <li><a href="#">Horticulture</a></li>
-                             <li><a href="#">Plant Pathology</a></li>
-                             <li><a href="#">Poultry Science</a></li>
-                          </ul>
-                       </li>
-                       <!-- Research -->
-                       <li>
-                          <a href="#">Research</a>
-                          <ul class="menu vertical">
-                             <li><a href="#">Active Research</a></li>
-                             <li><a href="#">Centers &#38; Institutes</a></li>
-                             <li><a href="#">Experiminet Stations</a></li>
-                             <li><a href="#">Farms</a></li>
-                             <li><a href="#">Labs</a></li>
-                             <li><a href="#">Contact Us</a></li>
-                          </ul>
-                       </li>
-                       <!-- Extension & Outreach -->
-                       <li>
-                          <a href="#">Extension &#38; Outreach</a>
-                          <ul class="menu vertical">
-                             <li><a href="#">UGA Cooperative Extension</a></li>
-                             <li><a href="#">Center for Agribusiness &#38; Economic Development</a></li>
-                             <li><a href="#">Coastal Georgia Botanical Gardens</a></li>
-                             <li><a href="#">Food PIC</a></li>
-                             <li><a href="#">Office of Environmental Sciences</a></li>
-                          </ul>
-                       </li>
-                       <!-- Global -->
-                       <li>
-                          <a href="#">Global</a>
-                          <ul class="menu vertical">
-                             <li><a href="#">Study Abroad</a></li>
-                             <li><a href="#">Scholarships</a></li>
-                             <li><a href="#">Innovation Labs</a></li>
-                             <li><a href="#">International Ag Day</a></li>
-                             <li><a href="#">Contact Us</a></li>
-                          </ul>
-                       </li>
-                       <!-- About -->
-                       <li>
-                          <a href="#">About</a>
-                          <ul class="menu vertical">
-                             <li><a href="#">Deans' Promise</a></li>
-                             <li><a href="#">Career</a></li>
-                             <li><a href="#">Personnel Directory</a></li>
-                             <li><a href="#">History</a></li>
-                             <li><a href="#">Administration</a></li>
-                             <li><a href="#">Offices</a></li>
-                             <li><a href="#">Athens Campus</a></li>
-                             <li><a href="#">Tifton Campus</a></li>
-                             <li><a href="#">Griffin Campus</a></li>
-                             <li><a href="#">Boards &#38; Committees</a></li>
-                             <li><a href="#">Signature Events</a></li>
-                          </ul>
-                       </li>
-                    </ul>
-                 <!--</div>-->
-             <!-- </div><-->
-
-           </div>
-        </div>
-      </nav>
-
-
-
-      <div class="row">
+   <!-- Header Section -->
+   <header>
+      <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
          <div class="large-12 columns">
 
-            <h2>Test Content</h2>
+            <!-- UGA Branding Section -->
+            <a class="button uga-button float-left">
+               <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
+            </a>
+
+            <!-- "People" Menu & Search Section -->
+         <!--<div class="float-right">-->
+               <!-- Search and People Buttons -->
+
+                  <!-- People Dropdown Button -->
+                  <button tabindex="3" class="button people-button dropdown" type="button" data-toggle="peopleDropdown">Information for&#8230;</button>
+                  <!-- People Dropdown Container -->
+                  <div class="dropdown-pane" id="peopleDropdown" data-dropdown data-auto-focus="false" data-options="vOffset: 5; closeOnClick: true;">
+                     <!-- People Drilldown Menu -->
+                     <ul class="vertical menu" data-drilldown>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">Alumni</a></li>
+                        <li>
+                           <a href="#">Faculty/Staff</a>
+                           <ul class="vertical menu">
+                              <li><a href="#">Faculty 1A</a></li>
+                              <li><a href="#">Staff 1A</a></li>
+                           </ul>
+                        </li>
+                     </ul>
+                  </div>
+
+                  <!-- Search Button -->
+                  <div id="sb-search" class="sb-search">
+                     <form>
+                        <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+                        <input class="sb-search-submit" type="submit" value="">
+                        <span class="sb-icon-search"><i class="fi-magnifying-glass"></i></span>
+                     </form>
+                  </div>
+
+               <!--</div>-->
+
+
+
+
 
 
          </div>
       </div>
 
+      <!-- Main Branding Section -->
+      <div class="row">
+         <div class="large-12 columns">
+            <h1 id="caesBranding"><span>College Of </span>Agricultural &#38; Environmental Sciences</h1>
+         </div>
+      </div>
+
+   </header>
+
+   <!-- Main Navigation -->
+   <nav>
+      <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
+         <div class="large-12 columns">
+
+            <div class="title-bar" data-responsive-toggle="mainNav" data-hide-for="medium">
+               <button class="menu-icon" type="button" data-toggle></button>
+               <div class="title-bar-title">Menu</div>
+            </div>
+            <ul class="vertical medium-horizontal menu" id="mainNav" data-responsive-menu="drilldown medium-dropdown" data-toptions="closingTime:100; closeOnClick: true;">
+               <!-- Academics -->
+               <li>
+                  <a id="jumpToMenu" href="#">Academics</a>
+                  <ul class="menu vertical">
+                     <li><a href="#">Prospective Students</a></li>
+                     <li><a href="#">Current Students</a></li>
+                     <li><a href="#">Undergraduate Programs</a></li>
+                     <li><a href="#">Graduate Programs</a></li>
+                     <li><a href="#">Extended Campuses</a></li>
+                     <li><a href="#">News &#38; Events</a></li>
+                     <li><a href="#">Contact Academics</a></li>
+                  </ul>
+               </li>
+               <!-- Departments -->
+               <li>
+                  <a href="#">Departments</a>
+                  <ul class="menu vertical">
+                     <li><a href="#">Agricultural &#38; Applied Economics</a></li>
+                     <li><a href="#">Agricultural Leadership, Education &#38; Communication</a></li>
+                     <li><a href="#">Animal &#38; Dairy Science</a></li>
+                     <li><a href="#">Crop &#38; Soil Sciences</a></li>
+                     <li><a href="#">Entomology</a></li>
+                     <li><a href="#">Food Science &#38; Technology</a></li>
+                     <li><a href="#">Horticulture</a></li>
+                     <li><a href="#">Plant Pathology</a></li>
+                     <li><a href="#">Poultry Science</a></li>
+                  </ul>
+               </li>
+               <!-- Research -->
+               <li>
+                  <a href="#">Research</a>
+                  <ul class="menu vertical">
+                     <li><a href="#">Active Research</a></li>
+                     <li><a href="#">Centers &#38; Institutes</a></li>
+                     <li><a href="#">Experiminet Stations</a></li>
+                     <li><a href="#">Farms</a></li>
+                     <li><a href="#">Labs</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </li>
+               <!-- Extension & Outreach -->
+               <li>
+                  <a href="#">Extension &#38; Outreach</a>
+                  <ul class="menu vertical">
+                     <li><a href="#">UGA Cooperative Extension</a></li>
+                     <li><a href="#">Center for Agribusiness &#38; Economic Development</a></li>
+                     <li><a href="#">Coastal Georgia Botanical Gardens</a></li>
+                     <li><a href="#">Food PIC</a></li>
+                     <li><a href="#">Office of Environmental Sciences</a></li>
+                  </ul>
+               </li>
+               <!-- Global -->
+               <li>
+                  <a href="#">Global</a>
+                  <ul class="menu vertical">
+                     <li><a href="#">Study Abroad</a></li>
+                     <li><a href="#">Scholarships</a></li>
+                     <li><a href="#">Innovation Labs</a></li>
+                     <li><a href="#">International Ag Day</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </li>
+               <!-- About -->
+               <li>
+                  <a href="#">About</a>
+                  <ul class="menu vertical">
+                     <li><a href="#">Deans' Promise</a></li>
+                     <li><a href="#">Career</a></li>
+                     <li><a href="#">Personnel Directory</a></li>
+                     <li><a href="#">History</a></li>
+                     <li><a href="#">Administration</a></li>
+                     <li><a href="#">Offices</a></li>
+                     <li><a href="#">Athens Campus</a></li>
+                     <li><a href="#">Tifton Campus</a></li>
+                     <li><a href="#">Griffin Campus</a></li>
+                     <li><a href="#">Boards &#38; Committees</a></li>
+                     <li><a href="#">Signature Events</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <!--</div>-->
+            <!-- </div><-->
+
+         </div>
+      </div>
+   </nav>
+
+
+
+   <div class="row">
+      <div class="large-12 columns">
+
+         <h2>Test Content</h2>
+
+         <!--
+         <div id="sb-search" class="sb-search">
+   			<form>
+   				<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+   				<input class="sb-search-submit" type="submit" value="">
+   				<span class="sb-icon-search"><i class="fi-magnifying-glass"></i></span>
+   			</form>
+   		</div>
+      -->
+
+
+      </div>
+   </div>
 
 
 
@@ -183,9 +199,14 @@
 
 
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/what-input/what-input.js"></script>
-    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
-    <script src="js/app.js"></script>
-  </body>
+
+   <script src="bower_components/jquery/dist/jquery.js"></script>
+   <script src="bower_components/what-input/what-input.js"></script>
+   <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+   <script src="js/app.js"></script>
+   <script>
+      new UISearch( document.getElementById( 'sb-search' ) );
+   </script>
+</body>
+
 </html>
