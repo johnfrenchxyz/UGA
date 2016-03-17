@@ -88,7 +88,6 @@
    padding-right: 0;
    border-color: $medium-gray;
    float: right;
-   margin-left: 200px;
 
    // Typography
    @include headerLinks;
@@ -333,16 +332,19 @@ nav { margin-top: 1em; }
 	color: #2c3e50;
 
    // Placeholder Text Style
-   &::-webkit-input-placeholder { color: pink; }
-   &:-moz-placeholder { color: pink; }
-   &::-moz-placeholder { color: pink; }
-   &:-ms-input-placeholder { color: pink; }
+   &::-webkit-input-placeholder { color: $body-font-color; }
+   &:-moz-placeholder { color: $body-font-color; }
+   &::-moz-placeholder { color: $body-font-color; }
+   &:-ms-input-placeholder { color: $body-font-color; }
 
 }
 
 input[type="search"].sb-search-input {
 	-webkit-appearance: none;
 	-webkit-border-radius: 0px;
+   border-top: none;
+   border-left-color: $light-gray;
+   border-bottom: solid 5px $light-gray;
 }
 
 
@@ -359,6 +361,7 @@ input[type="search"].sb-search-input {
 	line-height: 40px;
 	text-align: center;
 	cursor: pointer;
+   float: right;
 }
 
 .sb-search-submit {

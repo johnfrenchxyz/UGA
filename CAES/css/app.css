@@ -3945,7 +3945,6 @@ table.hover tr:nth-of-type(even):hover {
   padding-right: 0;
   border-color: #cacaca;
   float: right;
-  margin-left: 200px;
   font-size: 0.875rem;
   font-weight: bold; }
   #peopleDropdown a {
@@ -4121,17 +4120,20 @@ nav {
     .sb-search-input {
       width: 100%; } }
   .sb-search-input::-webkit-input-placeholder {
-    color: pink; }
+    color: #3e3e3e; }
   .sb-search-input:-moz-placeholder {
-    color: pink; }
+    color: #3e3e3e; }
   .sb-search-input::-moz-placeholder {
-    color: pink; }
+    color: #3e3e3e; }
   .sb-search-input:-ms-input-placeholder {
-    color: pink; }
+    color: #3e3e3e; }
 
 input[type="search"].sb-search-input {
   -webkit-appearance: none;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  border-top: none;
+  border-left-color: #e6e6e6;
+  border-bottom: solid 5px #e6e6e6; }
 
 .sb-icon-search,
 .sb-search-submit {
@@ -4145,7 +4147,8 @@ input[type="search"].sb-search-input {
   margin: 0;
   line-height: 40px;
   text-align: center;
-  cursor: pointer; }
+  cursor: pointer;
+  float: right; }
 
 .sb-search-submit {
   background: #fff;
