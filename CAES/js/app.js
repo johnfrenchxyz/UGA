@@ -8,12 +8,15 @@ var ugaBranding = document.getElementById("ugaText");
 function ugaResizeCheck() {
    if (Foundation.MediaQuery.current === 'small') {
       ugaBranding.innerHTML = "UGA";
-   } else {
+   } else if (Foundation.MediaQuery.current === 'medium') {
       ugaBranding.innerHTML = "University of Georgia";
-   }
+   } else { ugaBranding.innerHTML = "University of Georgia"; }
 }
 
 ugaResizeCheck();
+$(window).on('resize', function(){
+   ugaResizeCheck();
+});
 
 // Check on Resize
 window.onresize = function() {
@@ -261,3 +264,7 @@ if ( typeof define === 'function' && define.amd ) {
 }
 
 })( window );
+
+document.getElementById('sb-search').onclick = function() {
+   $('#peopleDropdown').foundation('close');
+};

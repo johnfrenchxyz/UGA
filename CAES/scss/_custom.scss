@@ -1,13 +1,17 @@
 // Typography
 // ----------
 
-// Roboto (Used for headings)
+// Roboto ()
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 // font-family: 'Roboto', sans-serif;
 
 // Nunito (Avenir Alternative)
 @import url(https://fonts.googleapis.com/css?family=Nunito:300);
 // font-family: 'Nunito', sans-serif;
+
+// Roboto Slab
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+// font-family: 'Roboto Slab', serif;
 
 // Foundation Icons
 @import "../fonts/foundation-icons/foundation-icons.css";
@@ -22,6 +26,10 @@
       font-weight: bold;
    }
 }
+
+// Headings
+// --------
+h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
 
 // UGA Branding
 // ------------
@@ -159,139 +167,6 @@
    height: 40px;
 }
 
-// CAES Branding
-// -------------
-#caesBranding {
-   font-family: 'Roboto', sans-serif;
-   font-weight: 700;
-   line-height: 1;
-   margin-top: 0em;
-   // Large screen left margin:
-   @include breakpoint(large up) {
-      padding-left: .5em;
-   }
-   span {
-      font-weight: 400;
-      font-size: rem-calc(16);
-      text-transform: uppercase;
-      display: block;
-      // Small Screen Font Reduction
-      @include breakpoint(small only) {
-         font-size: rem-calc(12);
-      }
-   }
-}
-
-// Main Navigation
-// ---------------
-
-$nav-bg-color: darken($dark-gray, 30%);
-$nav-link-color: $light-gray;
-$nav-arrow-color: $nav-link-color;
-
-nav { margin-top: 1em; }
-
-#mainNav {
-   background: $nav-bg-color;
-   border-bottom-left-radius: 1em;
-   border-bottom-right-radius: 1em;
-   border-bottom: solid 5px darken($nav-bg-color, 10%);
-   padding-left: .8em;
-   @include breakpoint(large down) {
-      border-bottom-left-radius: 0em;
-      border-bottom-right-radius: 0em;
-      border-bottom: solid 5px darken($nav-bg-color, 5%);
-      padding-left: 0em;
-   }
-
-   li {
-      background: $nav-bg-color;
-      padding-top: .5em;
-      padding-bottom: .5em;
-
-      &:hover { background: lighten($nav-bg-color, 10%); }
-      // NEED FOCUS & ACTIVE STATES
-      a {
-         color: $nav-link-color;
-         font-size: rem-calc(14);
-         font-weight: bold;
-         @include breakpoint(medium down) {
-            font-size: rem-calc(12);
-         }
-      }
-   }
-
-   // Drilldown arrow styling
-   .is-drilldown-submenu-parent > a::after {
-      border-color: transparent transparent transparent $nav-arrow-color;
-   }
-
-   // Dropdown Submenu li container
-   ul {
-      background: $nav-bg-color;
-      //border-top: solid 5px darken($nav-bg-color, 10%);
-      //border-left: none;
-      //border-right: none;
-      border: none;
-   }
-   // Dropdown Submenus li
-   .is-dropdown-submenu-item {
-      background: $nav-bg-color;
-      padding: .2em;
-   }
-
-}
-
-// Small Screen Menu Bar
-.title-bar {
-   // Menu Bar
-   background: $nav-bg-color;
-   // Menu Text
-   .title-bar-title { @include headerLinks; }
-   // Hamburger Icon
-   .menu-icon::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
-}
-
-// Fix for dropdown direction
-@include breakpoint(medium up) {
-   .medium-horizontal{
-      .is-dropdown-submenu{
-         top: 100%;
-         left: 0;
-      }
-      .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu{
-         right: 0
-      }
-   }
-}
-
-// Fix for arrow direction
-@include breakpoint(medium up) {
-   .medium-horizontal{
-      .is-dropdown-submenu-parent.is-right-arrow > a::after {
-         border-width: 5px;
-         margin-top: 6px;
-         border-style: solid solid inset inset;
-         border-color: $nav-arrow-color transparent transparent;
-      }
-   }
-}
-
-// Fix for arrow direction
-@include breakpoint(medium down) {
-   .medium-horizontal{
-      .is-dropdown-submenu-parent.is-right-arrow > a::after {
-         border-width: 4px;
-         margin-left: 5px;
-         margin-top: 5px;
-      }
-   }
-}
-
-
-
-
-
 // Expanding Search
 // ----------------
 .sb-search {
@@ -415,4 +290,157 @@ input[type="search"].sb-search-input {
 .sb-search.sb-search-open .sb-search-submit,
 .no-js .sb-search .sb-search-submit {
 	z-index: 90;
+}
+
+// CAES Branding
+// -------------
+#caesBranding {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 700;
+   line-height: 1;
+   margin-top: 0em;
+   // Large screen left margin:
+   @include breakpoint(large up) {
+      padding-left: .5em;
+   }
+   span {
+      font-weight: 400;
+      font-size: rem-calc(16);
+      text-transform: uppercase;
+      display: block;
+      // Small Screen Font Reduction
+      @include breakpoint(small only) {
+         font-size: rem-calc(12);
+      }
+   }
+}
+
+// Main Navigation
+// ---------------
+
+$nav-bg-color: darken($dark-gray, 30%);
+$nav-link-color: $light-gray;
+$nav-arrow-color: $nav-link-color;
+
+nav { margin-top: 1em; }
+
+#mainNav {
+   background: $nav-bg-color;
+   border-bottom-left-radius: 1em;
+   border-bottom-right-radius: 1em;
+   border-bottom: solid 5px darken($nav-bg-color, 10%);
+   padding-left: .8em;
+   @include breakpoint(large down) {
+      border-bottom-left-radius: 0em;
+      border-bottom-right-radius: 0em;
+      border-bottom: solid 5px darken($nav-bg-color, 5%);
+      padding-left: 0em;
+   }
+
+   li {
+      background: $nav-bg-color;
+      padding-top: .5em;
+      padding-bottom: .5em;
+
+      &:hover { background: lighten($nav-bg-color, 10%); }
+
+      a {
+         color: $nav-link-color;
+         font-size: rem-calc(14);
+         font-weight: bold;
+         @include breakpoint(medium down) {
+            font-size: rem-calc(12);
+         }
+      }
+   }
+
+   // Drilldown arrow styling
+   .is-drilldown-submenu-parent > a::after {
+      border-color: transparent transparent transparent $nav-arrow-color;
+   }
+
+   // Dropdown Submenu li container
+   ul {
+      background: $nav-bg-color;
+      //border-top: solid 5px darken($nav-bg-color, 10%);
+      //border-left: none;
+      //border-right: none;
+      border: none;
+   }
+   // Dropdown Submenus li
+   .is-dropdown-submenu-item {
+      background: $nav-bg-color;
+      padding: .2em;
+   }
+
+}
+
+// Small Screen Menu Bar
+.title-bar {
+   // Menu Bar
+   background: $nav-bg-color;
+   // Menu Text
+   .title-bar-title { @include headerLinks; }
+   // Hamburger Icon
+   .menu-icon::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
+}
+
+// Fix for dropdown direction
+@include breakpoint(medium up) {
+   .medium-horizontal{
+      .is-dropdown-submenu{
+         top: 100%;
+         left: 0;
+      }
+      .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu{
+         right: 0
+      }
+   }
+}
+
+// Fix for arrow direction
+@include breakpoint(medium up) {
+   .medium-horizontal{
+      .is-dropdown-submenu-parent.is-right-arrow > a::after {
+         border-width: 5px;
+         margin-top: 6px;
+         border-style: solid solid inset inset;
+         border-color: $nav-arrow-color transparent transparent;
+      }
+   }
+}
+
+// Fix for arrow direction
+@include breakpoint(medium down) {
+   .medium-horizontal{
+      .is-dropdown-submenu-parent.is-right-arrow > a::after {
+         border-width: 4px;
+         margin-left: 5px;
+         margin-top: 5px;
+      }
+   }
+}
+
+
+// Main Section
+// ---------------
+
+main { margin-top: 1em; }
+
+// Footer Section
+// ---------------
+footer {
+   margin-top: 5em;
+   font-family: 'Nunito', sans-serif;
+   color: $nav-bg-color;
+   .footer-links {
+      margin-left: 0;
+      li {
+         display: inline-block;
+         padding-right: .5em;
+         padding-left: .5em;
+         border-right: solid 1px $light-gray;
+         a { color: $nav-bg-color; text-decoration: underline; &:hover { color: $black; } }
+      }
+   }
 }
