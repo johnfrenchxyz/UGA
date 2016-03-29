@@ -28,6 +28,12 @@ Table of Contents:
    // This font is imported to be used as the default font family in the typography section below.
    @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
+   // Roboto Slab
+   @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+   // font-family: 'Roboto Slab', serif;
+
+   h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif !important; color: $primary-color !important; }
+
    // Foundation Icon Font Import
    @import "../foundation-icons/foundation-icons.css";
 
