@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Image Slider Component</title>
+      <!-- Important Owl stylesheet (image slider) -->
+      <link rel="stylesheet" href="owl.carousel.css">
+      <!-- Owl Slider Default Theme (image slider) -->
+      <link rel="stylesheet" href="owl.theme.css">
+
+      <link rel="stylesheet" href="../../css/app.css">
+   </head>
+
+   <body>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h1>Image Slider Component:</h1>
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="large-12 columns">
+
+            <!-- Image Slider Component (Start Copy Here) -->
+            <div id="owl-demo" class="owl-carousel owl-theme">
+               <div class="item">
+                  <div class="img-container">
+                     <a href="http://www.google.com"><img src="../../img/slider-images/stephen2.jpg" alt=""></a>
+                     <div class="caption">This image is poperly cropped. So is the next one, but it has no caption.</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="img-container">
+                     <img src="../../img/slider-images/stephen3.jpg" alt="">
+                     <div class="caption"></div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="img-container">
+                     <img src="../../img/slider-images/stephen4.jpg" alt="">
+                     <div class="caption">This is a very, very, very long caption that just keeps going and going and no matter how hard you try, you just can't get to the end. It is actually kind of upsetting how long this caption is.  But it is correctly cropped.</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="img-container">
+                     <img src="../../img/slider-images/stephen5.jpg" alt="">
+                     <div class="caption">This is an image that will not look good in all cases with the slider because it is the wrong size.</div>
+                  </div>
+               </div>
+               <div class="item">
+                  <div class="img-container">
+                     <img src="../../img/slider-images/stephen6.jpg" alt="">
+                     <div class="caption">One more example of someone who didn't use the right size image.</div>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h2>Documentation:</h2>
+            <ul>
+               <li>New slider. This one requires moving all the files that are now in this folder. Note the stylesheets in the header and the javascript src below, as well as the initialization. I am definitely happy with the mechanics / implementation. The only trouble with sliders is when content is unpredictable, but I'll address that below.</li>
+               <li>Right now on small, the captions disappear by defauly, and re-appear on hover.</li>
+               <li>We'll also need the option to make the images links to content.</li>
+               <li><strong>Previously, I had given a reccomeded pixel height and width for people to follow, but since the image editor in the DAM only supports aspect ratio, I want to change the reccomendation to crop all images to 16X9.  It is not my favorite, but I think it will be simple for the users.  I've updated the images to all be 16x9 and it works great. It is also a better size for small screen devices</strong></li>
+               <li>The dialog should require them to enter ALT text.</li>
+            </ul>
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <script src="../../bower_components/jquery/dist/jquery.js"></script>
+      <script src="../../bower_components/what-input/what-input.js"></script>
+      <script src="../../bower_components/foundation-sites/dist/foundation.js"></script>
+      <script src="../../js/app.js"></script>
+      <script src="../../js/masonry.pkgd.min.js"></script>
+      <!-- Owl Image Slider -->
+      <script src="owl.carousel.js"></script>
+
+      <!-- New Scripts Below -->
+
+      <script>
+      $(window).load(function(){
+          $('#masonry-container').masonry({
+             itemSelector: '#masonry-container li#masonry-item'
+          });
+      });
+      </script>
+
+      <script>
+      $(window).load(function(){
+          $('#masonry-container-2').masonry({
+             itemSelector: '#masonry-container-2 li#masonry-item'
+          });
+      });
+      </script>
+
+      <script>
+      $(document).ready(function() {
+
+         $("#owl-demo").owlCarousel({
+            navigation : true, // Show next and prev button
+            loop:true,  // Will loop from the last slide to the first
+            autoPlay:true, // Will autoplay when the page loads
+            autoplayTimeout:1000,   // autoplay timer
+            autoplayHoverPause:false,  // will pause autoplay on hover - I don't care either way
+            slideSpeed : 300, // Slide Speed
+            paginationSpeed : 400,
+            singleItem: true, // Makes one image appear at a time
+            responsive: true, // Will dynamically resize the slider based on screen size
+         });
+      });
+      </script>
+
+   </body>
+
+</html>
