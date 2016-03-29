@@ -4120,7 +4120,10 @@ input[type="search"].sb-search-input {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1;
-  margin-top: 0em; }
+  margin-top: 0em;
+  color: #3e3e3e; }
+  #caesBranding a {
+    color: #3e3e3e; }
   @media screen and (min-width: 64em) {
     #caesBranding {
       padding-left: .5em; } }

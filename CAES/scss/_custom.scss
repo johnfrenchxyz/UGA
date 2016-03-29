@@ -294,15 +294,21 @@ input[type="search"].sb-search-input {
 
 // CAES Branding
 // -------------
+
 #caesBranding {
+
+   a { color: #3e3e3e; }
+
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    line-height: 1;
    margin-top: 0em;
+   color: #3e3e3e;
    // Large screen left margin:
    @include breakpoint(large up) {
       padding-left: .5em;
    }
+
    span {
       font-weight: 400;
       font-size: rem-calc(16);
