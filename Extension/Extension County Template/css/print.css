@@ -1,0 +1,13 @@
+@media print {
+   .show-on-focus { display: none !important; }
+   .extension-top-bar { display: none !important; }
+   img { display: none !important; }
+   footer { display: none !important; }
+   nav { display: none !important; }
+   .show-for-small-only { display: none !important; }
+   .hide-for-large-only { display: none !important; }
+   #menuText { display: none !important; }
+   header { margin: 0 0 0 0 !important; }
+   main { margin: 0 0 0 0 !important; }
+   .main-content-buffer { margin: 0 0 0 0 !important; }
+}
