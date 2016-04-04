@@ -68,7 +68,10 @@
       margin: 0;
       padding: 0;
       list-style-type: none;
-      li { display: inline; }
+      li { display: inline-block; }
+      @include breakpoint(small only) {
+         li { display: block; }
+      }
     }
 
 
@@ -84,19 +87,21 @@
 
         // Controls the image properties if images are displayed
         img {
-            float: left;
-            width: 20%;
-            margin: 0 1em 1em 0;
-            @media only screen and (max-width: 40em) {
-                width: 25%;
-            }
+            // float: left;
+            // margin: 0 1em 1em 0;
+            // @include breakpoint(small) {
+            //    width: 80%;
+            // }
+            // @media only screen and (max-width: 40em) {
+            //     width: 25%;
+            // }
 
-            &.personnel {
-                width: 10%;
-                @media only screen and (max-width: 40em) {
-                    width: 20%;
-                }
-            }
+            // &.personnel {
+            //     width: 10%;
+            //     @media only screen and (max-width: 40em) {
+            //         width: 20%;
+            //     }
+            // }
         }
 
         // Controls the main content list

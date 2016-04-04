@@ -29,10 +29,14 @@ Table of Contents:
    @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
 
    // Roboto Slab
-   @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+   @import url(https://fonts.googleapis.com/css?family=Roboto+Slab,400,300);
    // font-family: 'Roboto Slab', serif;
 
-   h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif !important; color: $primary-color !important; }
+   h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif !important; font-weight: 300; }
+   h3 { font-family: 'Roboto', sans-serif; font-weight: bold; font-size: rem-calc(20); }
+   h4 { font-family: 'Roboto', sans-serif; font-weight: bold; font-style: italic; font-size: rem-calc(17); } 
+
+   //h3, h5 { font-family: 'Roboto', sans-serif; font-weight: 300; }
 
    // Foundation Icon Font Import
    @import "../foundation-icons/foundation-icons.css";
