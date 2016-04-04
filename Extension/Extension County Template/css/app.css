@@ -3657,7 +3657,7 @@ Table of Contents:
    4.6 Footer
 
 */
-h2, h3, h4, h5, h6 {
+h2, h5, h6 {
   font-family: 'Roboto Slab', serif !important;
   font-weight: 300; }
 
