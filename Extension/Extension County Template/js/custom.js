@@ -155,18 +155,22 @@ $(document).ready(function(){
     //---------------------
     $(document).ready(function(){
 
+
+
       // Initial Run
       var responsivePlainList = function(){
-         if ( $('.plain-list-component').parent().width() < 500 ) {
-           $('.plain-list-component img').css('float', 'none');
-           $('.plain-list-component img').css('min-width', '100%');
-           $('.personnel-list-item img').css('min-width', '100px');
-           $('.personnel-list-item img').css('float', 'left');
-        } else {
-           $('.plain-list-component img').css('float', 'left');
-           $('.plain-list-component img').css('min-width', '200px');
-           $('.personnel-list-item img').css('min-width', '100px');
-        }
+         $('.plain-list-component').each(function(){
+            if ( $(this).parent().width() < 500 ) {
+              $(this).find('img').css('float', 'none');
+              $(this).find('img').css('min-width', '100%');
+              $(this).find('.personnel-list-item img').css('min-width', '100px');
+              $(this).find('.personnel-list-item img').css('float', 'left');
+           } else {
+              $(this).find('img').css('float', 'left');
+              $(this).find('img').css('min-width', '200px');
+              $(this).find('.personnel-list-item img').css('min-width', '100px');
+           }
+         });
       };
 
       responsivePlainList();
