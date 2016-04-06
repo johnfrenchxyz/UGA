@@ -149,3 +149,51 @@ $(document).ready(function(){
             $('.searchbox-icon').css('display','block');
       }
     }
+
+
+    // Plain List Component
+    //---------------------
+    $(document).ready(function(){
+
+      // Initial Run
+      var responsivePlainList = function(){
+         if ( $('.plain-list-component').parent().width() < 500 ) {
+           $('.plain-list-component img').css('float', 'none');
+           $('.plain-list-component img').css('min-width', '100%');
+        } else {
+           $('.plain-list-component img').css('float', 'left');
+           $('.plain-list-component img').css('min-width', '200px');
+        }
+      };
+
+      responsivePlainList();
+
+     // Run on resize
+     $(window).on('resize', function(){
+        responsivePlainList();
+     });
+
+   });
+
+
+    // Personnel List
+    //---------------
+    $(document).ready(function(){
+
+      // Initial Run
+      var responsivePersonnel = function(){
+         if ( $('.personnel-contact-info').parent().width() < 500 ) {
+           $('.personnel-contact-info').css('display', 'block');
+        } else {
+           $('.personnel-contact-info').css('display', 'inline-block');
+        }
+      };
+
+      responsivePersonnel();
+
+     // Run on resize
+     $(window).on('resize', function(){
+        responsivePersonnel();
+     });
+
+   });

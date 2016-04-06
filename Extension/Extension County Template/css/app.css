@@ -4139,15 +4139,20 @@ span.button a {
     border-left: none;
     border-right: none; }
 
-.inline-list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; }
-  .inline-list li {
-    display: inline-block; }
-  @media screen and (min-width: 0em) and (max-width: 31.9375em) {
-    .inline-list li {
-      display: block; } }
+.personnel-list-item {
+  margin-top: 1em;
+  clear: both; }
+  .personnel-list-item img {
+    width: 100px;
+    float: left;
+    margin-right: 1em; }
+  .personnel-list-item ul {
+    list-style: none;
+    margin-left: 0;
+    overflow: hidden; }
+  .personnel-list-item .personnel-contact-info {
+    display: block;
+    margin-right: 2em; }
 
 .plain-list-component .title {
   color: #c41039;
@@ -4157,6 +4162,11 @@ span.button a {
   font-size: 0.75rem;
   color: #4e4e4e;
   text-transform: uppercase; }
+  .plain-list-component .details a {
+    color: #c41039;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: none; }
 
 .plain-list-component .date {
   color: #4e4e4e;
@@ -4172,10 +4182,15 @@ span.button a {
 .plain-list-component a.right {
   padding: 0 1em 1em 0; }
 
+.plain-list-component img {
+  float: none;
+  margin: 0 1em 1em 0;
+  max-width: 200px; }
+
 .plain-list-component ul {
   list-style: none;
   padding: 0;
-  margin: .5em 0 0 0; }
+  overflow: hidden; }
 
 .plain-list-component .inline-list > li {
   margin-left: 0;
@@ -4189,6 +4204,11 @@ span.button a {
   font-size: 0.75rem;
   color: #4e4e4e;
   text-transform: uppercase; }
+  .tiled-list-component .details a {
+    color: #c41039;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: none; }
 
 .tiled-list-component .date {
   color: #4e4e4e;
