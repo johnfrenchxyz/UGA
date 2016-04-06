@@ -160,9 +160,12 @@ $(document).ready(function(){
          if ( $('.plain-list-component').parent().width() < 500 ) {
            $('.plain-list-component img').css('float', 'none');
            $('.plain-list-component img').css('min-width', '100%');
+           $('.personnel-list-item img').css('min-width', '100px');
+           $('.personnel-list-item img').css('float', 'left');
         } else {
            $('.plain-list-component img').css('float', 'left');
            $('.plain-list-component img').css('min-width', '200px');
+           $('.personnel-list-item img').css('min-width', '100px');
         }
       };
 

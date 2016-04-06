@@ -75,7 +75,7 @@
       margin-top: 1em;
       clear: both;
       // Personnel Image
-      img { width: 100px; float: left; margin-right: 1em; }
+      img { width: 100px !important; float: left; margin-right: 1em; }
       // List
       ul { list-style: none; margin-left: 0; overflow: hidden; }
 

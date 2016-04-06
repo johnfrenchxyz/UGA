@@ -4143,7 +4143,7 @@ span.button a {
   margin-top: 1em;
   clear: both; }
   .personnel-list-item img {
-    width: 100px;
+    width: 100px !important;
     float: left;
     margin-right: 1em; }
   .personnel-list-item ul {
