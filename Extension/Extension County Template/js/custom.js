@@ -187,7 +187,7 @@ $(document).ready(function(){
     //---------------
     $(document).ready(function(){
 
-      // Initial Run
+      // Functions
       var responsivePersonnel = function(){
          if ( $('.personnel-contact-info').parent().width() < 500 ) {
            $('.personnel-contact-info').css('display', 'block');
@@ -196,11 +196,45 @@ $(document).ready(function(){
         }
       };
 
+      // Initial Run
       responsivePersonnel();
 
      // Run on resize
      $(window).on('resize', function(){
         responsivePersonnel();
+     });
+
+   });
+
+
+   // Office Information Component
+   //-----------------------------
+   $(document).ready(function(){
+
+      // Functions
+      var responsiveOfficeInfo = function(){
+
+         // Display Map
+         $('.office-map').css('display', 'block');
+         // Responsive
+         $('.office-information-component').each(function(){
+            if ( $(this).parent().width() < 700 ) {
+              $(this).find('.office-info').css('width', '100%');
+              $(this).find('.office-map').css('width', '100%');
+           } else {
+             $(this).find('.office-info').css('width', '50%');
+             $(this).find('.office-map').css('width', '50%');
+           }
+         });
+
+      };
+
+      // Initial Run
+      responsiveOfficeInfo();
+
+      // Run on Resize
+      $(window).on('resize', function(){
+        responsiveOfficeInfo();
      });
 
    });

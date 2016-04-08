@@ -63,7 +63,7 @@
         }
 
         // Lightens the horizontal rule
-        hr { border-top: 1px solid lighten($secondary-color, 2%); margin: 1em 0 0em 0; border-left: none; border-right: none; }
+        hr { border-top: 1px solid lighten($secondary-color, 2%); margin: 1em 0 1em 0; border-left: none; border-right: none; }
 
         a.right { padding: 0 1em 1em 0; }
 
@@ -89,8 +89,19 @@
 
 
     // Publication List
-    //-----------------------------
-    .publication { margin-bottom: 1em; }
+    //-----------------
+    .publication {
+      margin-bottom: 1em;
+      img { padding: 1em; }
+   }
+
+
+    // Blog Post List
+    //---------------
+    .blog-post {
+      img { padding: 1em; }
+    }
+
 
 
 
@@ -141,7 +152,7 @@
 
 
 // Office Information Component
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+//-----------------------------
 
 .office-information-component {
     @include paper-element;
@@ -157,7 +168,18 @@
         vertical-align: middle;
      }
 
+     .office-info {
+        width:100%;
+        float:left;
+        overflow:hidden;
+     }
 
+     .office-map {
+        width:50%;
+        float:right;
+        overflow:hidden;
+        display:none;
+     }
 
 }
 
