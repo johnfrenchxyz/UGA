@@ -3960,6 +3960,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     margin-right: 0; }
   .people-menu-small ul li {
+    padding-top: 10px;
     margin-right: 10px;
     font-size: 0.875rem; }
     .people-menu-small ul li a {
