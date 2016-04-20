@@ -20,7 +20,7 @@
       for (var i = toggles.length - 1; i >= 0; i--) {
          var toggle = toggles[i];
          toggleHandler(toggle);
-      };
+      }
 
       function toggleHandler(toggle) {
          toggle.addEventListener( "click", function(e) {
@@ -103,6 +103,35 @@
 
    });
 
+   // Main Nav Tab Fix
+   $(document).ready(function(){
+
+      var tabFix = function() {
+         // On Large, show nav-inner-container
+         if ( Foundation.MediaQuery.atLeast('large') ) {
+            $('#nav-inner-container').css('display', 'block');
+         } else {
+            // On Small, hide nav-inner-container until hamburger icon is pressed
+            $('#nav-inner-container').css('display', 'none');
+            $('.c-hamburger').on('click', function(){
+               $('#nav-inner-container').css('display', 'block');
+            });
+         }
+      };
+
+      // Initial Run
+      tabFix();
+      // Run on Resize
+      $(window).on('resize', function(){
+         tabFix();
+      });
+
+   });
+
+
+
+
+
 // Mobile Search (Expanding Input)
 // Taken from @author Codrops and modified by project authors.
 $(document).ready(function(){
@@ -112,7 +141,7 @@ $(document).ready(function(){
     var isOpen = false;
 
     submitIcon.click(function(){
-      if (isOpen == false) {
+      if (isOpen === false) {
             searchBox.addClass('searchbox-open');
             $(".extension-logo").fadeOut(100);
             inputBox.focus();
@@ -218,7 +247,7 @@ $(document).ready(function(){
          $('.office-map').css('display', 'block');
          // Responsive
          $('.office-information-component').each(function(){
-            if ( $(this).parent().width() < 700 ) {
+            if ( $(this).parent().width() < 500 ) {
               $(this).find('.office-info').css('width', '100%');
               $(this).find('.office-map').css('width', '100%');
            } else {
@@ -235,6 +264,20 @@ $(document).ready(function(){
       // Run on Resize
       $(window).on('resize', function(){
         responsiveOfficeInfo();
+     });
+
+     // Disable Scrolling for Google Maps
+     $('.office-map').each(function(){
+        // Disable Scroll by Default
+        $(this).find('iframe').addClass('scrolloff');
+        // Enable Scroll on Click
+        $(this).on('click', function(){
+           $(this).find('iframe').removeClass('scrolloff');
+        });
+        // Disable scroll when mouse leaves map
+        $(this).mouseleave(function(){
+           $(this).find('iframe').addClass('scrolloff');
+        });
      });
 
    });
