@@ -20,38 +20,40 @@
       <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
          <div class="large-12 columns">
 
-            <!-- UGA Branding Section -->
-            <a class="button uga-button float-left">
-               <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
-            </a>
+
 
             <!-- "People" Menu & Search Section -->
+            <div class="search-and-people-container">
 
-            <!-- People Dropdown Button -->
-            <button tabindex="3" class="button people-button dropdown" type="button" data-toggle="peopleDropdown">Information for&#8230;</button>
-            <!-- People Dropdown Container -->
-            <div class="dropdown-pane" id="peopleDropdown" data-dropdown data-auto-focus="false" data-options="vOffset: 5; closeOnClick: true;">
-               <!-- People Drilldown Menu -->
-               <ul class="vertical menu" data-drilldown>
-                  <li><a href="#">Students</a></li>
-                  <li><a href="#">Alumni</a></li>
-                  <li>
-                     <a href="#">Faculty/Staff</a>
-                     <ul class="vertical menu">
-                        <li><a href="#">Faculty 1A</a></li>
-                        <li><a href="#">Staff 1A</a></li>
-                     </ul>
-                  </li>
-               </ul>
+               <!-- UGA Branding Section -->
+               <a class="button uga-button float-left">
+                  <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
+               </a>
+
+               <div class="people-menu hide-for-small-only">
+                  <ul class="menu">
+                     <li><a href="google.com">Campuses</a></li>
+                     <li><a href="#">Students</a></li>
+                     <li><a href="#">Alumni</a></li>
+                     <li><a href="#">Faculty/Staff</a></li>
+                  </ul>
+               </div>
+               <div id="sb-search" class="sb-search">
+                  <form>
+                     <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
+                     <input class="sb-search-submit" type="submit" value="">
+                     <span class="sb-icon-search"><i class="fi-magnifying-glass"></i></span>
+                  </form>
+               </div>
             </div>
 
-            <!-- Search Button -->
-            <div id="sb-search" class="sb-search">
-               <form>
-                  <input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
-                  <input class="sb-search-submit" type="submit" value="">
-                  <span class="sb-icon-search"><i class="fi-magnifying-glass"></i></span>
-               </form>
+            <div class="people-menu-small show-for-small-only">
+               <ul class="menu">
+                  <li><a href="google.com">Campuses</a></li>
+                  <li><a href="#">Students</a></li>
+                  <li><a href="#">Alumni</a></li>
+                  <li><a href="#">Faculty/Staff</a></li>
+               </ul>
             </div>
 
          </div>
@@ -204,6 +206,9 @@
    <script src="bower_components/what-input/what-input.js"></script>
    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
    <script src="js/app.js"></script>
+   <!-- For Expanding Search -->
+   <script src="js/search/classie.js"></script>
+   <script src="js/search/uisearch.js"></script>
    <script>
       new UISearch(document.getElementById('sb-search'));
    </script>

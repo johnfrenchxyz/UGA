@@ -189,6 +189,32 @@
 
 .message-form-component {
     textarea { height: rem-calc(100); }
+    @mixin messageFormButton {
+      display: inline-block;
+      text-align: center;
+      line-height: 1;
+      cursor: pointer;
+      -webkit-appearance: none;
+      transition: all 0.25s ease-out;
+      vertical-align: middle;
+      border: 1px solid transparent;
+      border-radius: 0;
+      padding: 0.85em 1em;
+      margin: 0 1rem 1rem 0;
+      font-size: 0.9rem;
+    }
+    input[type=submit] {
+      @include messageFormButton;
+      background: #c41039;
+      color: #fff !important;
+   }
+   input[type=button] {
+      @include messageFormButton;
+      background: #e7e7e7;
+      color: rgb(50, 50, 50);
+      border-radius: .5em;
+      border: 1px solid #cacaca;
+   }
 }
 
 
@@ -200,8 +226,13 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 .social-media-icons-component {
+   margin-left: 0;
    i { font-size: rem-calc(48); }
+   ul { list-style: none; display: inline-block; }
+   .inline-list { li { display: inline; padding-right: 1em; } }
 }
+
+
 
 // Image Slider
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

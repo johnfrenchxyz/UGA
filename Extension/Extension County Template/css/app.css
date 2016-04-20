@@ -3691,6 +3691,9 @@ html, body {
   float: right;
   padding: .5em; }
 
+.scrolloff {
+  pointer-events: none !important; }
+
 #skipToContent {
   position: absolute;
   left: -10000px;
@@ -4273,8 +4276,50 @@ span.button a {
 .message-form-component textarea {
   height: 6.25rem; }
 
-.social-media-icons-component i {
-  font-size: 3rem; }
+.message-form-component input[type=submit] {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: 0.9rem;
+  background: #c41039;
+  color: #fff !important; }
+
+.message-form-component input[type=button] {
+  display: inline-block;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  transition: all 0.25s ease-out;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0.85em 1em;
+  margin: 0 1rem 1rem 0;
+  font-size: 0.9rem;
+  background: #e7e7e7;
+  color: #323232;
+  border-radius: .5em;
+  border: 1px solid #cacaca; }
+
+.social-media-icons-component {
+  margin-left: 0; }
+  .social-media-icons-component i {
+    font-size: 3rem; }
+  .social-media-icons-component ul {
+    list-style: none;
+    display: inline-block; }
+  .social-media-icons-component .inline-list li {
+    display: inline;
+    padding-right: 1em; }
 
 #owl-demo .item .img-container {
   max-height: 50%;

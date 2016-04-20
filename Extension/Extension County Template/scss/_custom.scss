@@ -80,6 +80,11 @@ Table of Contents:
          padding: .5em;
       }
 
+      // Fix for Google Maps Scrolling Problem
+      .scrolloff {
+        pointer-events: none !important;
+     }
+
 // 3. Typography
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // Controls the typography settings for the site.
