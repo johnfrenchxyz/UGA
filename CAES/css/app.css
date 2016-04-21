@@ -4176,3 +4176,25 @@ footer {
         text-decoration: underline; }
         footer .footer-links li a:hover {
           color: #0a0a0a; }
+
+/*
+   Components Styling
+   For CAES Template
+*/
+.tiled-list-container {
+  column-width: 300px;
+  -moz-column-width: 300px;
+  -webkit-column-width: 300px; }
+  .tiled-list-container .tiled-list-item {
+    margin: 0 0 1rem 0;
+    padding: 1rem;
+    border: 1px solid rgba(10, 10, 10, 0.25);
+    border-radius: 0;
+    position: relative;
+    color: #3e3e3e;
+    display: inline-block;
+    width: 100%; }
+    .tiled-list-container .tiled-list-item > :first-child {
+      margin-top: 0; }
+    .tiled-list-container .tiled-list-item > :last-child {
+      margin-bottom: 0; }
