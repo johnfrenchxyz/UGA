@@ -36,18 +36,18 @@ window.onresize = function() {
 
 // People Menu
 // --------------------------------
-$(document).ready(function() {
-
-   var peopleMenuSmall = function(){
-      if( window.innerWidth < 400 ) {
-         $('.people-menu-small').css('overflow', 'scroll');
-
-      }
-   };
-
-   $(window).on('resize', function(){
-      peopleMenuSmall();
-   });
-
-   peopleMenuSmall();
-});
+// $(document).ready(function() {
+//
+//    var peopleMenuSmall = function(){
+//       if( window.innerWidth < 400 ) {
+//          $('.people-menu-small').css('overflow', 'scroll');
+//
+//       }
+//    };
+//
+//    $(window).on('resize', function(){
+//       peopleMenuSmall();
+//    });
+//
+//    peopleMenuSmall();
+// });
