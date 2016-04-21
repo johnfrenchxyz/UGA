@@ -1,0 +1,22 @@
+/*
+   Components Styling
+   For CAES Template
+*/
+
+// Plain List Component
+//---------------------
+
+
+
+// Tiled List Component
+//---------------------
+.tiled-list-container {
+   column-width: 300px;
+	-moz-column-width: 300px;
+	-webkit-column-width: 300px;
+   .tiled-list-item {
+      @include callout-base;
+      display: inline-block;
+      width: 100%;
+   }
+}
