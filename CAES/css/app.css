@@ -3960,7 +3960,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 0;
     margin-right: 0; }
   .people-menu-small ul li {
-    padding-top: 10px;
     margin-right: 10px;
     font-size: 0.875rem; }
     .people-menu-small ul li a {
@@ -4069,6 +4068,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 90; }
 
 #caesBranding {
+  margin-bottom: .5em;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 1;
@@ -4088,19 +4088,14 @@ h1, h2, h3, h4, h5, h6 {
       #caesBranding span {
         font-size: 0.75rem; } }
 
-nav {
-  margin-top: 1em; }
-
 #mainNav {
   background: #3e3e3e;
   border-top-left-radius: 1em;
-  border-bottom: solid 5px #242424;
   padding-left: .8em; }
   @media screen and (max-width: 74.9375em) {
     #mainNav {
       border-bottom-left-radius: 0em;
       border-bottom-right-radius: 0em;
-      border-bottom: solid 5px #313131;
       padding-left: 0em; } }
   #mainNav li {
     background: #3e3e3e;
@@ -4125,13 +4120,20 @@ nav {
     padding: .2em; }
 
 .title-bar {
-  background: #3e3e3e; }
+  background: #3e3e3e;
+  height: 56px;
+  line-height: 56px; }
   .title-bar .title-bar-title {
     font-size: 0.875rem;
-    font-weight: bold; }
+    font-weight: bold;
+    vertical-align: middle;
+    margin-top: -17px; }
     .title-bar .title-bar-title a {
       font-size: 0.875rem;
       font-weight: bold; }
+  .title-bar .menu-icon {
+    vertical-align: middle;
+    margin-top: -15px; }
   .title-bar .menu-icon::after {
     box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 

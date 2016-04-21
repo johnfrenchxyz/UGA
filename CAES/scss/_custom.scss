@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
       margin-right: 0;
    }
    ul li {
-      padding-top: 10px;
+      // padding-top: 10px;
       margin-right: 10px;
       font-size: rem-calc(14);
       a { color: $body-font-color; font-weight: bold; &:hover { text-decoration: underline; } }
@@ -233,13 +233,14 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
 // -------------
 
 #caesBranding {
-
+   margin-bottom: .5em;
    a { color: #3e3e3e; }
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    line-height: 1;
    margin-top: 20px;
    color: #3e3e3e;
+
    // Large screen left margin:
    @include breakpoint(large up) {
       padding-left: .5em;
@@ -265,17 +266,15 @@ $nav-bg-color: darken($dark-gray, 30%);
 $nav-link-color: $light-gray;
 $nav-arrow-color: $nav-link-color;
 
-nav { margin-top: 1em; }
-
 #mainNav {
    background: $nav-bg-color;
    border-top-left-radius: 1em;
-   border-bottom: solid 5px darken($nav-bg-color, 10%);
+   // border-bottom: solid 5px darken($nav-bg-color, 10%);
    padding-left: .8em;
    @include breakpoint(large down) {
       border-bottom-left-radius: 0em;
       border-bottom-right-radius: 0em;
-      border-bottom: solid 5px darken($nav-bg-color, 5%);
+      // border-bottom: solid 5px darken($nav-bg-color, 5%);
       padding-left: 0em;
    }
 
@@ -318,9 +317,12 @@ nav { margin-top: 1em; }
 .title-bar {
    // Menu Bar
    background: $nav-bg-color;
+   height: 56px;
+   line-height: 56px;
    // Menu Text
-   .title-bar-title { @include headerLinks; }
+   .title-bar-title { @include headerLinks; vertical-align: middle; margin-top: -17px; }
    // Hamburger Icon
+   .menu-icon { vertical-align: middle; margin-top: -15px; }
    .menu-icon::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 }
 
