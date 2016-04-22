@@ -4280,7 +4280,8 @@ footer {
     position: relative;
     color: #3e3e3e;
     padding: 1em;
-    display: block;
+    column-break-inside: avoid;
+    display: inline-block;
     width: 100%; }
     .tiled-list-container .tiled-list-item > :first-child {
       margin-top: 0; }
