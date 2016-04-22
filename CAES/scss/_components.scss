@@ -3,9 +3,76 @@
    For CAES Template
 */
 
+// Component Title
+//----------------
+@mixin component-title($background, $color) {
+   background: $background;
+   position: relative;
+   color: $color;
+   width: 100%;
+   height: 56px;
+   line-height: 56px;
+   vertical-align: middle;
+   font-weight: 700;
+   font-size: rem-calc(14);
+   text-align: center;
+   text-transform: uppercase;
+   margin-bottom: 1em;
+   &:after {
+      content:'';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px $background;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent;
+   }
+}
+
+// Plain & Tiled List Default Styles
+//----------------------------------
+@mixin caes-list-style {
+   // Margins & Padding
+   padding: 1em;
+   // Title
+   .title {
+      font-family: 'Roboto Slab', serif;
+      font-size: rem-calc(24);
+      font-weight: 700;
+      display: block;
+      @include breakpoint (small only) { font-size: rem-calc(20); }
+   }
+   // Subtitle
+   .subtitle { font-weight: 700; color: $dark-gray; }
+   // Description
+   .description { overflow: auto; }
+}
+
 // Plain List Component
 //---------------------
+.plain-list-container {
+   border: solid 1px #d6d6d6;
+   padding-bottom: 1em;
+   .component-title { @include component-title( #d6d6d6, darken($caes-gray, 10%) ); }
 
+   // Prevent Conent/Image From Overlapping
+   &:after  {
+      height: 0;
+      visibility: hidden;
+      display: block;
+      content: ".";
+      clear: both;
+   }
+
+   .plain-list-item {
+      @include caes-list-style;
+      img { float: left; max-width: 200px; height: auto; padding-right: 1em; }
+
+   }
+}
 
 
 // Tiled List Component
@@ -14,9 +81,19 @@
    column-width: 300px;
 	-moz-column-width: 300px;
 	-webkit-column-width: 300px;
+   .component-title {
+      @include component-title( #d6d6d6, darken($caes-gray, 10%) );
+      -webkit-column-span: all;
+      -moz-column-span: all;
+      column-span: all;
+      margin-bottom: 2em;
+   }
    .tiled-list-item {
       @include callout-base;
-      display: inline-block;
+      @include caes-list-style;
+      display: block;
       width: 100%;
+      // Horizontal Rule
+      hr { margin: 0 -1em 1em -1em; }
    }
 }

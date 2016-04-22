@@ -6,7 +6,7 @@
 // font-family: 'Roboto', sans-serif;
 
 // Nunito (Avenir Alternative)
-@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,500);
 // font-family: 'Nunito', sans-serif;
 
 // Roboto Slab
@@ -29,7 +29,8 @@
 
 // Headings
 // --------
-h1, h2, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
+h1, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
+h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 700; }
 
 // UGA Branding
 // ------------

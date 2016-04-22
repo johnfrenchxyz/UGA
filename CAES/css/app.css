@@ -6,7 +6,7 @@
  * Licensed under MIT Open Source
  */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,500);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
 @import url(../fonts/foundation-icons/foundation-icons.css);
 .slide-in-down.mui-enter, .slide-in-left.mui-enter, .slide-in-up.mui-enter, .slide-in-right.mui-enter, .slide-out-down.mui-leave, .slide-out-right.mui-leave, .slide-out-up.mui-leave, .slide-out-left.mui-leave, .fade-in.mui-enter, .fade-out.mui-leave, .hinge-in-from-top.mui-enter, .hinge-in-from-right.mui-enter, .hinge-in-from-bottom.mui-enter, .hinge-in-from-left.mui-enter, .hinge-in-from-middle-x.mui-enter, .hinge-in-from-middle-y.mui-enter, .hinge-out-from-top.mui-leave, .hinge-out-from-right.mui-leave, .hinge-out-from-bottom.mui-leave, .hinge-out-from-left.mui-leave, .hinge-out-from-middle-x.mui-leave, .hinge-out-from-middle-y.mui-leave, .scale-in-up.mui-enter, .scale-in-down.mui-enter, .scale-out-up.mui-leave, .scale-out-down.mui-leave, .spin-in.mui-enter, .spin-out.mui-leave, .spin-in-ccw.mui-enter, .spin-out-ccw.mui-leave {
@@ -1231,7 +1231,7 @@ h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 1.5rem; }
+  font-size: 1.875rem; }
 
 h2 {
   font-size: 1.25rem; }
@@ -1252,11 +1252,11 @@ h6 {
   h1 {
     font-size: 3rem; }
   h2 {
-    font-size: 2.5rem; }
+    font-size: 1.75rem; }
   h3 {
-    font-size: 1.9375rem; }
+    font-size: 1.5rem; }
   h4 {
-    font-size: 1.5625rem; }
+    font-size: 1.25rem; }
   h5 {
     font-size: 1.25rem; }
   h6 {
@@ -3888,8 +3888,13 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif; }
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 .uga-button {
   background-color: #c41039;
@@ -4181,10 +4186,92 @@ footer {
    Components Styling
    For CAES Template
 */
+.plain-list-container {
+  border: solid 1px #d6d6d6;
+  padding-bottom: 1em; }
+  .plain-list-container .component-title {
+    background: #d6d6d6;
+    position: relative;
+    color: #5e5e5e;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em; }
+    .plain-list-container .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #d6d6d6;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .plain-list-container:after {
+    height: 0;
+    visibility: hidden;
+    display: block;
+    content: ".";
+    clear: both; }
+  .plain-list-container .plain-list-item {
+    padding: 1em; }
+    .plain-list-container .plain-list-item .title {
+      font-family: 'Roboto Slab', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: block; }
+      @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+        .plain-list-container .plain-list-item .title {
+          font-size: 1.25rem; } }
+    .plain-list-container .plain-list-item .subtitle {
+      font-weight: 700;
+      color: #8a8a8a; }
+    .plain-list-container .plain-list-item .description {
+      overflow: auto; }
+    .plain-list-container .plain-list-item img {
+      float: left;
+      max-width: 200px;
+      height: auto;
+      padding-right: 1em; }
+
 .tiled-list-container {
   column-width: 300px;
   -moz-column-width: 300px;
   -webkit-column-width: 300px; }
+  .tiled-list-container .component-title {
+    background: #d6d6d6;
+    position: relative;
+    color: #5e5e5e;
+    width: 100%;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    -webkit-column-span: all;
+    -moz-column-span: all;
+    column-span: all;
+    margin-bottom: 2em; }
+    .tiled-list-container .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #d6d6d6;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
   .tiled-list-container .tiled-list-item {
     margin: 0 0 1rem 0;
     padding: 1rem;
@@ -4192,9 +4279,25 @@ footer {
     border-radius: 0;
     position: relative;
     color: #3e3e3e;
-    display: inline-block;
+    padding: 1em;
+    display: block;
     width: 100%; }
     .tiled-list-container .tiled-list-item > :first-child {
       margin-top: 0; }
     .tiled-list-container .tiled-list-item > :last-child {
       margin-bottom: 0; }
+    .tiled-list-container .tiled-list-item .title {
+      font-family: 'Roboto Slab', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: block; }
+      @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+        .tiled-list-container .tiled-list-item .title {
+          font-size: 1.25rem; } }
+    .tiled-list-container .tiled-list-item .subtitle {
+      font-weight: 700;
+      color: #8a8a8a; }
+    .tiled-list-container .tiled-list-item .description {
+      overflow: auto; }
+    .tiled-list-container .tiled-list-item hr {
+      margin: 0 -1em 1em -1em; }

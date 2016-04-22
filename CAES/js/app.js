@@ -2,52 +2,45 @@ $(document).foundation();
 
 // UGA Branding Content Swap
 // -------------------------
-var ugaBranding = document.getElementById("ugaText");
-
-// Default Check
 function ugaResizeCheck() {
-   if (Foundation.MediaQuery.current === 'small') {
-      ugaBranding.innerHTML = "UGA";
-   } else if (Foundation.MediaQuery.current === 'medium') {
-      ugaBranding.innerHTML = "University of Georgia";
-   } else { ugaBranding.innerHTML = "University of Georgia"; }
+   if ( $(window).width() < 650 ) {
+      $('#ugaText').html('UGA');
+   } else { $('#ugaText').html('University of Georgia'); }
 }
-
+// Initial Run:
 ugaResizeCheck();
-$(window).on('resize', function(){
+// Run on Resize:
+$(window).resize(function(){
    ugaResizeCheck();
 });
 
-// Check on Resize
-window.onresize = function() {
-   if (Foundation.MediaQuery.current === 'small') {
-      ugaBranding.innerHTML = "UGA";
-   } else {
-      ugaBranding.innerHTML = "University of Georgia";
-   }
-};
-
-
 // Drilldown Height Fix -- Not sure why this fix is needed, but it is.
+//--------------------------------------------------------------------
 $('.is-drilldown').css('height', 'auto');
-window.onresize = function() {
+$(window).resize(function(){
    $('.is-drilldown').css('height', 'auto');
-};
+});
 
-// People Menu
-// --------------------------------
-// $(document).ready(function() {
-//
-//    var peopleMenuSmall = function(){
-//       if( window.innerWidth < 400 ) {
-//          $('.people-menu-small').css('overflow', 'scroll');
-//
-//       }
-//    };
-//
-//    $(window).on('resize', function(){
-//       peopleMenuSmall();
-//    });
-//
-//    peopleMenuSmall();
-// });
+// Plain List Responsive Column Control
+//-------------------------------------
+function responsivePlainList() {
+   $('.plain-list-item').each(function(){
+      if ( $(this).parent().width() < 700 ) {
+         $(this).find('img').css('float', 'none');
+         $(this).find('img').css('min-width', '100%');
+         $(this).find('img').css('padding-right', '0');
+      } else {
+         $(this).find('img').css('float', 'left');
+         $(this).find('img').css('max-width', '200px');
+         $(this).find('img').css('min-width', '0px');
+         $(this).find('img').css('padding-right', '1em');
+      }
+   });
+}
+
+// Initial Run:
+responsivePlainList();
+// Run on Resize:
+$(window).resize(function(){
+   responsivePlainList();
+});
