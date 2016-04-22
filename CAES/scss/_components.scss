@@ -91,7 +91,8 @@
    .tiled-list-item {
       @include callout-base;
       @include caes-list-style;
-      display: block;
+      column-break-inside: avoid;
+      display: inline-block;
       width: 100%;
       // Horizontal Rule
       hr { margin: 0 -1em 1em -1em; }
