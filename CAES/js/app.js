@@ -44,3 +44,20 @@ responsivePlainList();
 $(window).resize(function(){
    responsivePlainList();
 });
+
+// // Personnel List
+// //---------------
+// function responsivePersonnelList() {
+//    $('.personnel').each(function() {
+//       if ( $(this).parent().width() < 730) {
+//          $('contact-items li').css('margin-left', '-20px');
+//       } else { $('contact-items li').css('margin-left', '1em'); }
+//    });
+// }
+//
+// // Initial Run:
+// responsivePersonnelList();
+// // Run on Resize:
+// $(window).resize(function(){
+//    responsivePersonnelList();
+// });
