@@ -4188,7 +4188,7 @@ footer {
 */
 .plain-list-container {
   border: solid 1px #d6d6d6;
-  padding-bottom: 1em; }
+  margin-bottom: 3em; }
   .plain-list-container .component-title {
     background: #d6d6d6;
     position: relative;
@@ -4230,20 +4230,36 @@ footer {
         .plain-list-container .plain-list-item .title {
           font-size: 1.25rem; } }
     .plain-list-container .plain-list-item .subtitle {
-      font-weight: 700;
-      color: #8a8a8a; }
+      font-weight: 500;
+      color: #8a8a8a;
+      text-transform: uppercase;
+      font-size: 0.875rem; }
+    .plain-list-container .plain-list-item .subtitle:after {
+      content: "\000A";
+      white-space: pre; }
     .plain-list-container .plain-list-item .description {
       overflow: auto; }
+    .plain-list-container .plain-list-item .description:after {
+      content: "\000A";
+      white-space: pre; }
     .plain-list-container .plain-list-item img {
       float: left;
       max-width: 200px;
       height: auto;
-      padding-right: 1em; }
+      padding-right: 1em;
+      margin-bottom: 1em; }
+  .plain-list-container hr {
+    border-bottom: 1px solid #d6d6d6; }
+  .plain-list-container .read-more {
+    margin-left: 1em; }
 
 .tiled-list-container {
   column-width: 300px;
   -moz-column-width: 300px;
-  -webkit-column-width: 300px; }
+  -webkit-column-width: 300px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3; }
   .tiled-list-container .component-title {
     background: #d6d6d6;
     position: relative;
@@ -4296,9 +4312,47 @@ footer {
         .tiled-list-container .tiled-list-item .title {
           font-size: 1.25rem; } }
     .tiled-list-container .tiled-list-item .subtitle {
-      font-weight: 700;
-      color: #8a8a8a; }
+      font-weight: 500;
+      color: #8a8a8a;
+      text-transform: uppercase;
+      font-size: 0.875rem; }
+    .tiled-list-container .tiled-list-item .subtitle:after {
+      content: "\000A";
+      white-space: pre; }
     .tiled-list-container .tiled-list-item .description {
       overflow: auto; }
+    .tiled-list-container .tiled-list-item .description:after {
+      content: "\000A";
+      white-space: pre; }
+    .tiled-list-container .tiled-list-item img {
+      width: 100%; }
     .tiled-list-container .tiled-list-item hr {
-      margin: 0 -1em 1em -1em; }
+      margin: 0 -1em 1em -1em;
+      border-bottom: 1px solid #d6d6d6; }
+
+.personnel-list img {
+  width: 200px; }
+
+.personnel-list .person:after {
+  height: 0;
+  visibility: hidden;
+  display: block;
+  content: ".";
+  clear: both; }
+
+.personnel-list .person .contact-items {
+  margin-left: 0;
+  margin-bottom: 0; }
+
+.personnel-list .person .contact-items li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 1em;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.personnel-list .person .job-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin: 0 0 0 0; }
