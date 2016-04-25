@@ -85,6 +85,10 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
 
 // People Container
 .people-menu {
+   // Hide From 720px Down:
+   @media screen and (max-width: 720px) {
+   display: none !important;
+   }
    float: right;
    margin-right: 60px;
    position: relative;
@@ -102,6 +106,8 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
 
 // Small Screen People Container
 .people-menu-small {
+   // Show From 720px Down:
+   @media only screen and (min-width: 720px) { display: none !important; }
    width: 100%;
    padding: .5em;
    background: $light-gray;

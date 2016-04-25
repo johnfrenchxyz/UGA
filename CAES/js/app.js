@@ -45,19 +45,14 @@ $(window).resize(function(){
    responsivePlainList();
 });
 
-// // Personnel List
-// //---------------
-// function responsivePersonnelList() {
-//    $('.personnel').each(function() {
-//       if ( $(this).parent().width() < 730) {
-//          $('contact-items li').css('margin-left', '-20px');
-//       } else { $('contact-items li').css('margin-left', '1em'); }
-//    });
+
+// function peopleMenu() {
+//    if( $(window).width() < 720 ){
+//       $('.people-menu').css('display', 'none');
+//    } else { $('.people-menu').css('display', 'block'); }
 // }
 //
-// // Initial Run:
-// responsivePersonnelList();
-// // Run on Resize:
+// peopleMenu();
 // $(window).resize(function(){
-//    responsivePersonnelList();
+//    peopleMenu();
 // });

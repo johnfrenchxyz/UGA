@@ -3941,6 +3941,9 @@ h2 {
   height: 56px;
   line-height: 56px;
   margin-bottom: -56px; }
+  @media screen and (max-width: 720px) {
+    .people-menu {
+      display: none !important; } }
   .people-menu ul li {
     padding-top: 10px;
     padding-left: 0px;
@@ -3956,6 +3959,9 @@ h2 {
   width: 100%;
   padding: .5em;
   background: #e6e6e6; }
+  @media only screen and (min-width: 720px) {
+    .people-menu-small {
+      display: none !important; } }
   @media screen and (max-width: 388px) {
     .people-menu-small {
       overflow-y: scroll; } }
