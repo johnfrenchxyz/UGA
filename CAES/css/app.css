@@ -4199,7 +4199,8 @@ footer {
     background: #d6d6d6;
     position: relative;
     color: #5e5e5e;
-    width: 100%;
+    width: calc(100% + 2px);
+    margin-left: -1px;
     height: 56px;
     line-height: 56px;
     vertical-align: middle;
@@ -4207,7 +4208,8 @@ footer {
     font-size: 0.875rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1em; }
+    margin-bottom: 1em;
+    box-sizing: border-box; }
     .plain-list-container .component-title:after {
       content: '';
       position: absolute;
@@ -4270,7 +4272,8 @@ footer {
     background: #d6d6d6;
     position: relative;
     color: #5e5e5e;
-    width: 100%;
+    width: calc(100% + 2px);
+    margin-left: -1px;
     height: 56px;
     line-height: 56px;
     vertical-align: middle;
@@ -4279,6 +4282,7 @@ footer {
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
+    box-sizing: border-box;
     -webkit-column-span: all;
     -moz-column-span: all;
     column-span: all;
@@ -4362,3 +4366,57 @@ footer {
   font-size: 0.875rem;
   font-weight: 700;
   margin: 0 0 0 0; }
+
+.event-list .component-title {
+  background: #c41039;
+  position: relative;
+  color: #fefefe;
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  height: 56px;
+  line-height: 56px;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  box-sizing: border-box; }
+  .event-list .component-title:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #c41039;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent; }
+
+.event-list .event .calendar-icon {
+  background: #c41039;
+  color: #fefefe;
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 1em;
+  text-align: center; }
+
+.event-list .event .calendar-icon .month {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .event-list .event .calendar-icon .month:after {
+    height: 0;
+    visibility: hidden;
+    display: block;
+    content: ".";
+    clear: both; }
+
+.event-list .event .calendar-icon .day {
+  font-size: 2.375rem;
+  font-weight: 700;
+  background: #fefefe;
+  color: #5e5e5e;
+  padding: 0em .4em 0 .4em; }

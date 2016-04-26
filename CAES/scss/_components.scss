@@ -10,9 +10,10 @@ $component-title-default-color: darken($caes-gray, 10%);
 
 @mixin component-title($background, $color) {
    background: $background;
-   position: relative;
+   position: relative;;
    color: $color;
-   width: 100%;
+   width: calc(100% + 2px);
+   margin-left: -1px;
    height: 56px;
    line-height: 56px;
    vertical-align: middle;
@@ -21,6 +22,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    text-align: center;
    text-transform: uppercase;
    margin-bottom: 1em;
+   box-sizing: border-box;
    &:after {
       content:'';
       position: absolute;
@@ -73,7 +75,6 @@ $component-title-default-color: darken($caes-gray, 10%);
 //---------------------
 .plain-list-container {
    border: solid 1px #d6d6d6;
-   // padding-bottom: 1em;
    margin-bottom: 3em;
    // Component Title
    .component-title { @include component-title( $component-title-default-bg, $component-title-default-color ) }
@@ -154,5 +155,38 @@ $component-title-default-color: darken($caes-gray, 10%);
          margin-bottom: 0;
       }
       .job-title { font-family: 'Roboto Slab', serif; font-size: rem-calc(14); font-weight: 700; margin: 0 0 0 0; }
+   }
+}
+
+// Event List
+//-----------------
+.event-list {
+   // Component Title Color (Can Use Default Colors):
+   .component-title { @include component-title( $caes-red, $white ); }
+   .event {
+      // Calendar Icon
+      .calendar-icon {
+         background: $caes-red;
+         color: $white;
+         float: left;
+         width: 80px;
+         height: 80px;
+         margin-right: 1em;
+         // padding: .4em;
+         text-align: center;
+      }
+      .calendar-icon .month {
+         font-size: rem-calc(18);
+         font-weight: 700;
+         text-transform: uppercase;
+         @include clear();
+      }
+      .calendar-icon .day {
+         font-size: rem-calc(38);
+         font-weight: 700;
+         background: $white;
+         color: $component-title-default-color;
+         padding: 0em .4em 0 .4em;
+      }
    }
 }
