@@ -31,6 +31,31 @@
     @include paper-element;
 }
 
+// CSS Masonry
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+.masonry-container {
+   // Masonry Columns
+   column-width: 250px;
+	-moz-column-width: 250px;
+	-webkit-column-width: 250px;
+   column-count: 3;
+
+   .masonry-item { column-break-inside: avoid; display: inline-block; width: 100%; }
+
+}
+
+.masonry-two-column {
+   column-width: 300px !important;
+	-moz-column-width: 300px !important;
+	-webkit-column-width: 300px !important;
+}
+
+.masonry-one-column {
+   column-width: 500px !important;
+	-moz-column-width: 500px !important;
+	-webkit-column-width: 500px !important;
+}
+
 // List Components
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -113,7 +138,7 @@
 
         // Controls the image properties if images are displayed
         img {
-             float: none;
+             float: left;
              margin: 0 1em 1em 0;
              max-width: 200px;
         }

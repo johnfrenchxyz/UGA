@@ -4142,6 +4142,28 @@ span.button a {
     border-left: none;
     border-right: none; }
 
+.masonry-container {
+  column-width: 250px;
+  -moz-column-width: 250px;
+  -webkit-column-width: 250px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3; }
+  .masonry-container .masonry-item {
+    column-break-inside: avoid;
+    display: inline-block;
+    width: 100%; }
+
+.masonry-two-column {
+  column-width: 300px !important;
+  -moz-column-width: 300px !important;
+  -webkit-column-width: 300px !important; }
+
+.masonry-one-column {
+  column-width: 500px !important;
+  -moz-column-width: 500px !important;
+  -webkit-column-width: 500px !important; }
+
 .personnel-list-item {
   margin-top: 1em;
   clear: both; }
@@ -4194,7 +4216,7 @@ span.button a {
   padding: 0 1em 1em 0; }
 
 .plain-list-component img {
-  float: none;
+  float: left;
   margin: 0 1em 1em 0;
   max-width: 200px; }
 
