@@ -4420,3 +4420,10 @@ footer {
   background: #fefefe;
   color: #5e5e5e;
   padding: 0em .4em 0 .4em; }
+
+.social-media-icons {
+  list-style: none;
+  margin: 0;
+  font-size: 2.25rem; }
+  .social-media-icons li {
+    display: inline-block; }
