@@ -1,0 +1,7 @@
+header {
+   background: rgb(51, 153, 102) !important;
+}
+
+.side-nav .first-level.active {
+   background: rgb(51, 153, 102) !important;
+}

@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>2nd Level | County Template Home</title>
+      <link rel="stylesheet" href="css/app.css">
+   </head>
+
+   <body>
+
+      <!-- Outer Wrapper for Entire Site - (used by the mobile off canvas menu to contain the entire page and hide overflow) -->
+      <div class="off-canvas-wrapper">
+
+         <!-- Extension Top Bar & Search Section -->
+   		<div class="extension-top-bar">
+            <div class="row">
+               <div class="large-12 columns">
+
+                  <!-- Small Screen Search Icon -->
+                  <div class="show-for-small-only">
+                     <form class="searchbox">
+                         <input type="search" placeholder="Search......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                         <input type="submit" class="searchbox-submit" value="Go">
+                         <span class="searchbox-icon"><i class="fi-magnifying-glass" alt="Site Search Icon"></i></span>
+                     </form>
+                  </div>
+
+                  <!-- UGA Extension Logo -->
+                  <img src="img/extension-logo.svg" class="float-left extension-logo" alt="UGA Extension logo" />
+
+   					<!-- Large & Medium Screen Search -->
+   					<div class="search-container">
+                     <div class="input-group">
+                        <input class="input-group-field" tabindex="1" type="url">
+                        <a class="input-group-button button" tabindex="2"><i class="fi-magnifying-glass"></i></a>
+                     </div>
+   					</div>
+
+   				</div>
+   			</div>
+   		</div>
+
+         <!-- Site Header Section -->
+         <header>
+             <div class="row">
+                 <div class="large-12 medium-12 columns">
+                     <!-- Site Title Goes Here -->
+                     <div class="site-title">
+                        County Name
+                     </div>
+
+                     <!-- Contact Us & Events Icons-->
+                     <div class="hide-for-large-only">
+                         <button class="right-off-canvas-toggle hide-for-large c-hamburger c-hamburger--htx" data-toggle="offCanvas">
+                            <span>toggle menu</span>
+                         </button>
+                     </div>
+                 </div>
+             </div>
+         </header>
+
+         <!-- Inner Wrapper for Off Canvas Animated Slide -->
+         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+            <main>
+
+               <!-- Off Canvas Navigation Container -->
+               <!-- This container is blank on large screens and has the main navigation added on medium down -->
+               <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right"></div>
+
+               <!-- The main content "container" that the off canvas will push -->
+               <div class="off-canvas-content" data-off-canvas-content>
+
+                  <div class="row" data-equalizer="main-equalizer">
+                     <div class="large-3 show-for-large columns" data-equalizer-watch="main-equalizer" id="defaultNav">
+
+                        <!-- Main Navigation -->
+                        <div id="nav-outer-container">
+                           <nav id="nav-inner-container" class="side-nav" role="menu">
+                              <!-- First Level -->
+                              <a role="menuitem" class="first-level" href="index.html">Home</a>
+                              <a role="menuitem" class="first-level active" href="second-level.html">Agriculture & Natural Resources</a>
+                                 <!-- Second Level -->
+                                 <a role="menuitem" class="second-level">Home Gardening</a>
+                                 <a role="menuitem" class="second-level" href="third-level.html">Master Gardeners</a>
+                                 <a role="menuitem" class="second-level">Urban Gardening</a>
+                              <a role="menuitem" class="first-level">Family & Consumer Sciences</a>
+                              <a role="menuitem" class="first-level">4-H Youth</a>
+                              <a role="menuitem" class="first-level">Contact Us</a>
+                           </nav>
+                        </div>
+
+                    </div>
+
+                    <!-- Page Content Section -->
+                    <div class="large-9 columns" data-equalizer-watch="main-equalizer">
+                       <!-- Main Content Buffer (for footer on medium & small screens) -->
+                       <div class="main-content-buffer">
+                          <h1 class="page-title">2nd Level</h1>
+
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque hendrerit ligula eget pretium vehicula. Nunc at dui in turpis posuere feugiat. Aenean imperdiet purus vitae libero pretium, quis aliquet ipsum consequat. Aenean et risus ac felis cursus accumsan quis ac justo. Vivamus molestie id sapien ut congue. Integer commodo faucibus nulla a dapibus. Vivamus a lobortis elit. Vestibulum luctus sapien dui, ut imperdiet diam vulputate id. Quisque ornare pharetra lacus in accumsan. Donec nunc nulla, mattis at felis ut, vehicula euismod ante. Ut non tincidunt arcu. Vivamus ante risus, maximus nec magna vel, vulputate volutpat nulla. Nullam pretium hendrerit congue. Praesent fringilla tortor at elit sagittis, vitae laoreet ipsum interdum.
+
+                          Ut porttitor ornare massa vitae imperdiet. Etiam et ex a odio scelerisque aliquet at quis risus. Nullam ut fringilla leo. Vestibulum facilisis neque quis elit rhoncus cursus. Nam nec pretium massa. Mauris volutpat mauris eu egestas facilisis. Morbi tempor, lacus in tincidunt rhoncus, odio purus semper arcu, a laoreet augue nisi eu leo. Vivamus purus diam, venenatis quis interdum id, tempor vel lorem. Nam tempor elementum efficitur. Morbi quis pretium urna, non interdum ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec porta feugiat scelerisque.
+
+                          Nulla euismod bibendum velit a ultricies. Nullam fringilla ut massa a sagittis. Pellentesque aliquet non sem lacinia eleifend. Pellentesque sit amet lorem vel quam interdum aliquam. Cras venenatis et erat maximus efficitur. Sed porttitor risus et est volutpat fermentum. Donec tempor fermentum magna, id sodales dui lobortis ut. Nam laoreet enim eros, quis ullamcorper felis aliquam vitae.
+                       </div>
+                    </div>
+
+                 </div>
+
+              </main>
+
+           </div> <!-- Should Close the off canvas Content -->
+
+        </div> <!-- Should close the off canvas inner wrap -->
+
+
+         <!-- Footer Section -->
+         <footer>
+            <div class="footer-top">
+               <div class="row">
+                  <!-- County Contact Information Section -->
+                  <div class="large-4 medium-6 columns">
+                     <h3 class="subheader">[County Name] Office Information:</h3>
+                     <ul>
+                        <li><a><i class="fi-map"></i> 123 Easy Street | City, State 30607</a></li>
+                        <li><a><i class="fi-telephone"></i> 706-867-5309</a></li>
+                        <li><a><i class="fi-mail"></i> mail@emailaddress.com</a></li>
+                     </ul>
+                  </div>
+                  <!-- Affiliates & Partners Section-->
+                  <div class="large-4 medium-6 columns">
+                     <h3 class="subheader">Affiliates & Partners:</h3>
+                     <ul>
+                        <li><a href="http://www.uga.edu" target="_blank">The University of Georgia</a></li>
+                        <li><a href="http://www.caes.uga.edu" target="_blank">The College of Agricultural & Environmental Sciences</a></li>
+                        <li><a href="http://www.fcs.uga.edu" target="_blank">The College of Family & Consumer Scnences</a></li>
+                    </ul>
+               </div>
+               <!-- Intranet Section -->
+               <div class="large-4 medium-6 end columns">
+                  <h3 class="subheader">For Faculty/Staff:</h3>
+                  <a class="button small round">Staff Intranet</a>
+               </div>
+            </div>
+         </div>
+         <div class="footer-bottom">
+            <div class="row">
+               <div class="large-12 columns">
+                  Last Updated: 10/8/15 by jwfrench | Other Information
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      </div> <!-- Should close the outermost off canvas wrap -->
+
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/what-input/what-input.js"></script>
+      <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+      <script src="js/app.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- New Scripts Below -->
+
+
+   </body>
+</html>
