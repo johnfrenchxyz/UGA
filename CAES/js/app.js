@@ -46,13 +46,9 @@ $(window).resize(function(){
 });
 
 
-// function peopleMenu() {
-//    if( $(window).width() < 720 ){
-//       $('.people-menu').css('display', 'none');
-//    } else { $('.people-menu').css('display', 'block'); }
-// }
-//
-// peopleMenu();
+// Image Slider
+//-------------
 // $(window).resize(function(){
-//    peopleMenu();
+//    $('.orbit-bullets').css('margin-top', '0.8rem');
+//    console.log('its working');
 // });
