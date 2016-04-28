@@ -4208,7 +4208,7 @@ footer {
     font-size: 0.875rem;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     box-sizing: border-box; }
     .plain-list-container .component-title:after {
       content: '';
@@ -4221,12 +4221,6 @@ footer {
       border-top: solid 10px #d6d6d6;
       border-left: solid 10px transparent;
       border-right: solid 10px transparent; }
-      .plain-list-container .component-title:after:after {
-        height: 0;
-        visibility: hidden;
-        display: block;
-        content: ".";
-        clear: both; }
   .plain-list-container:after {
     height: 0;
     visibility: hidden;
@@ -4267,6 +4261,37 @@ footer {
   .plain-list-container .read-more {
     margin-left: 1em; }
 
+.component-title {
+  background: #d6d6d6;
+  position: relative;
+  color: #5e5e5e;
+  width: calc(100% + 2px);
+  margin-left: -1px;
+  height: 56px;
+  line-height: 56px;
+  vertical-align: middle;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2em;
+  box-sizing: border-box;
+  -webkit-column-span: all;
+  -moz-column-span: all;
+  column-span: all;
+  margin-bottom: 2em; }
+  .component-title:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    width: 0;
+    height: 0;
+    border-top: solid 10px #d6d6d6;
+    border-left: solid 10px transparent;
+    border-right: solid 10px transparent; }
+
 .tiled-list-container {
   column-width: 300px;
   -moz-column-width: 300px;
@@ -4274,42 +4299,6 @@ footer {
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3; }
-  .tiled-list-container .component-title {
-    background: #d6d6d6;
-    position: relative;
-    color: #5e5e5e;
-    width: calc(100% + 2px);
-    margin-left: -1px;
-    height: 56px;
-    line-height: 56px;
-    vertical-align: middle;
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 1em;
-    box-sizing: border-box;
-    -webkit-column-span: all;
-    -moz-column-span: all;
-    column-span: all;
-    margin-bottom: 2em; }
-    .tiled-list-container .component-title:after {
-      content: '';
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      margin-left: -10px;
-      width: 0;
-      height: 0;
-      border-top: solid 10px #d6d6d6;
-      border-left: solid 10px transparent;
-      border-right: solid 10px transparent; }
-      .tiled-list-container .component-title:after:after {
-        height: 0;
-        visibility: hidden;
-        display: block;
-        content: ".";
-        clear: both; }
   .tiled-list-container .tiled-list-item {
     margin: 0 0 1rem 0;
     padding: 1rem;
@@ -4392,7 +4381,7 @@ footer {
   font-size: 0.875rem;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
   box-sizing: border-box; }
   .event-list .component-title:after {
     content: '';
@@ -4405,12 +4394,6 @@ footer {
     border-top: solid 10px #c41039;
     border-left: solid 10px transparent;
     border-right: solid 10px transparent; }
-    .event-list .component-title:after:after {
-      height: 0;
-      visibility: hidden;
-      display: block;
-      content: ".";
-      clear: both; }
 
 .event-list .event .calendar-icon {
   background: #c41039;

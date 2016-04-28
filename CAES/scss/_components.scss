@@ -21,7 +21,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    font-size: rem-calc(14);
    text-align: center;
    text-transform: uppercase;
-   margin-bottom: 1em;
+   margin-bottom: 2em;
    box-sizing: border-box;
    &:after {
       content:'';
@@ -34,7 +34,6 @@ $component-title-default-color: darken($caes-gray, 10%);
       border-top: solid 10px $background;
       border-left: solid 10px transparent;
       border-right: solid 10px transparent;
-      @include clear();
    }
 }
 
@@ -94,20 +93,20 @@ $component-title-default-color: darken($caes-gray, 10%);
 
 // Tiled List Component
 //---------------------
+// Component Title:
+.component-title {
+   @include component-title( $component-title-default-bg, $component-title-default-color );
+   -webkit-column-span: all;
+   -moz-column-span: all;
+   column-span: all;
+   margin-bottom: 2em;
+}
 .tiled-list-container {
    // Masonry Columns
    column-width: 300px;
 	-moz-column-width: 300px;
 	-webkit-column-width: 300px;
    column-count: 3;
-   // Component Title:
-   .component-title {
-      @include component-title( $component-title-default-bg, $component-title-default-color );
-      -webkit-column-span: all;
-      -moz-column-span: all;
-      column-span: all;
-      margin-bottom: 2em;
-   }
    .tiled-list-item {
       @include callout-base;
       @include caes-list-style;
@@ -126,7 +125,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 //-----------------
 .publication-list {
    // Component Title Color (Can Use Default Colors):
-   // .component-title { @include component-title( $caes-blue, $white ); }
+   //.component-title { @include component-title( $caes-blue, $white ); }
    .publication {}
 }
 
@@ -142,7 +141,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 //-----------------
 .personnel-list {
    // Component Title Color (Can Use Default Colors):
-   // .component-title { @include component-title( $caes-blue, $white ); }
+   //.component-title { @include component-title( $caes-blue, $white ); }
    img { width: 200px; }
    .person {
       @include clear;
