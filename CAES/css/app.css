@@ -4503,12 +4503,20 @@ footer {
   list-style: none;
   margin: 0;
   font-size: 2.25rem; }
+  .social-media-icons .title {
+    font-size: 1rem;
+    font-weight: 700;
+    display: block; }
   .social-media-icons li {
     display: inline-block; }
 
 .social-media-icons-vertical {
   list-style: none;
   margin: 0; }
+  .social-media-icons-vertical .title {
+    font-size: 1rem;
+    font-weight: 700;
+    display: block; }
 
 .orbit-container .orbit-slide {
   width: 100%;
