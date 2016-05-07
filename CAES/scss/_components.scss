@@ -146,7 +146,9 @@ $component-title-default-color: darken($caes-gray, 10%);
 .blog-post-list {
    // Component Title Color (Can Use Default Colors):
    // .component-title { @include component-title( $caes-blue, $white ); }
-   .blog-post {}
+   .blog-post {
+      @include clear();
+   }
 }
 
 // Personnel List
@@ -175,8 +177,8 @@ $component-title-default-color: darken($caes-gray, 10%);
 .profile {
    ul { list-style: none; margin-left: 0; margin-bottom: 0; }
    img {
-      @include breakpoint (small) { width: 100%; }
-      @include breakpoint (medium) { width: 50%; }
+      @include breakpoint (medium down) { width: 100%; }
+      @include breakpoint (large) { width: 50%; }
    }
    .affiliations li {
       display: inline;
@@ -185,9 +187,19 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
    .job-title { font-family: 'Roboto Slab', serif; font-size: rem-calc(18); font-weight: 700; margin: 0 0 0 0; }
    .subtitle { font-weight: 500; color: $dark-gray; text-transform: uppercase; font-size: rem-calc(14); }
+   .profile-contact-items { border-bottom: solid 1px $medium-gray; width: 50%; padding-bottom: 1em; }
    .profile-contact-items li {
       display: inline;
       padding-right: 1em;
+      @include breakpoint(medium down) { display: block; }
+   }
+   .profile-address {
+      span { @include clear(); }
+      margin-top: 1em;
+      float: left;
+      margin-right: 1em;
+      width: 25%;
+      @include breakpoint(small only) { width: 100%; float: none; }
    }
 }
 
@@ -265,4 +277,10 @@ $component-title-default-color: darken($caes-gray, 10%);
          transform: translateY(-50%);
       }
    }
+
+   .caption-bottom-left {}
+   .caption-top-left {}
+   .caption-bottom-right {}
+   .caption-top-right {}
+
 }
