@@ -4506,6 +4506,10 @@ footer {
   .social-media-icons li {
     display: inline-block; }
 
+.social-media-icons-vertical {
+  list-style: none;
+  margin: 0; }
+
 .orbit-container .orbit-slide {
   width: 100%;
   height: 400px;

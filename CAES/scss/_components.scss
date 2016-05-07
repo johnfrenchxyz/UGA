@@ -246,6 +246,11 @@ $component-title-default-color: darken($caes-gray, 10%);
    li { display: inline-block; }
 }
 
+.social-media-icons-vertical {
+   list-style: none;
+   margin: 0; 
+}
+
 
 // Image Slider
 //-------------
