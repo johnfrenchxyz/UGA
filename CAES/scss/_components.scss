@@ -239,7 +239,16 @@ $component-title-default-color: darken($caes-gray, 10%);
 
 // Social Media Icons
 //-------------------
+@mixin social-media-title() {
+   .title {
+      font-size: rem-calc(16);
+      font-weight: 700;
+      display: block;
+   }
+}
+
 .social-media-icons {
+   @include social-media-title();
    list-style: none;
    margin: 0;
    font-size: rem-calc(36);
@@ -247,6 +256,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 }
 
 .social-media-icons-vertical {
+   @include social-media-title();
    list-style: none;
    margin: 0;
 }
