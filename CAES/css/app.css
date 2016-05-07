@@ -4533,3 +4533,21 @@ footer {
       -ms-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); } }
+
+.scholarship-container {
+  margin: 0 0 1rem 0;
+  padding: 1rem;
+  border: 1px solid rgba(10, 10, 10, 0.25);
+  border-radius: 0;
+  position: relative;
+  color: #3e3e3e;
+  float: right;
+  margin-left: 1em;
+  width: 250px; }
+  .scholarship-container > :first-child {
+    margin-top: 0; }
+  .scholarship-container > :last-child {
+    margin-bottom: 0; }
+  .scholarship-container .title {
+    font-weight: 700;
+    font-size: 1rem; }

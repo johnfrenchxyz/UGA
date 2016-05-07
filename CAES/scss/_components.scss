@@ -248,7 +248,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 
 .social-media-icons-vertical {
    list-style: none;
-   margin: 0; 
+   margin: 0;
 }
 
 
@@ -288,4 +288,14 @@ $component-title-default-color: darken($caes-gray, 10%);
    .caption-bottom-right {}
    .caption-top-right {}
 
+}
+
+// Scholarships
+//-------------
+.scholarship-container {
+   @include callout-base();
+   float: right;
+   margin-left: 1em;
+   width: 250px;
+   .title { font-weight: 700; font-size: rem-calc(16); }
 }
