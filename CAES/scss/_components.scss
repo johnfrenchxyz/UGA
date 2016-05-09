@@ -309,3 +309,25 @@ $component-title-default-color: darken($caes-gray, 10%);
    width: 250px;
    .title { font-weight: 700; font-size: rem-calc(16); }
 }
+
+
+// Hall of Fame Gallery
+//---------------------
+.hall-of-fame-container {
+   column-fill: balance;
+   -moz-column-fill: balance;
+   -webkit-column-fill: balance;
+
+   .hall-of-famer {
+      @include callout-base;
+      column-break-inside: avoid;
+      display: inline-block;
+      margin-right: .5em;
+      margin-left: .5em;
+      height: 400px;
+      width: 200px;
+      overflow: hidden;
+      img { max-height: 200px; }
+   }
+
+}
