@@ -1,0 +1,54 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>CAES Non-Personnel</title>
+   <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+
+   <div class="row">
+      <div class="large-12 columns">
+         <h1>CAES Non-Personnel:</h1>
+         <hr  />
+
+         <!-- Profile -->
+         <div class="profile" itemscope itemtype="http://schema.org/Person">
+            <!-- Name -->
+            <h1 class="title" itemprop="name">John Doe</h1>
+            <!-- Image -->
+            <img src="http://swansonquotes.com/wp-content/uploads/s07-ep02-condolences2-1000x500.jpg" itemprop="image" />
+            <!-- Affiliations -->
+            <ul class="affiliations">
+               <li class="subtitle" itemprop="affiliation"><strong>Birth:</strong> 08/15/1977, Anderson, SC</li>
+               <li class="subtitle" itemprop="affiliation"><strong>Death:</strong> 08/15/2077, Mars</li>
+            </ul>
+            <!-- Job Title -->
+            <span class="job-title" itemprop="jobTitle">Date Honored: 4/18/16</span>
+
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+
+   <script src="../bower_components/jquery/dist/jquery.js"></script>
+   <script src="../bower_components/what-input/what-input.js"></script>
+   <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+   <script src="../js/app.js"></script>
+   <!-- For Expanding Search -->
+   <script src="../js/search/classie.js"></script>
+   <script src="../js/search/uisearch.js"></script>
+   <script>
+      new UISearch(document.getElementById('sb-search'));
+   </script>
+</body>
+
+</html>
