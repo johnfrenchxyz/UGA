@@ -324,6 +324,7 @@ $component-title-default-color: darken($caes-gray, 10%);
       // margin-bottom: 2em;
       column-break-inside: avoid;
       display: inline-block;
+      @include breakpoint (small only) { width: 100%; height: auto; }
       img {
          width: 192px;
          height: 244px;
@@ -339,21 +340,16 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
 }
 
-// .hall-of-fame-container {
-//    column-fill: balance;
-//    -moz-column-fill: balance;
-//    -webkit-column-fill: balance;
-//
-//    .hall-of-famer {
-//       @include callout-base;
-//       column-break-inside: avoid;
-//       display: inline-block;
-//       margin-right: .5em;
-//       margin-left: .5em;
-//       height: 400px;
-//       width: 200px;
-//       overflow: hidden;
-//       img { max-height: 200px; }
-//    }
-//
-// }
+// Image Gallery
+//--------------
+.image-gallery-container {
+   column-width: 300px;
+	-moz-column-width: 300px;
+	-webkit-column-width: 300px;
+   column-count: 3;
+   li {
+      margin-top: 1em;
+      column-break-inside: avoid;
+      display: inline-block;
+   }
+}
