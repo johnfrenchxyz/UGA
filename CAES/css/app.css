@@ -4613,3 +4613,9 @@ footer {
       margin-bottom: .2em; }
     .image-gallery-container div img.thumbnail:hover {
       box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
+
+.google-map-container {
+  list-style: none;
+  margin: 0;
+  font-weight: 700;
+  font-size: 1rem; }
