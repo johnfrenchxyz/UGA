@@ -4560,27 +4560,21 @@ footer {
     font-weight: 700;
     font-size: 1rem; }
 
-.hall-of-fame-container {
-  column-fill: balance;
-  -moz-column-fill: balance;
-  -webkit-column-fill: balance; }
-  .hall-of-fame-container .hall-of-famer {
-    margin: 0 0 1rem 0;
-    padding: 1rem;
-    border: 1px solid rgba(10, 10, 10, 0.25);
-    border-radius: 0;
-    position: relative;
-    color: #3e3e3e;
-    column-break-inside: avoid;
-    display: inline-block;
-    margin-right: .5em;
-    margin-left: .5em;
-    height: 400px;
-    width: 200px;
-    overflow: hidden; }
-    .hall-of-fame-container .hall-of-famer > :first-child {
-      margin-top: 0; }
-    .hall-of-fame-container .hall-of-famer > :last-child {
-      margin-bottom: 0; }
-    .hall-of-fame-container .hall-of-famer img {
-      max-height: 200px; }
+.hall-of-famer {
+  text-align: center;
+  margin-bottom: 2em; }
+  .hall-of-famer img {
+    max-width: 200px;
+    display: block;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .2em; }
+  .hall-of-famer img.thumbnail:hover {
+    box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
+  .hall-of-famer .name {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1rem; }
+  .hall-of-famer .date {
+    margin-bottom: 2em; }
