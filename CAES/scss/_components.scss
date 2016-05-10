@@ -363,3 +363,12 @@ $component-title-default-color: darken($caes-gray, 10%);
       img.thumbnail:hover { box-shadow: 0 0 6px 1px rgba( darken($dark-gray, 15%) , 0.5) }
    }
 }
+
+// Google Map
+//-----------
+.google-map-container {
+   list-style: none;
+   margin: 0;
+   font-weight: 700;
+   font-size: rem-calc(16);
+}
