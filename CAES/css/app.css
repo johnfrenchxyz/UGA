@@ -4599,7 +4599,17 @@ footer {
   -webkit-column-count: 3;
      -moz-column-count: 3;
           column-count: 3; }
-  .image-gallery-container li {
+  .image-gallery-container div {
     margin-top: 1em;
     column-break-inside: avoid;
     display: inline-block; }
+    .image-gallery-container div img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: .2em; }
+    .image-gallery-container div img.thumbnail:hover {
+      box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
