@@ -4571,6 +4571,10 @@ footer {
     text-align: center;
     column-break-inside: avoid;
     display: inline-block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .hall-of-fame-container .hall-of-famer {
+        width: 100%;
+        height: auto; } }
     .hall-of-fame-container .hall-of-famer img {
       width: 192px;
       height: 244px;
@@ -4587,3 +4591,15 @@ footer {
       font-size: 1rem; }
     .hall-of-fame-container .hall-of-famer .date {
       margin-bottom: 2em; }
+
+.image-gallery-container {
+  column-width: 300px;
+  -moz-column-width: 300px;
+  -webkit-column-width: 300px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3; }
+  .image-gallery-container li {
+    margin-top: 1em;
+    column-break-inside: avoid;
+    display: inline-block; }
