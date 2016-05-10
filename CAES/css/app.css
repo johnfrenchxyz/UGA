@@ -4560,21 +4560,30 @@ footer {
     font-weight: 700;
     font-size: 1rem; }
 
-.hall-of-famer {
-  text-align: center;
-  margin-bottom: 2em; }
-  .hall-of-famer img {
-    max-width: 200px;
-    display: block;
-    margin-top: 1em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: .2em; }
-  .hall-of-famer img.thumbnail:hover {
-    box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
-  .hall-of-famer .name {
-    margin-top: 0;
-    font-weight: 700;
-    font-size: 1rem; }
-  .hall-of-famer .date {
-    margin-bottom: 2em; }
+.hall-of-fame-container {
+  column-width: 192px;
+  -moz-column-width: 192px;
+  -webkit-column-width: 192px;
+  -webkit-column-count: 4;
+     -moz-column-count: 4;
+          column-count: 4; }
+  .hall-of-fame-container .hall-of-famer {
+    text-align: center;
+    column-break-inside: avoid;
+    display: inline-block; }
+    .hall-of-fame-container .hall-of-famer img {
+      width: 192px;
+      height: 244px;
+      display: block;
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: .2em; }
+    .hall-of-fame-container .hall-of-famer img.thumbnail:hover {
+      box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
+    .hall-of-fame-container .hall-of-famer .name {
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1rem; }
+    .hall-of-fame-container .hall-of-famer .date {
+      margin-bottom: 2em; }
