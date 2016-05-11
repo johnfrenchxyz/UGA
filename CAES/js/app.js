@@ -31,7 +31,38 @@ $(window).resize(function(){
    drilldown menu.
 */
 
-// $('#academics ul').prepend('<li><a href="#">Academics Home</a><li>');
+function landingPageLinks() {
+   if ( $(window).width() < 640 ) {
+      // Academics
+      $('#academics ul li:eq(0)').after('<li class="is-submenu-item is-drilldown-submenu-item landing-page-link" role="menuitem"><a href="#">Academics Home</a></li>');
+      // Departments
+      $('#departments ul li:eq(0)').after('<li class="is-submenu-item is-drilldown-submenu-item landing-page-link" role="menuitem"><a href="#">Departments Home</a></li>');
+      // Research
+      $('#research ul li:eq(0)').after('<li class="is-submenu-item is-drilldown-submenu-item landing-page-link" role="menuitem"><a href="#">Research Home</a></li>');
+      // Extension & Outreach
+      $('#outreach ul li:eq(0)').after('<li class="is-submenu-item is-drilldown-submenu-item landing-page-link" role="menuitem"><a href="#">Extension & Outreach Home</a></li>');
+      // Global
+      $('#global ul li:eq(0)').after('<li class="is-submenu-item is-drilldown-submenu-item landing-page-link" role="menuitem"><a href="#">Global Home</a></li>');
+      // About
+      $('#about ul li:eq(0)').after('<li class="is-submenu-item is-drilldown-submenu-item landing-page-link" role="menuitem"><a href="#">About Home</a></li>');
+   } else {
+      $('.landing-page-link').each(function(){
+         $(this).remove();
+      });
+   }
+}
+
+// Initial Run:
+landingPageLinks();
+// Run on Resize:
+$(window).resize(function(){
+   // Removes any current landing page links on resize -- this prevents there from being multiple links
+   $('.landing-page-link').each(function(){
+      $(this).remove();
+   });
+   landingPageLinks();
+});
+
 
 
 // Plain List Responsive Column Control
