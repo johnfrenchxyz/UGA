@@ -21,6 +21,19 @@ $(window).resize(function(){
    $('.is-drilldown').css('height', 'auto');
 });
 
+// Drilldown/Small Screen Landing Page Links
+//------------------------------------------
+/*
+   Problem: On large, you can click top level menu items to be taken to a
+   landing page for that category, but on small, those top level links simply
+   activate the drilldown menu.
+   Solution: Create JavaScript that adds additional landing page links to the
+   drilldown menu.
+*/
+
+// $('#academics ul').prepend('<li><a href="#">Academics Home</a><li>');
+
+
 // Plain List Responsive Column Control
 //-------------------------------------
 function responsivePlainList() {
@@ -44,11 +57,3 @@ responsivePlainList();
 $(window).resize(function(){
    responsivePlainList();
 });
-
-
-// Image Slider
-//-------------
-// $(window).resize(function(){
-//    $('.orbit-bullets').css('margin-top', '0.8rem');
-//    console.log('its working');
-// });
