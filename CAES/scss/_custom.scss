@@ -276,13 +276,15 @@ $nav-arrow-color: $nav-link-color;
 #mainNav {
    background: $nav-bg-color;
    border-top-left-radius: 1em;
-   // border-bottom: solid 5px darken($nav-bg-color, 10%);
    padding-left: .8em;
    @include breakpoint(large down) {
       border-bottom-left-radius: 0em;
       border-bottom-right-radius: 0em;
       // border-bottom: solid 5px darken($nav-bg-color, 5%);
       padding-left: 0em;
+      @include breakpoint(small only) {
+         li ul { overflow: scroll !important; }
+      }
    }
 
    li {

@@ -4108,6 +4108,9 @@ h2 {
       border-bottom-left-radius: 0em;
       border-bottom-right-radius: 0em;
       padding-left: 0em; } }
+  @media screen and (max-width: 74.9375em) and (min-width: 0em) and (max-width: 39.9375em) {
+    #mainNav li ul {
+      overflow: scroll !important; } }
   #mainNav li {
     background: #3e3e3e;
     padding-top: .5em;
