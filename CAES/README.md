@@ -1,18 +1,5 @@
 #CAES To Do List
 
-##Completed:
-- Added caption-bottom-left, caption-bottom-right, caption-top-left, and caption-top-right to the CSS.  Tell Robby and see if he has added it to the dialog JSP.
-- Added clearfix to blog post list component so the entries don't indent.
-- Added street/mailing address to profile component.  Also add campus, building, and fax number.
-- Added Social Media Icons in the footer of the CAES homepage.
-- Added smaller, vertical layout for social media icons on the departmental page and added an title li.
-- Added scholarship component box (enabled button, disabled button).  May need additional tweaking, however.
-- Added "Portrait Gallery" or "Hall of Fame" component.
-- Added "Image Gallery" Component
-- Added "Non Personnel" Component
-- Added Styles to Google Map Component
-- Added JavaScipt that generates landing page links for top-level pages on the home template.
-
 ##In Progress:
 
 - Style the side navigation. We are going to limit dropdown items as they currently are, and make a more robust side-nav that would show siblings and children.
@@ -32,3 +19,17 @@
 ie - CAES > Master Gardeners > Specific Master Gardener.
 - Add Alumni to the Main Menu
 - Expanding Search needs to autofocus on safari mobile.
+
+##Completed:
+
+- Added caption-bottom-left, caption-bottom-right, caption-top-left, and caption-top-right to the CSS.  Tell Robby and see if he has added it to the dialog JSP.
+- Added clearfix to blog post list component so the entries don't indent.
+- Added street/mailing address to profile component.  Also add campus, building, and fax number.
+- Added Social Media Icons in the footer of the CAES homepage.
+- Added smaller, vertical layout for social media icons on the departmental page and added an title li.
+- Added scholarship component box (enabled button, disabled button).  May need additional tweaking, however.
+- Added "Portrait Gallery" or "Hall of Fame" component.
+- Added "Image Gallery" Component
+- Added "Non Personnel" Component
+- Added Styles to Google Map Component
+- Added JavaScipt that generates landing page links for top-level pages on the home template.
