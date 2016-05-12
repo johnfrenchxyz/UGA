@@ -3,7 +3,6 @@
 ##In Progress:
 
 - Style the side navigation. We are going to limit dropdown items as they currently are, and make a more robust side-nav that would show siblings and children.
-- Fix image gallery/lightbox bug (for some reason the lightbox gallery doesn't work when an image is clicked).
 - Create an image container that crops the image in the portrait instead of distorting it.
 - Style contact form component
 - Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
@@ -33,3 +32,4 @@ ie - CAES > Master Gardeners > Specific Master Gardener.
 - Added "Non Personnel" Component
 - Added Styles to Google Map Component
 - Added JavaScipt that generates landing page links for top-level pages on the home template.
+- Fixed image gallery/lightbox bug
