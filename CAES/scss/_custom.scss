@@ -1,13 +1,17 @@
 // Typography
 // ----------
 
-// Roboto (Used for headings)
+// Roboto ()
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 // font-family: 'Roboto', sans-serif;
 
 // Nunito (Avenir Alternative)
-@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+@import url(https://fonts.googleapis.com/css?family=Nunito:300,500);
 // font-family: 'Nunito', sans-serif;
+
+// Roboto Slab
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+// font-family: 'Roboto Slab', serif;
 
 // Foundation Icons
 @import "../fonts/foundation-icons/foundation-icons.css";
@@ -23,22 +27,29 @@
    }
 }
 
+// Headings
+// --------
+h1, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
+h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 700; }
+
 // UGA Branding
 // ------------
 .uga-button {
    @include button-style($caes-red, darken($caes-red, 10%), $white);
-   height: 40px;
+   height: 56px;
+   margin-bottom: -56px;
    // Typography
    @include headerLinks;
    text-transform: uppercase;
    text-align: left;
-   padding-top: 5px;
+   // padding-top: 5px;
+   z-index: -1;
    // Borders
-   border-bottom-right-radius: 1em;
-   border-bottom: solid 5px darken($caes-red, 5%);
-
+   // border-bottom: solid 5px darken($caes-red, 5%);
+   // UGA Icon
+   img { padding-bottom: 5px; }
    &:hover {
-      border-bottom: solid 5px darken($caes-red, 15%);
+      // border-bottom: solid 5px darken($caes-red, 15%);
       background: darken($caes-red, 10%);
       transition: all 250ms ease;
    }
@@ -58,114 +69,190 @@
    }
 }
 
-// People Menu
+
+// Site Search & People Menu
 // --------------------
-// People Button:
-.people-button {
-   // Button Style
-   @include button-style($light-gray, darken($light-gray, 10%), $body-font-color);
-   height: 40px;
-   // Typography
-   @include headerLinks;
-   // Borders
-   border-bottom-left-radius: 1em;
-   border-bottom: solid 5px darken($light-gray, 10%);
-   // Button Hover
+
+// Search & People Container
+.search-and-people-container {
+   float: right;
+   position: relative;
+   width: 100%;
+   @include breakpoint (small only) {
+      background: $caes-red;
+   }
+}
+
+// People Container
+.people-menu {
+   // Hide From 720px Down:
+   @media screen and (max-width: 720px) {
+   display: none !important;
+   }
+   float: right;
+   margin-right: 60px;
+   position: relative;
+   height: 56px;
+   line-height: 56px;
+   margin-bottom: -56px;
+   ul li {
+      padding-top: 10px;
+      padding-left: 0px;
+      padding-right: 0px;
+      font-size: rem-calc(14);
+      a { color: $body-font-color; font-weight: bold; &:hover { text-decoration: underline; } }
+   }
+}
+
+// Small Screen People Container
+.people-menu-small {
+   // Show From 720px Down:
+   @media only screen and (min-width: 720px) { display: none !important; }
+   width: 100%;
+   padding: .5em;
+   background: $light-gray;
+   // Really Small Screens:
+   @media screen and (max-width: 388px) { overflow-y: scroll; }
+   ul {
+      text-align: center;
+      min-width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+   }
+   ul li {
+      // padding-top: 10px;
+      margin-right: 10px;
+      font-size: rem-calc(14);
+      a { color: $body-font-color; font-weight: bold; &:hover { text-decoration: underline; } }
+   }
+
+}
+
+// Search Container
+.sb-search {
+	position: relative;
+	width: 0%;
+	min-width: 56px;
+	height: 56px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
+   z-index: 120;
+}
+
+// Search Input Field
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: $caes-red;
+	width: 100%;
+	height: 56px;
+	margin: 0;
+	z-index: 10;
+	padding: 20px 65px 20px 20px;
+	font-family: inherit;
+	font-size: 20px;
+	color: $white;
+
+   // Placeholder Text
+   $search-placeholder-color: $white;
+   &::-webkit-input-placeholder { color: $search-placeholder-color; }
+   &:-moz-placeholder { color: $search-placeholder-color; }
+   &::-moz-placeholder { color: $search-placeholder-color; }
+   &:-ms-input-placeholder { color: $search-placeholder-color; }
+
+}
+
+#search { background: $caes-red; border: solid 1px $caes-red; }
+
+.sb-icon-search,
+.sb-search-submit  {
+	width: 56px;
+	height: 56px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 56px;
+	text-align: center;
+	cursor: pointer;
    &:hover {
-      border-bottom: solid 5px darken($light-gray, 15%);
+      background: darken($caes-red, 10%);
       transition: all 250ms ease;
    }
-   // Custom Arrow Color
-   &::after { border-color: $body-font-color transparent transparent !important; }
 }
 
-// People Dropdown Pane
-#peopleDropdown {
-   padding-left: 0;
-   padding-right: 0;
-   border-color: $medium-gray;
-
-   // Typography
-   @include headerLinks;
-
-   // On Small:
-   @include breakpoint(small only) {
-      width: 100%;
-      padding-right: 2px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-      .is-drilldown { min-width: 100%; }
-   }
-
-   // Custom Breakpoint Medium
-   @media (min-width: 640px) and (max-width: 800px) {
-      top: 45px !important;
-      left: 65% !important;
-      border-top-left-radius: 1em;
-      width: 206px;
-   }
-
-   // Custom Breakpoint Medium
-   @media (min-width: 800px) and (max-width: 950px) {
-      top: 45px !important;
-      left: 73% !important;
-      border-top-left-radius: 1em;
-      width: 206px;
-   }
-
-   // Custom Breakpoint Medium
-   @media (min-width: 950px) and (max-width: 1024px) {
-      top: 45px !important;
-      left: 76% !important;
-      border-top-left-radius: 1em;
-      width: 206px;
-   }
-
-   // Custom Breakpoint Upper Medium
-   @media (min-width: 1024px) and (max-width: 1200px) {
-      top: 45px !important;
-      left: 80% !important;
-      border-top-left-radius: 1em;
-      width: 206px;
-   }
-
-   // On Large:
-   @include breakpoint(large up) {
-      width: 206px;
-      border-top-left-radius: 1em;
-   }
-
-   // People Drilldown Menu:
-   .is-drilldown { width: 100%; li:hover { background: $light-gray; transition: all 250ms ease; } }
-
+.sb-search-submit {
+	background: #fff; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
 }
 
-// Dropdown margin fix (Prevents blank overflow on page before people dropdown is activated):
-.dropdown-pane {
-   left: 0;
+.sb-icon-search {
+	color: #fff;
+	background: $caes-red;
+	z-index: 90;
+	font-size: 22px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	-webkit-font-smoothing: antialiased;
 }
 
-// Site Search
-// --------------------
-// Search Button:
-.search-button {
-   @include button-style($caes-red, darken($caes-red, 10%), $white);
-   border-bottom: solid 5px darken($caes-red, 5%);
-   transition: border 0.25s ease-out, color 0.25s ease-out;
-   &:hover { border-bottom: solid 5px darken($caes-red, 15%); }
-   height: 40px;
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+	width: 100%;
+   background: $caes-red;
+   color: $white;
 }
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+	background: $caes-red;
+	color: #fff;
+	z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+	z-index: 90;
+}
+
+
 
 // CAES Branding
 // -------------
+
 #caesBranding {
+   margin-bottom: .5em;
+   a { color: #3e3e3e; }
    font-family: 'Roboto', sans-serif;
    font-weight: 700;
    line-height: 1;
-   margin-top: 0em;
+   margin-top: 20px;
+   color: #3e3e3e;
+
    // Large screen left margin:
    @include breakpoint(large up) {
       padding-left: .5em;
    }
+
    span {
       font-weight: 400;
       font-size: rem-calc(16);
@@ -178,6 +265,7 @@
    }
 }
 
+
 // Main Navigation
 // ---------------
 
@@ -185,19 +273,18 @@ $nav-bg-color: darken($dark-gray, 30%);
 $nav-link-color: $light-gray;
 $nav-arrow-color: $nav-link-color;
 
-nav { margin-top: 1em; }
-
 #mainNav {
    background: $nav-bg-color;
-   border-bottom-left-radius: 1em;
-   border-bottom-right-radius: 1em;
-   border-bottom: solid 5px darken($nav-bg-color, 10%);
+   border-top-left-radius: 1em;
    padding-left: .8em;
    @include breakpoint(large down) {
       border-bottom-left-radius: 0em;
       border-bottom-right-radius: 0em;
-      border-bottom: solid 5px darken($nav-bg-color, 5%);
+      // border-bottom: solid 5px darken($nav-bg-color, 5%);
       padding-left: 0em;
+      @include breakpoint(small only) {
+         li ul { overflow: scroll !important; }
+      }
    }
 
    li {
@@ -206,7 +293,7 @@ nav { margin-top: 1em; }
       padding-bottom: .5em;
 
       &:hover { background: lighten($nav-bg-color, 10%); }
-      // NEED FOCUS & ACTIVE STATES
+
       a {
          color: $nav-link-color;
          font-size: rem-calc(14);
@@ -222,10 +309,34 @@ nav { margin-top: 1em; }
       border-color: transparent transparent transparent $nav-arrow-color;
    }
 
+   // Dropdown Submenu li container
+   ul {
+      background: $nav-bg-color;
+      border: none;
+   }
+   // Dropdown Submenus li
+   .is-dropdown-submenu-item {
+      background: $nav-bg-color;
+      padding: .2em;
+   }
+
+}
+
+// Small Screen Menu Bar
+.title-bar {
+   // Menu Bar
+   background: $nav-bg-color;
+   height: 56px;
+   line-height: 56px;
+   // Menu Text
+   .title-bar-title { @include headerLinks; vertical-align: middle; margin-top: -17px; }
+   // Hamburger Icon
+   .menu-icon { vertical-align: middle; margin-top: -15px; }
+   .menu-icon::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 }
 
 // Fix for dropdown direction
-@include breakpoint(medium up){
+@include breakpoint(medium up) {
    .medium-horizontal{
       .is-dropdown-submenu{
          top: 100%;
@@ -238,7 +349,7 @@ nav { margin-top: 1em; }
 }
 
 // Fix for arrow direction
-@include breakpoint(medium up){
+@include breakpoint(medium up) {
    .medium-horizontal{
       .is-dropdown-submenu-parent.is-right-arrow > a::after {
          border-width: 5px;
@@ -250,12 +361,36 @@ nav { margin-top: 1em; }
 }
 
 // Fix for arrow direction
-@include breakpoint(medium down){
+@include breakpoint(medium down) {
    .medium-horizontal{
       .is-dropdown-submenu-parent.is-right-arrow > a::after {
          border-width: 4px;
          margin-left: 5px;
          margin-top: 5px;
+      }
+   }
+}
+
+
+// Main Section
+// ---------------
+
+main { margin-top: 1em; }
+
+// Footer Section
+// ---------------
+footer {
+   margin-top: 5em;
+   font-family: 'Nunito', sans-serif;
+   color: $nav-bg-color;
+   .footer-links {
+      margin-left: 0;
+      li {
+         display: inline-block;
+         padding-right: .5em;
+         padding-left: .5em;
+         border-right: solid 1px $light-gray;
+         a { color: $nav-bg-color; text-decoration: underline; &:hover { color: $black; } }
       }
    }
 }
