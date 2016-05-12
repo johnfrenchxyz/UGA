@@ -1,48 +1,38 @@
-# Foundation for Sites Template
+#CAES To Do List
+//-------------
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+##Completed:
+//--------
+- Added caption-bottom-left, caption-bottom-right, caption-top-left, and caption-top-right to the CSS.  Tell Robby and see if he has added it to the dialog JSP.
+- Added clearfix to blog post list component so the entries don't indent.
+- Added street/mailing address to profile component.  Also add campus, building, and fax number.
+- Added Social Media Icons in the footer of the CAES homepage.
+- Added smaller, vertical layout for social media icons on the departmental page and added an title <li>.
+- Added scholarship component box (enabled button, disabled button).  May need additional tweaking, however.
+- Added "Portrait Gallery" or "Hall of Fame" component.
+- Added "Image Gallery" Component
+- Added "Non Personnel" Component
+- Added Styles to Google Map Component
+- Added JavaScipt that generates landing page links for top-level pages on the home template.
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
+##In Progress:
+//----------
 
-## Installation
+- Style the side navigation. We are going to limit dropdown items as they currently are, and make a more robust side-nav that would show siblings and children.
+- Fix image gallery/lightbox bug (for some reason the lightbox gallery doesn't work when an image is clicked).
+- Style description for the scholarship component.
+- Create an image container that crops the image in the portrait instead of distorting it.
 
-To use this template, your computer needs:
-
-- [NodeJS](https://nodejs.org/en/) (0.10 or greater)
-- [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template basic
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-bower install
-```
-
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+- Style contact form component
+- Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
+- Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
+- Move Image Gallery component to CSS masonry instead of jQuery (do this with Gabe and Robby)
+- Examine plain list border issue in firefox.
+- Make the image slider caption classes actually move the caption.
+- Begin thinking about style guide for the end of may.
+- Talk to Robby/look at his component documentation about "Advanced Components"
+- Look into components overlapping dropdown in author.
+- Need to develop breadcrumbs both for site and network context.  For the network breadcrumbs > incorporate them into the site breadcrumbs:
+ie - CAES > Master Gardeners > Specific Master Gardener.
+- Add Alumni to the Main Menu
+- Expanding Search needs to autofocus on safari mobile.
