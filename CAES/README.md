@@ -32,3 +32,4 @@
 - Added Styles to Google Map Component
 - Added JavaScipt that generates landing page links for top-level pages on the home template.
 - Fixed image gallery/lightbox bug
+- Fixed bug where orbit arrows would overlap main nav dropdowns.  They no longer do.
