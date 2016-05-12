@@ -371,6 +371,11 @@ $nav-arrow-color: $nav-link-color;
    }
 }
 
+// Fix for dropdown menu z-index
+.is-dropdown-submenu {
+	z-index: 2;
+}
+
 
 // Main Section
 // ---------------

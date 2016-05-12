@@ -2555,7 +2555,7 @@ body {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  z-index: 10;
+  z-index: 1;
   padding: 1rem;
   color: #fefefe; }
   [data-whatinput='mouse'] .orbit-previous, [data-whatinput='mouse'] .orbit-next {
@@ -4170,6 +4170,9 @@ h2 {
     border-width: 4px;
     margin-left: 5px;
     margin-top: 5px; } }
+
+.is-dropdown-submenu {
+  z-index: 2; }
 
 main {
   margin-top: 1em; }
