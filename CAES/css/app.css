@@ -2540,7 +2540,7 @@ body {
   width: 100%;
   max-width: 100%; }
 
-.orbit-caption {
+.orbit-caption, .orbit-container .caption-top-left, .orbit-container .caption-top-right {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -4544,6 +4544,20 @@ footer {
       -ms-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%); } }
+
+.orbit-container .caption-top-left {
+  top: 0;
+  bottom: 90 !important;
+  margin-bottom: 345px; }
+
+.orbit-container .caption-bottom-right {
+  text-align: right; }
+
+.orbit-container .caption-top-right {
+  top: 0;
+  bottom: 90 !important;
+  margin-bottom: 345px;
+  text-align: right; }
 
 .scholarship-container {
   margin: 0 0 1rem 0;
