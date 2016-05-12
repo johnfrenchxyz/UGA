@@ -5,7 +5,7 @@
 - Added clearfix to blog post list component so the entries don't indent.
 - Added street/mailing address to profile component.  Also add campus, building, and fax number.
 - Added Social Media Icons in the footer of the CAES homepage.
-- Added smaller, vertical layout for social media icons on the departmental page and added an title <code><li></code>.
+- Added smaller, vertical layout for social media icons on the departmental page and added an title "<li>".
 - Added scholarship component box (enabled button, disabled button).  May need additional tweaking, however.
 - Added "Portrait Gallery" or "Hall of Fame" component.
 - Added "Image Gallery" Component
