@@ -316,27 +316,31 @@ $component-title-default-color: darken($caes-gray, 10%);
 // Hall of Fame Gallery
 //---------------------
 .hall-of-fame-container {
-   column-width: 192px;
-	-moz-column-width: 192px;
-	-webkit-column-width: 192px;
-   column-count: 4;
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
    .hall-of-famer {
-      // @include callout-base;
       text-align: center;
-      // margin-bottom: 2em;
-      column-break-inside: avoid;
-      display: inline-block;
-      @include breakpoint (small only) { width: 100%; height: auto; }
-      img {
-         width: 192px;
-         height: 244px;
-         display: block;
+      flex-grow: 1;
+      flex-basis: 25%;
+      .img-container {
+         overflow: hidden;
          margin-top: 1em;
          margin-left: auto;
          margin-right: auto;
          margin-bottom: .2em;
+         width: 190px;
+         height: 190px;
+         overflow: hidden;
+         &:hover { box-shadow: 0 0 6px 1px rgba( darken($dark-gray, 15%) , 0.5) }
       }
-      img.thumbnail:hover { box-shadow: 0 0 6px 1px rgba( darken($dark-gray, 15%) , 0.5) }
+      img {
+         object-position: center;
+         object-fit: cover;
+         min-height: 100%;
+         width: auto;
+      }
+
       .name { margin-top: 0; font-weight: 700; font-size: rem-calc(16); }
       .date { margin-bottom: 2em; }
    }
