@@ -5,7 +5,7 @@
 - Added clearfix to blog post list component so the entries don't indent.
 - Added street/mailing address to profile component.  Also add campus, building, and fax number.
 - Added Social Media Icons in the footer of the CAES homepage.
-- Added smaller, vertical layout for social media icons on the departmental page and added an title "<li>".
+- Added smaller, vertical layout for social media icons on the departmental page and added an title li.
 - Added scholarship component box (enabled button, disabled button).  May need additional tweaking, however.
 - Added "Portrait Gallery" or "Hall of Fame" component.
 - Added "Image Gallery" Component
@@ -19,7 +19,6 @@
 - Fix image gallery/lightbox bug (for some reason the lightbox gallery doesn't work when an image is clicked).
 - Style description for the scholarship component.
 - Create an image container that crops the image in the portrait instead of distorting it.
-
 - Style contact form component
 - Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
 - Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
