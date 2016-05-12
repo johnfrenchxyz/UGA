@@ -1,48 +1,15 @@
-# Foundation for Sites Template
+#EXTENSION TO DO LIST
 
-**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
+##Completed:
+- Moved inline JS out of Office Information Component JSP and added it to custom.js while fixing the scrolling problem for maps on the page, including multiple maps, while still maintaining their functionality.
+- On small screens, using tab will no longer reveal the off-canvas menu.  This change has NOT been pushed to dev yet.
+- Contact form styling improved - both the submit button and the captcha button.  But it appears as though the label styling is controlled by AEM, and I am not sure how to change it.
 
-This is the basic starter project for [Foundation for Sites 6](http://foundation.zurb.com/sites). It includes a Sass compiler and a starter HTML file for you.
 
-## Installation
-
-To use this template, your computer needs:
-
-- [NodeJS](https://nodejs.org/en/) (0.10 or greater)
-- [Git](https://git-scm.com/)
-
-This template can be installed with the Foundation CLI, or downloaded and set up manually.
-
-### Using the CLI
-
-Install the Foundation CLI with this command:
-
-```bash
-npm install foundation-cli --global
-```
-
-Use this command to set up a blank Foundation for Sites project with this template:
-
-```bash
-foundation new --framework sites --template basic
-```
-
-The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
-
-### Manual Setup
-
-To manually set up the template, first download it with Git:
-
-```bash
-git clone https://github.com/zurb/foundation-sites-template projectname
-```
-
-Then open the folder in your command line, and install the needed dependencies:
-
-```bash
-cd projectname
-npm install
-bower install
-```
-
-Finally, run `npm start` to run the Sass compiler. It will re-run every time you save a Sass file.
+##In Progress:
+- Weird issue with scrolling/visibility on personnel list component.
+- Add margin-to to read more button for tiled list components
+- Fix all the issues Gabe brought up in terms of component testing.
+- Now that the small screen tab issue has been fixed, there is now a tabIndex problem, that I am really not sure how to solve.  It just behaves very strangely on the Extension template.  One of the things that will need to be added is the the ability to tab to the hamburger icon and activate it.
+- Move masonry from jquery plugin in to css only version
+- Find a way to add a label to the large desktop search.  It may have to be there, but have a visibility of hidden?  Or a .show-for-sr class.
