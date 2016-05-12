@@ -9,7 +9,6 @@
 - Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
 - Move Image Gallery component to CSS masonry instead of jQuery (do this with Gabe and Robby)
 - Examine plain list border issue in firefox.
-- Make the image slider caption classes actually move the caption.
 - Begin thinking about style guide for the end of may.
 - Talk to Robby/look at his component documentation about "Advanced Components"
 - Look into components overlapping dropdown in author.
@@ -20,6 +19,7 @@ ie - CAES > Master Gardeners > Specific Master Gardener.
 
 ##Completed:
 
+- Gave functionality to the image slider caption classes.
 - Created an image container that crops the image in the portrait gallery / hall of fame component instead of distorting the image.  Also moved component to flexbox.
 - Added style for the description of the scholarship component.
 - Added caption-bottom-left, caption-bottom-right, caption-top-left, and caption-top-right to the CSS.  Tell Robby and see if he has added it to the dialog JSP.
