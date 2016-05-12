@@ -3,7 +3,6 @@
 ##In Progress:
 
 - Style the side navigation. We are going to limit dropdown items as they currently are, and make a more robust side-nav that would show siblings and children.
-- Fix image gallery/lightbox bug (for some reason the lightbox gallery doesn't work when an image is clicked).
 - Style contact form component
 - Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
 - Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
@@ -12,8 +11,7 @@
 - Begin thinking about style guide for the end of may.
 - Talk to Robby/look at his component documentation about "Advanced Components"
 - Look into components overlapping dropdown in author.
-- Need to develop breadcrumbs both for site and network context.  For the network breadcrumbs > incorporate them into the site breadcrumbs:
-ie - CAES > Master Gardeners > Specific Master Gardener.
+- Need to develop breadcrumbs both for site and network context.  For the network breadcrumbs > incorporate them into the site breadcrumbs: ie - CAES > Master Gardeners > Specific Master Gardener.
 - Add Alumni to the Main Menu
 - Expanding Search needs to autofocus on safari mobile.
 
@@ -33,3 +31,4 @@ ie - CAES > Master Gardeners > Specific Master Gardener.
 - Added "Non Personnel" Component
 - Added Styles to Google Map Component
 - Added JavaScipt that generates landing page links for top-level pages on the home template.
+- Fixed image gallery/lightbox bug
