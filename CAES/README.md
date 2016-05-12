@@ -4,7 +4,6 @@
 
 - Style the side navigation. We are going to limit dropdown items as they currently are, and make a more robust side-nav that would show siblings and children.
 - Fix image gallery/lightbox bug (for some reason the lightbox gallery doesn't work when an image is clicked).
-- Style description for the scholarship component.
 - Create an image container that crops the image in the portrait instead of distorting it.
 - Style contact form component
 - Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
@@ -22,6 +21,7 @@ ie - CAES > Master Gardeners > Specific Master Gardener.
 
 ##Completed:
 
+- Added style for the description of the scholarship component.
 - Added caption-bottom-left, caption-bottom-right, caption-top-left, and caption-top-right to the CSS.  Tell Robby and see if he has added it to the dialog JSP.
 - Added clearfix to blog post list component so the entries don't indent.
 - Added street/mailing address to profile component.  Also add campus, building, and fax number.

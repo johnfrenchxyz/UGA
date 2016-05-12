@@ -4561,7 +4561,12 @@ footer {
     margin-bottom: 0; }
   .scholarship-container .title {
     font-weight: 700;
-    font-size: 1rem; }
+    font-size: 1.125rem;
+    margin-bottom: .5em; }
+  .scholarship-container .description {
+    font-size: 0.875rem; }
+  .scholarship-container .button {
+    margin-top: 1em; }
 
 .hall-of-fame-container {
   column-width: 192px;

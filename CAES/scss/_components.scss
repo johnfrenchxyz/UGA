@@ -307,7 +307,9 @@ $component-title-default-color: darken($caes-gray, 10%);
    float: right;
    margin-left: 1em;
    width: 250px;
-   .title { font-weight: 700; font-size: rem-calc(16); }
+   .title { font-weight: 700; font-size: rem-calc(18); margin-bottom: .5em; }
+   .description { font-size: rem-calc(14); }
+   .button { margin-top: 1em; }
 }
 
 
