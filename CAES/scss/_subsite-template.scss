@@ -1,0 +1,44 @@
+// Subsite Main Navigation
+//------------------------
+$caes-dark-gray: #3e3e3e;
+$caes-light-gray: lighten($medium-gray, 10%);
+
+#subsiteNav {
+   @extend #mainNav;
+   // Arrow Color Mixin
+   @mixin arrowColor($color) {
+      .is-dropdown-submenu-parent.is-right-arrow > a::after {
+         border-color: $color transparent transparent;
+      }
+   };
+   @include arrowColor($caes-dark-gray);
+   // Nav Style
+   background: $caes-light-gray;
+   border-bottom: 1px solid darken($caes-light-gray, 10%);
+   // Top Level
+   li {
+      background: $caes-light-gray;
+      a { color: $caes-dark-gray; }
+      &:hover { background: darken($caes-light-gray, 30%); }
+      &:hover { a { color: $white; } }
+      // Arrow Hover Color
+      &:hover {
+         a::after {
+            border-color: $white transparent transparent !important;
+         }
+      }
+   }
+   .is-dropdown-submenu-item {
+      background: $caes-light-gray;
+      border-left: 1px solid darken($caes-light-gray, 10%);
+      border-right: 1px solid darken($caes-light-gray, 10%);
+      a { color: $caes-dark-gray !important; }
+      &:hover {
+         border-left: 1px solid darken($caes-light-gray, 30%);
+         border-right: 1px solid darken($caes-light-gray, 30%);
+         a { color: $white !important; } }
+   }
+
+
+
+}

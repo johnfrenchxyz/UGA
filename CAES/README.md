@@ -2,7 +2,7 @@
 
 ##In Progress:
 
-- Style the side navigation. We are going to limit dropdown items as they currently are, and make a more robust side-nav that would show siblings and children.
+- Continue overhauling the subsite template. External scss file deleted. Scss now filters through app.css, which is cool.  We'll need to let Robby know. Style the side nav.
 - Style contact form component
 - Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
 - Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
