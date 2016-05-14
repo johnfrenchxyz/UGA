@@ -14,6 +14,7 @@
 - Need to develop breadcrumbs both for site and network context.  For the network breadcrumbs > incorporate them into the site breadcrumbs: ie - CAES > Master Gardeners > Specific Master Gardener.
 - Add Alumni to the Main Menu
 - Expanding Search needs to autofocus on safari mobile.
+- The hover on the mobile hamburger menu is not right. Only the top bar changes.
 
 ##Completed:
 

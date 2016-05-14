@@ -28,6 +28,7 @@ $caes-light-gray: lighten($medium-gray, 10%);
          }
       }
    }
+   // Dropdown Styling (2nd Level)
    .is-dropdown-submenu-item {
       background: $caes-light-gray;
       border-left: 1px solid darken($caes-light-gray, 10%);
@@ -37,6 +38,16 @@ $caes-light-gray: lighten($medium-gray, 10%);
          border-left: 1px solid darken($caes-light-gray, 30%);
          border-right: 1px solid darken($caes-light-gray, 30%);
          a { color: $white !important; } }
+   }
+   // Drilldown Styling
+   .is-drilldown-submenu-item {
+      a { color: $caes-dark-gray !important; }
+      &:hover { a {color: $white !important;} }
+   }
+   // Drilldown Back Button Styling
+   .js-drilldown-back {
+      a { color: $caes-dark-gray !important; }
+      &:hover { a { color: $white !important; } }
    }
 
 
