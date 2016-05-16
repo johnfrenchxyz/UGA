@@ -4125,6 +4125,8 @@ h2 {
     vertical-align: middle;
     margin-top: -15px; }
   .title-bar .menu-icon::after, .subsite-title-bar .menu-icon::after {
+    background: #fefefe; }
+  .title-bar .menu-icon::after, .subsite-title-bar .menu-icon::after {
     box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 
 @media screen and (min-width: 40em) {
