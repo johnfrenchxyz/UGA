@@ -3955,30 +3955,6 @@ h2 {
       .people-menu ul li a:hover {
         text-decoration: underline; }
 
-.people-menu-small {
-  width: 100%;
-  padding: .5em;
-  background: #e6e6e6; }
-  @media only screen and (min-width: 720px) {
-    .people-menu-small {
-      display: none !important; } }
-  @media screen and (max-width: 388px) {
-    .people-menu-small {
-      overflow-y: scroll; } }
-  .people-menu-small ul {
-    text-align: center;
-    min-width: 100%;
-    margin-left: 0;
-    margin-right: 0; }
-  .people-menu-small ul li {
-    margin-right: 10px;
-    font-size: 0.875rem; }
-    .people-menu-small ul li a {
-      color: #3e3e3e;
-      font-weight: bold; }
-      .people-menu-small ul li a:hover {
-        text-decoration: underline; }
-
 .sb-search {
   position: relative;
   width: 0%;
