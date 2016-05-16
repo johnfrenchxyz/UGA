@@ -60,6 +60,12 @@ $caes-light-gray: lighten($medium-gray, 10%);
 
 // Subsite Side Navigation
 //------------------------
+.submenu {
+   // Medium/Large Collapse
+   margin-right: -15px;
+   // Small Uncollapse
+   @include breakpoint (small only) { margin-right: 0px; }
+}
 .submenu ul {
    // Hover Mixin
    @mixin submenuHover() { &:hover { background: darken($caes-light-gray, 5%); } }
