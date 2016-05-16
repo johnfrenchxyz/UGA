@@ -2,22 +2,20 @@
 
 ##In Progress:
 
-- Continue overhauling the subsite template. External scss file deleted. Scss now filters through app.css, which is cool.  We'll need to let Robby know. Style the side nav.
-- What to do about People Menu?  I don't LOVE it right now, especially on the departmental tempalte.
 - Style contact form component
-- Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
-- Move Image Gallery component to CSS masonry instead of jQuery (do this with Gabe and Robby)
 - Examine plain list border issue in firefox.
 - Begin thinking about style guide for the end of may.
 - Talk to Robby/look at his component documentation about "Advanced Components"
 - Look into components overlapping dropdown in author.
-- Need to develop breadcrumbs both for site and network context.  For the network breadcrumbs > incorporate them into the site breadcrumbs: ie - CAES > Master Gardeners > Specific Master Gardener.
-- Add Alumni to the Main Menu
+- Should we add breadcrumbs to departmental homepage?
 - Expanding Search needs to autofocus on safari mobile.
-- The hover on the mobile hamburger menu is not right. Only the top bar changes.
 
 ##Completed:
 
+- Fixed hamburger icon on homepage and departmental pages.
+- Moved "people menu" into the main menu on small for usability.
+- Styled subsite/side navigation for subsite templates.
+- Massive updates & improvements to the subsite template.
 - Gave functionality to the image slider caption classes.
 - Created an image container that crops the image in the portrait gallery / hall of fame component instead of distorting the image.  Also moved component to flexbox.
 - Added style for the description of the scholarship component.
@@ -29,6 +27,7 @@
 - Added scholarship component box (enabled button, disabled button).  May need additional tweaking, however.
 - Added "Portrait Gallery" or "Hall of Fame" component.
 - Added "Image Gallery" Component
+- Made "Image Gallery" Component rely on CSS instead of jQuery for masonry.
 - Added "Non Personnel" Component
 - Added Styles to Google Map Component
 - Added classes that generate landing page links for top-level pages on the home template when viewed on small screens.
