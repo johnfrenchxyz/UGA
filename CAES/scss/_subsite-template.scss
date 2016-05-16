@@ -28,6 +28,12 @@ $caes-light-gray: lighten($medium-gray, 10%);
          }
       }
    }
+   // Top Level Active
+   li.active {
+      background: darken($caes-light-gray, 10%) !important;
+      &:hover { background: darken($caes-light-gray, 30%) !important; }
+   }
+
    // Dropdown Styling (2nd Level)
    .is-dropdown-submenu-item {
       background: $caes-light-gray;
@@ -49,7 +55,20 @@ $caes-light-gray: lighten($medium-gray, 10%);
       a { color: $caes-dark-gray !important; }
       &:hover { a { color: $white !important; } }
    }
+}
 
 
-
+// Subsite Side Navigation
+//------------------------
+.submenu {
+   ul {
+      .title {
+         font-weight: 700;
+         background: $caes-light-gray;
+         border-bottom: solid 1px darken($caes-light-gray, 10%);
+         font-size: rem-calc(16);
+      }
+      li a { font-size: rem-calc(12); }
+      .active {  }
+   }
 }
