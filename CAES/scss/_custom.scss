@@ -105,28 +105,28 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
 }
 
 // Small Screen People Container
-.people-menu-small {
-   // Show From 720px Down:
-   @media only screen and (min-width: 720px) { display: none !important; }
-   width: 100%;
-   padding: .5em;
-   background: $light-gray;
-   // Really Small Screens:
-   @media screen and (max-width: 388px) { overflow-y: scroll; }
-   ul {
-      text-align: center;
-      min-width: 100%;
-      margin-left: 0;
-      margin-right: 0;
-   }
-   ul li {
-      // padding-top: 10px;
-      margin-right: 10px;
-      font-size: rem-calc(14);
-      a { color: $body-font-color; font-weight: bold; &:hover { text-decoration: underline; } }
-   }
-
-}
+// .people-menu-small {
+//    // Show From 720px Down:
+//    @media only screen and (min-width: 720px) { display: none !important; }
+//    width: 100%;
+//    padding: .5em;
+//    background: $light-gray;
+//    // Really Small Screens:
+//    @media screen and (max-width: 388px) { overflow-y: scroll; }
+//    ul {
+//       text-align: center;
+//       min-width: 100%;
+//       margin-left: 0;
+//       margin-right: 0;
+//    }
+//    ul li {
+//       // padding-top: 10px;
+//       margin-right: 10px;
+//       font-size: rem-calc(14);
+//       a { color: $body-font-color; font-weight: bold; &:hover { text-decoration: underline; } }
+//    }
+//
+// }
 
 // Search Container
 .sb-search {

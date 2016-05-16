@@ -3,6 +3,17 @@
 $caes-dark-gray: #3e3e3e;
 $caes-light-gray: lighten($medium-gray, 10%);
 
+// Mobile Title Bar
+.subsite-title-bar {
+   @extend .title-bar;
+   background: $caes-light-gray;
+   .title-bar-title { color: $caes-dark-gray; }
+   // Hamburger Icon
+   .menu-icon { vertical-align: middle; margin-top: -15px; }
+   .menu-icon::after { background: $caes-dark-gray; }
+   .menu-icon::after { box-shadow: 0 6px 0 $caes-dark-gray, 0 12px 0 $caes-dark-gray; }
+}
+
 #subsiteNav {
    @extend #mainNav;
    // Arrow Color Mixin
