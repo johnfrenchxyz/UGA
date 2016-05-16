@@ -3,8 +3,8 @@
 ##In Progress:
 
 - Continue overhauling the subsite template. External scss file deleted. Scss now filters through app.css, which is cool.  We'll need to let Robby know. Style the side nav.
+- What to do about People Menu?  I don't LOVE it right now, especially on the departmental tempalte.
 - Style contact form component
-- Fix the landing page issue on mobile.  A possible fix would be adding links on the mobile drilldown menu.
 - Style side nav for departmental pages.  It will show sibling and children pages, but parent pages will be contained to the breadcrumb.
 - Move Image Gallery component to CSS masonry instead of jQuery (do this with Gabe and Robby)
 - Examine plain list border issue in firefox.
@@ -14,6 +14,7 @@
 - Need to develop breadcrumbs both for site and network context.  For the network breadcrumbs > incorporate them into the site breadcrumbs: ie - CAES > Master Gardeners > Specific Master Gardener.
 - Add Alumni to the Main Menu
 - Expanding Search needs to autofocus on safari mobile.
+- The hover on the mobile hamburger menu is not right. Only the top bar changes.
 
 ##Completed:
 
@@ -30,6 +31,6 @@
 - Added "Image Gallery" Component
 - Added "Non Personnel" Component
 - Added Styles to Google Map Component
-- Added JavaScipt that generates landing page links for top-level pages on the home template.
+- Added classes that generate landing page links for top-level pages on the home template when viewed on small screens.
 - Fixed image gallery/lightbox bug
 - Fixed bug where orbit arrows would overlap main nav dropdowns.  They no longer do.
