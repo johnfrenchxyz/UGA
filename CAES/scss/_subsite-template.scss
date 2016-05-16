@@ -60,15 +60,28 @@ $caes-light-gray: lighten($medium-gray, 10%);
 
 // Subsite Side Navigation
 //------------------------
-.submenu {
-   ul {
-      .title {
-         font-weight: 700;
-         background: $caes-light-gray;
-         border-bottom: solid 1px darken($caes-light-gray, 10%);
-         font-size: rem-calc(16);
-      }
-      li a { font-size: rem-calc(12); }
-      .active {  }
+.submenu ul {
+   // Hover Mixin
+   @mixin submenuHover() { &:hover { background: darken($caes-light-gray, 5%); } }
+   // Parent
+   .parent {
+      font-weight: 700;
+      background: $caes-light-gray;
+      border-bottom: solid 1px darken($caes-light-gray, 10%);
+      font-size: rem-calc(16);
+      @include submenuHover();
    }
+   // Silbings
+   li {
+      font-size: rem-calc(14);
+      @include submenuHover();
+   }
+   // Active
+   .active {
+      font-weight: 700;
+      background: $caes-light-gray;
+      a { color: $caes-dark-gray; }
+   }
+   // Children
+   .children a { padding-left: 2em; font-weight: 700; }
 }
