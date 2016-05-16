@@ -4691,6 +4691,12 @@ footer {
   #subsiteNav .js-drilldown-back:hover a {
     color: #fefefe !important; }
 
+.submenu {
+  margin-right: -15px; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .submenu {
+      margin-right: 0px; } }
+
 .submenu ul .parent {
   font-weight: 700;
   background: #e4e4e4;
