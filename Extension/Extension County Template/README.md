@@ -2,6 +2,7 @@
 
 ##In Progress:
 
+- Bug > On Mobile, when off-canvas is activated, the rest of the content is supposed to hide overflow and let menu scrolls, but entire page currently scrolls.
 - Weird issue with scrolling/visibility on personnel list component.
 - Add margin-to to read more button for tiled list components
 - Fix all the issues Gabe brought up in terms of component testing.
