@@ -37,8 +37,10 @@
 
    // Disble Scrolling When Off Canvas is Active:
    $(".right-off-canvas-toggle, .js-off-canvas-exit").click(function(){
-      $("body").toggleClass("hide-overflow");
-      //$("#offCanvas").toggleClass("overflow-scroll");
+      // $("main").toggleClass("hide-overflow");
+      // $("#offCanvas").toggleClass("overflow-scroll");
+      // $(body).css('height', '100%');
+      $(body).css('overflow', 'hidden');
    });
 
    // Close the Off Canvas when the window is resized:

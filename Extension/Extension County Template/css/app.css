@@ -4013,7 +4013,6 @@ header {
     background: rgba(254, 254, 254, 0.9); }
 
 .off-canvas-active {
-  overflow: hidden;
   background: #fefefe; }
 
 .main-content-buffer {
