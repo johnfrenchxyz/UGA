@@ -35,100 +35,109 @@
       $(".c-hamburger").removeClass("is-active");
    });
 
-   // Disble Scrolling When Off Canvas is Active:
-   $(".right-off-canvas-toggle, .js-off-canvas-exit").click(function(){
-      // $("main").toggleClass("hide-overflow");
-      // $("#offCanvas").toggleClass("overflow-scroll");
-      // $(body).css('height', '100%');
-      $(body).css('overflow', 'hidden');
+
+   $('.right-off-canvas-toggle, .js-off-canvas-exit').click(function(){
+      $('.off-canvas-content').css('overflow', 'hidden');
    });
 
+
+   // Disble Scrolling When Off Canvas is Active:
+   // $(".right-off-canvas-toggle, .js-off-canvas-exit").click(function(){
+   //    // $("main").toggleClass("hide-overflow");
+   //    // $("#offCanvas").toggleClass("overflow-scroll");
+   //    // $(body).css('height', '100%');
+   //    $(body).css('overflow', 'hidden');
+   // });
+
    // Close the Off Canvas when the window is resized:
-   $(window).resize(function() {
-      $(".off-canvas-wrapper-inner").removeClass("is-open-right");
-      $(".off-canvas-wrapper-inner").removeClass("is-off-canvas-open");
-      $(".c-hamburger").removeClass("is-active");
-      $("body").removeClass("hide-overflow");
-      $(".off-canvas").removeClass("is-open");
-   });
+   // $(window).resize(function() {
+   //    $(".off-canvas-wrapper-inner").removeClass("is-open-right");
+   //    $(".off-canvas-wrapper-inner").removeClass("is-off-canvas-open");
+   //    $(".c-hamburger").removeClass("is-active");
+   //    $("body").removeClass("hide-overflow");
+   //    $(".off-canvas").removeClass("is-open");
+   // });
 
    // Calculate the height of the off-canvas nav:
    // This allows the off canvas to scroll to the end
    // of the menu items even with different ammounts of body content.
 
-   $(document).ready(function(){
+   // $(document).ready(function(){
+   //
+   //    function getNavHeight () {
+   //       var windowHeight = $(window).height();
+   //       // Allows the off-canvas to scroll, reguardless of window or content height.
+   //       $("#offCanvas").height(
+   //          windowHeight - $('.extension-top-bar').outerHeight() - $('header').outerHeight() + ( $("footer").outerHeight() )
+   //       );
+   //    }
+   //    getNavHeight();
+   //
+   //    // Re-run on resize
+   //    $(window).resize(function(){
+   //       getNavHeight();
+   //    });
+   //
+   // });
 
-      function getNavHeight () {
-         var windowHeight = $(window).height();
-         // Allows the off-canvas to scroll, reguardless of window or content height.
-         $("#offCanvas").height(
-            windowHeight - $('.extension-top-bar').outerHeight() - $('header').outerHeight() + ( $("footer").outerHeight() )
-         );
-      }
-      getNavHeight();
-
-      // Re-run on resize
-      $(window).resize(function(){
-         getNavHeight();
-      });
-
-   });
 
    // Off Canvas Navigation Position
-   // Dynamically moves the nav in the DOM, depending on the screen size:
    $(document).ready(function(){
-
-      // Based on Screen Size - Puts Nav on Left for Desktop (Large) and Right Off-Canvas for Medium Down:
-      function moveNav () {
-
-         if ( Foundation.MediaQuery.atLeast('large') ) {
-
-            if ( ! $.contains( $("#defaultNav"), $("#nav-outer-container") ) ) {
-               $("#defaultNav").append( $("#nav-outer-container") );
-               //alert("Default yah");
-            }
-
-         } else {
-            if ( ! $.contains( $("#offCanvas"), $("#nav-outer-container") ) ) {
-               $("#offCanvas").append( $("#nav-outer-container") );
-            //   alert("Off canvas yah");
-            }
-         }
-      }
-
-      // Initial Nav Placement:
-      moveNav();
-      // Move Nav If Necessary:
-      $(window).resize(function(){
-         moveNav();
-      });
-
+      $( ".side-nav" ).clone().appendTo( ".off-canvas-menu" );
    });
+
+   // Dynamically moves the nav in the DOM, depending on the screen size:
+   // $(document).ready(function(){
+   //
+   //    // Based on Screen Size - Puts Nav on Left for Desktop (Large) and Right Off-Canvas for Medium Down:
+   //    function moveNav () {
+   //
+   //       if ( Foundation.MediaQuery.atLeast('large') ) {
+   //
+   //          if ( ! $.contains( $("#defaultNav"), $("#nav-outer-container") ) ) {
+   //             $("#defaultNav").append( $("#nav-outer-container") );
+   //          }
+   //
+   //       } else {
+   //          if ( ! $.contains( $("#offCanvas"), $("#nav-outer-container") ) ) {
+   //             $("#offCanvas").append( $("#nav-outer-container") );
+   //          }
+   //       }
+   //    }
+   //
+   //    // Initial Nav Placement:
+   //    moveNav();
+   //    // Move Nav If Necessary:
+   //    $(window).resize(function(){
+   //       moveNav();
+   //    });
+   //
+   // });
 
    // Main Nav Tab Fix
-   $(document).ready(function(){
-
-      var tabFix = function() {
-         // On Large, show nav-inner-container
-         if ( Foundation.MediaQuery.atLeast('large') ) {
-            $('#nav-inner-container').css('display', 'block');
-         } else {
-            // On Small, hide nav-inner-container until hamburger icon is pressed
-            $('#nav-inner-container').css('display', 'none');
-            $('.c-hamburger').on('click', function(){
-               $('#nav-inner-container').css('display', 'block');
-            });
-         }
-      };
-
-      // Initial Run
-      tabFix();
-      // Run on Resize
-      $(window).on('resize', function(){
-         tabFix();
-      });
-
-   });
+   // $(document).ready(function(){
+   //
+   //    var tabFix = function() {
+   //       // On Large, show nav-inner-container
+   //       if ( Foundation.MediaQuery.atLeast('large') ) {
+   //          $('#nav-inner-container').css('display', 'block');
+   //       } else {
+   //          // On Small, hide nav-inner-container until hamburger icon is pressed
+   //          $('#nav-inner-container').css('display', 'none');
+   //          $('.c-hamburger').on('click', function(){
+   //             $('#nav-inner-container').css('display', 'block');
+   //          });
+   //       }
+   //    };
+   //
+   //    // Initial Run
+   //    tabFix();
+   //    // Run on Resize
+   //    $(window).on('resize', function(){
+   //       tabFix();
+   //    });
+   //
+   // });
 
 
 

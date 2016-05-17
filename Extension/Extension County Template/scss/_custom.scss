@@ -1,718 +1,633 @@
 /*
 
-UGA Extension County Site Template 2015/2016
-Custom Variable, Mixins, and Styles by John French
-
-Table of Contents:
-
-1. Custom Imports
-2. Global Styles
-3. Typography
-4. Template
-   4.1 Extension Top Bar
-   4.2 Header
-   4.3 Navigation (Side / Off Canvas Custom Styles)
-   4.4 Custom 4-H Styles
-   4.5 Main Content Area
-   4.6 Footer
+UGA Extension County Template
+Custom SCSS
 
 */
 
+// Custom Imports
+//---------------
 
-
-// 1. Custom Imports
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Controls what other scss files or elements are imported into these custom styles.
-
-   // Roboto Font Import
-   // This font is imported to be used as the default font family in the typography section below.
-   @import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
-
-   // Roboto Slab
-   @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
-   // font-family: 'Roboto Slab', serif;
-
-   h2, h5, h6 { font-family: 'Roboto Slab', serif !important; font-weight: 300; }
-   h3 { font-family: 'Roboto', sans-serif; font-weight: bold; font-size: rem-calc(20); }
-   h4 { font-family: 'Roboto Slab', serif; font-weight: bold; font-style: italic; font-size: rem-calc(17); }
-
-   //h3, h5 { font-family: 'Roboto', sans-serif; font-weight: 300; }
-
-   // Foundation Icon Font Import
-   @import "../foundation-icons/foundation-icons.css";
-
-   // We use this to control whether or not CSS classes come through in the gem files.
-   $include-html-classes: true;
-   // $include-print-styles: true;
-   $include-html-global-classes: $include-html-classes;
-
-// 2. Global Styles
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Controls what other scss files or elements are imported into these custom styles.
-
-      // Main Body Styles
-      html, body {
-         height: 100%;
-         position: relative;
-         background: $white;
-      }
-
-      .hide-overflow {
-         overflow: hidden;
-      }
-
-      .overflow-scroll {
-         overflow: scroll !important;
-      }
-
-      // Box Shadows
-      $box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-      $bottom-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-
-      // Classes for Floating Images
-      .picLeft {
-         float: left;
-         padding: .5em;
-      }
-
-      .picRight {
-         float: right;
-         padding: .5em;
-      }
-
-      // Fix for Google Maps Scrolling Problem
-      .scrolloff {
-        pointer-events: none !important;
-     }
-
-// 3. Typography
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// Controls the typography settings for the site.
-
-   // Body Font Size
-   $body-font-size: rem-calc(13);
-
-
-
-
-// 4. Template
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-// All styles that control the various elements of the template.
-
-   // 4.0 Skip Links (For Accessibility)
-   #skipToContent {
-      position:absolute;
-      left:-10000px;
-      top:auto;
-      width:1px;
-      height:1px;
-      overflow:hidden;
-   }
-
-   @media screen and (max-width: 512px) {
-      .search-container {
-         display: none !important;
-      }
-      .searchbox {
-         display: block;
-      }
-   }
-
-   input { color: $jet; }
-
-   // Placeholder Colors
-   /* all */
-   ::-webkit-input-placeholder { color:$jet; }
-   ::-moz-placeholder { color:$jet; } /* firefox 19+ */
-   :-ms-input-placeholder { color:$jet; } /* ie */
-   input:-moz-placeholder { color:$jet; }
-
-   input, select, textarea{
-    color: $jet !important;
+// Roboto Font Import
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+// Roboto Slab
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300);
+// font-family: 'Roboto Slab', serif;
+h2, h5, h6 {
+   font-family: 'Roboto Slab', serif !important;
+   font-weight: 300;
+}
+h3 {
+   font-family: 'Roboto', sans-serif;
+   font-weight: bold;
+   font-size: rem-calc(20);
+}
+h4 {
+   font-family: 'Roboto Slab', serif;
+   font-weight: bold;
+   font-style: italic;
+   font-size: rem-calc(17);
 }
 
-   // 4.1 Extension Top Bar & Site Search
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-   .extension-top-bar {
-      width: 100%;
-      height: 5em;
-      background: $secondary-color;
-      padding: 1em 1em 1em 0em;
-
-      // Extension Logo
-      .extension-logo {
-           width: 150px;
-           height: 53px;
-           position: absolute;
-      }
-
-      // Large & Medium Screen Search
-      .search-container {
-         width:300px;
-         position: relative;
-         float: right;
-         height: 4em;
-         overflow: hidden;
-         color: $jet;
-
-         @include breakpoint(small only) {
-            display: none;
-         }
-
-         .input-group-button {
-            button {
-               margin: 0;
-               height: 2.4375rem;
-            }
-         }
-
-      }
-
-      // Small Expanding Search
-
-      .searchbox {
-         position:relative;
-         min-width:38px;
-         width:0%;
-         height:45px;
-         float:right;
-         z-index: 999;
-         overflow:hidden;
-         margin-right: -10px;
-
-
-
-         -webkit-transition: width 0.3s;
-         -moz-transition: width 0.3s;
-         -ms-transition: width 0.3s;
-         -o-transition: width 0.3s;
-         transition: width 0.3s;
-      }
-
-      .searchbox-input{
-         top:0;
-         right:0;
-         border:0;
-         outline:0;
-         width:100%;
-         height:38px;
-         margin:0;
-         padding:0px 38px 0px 20px;
-         font-size:16px;
-         z-index: 999;
-         color: $jet;
-      }
-
-      .searchbox-icon,
-      .searchbox-submit{
-         width:38px;
-         height:38px;
-         display:block;
-         position:absolute;
-         top:0;
-         font-size: rem-calc(14);
-         right:0;
-         padding:0;
-         margin:0;
-         border:0;
-         outline:0;
-         line-height:38px;
-         text-align:center;
-         cursor:pointer;
-         color: $white;
-         background: $primary-color;
-         z-index: 999;
-      }
-
-      .searchbox-open{
-         width:100%;
-         z-index: 999;
-      }
-
-      // Search Results Page
-      // Class/Id Names for GCS:
-      // .gs-title (Link titles) - make it $primary-color
-      // .gsc-url-top (Link URL) - make it $four-h-color
-      .gsc-adBlockNoHeight {
-         display: none;
-      }
-
-   }
-
-   // 4.2 Header
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-   // Variables:
-   $site-title-font-size: rem-calc(44);
-   $site-title-font-reduction: rem-calc(34);
-
-   // Header Container
-   header {
-      background: $primary-color;
-      padding: 1em .9em 1em 0em;
-      box-shadow: $bottom-shadow;
-      z-index: 999;
-      position: relative;
-
-      // Site Title
-      .site-title {
-         color: $white;
-         font-size: $site-title-font-size;
-         float: left;
-         // Font Reduction for Site Title
-         @include breakpoint(small only) {
-            font-size: $site-title-font-reduction;
-         }
-
-         a { color: $white; }
-
-      }
-
-
-
-         // Hamburger Icon Variables
-         $button-width: 20px;                    // The width of the button area
-         $button-height: 20px;                   // The height of the button area
-         $bar-thickness: 3px;                    // The thickness of the button bars
-         $button-pad: 0px;                      // The left/right padding between button area and bars.
-         $button-bar-space: 3px;                // The spacing between button bars
-         $button-transistion-duration: 0.2s;     // The transition duration
-
-         #menuText {
-            color: $white;
-            float: right;
-            margin-right: 0%;
-            margin-top: 22px;
-         }
-
-
-         .c-hamburger {
-            position: relative;
-            overflow: hidden;
-            margin: 0;
-            margin-top: 15px;
-
-            @include breakpoint(medium) {
-               margin-top: 23px;
-               margin-right: 10px;
-            }
-            float: right;
-            padding: 0;
-            width: $button-width;
-            height: $button-height;
-            font-size: 0;
-            text-indent: -9999px;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-            box-shadow: none;
-            border-radius: none;
-            border: none;
-            cursor: pointer;
-            transition: background $button-transistion-duration;
-            &:focus {
-               outline: none;
-            }
-         }
-
-         .c-hamburger span {
-            display: block;
-            position: absolute;
-            top: ($button-height / 2) - ($bar-thickness / 2);
-            left: $button-pad;
-            right: $button-pad;
-            height: $bar-thickness;
-            background: rgb(255,255,255);
-         }
-
-         .c-hamburger span::before,
-         .c-hamburger span::after {
-            position: absolute;
-            display: block;
-            left: 0;
-            width: 100%;
-            height: $bar-thickness;
-            background-color: #fff;
-            content: "";
-         }
-
-         .c-hamburger span::before {
-            top: -$bar-thickness - $button-bar-space;
-         }
-
-         .c-hamburger span::after {
-            bottom: -$bar-thickness - $button-bar-space;
-         }
-
-         .c-hamburger--htx {
-            background-color: none;
-         }
-
-         .c-hamburger--htx span {
-            transition: background 0s $button-transistion-duration;
-         }
-
-         .c-hamburger--htx span::before,
-         .c-hamburger--htx span::after {
-            transition-duration: $button-transistion-duration, $button-transistion-duration;
-            transition-delay: $button-transistion-duration, 0s;
-         }
-
-         .c-hamburger--htx span::before {
-            transition-property: top, transform;
-         }
-
-         .c-hamburger--htx span::after {
-            transition-property: bottom, transform;
-         }
-
-         /* active state, i.e. menu open */
-
-         .c-hamburger--htx.is-active {
-            background-color: none;
-         }
-
-         .c-hamburger--htx.is-active span {
-            background: none;
-         }
-
-         .c-hamburger--htx.is-active span::before {
-            top: 0;
-            transform: rotate(45deg);
-         }
-
-         .c-hamburger--htx.is-active span::after {
-            bottom: 0;
-            transform: rotate(-45deg);
-         }
-
-         .c-hamburger--htx.is-active span::before,
-         .c-hamburger--htx.is-active span::after {
-            transition-delay: 0s, $button-transistion-duration;
-         }
-
-         /* active state, i.e. menu open */
-
-         .c-hamburger--htra.is-active {
-            background-color: darken(rgb(255,150,80), 20%);
-         }
-
-         .c-hamburger--htra.is-active span {
-            transform: rotate(180deg);
-         }
-
-         .c-hamburger--htra.is-active span::before,
-         .c-hamburger--htra.is-active span::after {
-            width: 50%;
-         }
-
-         .c-hamburger--htra.is-active span::before {
-            top: 0;
-            transform: translateX(-$bar-thickness) translateY($bar-thickness/2) rotate(-45deg);
-         }
-
-         .c-hamburger--htra.is-active span::after {
-            bottom: 0;
-            transform: translateX(-$bar-thickness) translateY(-$bar-thickness/2) rotate(45deg);
-         }
-      //}
-   }
-
-   // 4.3 Navigation (Side / Off Canvas Custom Styles)
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-   // Navigation Variables:
-
-      // Side Nav Border:
-      $side-nav-border: solid 1px darken($secondary-color, 5%);
-
-   // Navigation Styles
-
-   .side-nav {
-      // Global Navigation Styles
-      height: 100%;
-      min-height: 100%;
-      padding-top: 1em;
-      padding-bottom: 1em;
-      border-left: $side-nav-border;
-      border-right: $side-nav-border;
-      background: $white;
-
-      @mixin nav-states {
-         // Hover State:
-         &:hover { background: lighten($secondary-color, 5%); }
-         // Active State (Page Indication):
-         &.active { background: $primary-color !important; color: $white; }
-         &:active, &:focus { background: $secondary-color; }
-      }
-
-      // First Level
-      .first-level {
-         display: block;
-         color: $dark-gray-color;
-         font-size: rem-calc(20);
-         padding: .5em;
-         border-top: $side-nav-border;
-         @include nav-states;
-
-         // Creates a bottom border for the last first level menu item:
-         &:last-child {
-            border-bottom: $side-nav-border;
-         }
-
-      }
-
-      // Second Level
-      .second-level {
-         //background: $secondary-color;
-         display: block;
-         color: $dark-gray-color;
-         font-size: rem-calc(16);
-         padding: .4em;
-         padding-left: 2em;
-
-         @include nav-states;
-      }
-
-      // Third Level
-      .third-level {
-         display: block;
-         //background: $secondary-color;
-         color: $dark-gray-color;
-         padding: .4em;
-         margin-left: 3em;
-         padding-left: 1em;
-         font-size: rem-calc(14);
-         border-left: $side-nav-border;
-
-         @include nav-states;
-         &.active {border-left: solid 1px $primary-color;}
-      }
-   }
-
-
-   // Fixing Navigation Scrollbar Issues:
-
-      // For Webkit (Chrome, Safari):
-      #offCanvas::-webkit-scrollbar, .side-nav::-webkit-scrollbar {
-         display: none;
-      }
-
-      // Firefox
-      #offCanvas {
-         background: $white;
-         #nav-outer-container {
-            border-bottom: solid 5px $white !important;
-         }
-      }
-      * { margin: 0; }
-      #nav-outer-container {
-         height: 100%;
-         width: 100%;
-         // overflow: hidden;
-         // box-shadow: $side-nav-shadow;
-         border-bottom: solid 5px darken($secondary-color, 5%);
-         border-radius: 5px;
-      }
-
-      #nav-inner-container {
-         width: 100%;
-         height: 99%;
-         left:0;
-         // overflow: auto;
-      }
-
-
-
-
-   // Off Canvas
-   // - - - - - - - - - - - - - - - - - - - - - - -
-
-   .off-canvas {
-      background: $white;
-      height: 100%;
-      overflow-y: scroll !important;
-      overflow-x: hidden;
-   }
-
-   .off-canvas-content {
-      box-shadow: 5px 0 10px -5px #333;
-      background: $white;
-   }
-
-   .off-canvas-wrapper-inner {
-      z-index: 1;
-      background: $white;
-   }
-
-   .js-off-canvas-exit {
-      background: rgba($white, .7);
-      &:hover { background: rgba($white, .9); }
-   }
-
-   .off-canvas-active {
-      // overflow: hidden;
-      background: $white;
-   }
-
-
-   // 4.4 Custom 4-H Styles
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-   // 4.5 Main Content Area
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-   // Main Content Buffer
-   // A div that gives the fotter some extra padding on medium and small screens
-   .main-content-buffer {
-      //@include breakpoint(medium down) { padding-bottom: 4em; }
-      padding-bottom: 4em;
-   }
-
-   // Page Title (h1 & main page name)
-   .page-title {margin-top: .55em;}
-
-   .page-content {
-      margin: 0 0 2em 0;
-   }
-
-
-   // 4.6 Footer
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-
-   .footer-top {
-      background: $secondary-color;
-      color: darken($secondary-color, 50%);
-      padding: 1em 1em 1em 1em;
-      border-top: solid 2em darken($secondary-color, 40%);
-      //z-index: 999;
-
-      ul {
-         list-style: none;
-         font-size: $body-font-size;
-         margin-left: 0;
-      }
-
-      i { margin-right: .2em; }
-
-   }
-
-   .footer-bottom {
-      padding: 1em 0 0 0;
-      margin: 0 0 3em 0;
-      font-size: $body-font-size;
-      color: darken($secondary-color, 40%);
-   }
-
-
-
-
-   // Additional Changes (Update from while John was one PT)
-   // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-   /* jumplinks to nav and content for screen readers */
-#jumplinks {
-	font-size: 0.0rem;
-    height: 1px;
-    background-color: #e7e7e7;
-}
-#jumplinks img {
-	width: 1px;
-    height: 1px
+// Foundation Icon Font Import
+@import "../foundation-icons/foundation-icons.css";
+// We use this to control whether or not CSS classes come through in the gem files.
+$include-html-classes: true;
+// $include-print-styles: true;
+$include-html-global-classes: $include-html-classes;
+
+
+
+// Global Styles
+//--------------
+
+// Main Body Styles
+body, html {
+   height: 100%;
+   position: relative;
+   background: $white;
 }
 
-
-/* increase size of headings on mobile */
-@media screen and (max-width: 63.9375em) {
-		h2 {
-			font-size: 1.4rem;
-		}
-
-		h3 {
-			font-size: 1.3125rem;
-		}
-
-		h4 {
-			font-size: 1.2rem;
-		}
-
-		h5 {
-			font-size: 1.125rem;
-		}
-
-		h6 {
-			font-size: 1rem;
-		}
+// Hide Overflow Utility Class
+.hide-overflow {
+   overflow: hidden;
 }
 
-
-/* style overrides for component dialogs to give links some color  */
-.component-instructions a:link {
-	color: #0000ee !important;
-	text-decoration: none !important;
+// Scroll Overflow Utility Class
+.overflow-scroll {
+   overflow: scroll !important;
 }
 
-.component-instructions a:visited {
-	color: #551a8b !important;
-	text-decoration: none !important;
-}
+// Box Shadows
+$box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+$bottom-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 
-.component-instructions a:hover {
-	text-decoration: underline !important;
-}
-
-
-/* allow button class to be applied to a span around an <a> tag
-	- needed because rich text puts the button class in a span rather than
-	on the link itself */
-span.button a {
-	color:white;
-}
-
-/* make sure that there's enough space between components.
-	- noticed with the slider - there was never enough room between bottom of slider and the next component
-	- this fix might nor might not be needed by a given component
-	- buttons and headers and divs at the beginnings and ends of components have their own padding and affect how the components interact with each other
-	- more thorough testing of component-component interactions would be needed to do this the right way
-	- also - keep in mind that not every component may be wrapped in a section (thought it would be nice if they were).
-	- Rich Text doesn't have the section class, for example.
-*/
-.section {
-	margin-top: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-
-/* Some folks requested that picLeft and Right classes were flush to page margins, which makes sense.
-	they also wanted to increase the distance between the image and any text
-*/
+// Classes for Floating Images
 .picLeft {
-	padding:1rem;
-    padding-left:0;
+   float: left;
+   padding: 1rem 1rem 1rem 0;
 }
 .picRight {
-	padding:1rem;
-    padding-right:0;
+   float: right;
+   padding: 1rem 0 1rem 1rem;
 }
 
-/* fix problems with lists in rich text
-	there's no left padding or margin for the bullets
-	especially a problem when an image is floated left next to them
-	should this be applied to any list on the site instead of just rickText lists?
-	http://stackoverflow.com/questions/13032319/list-on-the-right-of-a-left-floating-image
-*/
+// Fix for Google Maps Scrolling Problem
+.scrolloff {
+   pointer-events: none !important;
+}
+
+
+
+
+// Typography
+//-----------
+
+// Body Font Size
+$body-font-size: rem-calc(13);
+
+
+// Template
+//---------
+
+// Skip Links
+.skip-link {
+   position: absolute;
+   top: -100px;
+   background-color: #f1f1f1;
+   -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+   box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+   color: $primary-color;
+   display: block;
+   font-family: "Open Sans",sans-serif;
+   font-size: 14px;
+   font-weight: 700;
+   height: auto;
+   left: 6px;
+   line-height: normal;
+   padding: 15px 23px 14px;
+   text-decoration: none;
+   width: auto;
+   z-index: 100000;
+   -webkit-transition: top 0.75s ease-out;
+   transition: top 0.75s ease-out;
+   // Focus:
+   &:focus {
+      color: $primary-color;
+      top: 7px;
+      -webkit-transition: top 0s;
+      transition: top 0s;
+   }
+}
+
+// Input Styles
+input {
+   color: $jet;
+}
+::-webkit-input-placeholder {
+   color: $jet;
+}
+::-moz-placeholder {
+   color: $jet;
+}
+/* firefox 19+ */
+:-ms-input-placeholder {
+   color: $jet;
+}
+/* ie */
+input:-moz-placeholder {
+   color: $jet;
+}
+input,
+select,
+textarea {
+   color: $jet !important;
+}
+
+// Search Container Global
+@media screen and (max-width: 512px) {
+   .search-container {
+      display: none !important;
+   }
+   .searchbox {
+      display: block;
+   }
+}
+
+// Extension Top Bar & Site Search
+//--------------------------------
+
+.extension-top-bar {
+   width: 100%;
+   height: 5em;
+   background: $secondary-color;
+   padding: 1em 1em 1em 0;
+   // Extension Logo
+   .extension-logo {
+      width: 150px;
+      height: 53px;
+      position: absolute;
+   }
+   // Large & Medium Screen Search
+   .search-container {
+      width: 300px;
+      position: relative;
+      float: right;
+      height: 4em;
+      overflow: hidden;
+      color: $jet;
+      @include breakpoint(small only) {
+         display: none;
+      }
+      .input-group-button {
+         button {
+            margin: 0;
+            height: 2.4375rem;
+         }
+      }
+   }
+   // Small Expanding Search
+   .searchbox {
+      position: relative;
+      min-width: 38px;
+      width: 0;
+      height: 45px;
+      float: right;
+      z-index: 999;
+      overflow: hidden;
+      margin-right: -10px;
+      -webkit-transition: width 0.3s;
+      -moz-transition: width 0.3s;
+      -ms-transition: width 0.3s;
+      -o-transition: width 0.3s;
+      transition: width 0.3s;
+   }
+   .searchbox-input {
+      top: 0;
+      right: 0;
+      border: 0;
+      outline: 0;
+      width: 100%;
+      height: 38px;
+      margin: 0;
+      padding: 0 38px 0 20px;
+      font-size: 16px;
+      z-index: 999;
+      color: $jet;
+   }
+   .searchbox-icon,
+   .searchbox-submit {
+      width: 38px;
+      height: 38px;
+      display: block;
+      position: absolute;
+      top: 0;
+      font-size: rem-calc(14);
+      right: 0;
+      padding: 0;
+      margin: 0;
+      border: 0;
+      outline: 0;
+      line-height: 38px;
+      text-align: center;
+      cursor: pointer;
+      color: $white;
+      background: $primary-color;
+      z-index: 999;
+   }
+   .searchbox-open {
+      width: 100%;
+      z-index: 999;
+   }
+   // Search Results Page
+   .gs-title { color: $primary-color; }
+   .gsc-url-top { color: $four-h-color; }
+   .gsc-adBlockNoHeight {
+      display: none;
+   }
+}
+
+// Header
+//-------
+
+// Variables:
+$site-title-font-size: rem-calc(44);
+$site-title-font-reduction: rem-calc(34);
+
+// Header Container
+header {
+   background: $primary-color;
+   padding: 1em 0.9em 1em 0;
+   box-shadow: $bottom-shadow;
+   z-index: 999;
+   position: relative;
+   // Site Title
+   .site-title {
+      color: $white;
+      font-size: $site-title-font-size;
+      float: left;
+      // Font Reduction for Site Title
+      @include breakpoint(small only) {
+         font-size: $site-title-font-reduction;
+      }
+      a {
+         color: $white;
+      }
+   }
+   // Hamburger Icon Variables
+   $button-width: 20px;
+   // The width of the button area
+   $button-height: 20px;
+   // The height of the button area
+   $bar-thickness: 3px;
+   // The thickness of the button bars
+   $button-pad: 0;
+   // The left/right padding between button area and bars.
+   $button-bar-space: 3px;
+   // The spacing between button bars
+   $button-transistion-duration: 0.2s;
+   // The transition duration
+   #menuText {
+      color: $white;
+      float: right;
+      margin-right: 0;
+      margin-top: 22px;
+   }
+   .c-hamburger {
+      position: relative;
+      overflow: hidden;
+      margin: 15px 0 0;
+      @include breakpoint(medium) {
+         margin-top: 23px;
+         margin-right: 10px;
+      }
+      float: right;
+      padding: 0;
+      width: $button-width;
+      height: $button-height;
+      font-size: 0;
+      text-indent: -9999px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      box-shadow: none;
+      border-radius: none;
+      border: none;
+      cursor: pointer;
+      transition: background $button-transistion-duration;
+      &:focus {
+         outline: none;
+      }
+   }
+   .c-hamburger span {
+      display: block;
+      position: absolute;
+      top: ($button-height / 2) - ($bar-thickness / 2);
+      left: $button-pad;
+      right: $button-pad;
+      height: $bar-thickness;
+      background: rgb(255,255,255);
+   }
+   .c-hamburger span::after,
+   .c-hamburger span::before {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: $bar-thickness;
+      background-color: #fff;
+      content: "";
+   }
+   .c-hamburger span::before {
+      top: -$bar-thickness - $button-bar-space;
+   }
+   .c-hamburger span::after {
+      bottom: -$bar-thickness - $button-bar-space;
+   }
+   .c-hamburger--htx {
+      background-color: none;
+   }
+   .c-hamburger--htx span {
+      transition: background 0s $button-transistion-duration;
+   }
+   .c-hamburger--htx span::after,
+   .c-hamburger--htx span::before {
+      transition-duration: $button-transistion-duration, $button-transistion-duration;
+      transition-delay: $button-transistion-duration, 0s;
+   }
+   .c-hamburger--htx span::before {
+      transition-property: top, transform;
+   }
+   .c-hamburger--htx span::after {
+      transition-property: bottom, transform;
+   }
+   /* active state, i.e. menu open */
+   .c-hamburger--htx.is-active {
+      background-color: none;
+   }
+   .c-hamburger--htx.is-active span {
+      background: none;
+   }
+   .c-hamburger--htx.is-active span::before {
+      top: 0;
+      transform: rotate(45deg);
+   }
+   .c-hamburger--htx.is-active span::after {
+      bottom: 0;
+      transform: rotate(-45deg);
+   }
+   .c-hamburger--htx.is-active span::after,
+   .c-hamburger--htx.is-active span::before {
+      transition-delay: 0s, $button-transistion-duration;
+   }
+   /* active state, i.e. menu open */
+   .c-hamburger--htra.is-active {
+      background-color: darken(rgb(255,150,80), 20%);
+   }
+   .c-hamburger--htra.is-active span {
+      transform: rotate(180deg);
+   }
+   .c-hamburger--htra.is-active span::after,
+   .c-hamburger--htra.is-active span::before {
+      width: 50%;
+   }
+   .c-hamburger--htra.is-active span::before {
+      top: 0;
+      transform: translateX(-$bar-thickness) translateY($bar-thickness/2) rotate(-45deg);
+   }
+   .c-hamburger--htra.is-active span::after {
+      bottom: 0;
+      transform: translateX(-$bar-thickness) translateY(-$bar-thickness/2) rotate(45deg);
+   }
+}
+
+// Main Navigation
+//-----------
+$side-nav-border: solid 1px darken($secondary-color, 5%);
+
+.side-nav {
+   height: 100%;
+   min-height: 100%;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   border-left: $side-nav-border;
+   border-right: $side-nav-border;
+   background: $white;
+   border-bottom: solid 5px darken($secondary-color, 5%);
+   border-radius: 5px;
+   @mixin nav-states {
+      // Hover State:
+      &:hover {
+         background: lighten($secondary-color, 5%);
+      }
+      // Active State (Page Indication):
+      &.active {
+         background: $primary-color !important;
+         color: $white;
+      }
+      &:active,
+      &:focus {
+         background: $secondary-color;
+      }
+   }
+   // First Level
+   .first-level {
+      display: block;
+      color: $dark-gray-color;
+      font-size: rem-calc(20);
+      padding: 0.5em;
+      border-top: $side-nav-border;
+      @include nav-states;
+      // Creates a bottom border for the last first level menu item:
+      &:last-child {
+         border-bottom: $side-nav-border;
+      }
+   }
+   // Second Level
+   .second-level {
+      //background: $secondary-color;
+      display: block;
+      color: $dark-gray-color;
+      font-size: rem-calc(16);
+      padding: 0.4em 0.4em 0.4em 2em;
+      @include nav-states;
+   }
+   // Third Level
+   .third-level {
+      display: block;
+      //background: $secondary-color;
+      color: $dark-gray-color;
+      padding: 0.4em;
+      margin-left: 3em;
+      padding-left: 1em;
+      font-size: rem-calc(14);
+      border-left: $side-nav-border;
+      @include nav-states;
+      &.active {
+         border-left: solid 1px $primary-color;
+      }
+   }
+}
+
+// Off Canvas
+//-----------
+.off-canvas-menu {
+   .side-nav {
+      border-bottom: none;
+   }
+}
+
+// Off-Canvas Exit
+.js-off-canvas-exit {
+   background: rgba($white, .7);
+   &:hover { background: rgba($white, .9); }
+}
+
+// Fixing Navigation Scrollbar Issues:
+// // For Webkit (Chrome, Safari):
+// #offCanvas::-webkit-scrollbar, .side-nav::-webkit-scrollbar {
+//    display: none;
+// }
+//
+// // Firefox
+// #offCanvas {
+//    background: $white;
+//    #nav-outer-container {
+//       border-bottom: solid 5px $white !important;
+//    }
+// }
+// * { margin: 0; }
+// #nav-outer-container {
+//    height: 100%;
+//    width: 100%;
+//    // overflow: hidden;
+//    // box-shadow: $side-nav-shadow;
+//    border-bottom: solid 5px darken($secondary-color, 5%);
+//    border-radius: 5px;
+// }
+// #nav-inner-container {
+//    width: 100%;
+//    height: 99%;
+//    left:0;
+//    // overflow: auto;
+// }
+// Off Canvas
+// - - - - - - - - - - - - - - - - - - - - - - -
+// .off-canvas {
+//    background: $white;
+//    height: 100%;
+//    overflow-y: scroll !important;
+//    overflow-x: hidden;
+// }
+// .off-canvas-content {
+//    box-shadow: 5px 0 10px -5px #333;
+//    background: $white;
+// }
+// .off-canvas-wrapper-inner {
+//    z-index: 1;
+//    background: $white;
+// }
+// .js-off-canvas-exit {
+//    background: rgba($white, .7);
+//    &:hover { background: rgba($white, .9); }
+// }
+// .off-canvas-active {
+//    // overflow: hidden;
+//    background: $white;
+// }
+// 4.4 Custom 4-H Styles
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// 4.5 Main Content Area
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Main Content Buffer
+// A div that gives the fotter some extra padding on medium and small screens
+// .main-content-buffer {
+//    //@include breakpoint(medium down) { padding-bottom: 4em; }
+//    padding-bottom: 4em;
+// }
+
+// Page Title (h1 & main page name)
+.page-title {
+   margin-top: 0.55em;
+}
+
+// .page-content {
+//    margin: 0 0 2em 0;
+// }
+
+
+// Footer
+//-------
+.footer-top {
+   background: $secondary-color;
+   color: darken($secondary-color, 50%);
+   padding: 1em;
+   border-top: solid 2em darken($secondary-color, 40%);
+   //z-index: 999;
+   ul {
+      list-style: none;
+      font-size: $body-font-size;
+      margin-left: 0;
+   }
+   i {
+      margin-right: 0.2em;
+   }
+}
+.footer-bottom {
+   padding: 1em 0 0;
+   margin: 0 0 3em;
+   font-size: $body-font-size;
+   color: darken($secondary-color, 40%);
+}
+
+
+
+// Additional Changes
+//-------------------
+// Increases the size of headings on mobile
+@media screen and (max-width: 63.9375em) {
+   h2 {
+      font-size: 1.4rem;
+   }
+   h3 {
+      font-size: 1.3125rem;
+   }
+   h4 {
+      font-size: 1.2rem;
+   }
+   h5 {
+      font-size: 1.125rem;
+   }
+   h6 {
+      font-size: 1rem;
+   }
+}
+.component-instructions a:link {
+   color: #0000ee !important;
+   text-decoration: none !important;
+}
+.component-instructions a:visited {
+   color: #551a8b !important;
+   text-decoration: none !important;
+}
+.component-instructions a:hover {
+   text-decoration: underline !important;
+}
+span.button a {
+   color: white;
+}
+.section {
+   margin-top: 0.75rem;
+   margin-bottom: 0.75rem;
+}
+
 .richText ul {
-	overflow: hidden;
-	padding-left: 2rem;
+   overflow: hidden;
+   padding-left: 2rem;
 }
-
-/* Here are some changes that Cindy and Ruth requested for the social media icons */
 .social-media-icons-component {
-	margin-left:2.5rem;
+   margin-left: 2.5rem;
 }
 .social-media-icons-component i {
-	padding:.15rem;
+   padding: 0.15rem;
 }
