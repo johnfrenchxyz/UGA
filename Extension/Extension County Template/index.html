@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>County Template Home NO EQ</title>
+   <title>County Template Home</title>
    <link rel="stylesheet" href="css/app.css" type="text/css">
    <link rel="stylesheet" type="text/css" href="css/print.css">
    <link rel="stylesheet" type="text/css" href="fonts/foundation-icons/foundation-icons.css" />
@@ -17,9 +17,9 @@
 <body>
 
    <!-- Screen Reader Links -->
-   <a id="skipToContent" href="#main" tabindex="1" aria-role="link">Jump To Main Content</a>
-   <a class="show-for-large-only" href="#nav-inner-container" tabindex="2" aria-role="link">Jump To Main Menu</a>
-   <!-- Outer Wrapper for Entire Site - (used by the mobile off canvas menu to contain the entire page and hide overflow) -->
+   <a class="skip-link" href="#main" tabindex="1" aria-role="link">Jump To Main Content</a>
+   <a class="skip-link" href="#nav-inner-container" tabindex="2" aria-role="link">Jump To Main Menu</a>
+
    <div class="off-canvas-wrapper">
 
       <!-- Extension Top Bar & Search Section -->
@@ -72,42 +72,39 @@
          </div>
       </header>
 
-      <!-- Inner Wrapper for Off Canvas Animated Slide -->
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-         <main>
+         <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
 
-            <!-- Off Canvas Navigation Container -->
-            <!-- This container is blank on large screens and has the main navigation added on medium down -->
-            <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right"></div>
+            <!-- Off-Canvas Menu -->
+            <nav class="off-canvas-menu">
+               <!-- Content Dynamically Generated From Main Nav -->
+            </nav>
 
-            <!-- The main content "container" that the off canvas will push -->
-            <div class="off-canvas-content" data-off-canvas-content>
+         </div>
+
+         <div class="off-canvas-content" data-off-canvas-content>
+
+            <main>
 
                <div class="row">
-                  <div class="large-3 show-for-large columns" id="defaultNav">
-
-                     <!-- Main Navigation -->
-                     <div id="nav-outer-container">
-                        <nav id="nav-inner-container" class="side-nav" role="menu">
-                           <!-- First Level -->
-                           <a role="menuitem" class="first-level active" href="index.html">Home</a>
-                           <a role="menuitem" class="first-level" href="second-level.html">Agriculture & Natural Resources</a>
-                           <a role="menuitem" class="first-level">Family & Consumer Sciences</a>
-                           <a role="menuitem" class="first-level">4-H Youth</a>
-                           <a role="menuitem" class="first-level">Contact Us</a>
-                           <a role="menuitem" class="first-level">Family & Consumer Sciences</a>
-                           <a role="menuitem" class="first-level">4-H Youth</a>
-                           <a role="menuitem" class="first-level">End</a>
-                        </nav>
-                     </div>
-
+                  <!-- Large Screen Navigation -->
+                  <div class="large-3 show-for-large columns">
+                     <nav class="side-nav" role="menu">
+                        <!-- First Level -->
+                        <a role="menuitem" class="first-level active" href="index.html">Home</a>
+                        <a role="menuitem" class="first-level" href="second-level.html">Agriculture & Natural Resources</a>
+                        <a role="menuitem" class="first-level">Family & Consumer Sciences</a>
+                        <a role="menuitem" class="first-level">4-H Youth</a>
+                        <a role="menuitem" class="first-level">Contact Us</a>
+                        <a role="menuitem" class="first-level">Family & Consumer Sciences</a>
+                        <a role="menuitem" class="first-level">4-H Youth</a>
+                        <a role="menuitem" class="first-level">End</a>
+                     </nav>
                   </div>
-
-                  <!-- Page Content Section -->
+                  <!-- Page Content -->
                   <div class="large-9 columns">
                      <!-- Main Content Buffer (for footer on medium & small screens) -->
-                     <div class="main-content-buffer">
                         <h1 class="page-title">Home</h1>
                         <h2>Test</h2>
                         <h3>Test</h3>
@@ -133,63 +130,21 @@
                         vitae sodales tempor, justo ante imperdiet arcu, nec maximus lacus est in sapien. Aenean sem nisl, tempor malesuada viverra id, auctor id lorem. Integer augue urna, suscipit sed mollis vel, vulputate quis ipsum. Quisque cursus
                         dolor feugiat lacinia suscipit. In hac habitasse platea dictumst. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse rutrum viverra luctus. Nam commodo mauris nisl, dictum venenatis ligula pharetra a. Cum
                         sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas porta in lectus et luctus. Donec porttitor iaculis tellus in blandit.
-
-
-
-                     </div>
                   </div>
-
                </div>
 
-         </main>
+            </main>
 
+         <!-- off-canvas-content -->
          </div>
-         <!-- Should Close the off canvas Content -->
 
+      <!-- off-canvas-wrapper-inner -->
       </div>
-      <!-- Should close the off canvas inner wrap -->
 
-
-      <!-- Footer Section -->
-      <footer>
-         <div class="footer-top">
-            <div class="row">
-               <!-- County Contact Information Section -->
-               <div class="large-4 medium-6 columns">
-                  <h3 class="subheader">[County Name] Office Information:</h3>
-                  <ul>
-                     <li><a><i class="fi-map"></i> 123 Easy Street | City, State 30607</a></li>
-                     <li><a><i class="fi-telephone"></i> 706-867-5309</a></li>
-                     <li><a><i class="fi-mail"></i> mail@emailaddress.com</a></li>
-                  </ul>
-               </div>
-               <!-- Affiliates & Partners Section-->
-               <div class="large-4 medium-6 columns">
-                  <h3 class="subheader">Affiliates & Partners:</h3>
-                  <ul>
-                     <li><a href="http://www.uga.edu" target="_blank">The University of Georgia</a></li>
-                     <li><a href="http://www.caes.uga.edu" target="_blank">The College of Agricultural & Environmental Sciences</a></li>
-                     <li><a href="http://www.fcs.uga.edu" target="_blank">The College of Family & Consumer Scnences</a></li>
-                  </ul>
-               </div>
-               <!-- Intranet Section -->
-               <div class="large-4 medium-6 end columns">
-                  <h3 class="subheader">For Faculty/Staff:</h3>
-                  <a class="button small round">Staff Intranet</a>
-               </div>
-            </div>
-         </div>
-         <div class="footer-bottom">
-            <div class="row">
-               <div class="large-12 columns">
-                  Last Updated: 10/8/15 by jwfrench | Other Information
-               </div>
-            </div>
-         </div>
-      </footer>
-
+   <!-- off-canvas-wrapper -->
    </div>
-   <!-- Should close the outermost off canvas wrap -->
+
+
 
 
    <script src="bower_components/jquery/dist/jquery.js"></script>
@@ -198,8 +153,6 @@
    <script src="js/app.js"></script>
    <script src="js/custom.js"></script>
    <!-- New Scripts Below -->
-
-
 </body>
 
 </html>

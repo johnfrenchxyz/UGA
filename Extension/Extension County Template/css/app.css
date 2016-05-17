@@ -3640,21 +3640,8 @@ table.hover tr:nth-of-type(even):hover {
 
 /*
 
-UGA Extension County Site Template 2015/2016
-Custom Variable, Mixins, and Styles by John French
-
-Table of Contents:
-
-1. Custom Imports
-2. Global Styles
-3. Typography
-4. Template
-   4.1 Extension Top Bar
-   4.2 Header
-   4.3 Navigation (Side / Off Canvas Custom Styles)
-   4.4 Custom 4-H Styles
-   4.5 Main Content Area
-   4.6 Footer
+UGA Extension County Template
+Custom SCSS
 
 */
 h2, h5, h6 {
@@ -3672,7 +3659,7 @@ h4 {
   font-style: italic;
   font-size: 1.0625rem; }
 
-html, body {
+body, html {
   height: 100%;
   position: relative;
   background: #fefefe; }
@@ -3685,33 +3672,41 @@ html, body {
 
 .picLeft {
   float: left;
-  padding: .5em; }
+  padding: 1rem 1rem 1rem 0; }
 
 .picRight {
   float: right;
-  padding: .5em; }
+  padding: 1rem 0 1rem 1rem; }
 
 .scrolloff {
   pointer-events: none !important; }
 
-#skipToContent {
+.skip-link {
   position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden; }
-
-@media screen and (max-width: 512px) {
-  .search-container {
-    display: none !important; }
-  .searchbox {
-    display: block; } }
+  top: -100px;
+  background-color: #f1f1f1;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  color: #c41039;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: auto;
+  left: 6px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  width: auto;
+  z-index: 100000;
+  transition: top 0.75s ease-out; }
+  .skip-link:focus {
+    color: #c41039;
+    top: 7px;
+    transition: top 0s; }
 
 input {
   color: #222222; }
 
-/* all */
 ::-webkit-input-placeholder {
   color: #222222; }
 
@@ -3726,14 +3721,22 @@ input {
 input:-moz-placeholder {
   color: #222222; }
 
-input, select, textarea {
+input,
+select,
+textarea {
   color: #222222 !important; }
+
+@media screen and (max-width: 512px) {
+  .search-container {
+    display: none !important; }
+  .searchbox {
+    display: block; } }
 
 .extension-top-bar {
   width: 100%;
   height: 5em;
   background: #e7e7e7;
-  padding: 1em 1em 1em 0em; }
+  padding: 1em 1em 1em 0; }
   .extension-top-bar .extension-logo {
     width: 150px;
     height: 53px;
@@ -3754,7 +3757,7 @@ input, select, textarea {
   .extension-top-bar .searchbox {
     position: relative;
     min-width: 38px;
-    width: 0%;
+    width: 0;
     height: 45px;
     float: right;
     z-index: 999;
@@ -3769,7 +3772,7 @@ input, select, textarea {
     width: 100%;
     height: 38px;
     margin: 0;
-    padding: 0px 38px 0px 20px;
+    padding: 0 38px 0 20px;
     font-size: 16px;
     z-index: 999;
     color: #222222; }
@@ -3795,12 +3798,16 @@ input, select, textarea {
   .extension-top-bar .searchbox-open {
     width: 100%;
     z-index: 999; }
+  .extension-top-bar .gs-title {
+    color: #c41039; }
+  .extension-top-bar .gsc-url-top {
+    color: #339966; }
   .extension-top-bar .gsc-adBlockNoHeight {
     display: none; }
 
 header {
   background: #c41039;
-  padding: 1em .9em 1em 0em;
+  padding: 1em 0.9em 1em 0;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
   z-index: 999;
   position: relative;
@@ -3818,13 +3825,12 @@ header {
   header #menuText {
     color: #fefefe;
     float: right;
-    margin-right: 0%;
+    margin-right: 0;
     margin-top: 22px; }
   header .c-hamburger {
     position: relative;
     overflow: hidden;
-    margin: 0;
-    margin-top: 15px;
+    margin: 15px 0 0;
     float: right;
     padding: 0;
     width: 20px;
@@ -3849,12 +3855,12 @@ header {
     display: block;
     position: absolute;
     top: 8.5px;
-    left: 0px;
-    right: 0px;
+    left: 0;
+    right: 0;
     height: 3px;
     background: white; }
-  header .c-hamburger span::before,
-  header .c-hamburger span::after {
+  header .c-hamburger span::after,
+  header .c-hamburger span::before {
     position: absolute;
     display: block;
     left: 0;
@@ -3870,8 +3876,8 @@ header {
     background-color: none; }
   header .c-hamburger--htx span {
     transition: background 0s 0.2s; }
-  header .c-hamburger--htx span::before,
-  header .c-hamburger--htx span::after {
+  header .c-hamburger--htx span::after,
+  header .c-hamburger--htx span::before {
     transition-duration: 0.2s, 0.2s;
     transition-delay: 0.2s, 0s; }
   header .c-hamburger--htx span::before {
@@ -3894,8 +3900,8 @@ header {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg); }
-  header .c-hamburger--htx.is-active span::before,
-  header .c-hamburger--htx.is-active span::after {
+  header .c-hamburger--htx.is-active span::after,
+  header .c-hamburger--htx.is-active span::before {
     transition-delay: 0s, 0.2s; }
   header .c-hamburger--htra.is-active {
     background-color: #e95d00; }
@@ -3903,8 +3909,8 @@ header {
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
-  header .c-hamburger--htra.is-active span::before,
-  header .c-hamburger--htra.is-active span::after {
+  header .c-hamburger--htra.is-active span::after,
+  header .c-hamburger--htra.is-active span::before {
     width: 50%; }
   header .c-hamburger--htra.is-active span::before {
     top: 0;
@@ -3924,12 +3930,14 @@ header {
   padding-bottom: 1em;
   border-left: solid 1px #dadada;
   border-right: solid 1px #dadada;
-  background: #fefefe; }
+  background: #fefefe;
+  border-bottom: solid 5px #dadada;
+  border-radius: 5px; }
   .side-nav .first-level {
     display: block;
     color: #4e4e4e;
     font-size: 1.25rem;
-    padding: .5em;
+    padding: 0.5em;
     border-top: solid 1px #dadada; }
     .side-nav .first-level:hover {
       background: #f4f4f4; }
@@ -3944,8 +3952,7 @@ header {
     display: block;
     color: #4e4e4e;
     font-size: 1rem;
-    padding: .4em;
-    padding-left: 2em; }
+    padding: 0.4em 0.4em 0.4em 2em; }
     .side-nav .second-level:hover {
       background: #f4f4f4; }
     .side-nav .second-level.active {
@@ -3956,7 +3963,7 @@ header {
   .side-nav .third-level {
     display: block;
     color: #4e4e4e;
-    padding: .4em;
+    padding: 0.4em;
     margin-left: 3em;
     padding-left: 1em;
     font-size: 0.875rem;
@@ -3971,88 +3978,35 @@ header {
     .side-nav .third-level.active {
       border-left: solid 1px #c41039; }
 
-#offCanvas::-webkit-scrollbar, .side-nav::-webkit-scrollbar {
-  display: none; }
-
-#offCanvas {
-  background: #fefefe; }
-  #offCanvas #nav-outer-container {
-    border-bottom: solid 5px #fefefe !important; }
-
-* {
-  margin: 0; }
-
-#nav-outer-container {
-  height: 100%;
-  width: 100%;
-  border-bottom: solid 5px #dadada;
-  border-radius: 5px; }
-
-#nav-inner-container {
-  width: 100%;
-  height: 99%;
-  left: 0; }
-
-.off-canvas {
-  background: #fefefe;
-  height: 100%;
-  overflow-y: scroll !important;
-  overflow-x: hidden; }
-
-.off-canvas-content {
-  box-shadow: 5px 0 10px -5px #333;
-  background: #fefefe; }
-
-.off-canvas-wrapper-inner {
-  z-index: 1;
-  background: #fefefe; }
+.off-canvas-menu .side-nav {
+  border-bottom: none; }
 
 .js-off-canvas-exit {
   background: rgba(254, 254, 254, 0.7); }
   .js-off-canvas-exit:hover {
     background: rgba(254, 254, 254, 0.9); }
 
-.off-canvas-active {
-  background: #fefefe; }
-
-.main-content-buffer {
-  padding-bottom: 4em; }
-
 .page-title {
-  margin-top: .55em; }
-
-.page-content {
-  margin: 0 0 2em 0; }
+  margin-top: 0.55em; }
 
 .footer-top {
   background: #e7e7e7;
   color: #686868;
-  padding: 1em 1em 1em 1em;
+  padding: 1em;
   border-top: solid 2em #818181; }
   .footer-top ul {
     list-style: none;
     font-size: 0.8125rem;
     margin-left: 0; }
   .footer-top i {
-    margin-right: .2em; }
+    margin-right: 0.2em; }
 
 .footer-bottom {
-  padding: 1em 0 0 0;
-  margin: 0 0 3em 0;
+  padding: 1em 0 0;
+  margin: 0 0 3em;
   font-size: 0.8125rem;
   color: #818181; }
 
-/* jumplinks to nav and content for screen readers */
-#jumplinks {
-  font-size: 0.0rem;
-  height: 1px;
-  background-color: #e7e7e7; }
-
-#jumplinks img {
-  width: 1px;
-  height: 1px; }
-
-/* increase size of headings on mobile */
 @media screen and (max-width: 63.9375em) {
   h2 {
     font-size: 1.4rem; }
@@ -4065,7 +4019,6 @@ header {
   h6 {
     font-size: 1rem; } }
 
-/* style overrides for component dialogs to give links some color  */
 .component-instructions a:link {
   color: #0000ee !important;
   text-decoration: none !important; }
@@ -4077,51 +4030,22 @@ header {
 .component-instructions a:hover {
   text-decoration: underline !important; }
 
-/* allow button class to be applied to a span around an <a> tag
-	- needed because rich text puts the button class in a span rather than
-	on the link itself */
 span.button a {
   color: white; }
 
-/* make sure that there's enough space between components.
-	- noticed with the slider - there was never enough room between bottom of slider and the next component
-	- this fix might nor might not be needed by a given component
-	- buttons and headers and divs at the beginnings and ends of components have their own padding and affect how the components interact with each other
-	- more thorough testing of component-component interactions would be needed to do this the right way
-	- also - keep in mind that not every component may be wrapped in a section (thought it would be nice if they were).
-	- Rich Text doesn't have the section class, for example.
-*/
 .section {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem; }
 
-/* Some folks requested that picLeft and Right classes were flush to page margins, which makes sense.
-	they also wanted to increase the distance between the image and any text
-*/
-.picLeft {
-  padding: 1rem;
-  padding-left: 0; }
-
-.picRight {
-  padding: 1rem;
-  padding-right: 0; }
-
-/* fix problems with lists in rich text
-	there's no left padding or margin for the bullets
-	especially a problem when an image is floated left next to them
-	should this be applied to any list on the site instead of just rickText lists?
-	http://stackoverflow.com/questions/13032319/list-on-the-right-of-a-left-floating-image
-*/
 .richText ul {
   overflow: hidden;
   padding-left: 2rem; }
 
-/* Here are some changes that Cindy and Ruth requested for the social media icons */
 .social-media-icons-component {
   margin-left: 2.5rem; }
 
 .social-media-icons-component i {
-  padding: .15rem; }
+  padding: 0.15rem; }
 
 /*
     Styles for Adobe Experience Manager Components
