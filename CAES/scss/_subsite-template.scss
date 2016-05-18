@@ -98,6 +98,7 @@ $caes-light-gray: lighten($medium-gray, 10%);
       font-weight: 700;
       background: $caes-light-gray;
       a { color: $caes-dark-gray; }
+      ul { background: none; }
    }
    // Children
    .children a { padding-left: 2em; font-weight: 700; }

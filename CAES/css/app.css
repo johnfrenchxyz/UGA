@@ -4705,6 +4705,8 @@ footer {
   background: #e4e4e4; }
   .submenu ul .active a {
     color: #3e3e3e; }
+  .submenu ul .active ul {
+    background: none; }
 
 .submenu ul .children a {
   padding-left: 2em;
