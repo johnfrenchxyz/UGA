@@ -2,6 +2,8 @@
 
 ##In Progress:
 
+- Tiled version of personnel component, or all components, displays images that are too large.  Try to reduce column size.
+- Fix cut-off text in dialogs in AEM.
 - Style contact form component
 - Examine plain list border issue in firefox.
 - Look into components overlapping dropdown in author.
