@@ -4,10 +4,7 @@
 
 - Style contact form component
 - Examine plain list border issue in firefox.
-- Begin thinking about style guide for the end of may.
-- Talk to Robby/look at his component documentation about "Advanced Components"
 - Look into components overlapping dropdown in author.
-- Should we add breadcrumbs to departmental homepage?
 - Expanding Search needs to autofocus on safari mobile.
 
 ##Completed:
