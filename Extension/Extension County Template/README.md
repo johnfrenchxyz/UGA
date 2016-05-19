@@ -2,13 +2,11 @@
 
 ##In Progress:
 
-- Bug > On Mobile, when off-canvas is activated, the rest of the content is supposed to hide overflow and let menu scrolls, but entire page currently scrolls.
-- Weird issue with scrolling/visibility on personnel list component.
-- Add margin-to to read more button for tiled list components
-- Fix all the issues Gabe brought up in terms of component testing.
-- Now that the small screen tab issue has been fixed, there is now a tabIndex problem, that I am really not sure how to solve.  It just behaves very strangely on the Extension template.  One of the things that will need to be added is the the ability to tab to the hamburger icon and activate it.
-- Move masonry from jquery plugin in to css only version
-- Find a way to add a label to the large desktop search.  It may have to be there, but have a visibility of hidden?  Or a .show-for-sr class.
+- Push off-canvas fix to production.
+- Standard Resources need to be moved to CSS Masonry, and be advised - the HTML in /shared/projects will need to be kept updated, as this is where the HTML is stored.
+- Design “Our Impact” footer section for Extension template.
+
+
 
 ##Completed:
 
