@@ -3992,11 +3992,36 @@ header {
 main {
   padding-bottom: 4em; }
 
+.our-impact {
+  background: #818181;
+  line-height: 4em;
+  color: #e7e7e7;
+  width: 100%; }
+  @media screen and (min-width: 0em) and (max-width: 31.9375em) {
+    .our-impact {
+      text-align: center; } }
+  .our-impact .impact-button {
+    background: #686868;
+    color: #fff;
+    margin-left: 1em;
+    padding: .5em 1.5em .5em 1.5em;
+    display: inline-block;
+    font-weight: 700; }
+    .our-impact .impact-button:hover, .our-impact .impact-button:focus {
+      background: #4e4e4e;
+      color: #fff; }
+    @media screen and (min-width: 0em) and (max-width: 31.9375em) {
+      .our-impact .impact-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0; } }
+
 .footer-top {
+  padding-top: 1em;
+  padding-bottom: 1em;
   background: #e7e7e7;
-  color: #686868;
-  padding: 1em;
-  border-top: solid 2em #818181; }
+  color: #686868; }
   .footer-top ul {
     list-style: none;
     font-size: 0.8125rem;

@@ -493,12 +493,31 @@ main { padding-bottom: 4em; }
 
 // Footer
 //-------
+.our-impact {
+   background: darken($secondary-color, 40%);
+   line-height: 4em;
+   color: $secondary-color;
+   width: 100%;
+   @include breakpoint(small only) { text-align: center; }
+   .impact-button {
+      @include button-style( darken($secondary-color, 50%), darken($secondary-color, 60%), $secondary-color );
+      margin-left: 1em;
+      padding: .5em 1.5em .5em 1.5em;
+      display: inline-block;
+      font-weight: 700;
+      @include breakpoint (small only) {
+         display: block;
+         width: 100%;
+         text-align: center;
+         margin: 0;
+      }
+   }
+}
 .footer-top {
+   padding-top: 1em;
+   padding-bottom: 1em;
    background: $secondary-color;
    color: darken($secondary-color, 50%);
-   padding: 1em;
-   border-top: solid 2em darken($secondary-color, 40%);
-   //z-index: 999;
    ul {
       list-style: none;
       font-size: $body-font-size;
