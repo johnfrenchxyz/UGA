@@ -4424,7 +4424,7 @@ footer {
     display: block;
     content: ".";
     clear: both; }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+  @media screen and (max-width: 63.9375em) {
     .profile .profile-address {
       width: 100%;
       float: none; } }
@@ -4547,8 +4547,6 @@ footer {
   border-radius: 0;
   position: relative;
   color: #3e3e3e;
-  float: right;
-  margin-left: 1em;
   width: 250px; }
   .scholarship-container > :first-child {
     margin-top: 0; }

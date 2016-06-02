@@ -199,7 +199,7 @@ $component-title-default-color: darken($caes-gray, 10%);
       float: left;
       margin-right: 1em;
       width: 25%;
-      @include breakpoint(small only) { width: 100%; float: none; }
+      @include breakpoint(medium down) { width: 100%; float: none; }
    }
 }
 
@@ -318,8 +318,8 @@ $component-title-default-color: darken($caes-gray, 10%);
 //-------------
 .scholarship-container {
    @include callout-base();
-   float: right;
-   margin-left: 1em;
+   // float: right;
+   // margin-left: 1em;
    width: 250px;
    .title { font-weight: 700; font-size: rem-calc(18); margin-bottom: .5em; }
    .description { font-size: rem-calc(14); }
