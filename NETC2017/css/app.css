@@ -4021,6 +4021,9 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif; }
 
+body {
+  background: #6c6c6c; }
+
 header {
   width: 100vw;
   height: 100vh;
@@ -4057,25 +4060,12 @@ header {
 .flex-center {
   resize: both; }
 
-.image {
-  position: relative;
-  width: 100%;
-  /* for IE 6 */ }
-
-h2 {
-  position: absolute;
-  top: 200px;
-  left: 0;
-  width: 100%; }
-
-h2 span {
-  color: white;
-  font: bold 24px/45px Helvetica, Sans-Serif;
-  letter-spacing: -1px;
-  background: black;
-  /* fallback color */
-  background: rgba(0, 0, 0, 0.7);
-  padding: 10px; }
-
-h2 span.spacer {
-  padding: 0 5px; }
+main {
+  height: 100vh;
+  width: 100vw;
+  background: #6c6c6c;
+  color: #fefefe;
+  text-align: center; }
+  main #netcPromo {
+    width: 100vw;
+    height: auto; }
