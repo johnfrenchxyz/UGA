@@ -12,6 +12,7 @@
    *    without disabling user zoom.
    */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Poppins);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -4021,6 +4022,9 @@ h5,
 h6 {
   font-family: 'Roboto', sans-serif; }
 
+p {
+  font-family: 'Poppins'; }
+
 body {
   background: #6c6c6c; }
 
@@ -4063,9 +4067,17 @@ header {
 main {
   height: 100vh;
   width: 100vw;
-  background: #6c6c6c;
-  color: #fefefe;
+  background: #ffc853;
+  color: #000;
   text-align: center; }
+  main h1 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
+  main h2 {
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase; }
   main #netcPromo {
     width: 100vw;
     height: auto; }
