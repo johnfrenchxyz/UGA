@@ -1,6 +1,8 @@
 // Color Variables
 $netc-green: #284405;
-$netc-gray: #6c6c6c; // Typography
+$netc-gray: #6c6c6c;
+$netc-dark-gray: #343434;
+// Typography
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 h1,
 h2,
@@ -10,70 +12,51 @@ h5,
 h6 {
     font-family: 'Roboto', sans-serif;
 }
+body { background: $netc-gray; }
 header {
-  width: 100vw;
-  height: 100vh;
-  background: $netc-green;
-  text-align: center;
-  margin: 0 auto;
-  // padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  // resize: both;
-  overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    background: $netc-green;
+    text-align: center;
+    margin: 0 auto;
+    // padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // resize: both;
+    overflow: auto;
     #mainLogo {
-      width: 50%;
+        width: 50%;
         margin: 1em;
         min-width: 300px;
     }
     #findOutMore {
-      @include button-hollow;
-      border-color: $white;
-      color: $white;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      margin: 1em;
-      &:hover {
-        background: $white;
-        color: $netc-green;
-      }
-      // Sizing
-      @include breakpoint(small only) {
-        width: 80%;
-      }
+        @include button-hollow;
+        border-color: $white;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin: 1em;
+        &:hover {
+            background: $white;
+            color: $netc-green;
+        }
+        // Sizing
+        @include breakpoint(small only) {
+            width: 80%;
+        }
     }
 }
-
 .flex-center {
-  // width: 50%;
-  // padding: 20px;
-  resize: both;
-  // overflow: auto;
+    resize: both;
 }
 
-.image {
-   position: relative;
-   width: 100%; /* for IE 6 */
-}
-
-h2 {
-   position: absolute;
-   top: 200px;
-   left: 0;
-   width: 100%;
-}
-
-h2 span {
-   color: white;
-   font: bold 24px/45px Helvetica, Sans-Serif;
-   letter-spacing: -1px;
-   background: rgb(0, 0, 0); /* fallback color */
-   background: rgba(0, 0, 0, 0.7);
-   padding: 10px;
-}
-
-h2 span.spacer {
-   padding:0 5px;
+main {
+  height: 100vh;
+  width: 100vw;
+  background: $netc-gray;
+  color: $white;
+  text-align: center;
+  #netcPromo { width: 100vw; height: auto; }
 }
