@@ -4043,7 +4043,8 @@ header {
     color: #fefefe;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 3px; }
+    letter-spacing: 3px;
+    margin: 1em; }
     header #findOutMore, header #findOutMore:hover, header #findOutMore:focus {
       background-color: transparent; }
     header #findOutMore:hover {
@@ -4051,8 +4052,7 @@ header {
       color: #284405; }
     @media screen and (max-width: 39.9375em) {
       header #findOutMore {
-        width: 100%;
-        margin: 1em; } }
+        width: 80%; } }
 
 .flex-center {
   resize: both; }

@@ -34,14 +34,14 @@ header {
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 3px;
+      margin: 1em;
       &:hover {
         background: $white;
         color: $netc-green;
       }
       // Sizing
       @include breakpoint(small only) {
-        width: 100%;
-        margin: 1em;
+        width: 80%;
       }
     }
 }
