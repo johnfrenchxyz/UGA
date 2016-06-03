@@ -11,6 +11,7 @@
    * 2. Prevent iOS and IE text size adjust after device orientation change,
    *    without disabling user zoom.
    */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -4012,14 +4013,69 @@ table.hover tr:nth-of-type(even):hover {
 .long-delay {
   animation-delay: 700ms !important; }
 
-header #mainLogo {
-  width: 50%;
-  min-width: 300px; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif; }
 
-nav {
-  width: 100%;
-  background: #2199e8;
-  height: 4em; }
-  nav #mainLogo {
+header {
+  width: 100vw;
+  height: 100vh;
+  background: #284405;
+  text-align: center;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto; }
+  header #mainLogo {
     width: 50%;
+    margin: 1em;
     min-width: 300px; }
+  header #findOutMore {
+    border-color: #fefefe;
+    color: #fefefe;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px; }
+    header #findOutMore, header #findOutMore:hover, header #findOutMore:focus {
+      background-color: transparent; }
+    header #findOutMore:hover {
+      background: #fefefe;
+      color: #284405; }
+    @media screen and (max-width: 39.9375em) {
+      header #findOutMore {
+        width: 100%;
+        margin: 1em; } }
+
+.flex-center {
+  resize: both; }
+
+.image {
+  position: relative;
+  width: 100%;
+  /* for IE 6 */ }
+
+h2 {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 100%; }
+
+h2 span {
+  color: white;
+  font: bold 24px/45px Helvetica, Sans-Serif;
+  letter-spacing: -1px;
+  background: black;
+  /* fallback color */
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px; }
+
+h2 span.spacer {
+  padding: 0 5px; }
