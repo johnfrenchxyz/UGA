@@ -69,6 +69,7 @@ main {
   // Stay Connected Section
   .stay-connected {
     list-style: none;
+    margin-bottom: 0px;
     li { display: inline-block; padding: 1em; }
     i { color: $netc-black; font-size: rem-calc(36); }
     a { i { transition: 250ms ease; }
@@ -80,5 +81,24 @@ main {
     font-weight: bold;
     transition: 250ms ease;
     &:hover { color: lighten($netc-black, 25%); }
+  }
+  #mailingList {
+    @include button-hollow;
+    border-color: $netc-black;
+    color: $netc-black;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    &:hover {
+        background: $netc-black;
+        color: $netc-yellow;
+    }
+    // Sizing
+    @include breakpoint(small only) {
+        width: 80%;
+    }
   }
 }
