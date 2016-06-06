@@ -7,6 +7,7 @@ $netc-black: #000;
 // Typography
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url("../fonts/foundation-icons/foundation-icons.css");
 h1,
 h2,
 h3,
@@ -16,7 +17,7 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 p { font-family: 'Poppins';}
-body { background: $netc-gray; }
+body { background: $netc-yellow; }
 header {
     width: 100vw;
     height: 100vh;
@@ -65,4 +66,19 @@ main {
   h2 { font-weight: 700; letter-spacing: 5px; text-transform: uppercase; }
   text-align: center;
   #netcPromo { width: 100vw; height: auto; }
+  // Stay Connected Section
+  .stay-connected {
+    list-style: none;
+    li { display: inline-block; padding: 1em; }
+    i { color: $netc-black; font-size: rem-calc(36); }
+    a { i { transition: 250ms ease; }
+    &:hover { i { color: lighten($netc-black, 25%); } } }
+  }
+  a {
+    color: $netc-black;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 250ms ease;
+    &:hover { color: lighten($netc-black, 25%); }
+  }
 }

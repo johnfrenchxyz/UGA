@@ -13,6 +13,7 @@
    */
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 @import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url("../fonts/foundation-icons/foundation-icons.css");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -4026,7 +4027,7 @@ p {
   font-family: 'Poppins'; }
 
 body {
-  background: #6c6c6c; }
+  background: #ffc853; }
 
 header {
   width: 100vw;
@@ -4082,3 +4083,22 @@ main {
   main #netcPromo {
     width: 100vw;
     height: auto; }
+  main .stay-connected {
+    list-style: none; }
+    main .stay-connected li {
+      display: inline-block;
+      padding: 1em; }
+    main .stay-connected i {
+      color: #000;
+      font-size: 2.25rem; }
+    main .stay-connected a i {
+      transition: 250ms ease; }
+    main .stay-connected a:hover i {
+      color: #404040; }
+  main a {
+    color: #000;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: 250ms ease; }
+    main a:hover {
+      color: #404040; }
