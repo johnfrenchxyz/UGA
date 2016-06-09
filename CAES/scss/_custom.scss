@@ -47,7 +47,7 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
    // Borders
    // border-bottom: solid 5px darken($caes-red, 5%);
    // UGA Icon
-   img { padding-bottom: 5px; }
+   img { padding-bottom: 13px; }
    &:hover {
       // border-bottom: solid 5px darken($caes-red, 15%);
       background: darken($caes-red, 10%);
@@ -71,7 +71,7 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
 
 
 // Site Search & People Menu
-// --------------------
+// -------------------------
 
 // Search & People Container
 .search-and-people-container {
@@ -90,7 +90,7 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
    display: none !important;
    }
    float: right;
-   margin-right: 60px;
+   margin-right: 70px;
    position: relative;
    height: 56px;
    line-height: 56px;
@@ -100,7 +100,12 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
       padding-left: 0px;
       padding-right: 0px;
       font-size: rem-calc(14);
-      a { color: $body-font-color; font-weight: bold; &:hover { text-decoration: underline; } }
+      a {
+         color: $body-font-color;
+         font-weight: bold;
+         padding-right: .3em !important;
+         &:hover { text-decoration: underline; }
+      }
    }
 }
 
@@ -251,12 +256,9 @@ $nav-arrow-color: $nav-link-color;
 
 #mainNav {
    background: $nav-bg-color;
-   border-top-left-radius: 1em;
-   padding-left: .8em;
+   padding-left: 0em;
+   // margin-bottom: -16px;
    @include breakpoint(large down) {
-      border-bottom-left-radius: 0em;
-      border-bottom-right-radius: 0em;
-      // border-bottom: solid 5px darken($nav-bg-color, 5%);
       padding-left: 0em;
       @include breakpoint(small only) {
          li ul { overflow: scroll !important; }
@@ -357,7 +359,13 @@ $nav-arrow-color: $nav-link-color;
 // Main Section
 // ---------------
 
-main { margin-top: 1em; }
+main {
+   margin-top: 1em;
+   .large-9 { padding-right: 30px !important; }
+   @media (max-width: 1200px) {
+      padding: 1em;
+   }
+}
 
 // Footer Section
 // ---------------
