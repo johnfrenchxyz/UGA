@@ -20,6 +20,6 @@
 - Collapsed row on large screens for homepage.
 - Aligned "University of Georgia" text with bottom of the arch - but is this better?
 - Reduced padding between entries on the people menu (Campuses, Students, Alumni, Faculty/Staff)
-- Made the image slider and the navigation bar flush against each other, but only on large screens.
+- Explain why we can't make the image slider and the navigation bar flush against each other, even on large screens.
 - Made image slider bullets / indicators smaller.
 - Display component header color functionality (in response to Angela's concern)
