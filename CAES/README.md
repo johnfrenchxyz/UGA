@@ -2,12 +2,6 @@
 
 ##In Progress:
 
-- Align "University of Georgia" text with bottom of the arch
-- Reduce margins between entries on the people menu (Campuses, Students, Alumni, Faculty/Staff)
-- Make the image slider and the navigation bar flush against each other.
-- Square all menu bars.
-- Components that currently have a gray box, should have a red box (work it out)
-- Collapse row on large screens for homepage.
 - Make decision about subsite CAES gray box or no bray box, just breadcrumb.
 - Slightly darken Departmental Navigation bars (or not)
 - Fix dialog text in AEM. It is currently being cut off.
@@ -21,3 +15,11 @@
 - Expanding Search needs to autofocus on safari mobile.
 
 ##Recently Completed:
+
+- Made all edges of menu bars / main nav square for design consistency.
+- Collapsed row on large screens for homepage.
+- Aligned "University of Georgia" text with bottom of the arch - but is this better?
+- Reduced padding between entries on the people menu (Campuses, Students, Alumni, Faculty/Staff)
+- Made the image slider and the navigation bar flush against each other, but only on large screens.
+- Made image slider bullets / indicators smaller.
+- Display component header color functionality (in response to Angela's concern)
