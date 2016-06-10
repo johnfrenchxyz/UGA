@@ -3915,7 +3915,8 @@ h2 {
     font-size: 0.875rem;
     font-weight: bold; }
   .uga-button img {
-    padding-bottom: 13px; }
+    padding-bottom: 15px;
+    margin-right: 3px; }
   .uga-button:hover {
     background: #950c2b;
     transition: all 250ms ease; }
@@ -4078,7 +4079,10 @@ h2 {
 
 #mainNav, #subsiteNav {
   background: #3e3e3e;
-  padding-left: 0em; }
+  padding-left: 0em;
+  padding-top: 3px;
+  height: 56px;
+  line-height: 56px; }
   @media screen and (max-width: 74.9375em) {
     #mainNav, #subsiteNav {
       padding-left: 0em; } }
@@ -4150,13 +4154,11 @@ h2 {
 .is-dropdown-submenu {
   z-index: 2; }
 
-main {
-  margin-top: 1em; }
-  main .large-9 {
-    padding-right: 30px !important; }
-  @media (max-width: 1200px) {
-    main {
-      padding: 1em; } }
+.is-drilldown {
+  height: 355.5px !important; }
+
+.drilldown-toggle-height {
+  height: 0 !important; }
 
 footer {
   margin-top: 5em;

@@ -16,9 +16,23 @@ $(window).resize(function(){
 
 // Drilldown Height Fix -- Not sure why this fix is needed, but it is.
 //--------------------------------------------------------------------
-$('.is-drilldown').css('height', 'auto');
+// $('.is-drilldown').css('height', 'auto');
+// $(window).resize(function(){
+//    $('.is-drilldown').css('height', 'auto');
+// });
+
+var drilldownToggle = function() {
+   $('.is-drilldown').addClass('drilldown-toggle-height');
+   $('.menu-icon').click(function(){
+      $('.is-drilldown').toggleClass('drilldown-toggle-height');
+   });
+};
+
+// Initial Run
+drilldownToggle();
+// Run on Resize:
 $(window).resize(function(){
-   $('.is-drilldown').css('height', 'auto');
+   drilldownToggle();
 });
 
 // Drilldown/Small Screen Landing Page Links
@@ -52,16 +66,16 @@ $(window).resize(function(){
 //    }
 // }
 
-// Initial Run:
-landingPageLinks();
-// Run on Resize:
-$(window).resize(function(){
-   // Removes any current landing page links on resize -- this prevents there from being multiple links
-   $('.landing-page-link').each(function(){
-      $(this).remove();
-   });
-   landingPageLinks();
-});
+// // Initial Run:
+// landingPageLinks();
+// // Run on Resize:
+// $(window).resize(function(){
+//    // Removes any current landing page links on resize -- this prevents there from being multiple links
+//    $('.landing-page-link').each(function(){
+//       $(this).remove();
+//    });
+//    landingPageLinks();
+// });
 
 
 
