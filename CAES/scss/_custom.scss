@@ -30,7 +30,12 @@
 // Headings
 // --------
 h1, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
-h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 700; }
+h2 {
+   font-family: 'Roboto', sans-serif;
+   text-transform: uppercase;
+   font-weight: 700;
+   margin-top: .5em;
+}
 
 // UGA Branding
 // ------------
@@ -254,7 +259,6 @@ $nav-arrow-color: $nav-link-color;
 #mainNav {
    background: $nav-bg-color;
    padding-left: 0em;
-   padding-top: 3px;
    height: 56px;
    line-height: 56px;
    // margin-bottom: -16px;
@@ -374,6 +378,45 @@ main {
    //    padding: 1em;
    // }
 }
+
+// Subsite Side Navigation
+//------------------------
+$caes-dark-gray: #3e3e3e;
+$caes-light-gray: lighten($medium-gray, 10%);
+.submenu {
+   margin-top: 2em;
+   // Medium/Large Collapse
+   margin-right: -15px;
+   // Small Uncollapse
+   @include breakpoint (small only) { margin-right: 0px; }
+}
+.submenu ul {
+   // Hover Mixin
+   @mixin submenuHover() { &:hover { background: darken($caes-light-gray, 5%); } }
+   // Parent
+   .parent {
+      font-weight: 700;
+      background: $caes-light-gray;
+      border-bottom: solid 1px darken($caes-light-gray, 10%);
+      font-size: rem-calc(16);
+      @include submenuHover();
+   }
+   // Silbings
+   li {
+      font-size: rem-calc(14);
+      @include submenuHover();
+   }
+   // Active
+   .active {
+      font-weight: 700;
+      background: $caes-light-gray;
+      a { color: $caes-dark-gray; }
+      ul { background: none; }
+   }
+   // Children
+   .children a { padding-left: 2em; font-weight: 700; }
+}
+
 
 // Footer Section
 // ---------------
