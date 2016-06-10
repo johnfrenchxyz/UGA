@@ -2,17 +2,17 @@
 
 ## Notes from meeting (6/9/16)
 
-- sidenav vs breakcrumbs - get william bentsel for user test
-- make departmental nav the same color as the main nav.
-- Ask william about the campuses students alumni
-- Add "CAES" back into the header and make most of that bar gray.
-- For news > Title of article > author info after the block of text
-- In the events component (and all subsequent components) make it as close to the whitespace as possible.
-- just janky color correct the "donate now" button to match the site red
+- Sidenav vs Breakcrumbs - get William Vencill for user test
+- Ask William about the campuses students alumni menu on departmental pages.
+
 
 ##In Progress:
 
-- Make decision about subsite CAES gray box or no bray box, just breadcrumb.
+- Make departmental nav the same color as the main nav.
+- Try to make our own "Donate Now" Button.
+- In the events component (and all subsequent components) make it as close to the whitespace as possible.
+- Add "CAES" back into the header and make most of that bar gray.
+- For news, blogpost, pub, etc make the order > Title of article > text > author info and date.
 - Slightly darken Departmental Navigation bars (or not)
 - Fix dialog text in AEM. It is currently being cut off.
 - Create a standalone button component (Robby?)
