@@ -42,12 +42,9 @@ h2 { font-family: 'Roboto', sans-serif; text-transform: uppercase; font-weight: 
    @include headerLinks;
    text-transform: uppercase;
    text-align: left;
-   // padding-top: 5px;
    z-index: -1;
-   // Borders
-   // border-bottom: solid 5px darken($caes-red, 5%);
    // UGA Icon
-   img { padding-bottom: 13px; }
+   img { padding-bottom: 15px; margin-right: 3px; }
    &:hover {
       // border-bottom: solid 5px darken($caes-red, 15%);
       background: darken($caes-red, 10%);
@@ -257,6 +254,9 @@ $nav-arrow-color: $nav-link-color;
 #mainNav {
    background: $nav-bg-color;
    padding-left: 0em;
+   padding-top: 3px;
+   height: 56px;
+   line-height: 56px;
    // margin-bottom: -16px;
    @include breakpoint(large down) {
       padding-left: 0em;
@@ -355,16 +355,24 @@ $nav-arrow-color: $nav-link-color;
 	z-index: 2;
 }
 
+.is-drilldown {
+   height: 355.5px !important;
+}
+
+.drilldown-toggle-height {
+   height: 0 !important;
+}
+
 
 // Main Section
 // ---------------
 
 main {
-   margin-top: 1em;
-   .large-9 { padding-right: 30px !important; }
-   @media (max-width: 1200px) {
-      padding: 1em;
-   }
+   // margin-top: 1em;
+   // .large-9 { padding-right: 30px !important; }
+   // @media (max-width: 1200px) {
+   //    padding: 1em;
+   // }
 }
 
 // Footer Section
