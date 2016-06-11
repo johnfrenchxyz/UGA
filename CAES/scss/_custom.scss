@@ -80,7 +80,7 @@ h2 {
    float: right;
    position: relative;
    width: 100%;
-   @include breakpoint (small only) {
+   @include breakpoint(small only) {
       background: $caes-red;
    }
 }
@@ -261,7 +261,6 @@ $nav-arrow-color: $nav-link-color;
    padding-left: 0em;
    height: 56px;
    line-height: 56px;
-   // margin-bottom: -16px;
    @include breakpoint(large down) {
       padding-left: 0em;
       @include breakpoint(small only) {
@@ -273,7 +272,6 @@ $nav-arrow-color: $nav-link-color;
       background: $nav-bg-color;
       padding-top: .5em;
       padding-bottom: .5em;
-
       &:hover { background: lighten($nav-bg-color, 10%); }
 
       a {

@@ -21,19 +21,19 @@ $(window).resize(function(){
 //    $('.is-drilldown').css('height', 'auto');
 // });
 
-var drilldownToggle = function() {
-   $('.is-drilldown').addClass('drilldown-toggle-height');
-   $('.menu-icon').click(function(){
-      $('.is-drilldown').toggleClass('drilldown-toggle-height');
-   });
-};
-
-// Initial Run
-drilldownToggle();
-// Run on Resize:
-$(window).resize(function(){
-   drilldownToggle();
-});
+// var drilldownToggle = function() {
+//    $('.is-drilldown').addClass('drilldown-toggle-height');
+//    $('.menu-icon').click(function(){
+//       $('.is-drilldown').toggleClass('drilldown-toggle-height');
+//    });
+// };
+//
+// // Initial Run
+// drilldownToggle();
+// // Run on Resize:
+// $(window).resize(function(){
+//    drilldownToggle();
+// });
 
 // Drilldown/Small Screen Landing Page Links
 //------------------------------------------
