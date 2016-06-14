@@ -4080,26 +4080,30 @@ h2 {
 
 #mainNav {
   background: #3e3e3e;
-  padding-left: 0em;
   height: 56px;
   line-height: 56px; }
-  @media screen and (max-width: 74.9375em) {
-    #mainNav {
-      padding-left: 0em; } }
-  @media screen and (max-width: 74.9375em) and (min-width: 0em) and (max-width: 39.9375em) {
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     #mainNav li ul {
       overflow: scroll !important; } }
   #mainNav li {
     background: #3e3e3e;
-    padding-top: .5em;
-    padding-bottom: .5em; }
+    z-index: 100; }
+    @media screen and (min-width: 40em) {
+      #mainNav li {
+        padding-top: .6em;
+        padding-bottom: .7em; } }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      #mainNav li {
+        padding-top: .5em;
+        padding-bottom: .5em; } }
     #mainNav li:hover {
       background: #575757; }
     #mainNav li a {
       color: #e6e6e6;
       font-size: 0.875rem;
-      font-weight: bold; }
-      @media screen and (max-width: 63.9375em) {
+      font-weight: bold;
+      transition: 250ms ease; }
+      @media (max-width: 750px) {
         #mainNav li a {
           font-size: 0.75rem; } }
   #mainNav .is-drilldown-submenu-parent > a::after {
@@ -4107,6 +4111,12 @@ h2 {
   #mainNav ul {
     background: #3e3e3e;
     border: none; }
+    @media screen and (min-width: 40em) {
+      #mainNav ul {
+        margin-top: 36px; } }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      #mainNav ul {
+        margin-top: 0px; } }
   #mainNav .is-dropdown-submenu-item {
     background: #3e3e3e;
     padding: .2em; }
@@ -4127,13 +4137,11 @@ h2 {
     vertical-align: middle;
     margin-top: -15px; }
   .title-bar .menu-icon::after {
-    background: #fefefe; }
-  .title-bar .menu-icon::after {
     box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 
 @media screen and (min-width: 40em) {
   .medium-horizontal .is-dropdown-submenu {
-    top: 100%;
+    top: 20px;
     left: 0; }
   .medium-horizontal .is-dropdown-submenu-parent.opens-left .is-dropdown-submenu {
     right: 0; } }
@@ -4160,35 +4168,42 @@ h2 {
 .drilldown-toggle-height {
   height: 0 !important; }
 
-.submenu {
-  margin-top: 2em;
+main {
+  margin-top: 1em; }
+  main .large-9 {
+    padding-right: 30px !important; }
+  @media (max-width: 1200px) {
+    main {
+      padding: 1em; } }
+
+.side-nav {
   margin-right: -15px; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    .submenu {
+    .side-nav {
       margin-right: 0px; } }
 
-.submenu ul .parent {
+.side-nav ul .parent {
   font-weight: 700;
   background: #e4e4e4;
   border-bottom: solid 1px #cacaca;
   font-size: 1rem; }
-  .submenu ul .parent:hover {
+  .side-nav ul .parent:hover {
     background: #d7d7d7; }
 
-.submenu ul li {
+.side-nav ul li {
   font-size: 0.875rem; }
-  .submenu ul li:hover {
+  .side-nav ul li:hover {
     background: #d7d7d7; }
 
-.submenu ul .active {
+.side-nav ul .active {
   font-weight: 700;
   background: #e4e4e4; }
-  .submenu ul .active a {
+  .side-nav ul .active a {
     color: #3e3e3e; }
-  .submenu ul .active ul {
+  .side-nav ul .active ul {
     background: none; }
 
-.submenu ul .children a {
+.side-nav ul .children a {
   padding-left: 2em;
   font-weight: 700; }
 
