@@ -4389,6 +4389,199 @@ footer {
   -moz-column-width: 500px !important;
   -webkit-column-width: 500px !important; }
 
+.featured-row {
+  margin-left: -30px !important;
+  margin-right: -30px !important; }
+
+.academics {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .academics .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .academics .title {
+        font-size: 1rem; } }
+  .academics .subtitle {
+    font-weight: 500;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .academics .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .academics .description {
+    overflow: auto; }
+  .academics .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .academics .component-title {
+    background: #0083aa;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .academics .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #0083aa;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .academics img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .academics .title, .academics .subtitle, .academics .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+
+.research {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .research .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .research .title {
+        font-size: 1rem; } }
+  .research .subtitle {
+    font-weight: 500;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .research .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .research .description {
+    overflow: auto; }
+  .research .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .research .component-title {
+    background: #ffa02f;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .research .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #ffa02f;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .research img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .research .title, .research .subtitle, .research .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+
+.extension {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .extension .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .extension .title {
+        font-size: 1rem; } }
+  .extension .subtitle {
+    font-weight: 500;
+    color: #8a8a8a;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .extension .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .extension .description {
+    overflow: auto; }
+  .extension .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .extension .component-title {
+    background: #339966;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .extension .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #339966;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .extension img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .extension .title, .extension .subtitle, .extension .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+
 .blog-post-list .blog-post:after {
   height: 0;
   visibility: hidden;
