@@ -112,7 +112,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    column-width: 300px;
 	-moz-column-width: 300px;
 	-webkit-column-width: 300px;
-   column-count: 3;
+   column-count: 4;
    .tiled-list-item {
       @include callout-base;
       @include caes-list-style;
