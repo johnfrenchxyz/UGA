@@ -4739,3 +4739,14 @@ footer {
     padding: .1em .3em .1em .3em; }
   .featured-event .event {
     margin-top: 1em; }
+
+.event-info {
+  margin-left: 4em; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .event-info {
+      margin-left: 0; } }
+  .event-info .title {
+    font-family: 'Roboto', sans-serif; }
+  .event-info .event-map {
+    margin-top: 1em;
+    display: block; }

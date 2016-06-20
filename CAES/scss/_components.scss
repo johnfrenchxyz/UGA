@@ -426,3 +426,19 @@ $component-title-default-color: darken($caes-gray, 10%);
    margin-bottom: 4em;
    .event { margin-top: 1em; }
 }
+
+// Event Page
+//-----------
+// Takes styles from .featured-event
+.event-info {
+   margin-left: 4em;
+   @include breakpoint(small only) { margin-left: 0; }
+   .title {
+      font-family: 'Roboto', sans-serif;
+   }
+   .event-map {
+      margin-top: 1em;
+      display: block;
+
+   }
+}
