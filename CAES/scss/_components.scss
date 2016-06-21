@@ -87,6 +87,8 @@ $component-title-default-color: darken($caes-gray, 10%);
    @include clear;
 
    .plain-list-item {
+      display: block;
+      margin-bottom: 1em;
       @include caes-list-style;
       img { float: left; max-width: 200px; height: auto; padding-right: 1em; margin-bottom: 1em; }
    }
@@ -109,15 +111,27 @@ $component-title-default-color: darken($caes-gray, 10%);
 }
 .tiled-list-container {
    // Masonry Columns
-   column-width: 300px;
-	-moz-column-width: 300px;
-	-webkit-column-width: 300px;
-   column-count: 4;
+   column-width: 250px;
+	-moz-column-width: 250px;
+	-webkit-column-width: 250px;
+   column-count: 3;
+   .tiled-list-pad {
+      padding-top: 1em;
+      column-break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+   }
+
    .tiled-list-item {
       @include callout-base;
       @include caes-list-style;
+      margin: 0;
       column-break-inside: avoid;
-      display: inline-block;
+      -webkit-column-break-inside: avoid;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      display: block;
       width: 100%;
       // Image
       img { width: 100%; }
@@ -486,4 +500,12 @@ $component-title-default-color: darken($caes-gray, 10%);
       display: block;
 
    }
+}
+
+
+
+// News List
+//----------
+.news-list {
+   p { margin-bottom: 5px; }
 }
