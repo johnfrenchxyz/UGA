@@ -4943,3 +4943,6 @@ footer {
   .event-info .event-map {
     margin-top: 1em;
     display: block; }
+
+.news-list p {
+  margin-bottom: 5px; }
