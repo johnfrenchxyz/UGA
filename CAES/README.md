@@ -1,12 +1,8 @@
 #CAES To Do List
 
-## Notes from meeting (6/9/16)
-
-- Sidenav vs Breakcrumbs - get William Vencill for user test
-- Ask William about the campuses students alumni menu on departmental pages.
-
 
 ##In Progress:
+- Ask William about the campuses students alumni menu on departmental pages.
 - Try to make our own "Donate Now" Button.
 - Events Sidebar - add "full date" below the location
 - Calendar Page - add pagination to event list component
