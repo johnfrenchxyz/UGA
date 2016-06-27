@@ -17,7 +17,7 @@
       <div class="large-12 columns">
          <h1>CAES Event Calendar:</h1>
          <p>The "main page" for CAES Events.</p>
-         <hr  />
+         <hr />
       </div>
    </div>
 
@@ -41,11 +41,11 @@
                   <span itemprop="location" itemscope itemtype="http://schema.org/Place">
                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="addressLocality">Greensboro</span>,
-                        <span itemprop="addressRegion">GA</span>
-                     </span>
-                     at
-                     <span itemprop="name">Greensboro County School System</span>
-                  </span>
+               <span itemprop="addressRegion">GA</span>
+               </span>
+               at
+               <span itemprop="name">Greensboro County School System</span>
+               </span>
                </span>
                <!-- Description / Summary -->
                <p class="description" itemprop="description">Aliquam aliquam posuere nisl nec molestie. Fusce dapibus finibus mi, elementum commodo diam fermentum et. Aliquam ligula mauris, lacinia eu mi et, convallis laoreet mauris. Suspendisse pretium justo est. Nulla ipsum odio.</p>
@@ -82,11 +82,11 @@
                   <span itemprop="location" itemscope itemtype="http://schema.org/Place">
                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="addressLocality">Greensboro</span>,
-                        <span itemprop="addressRegion">GA</span>
-                     </span>
-                     at
-                     <span itemprop="name">Greensboro County School System</span>
-                  </span>
+               <span itemprop="addressRegion">GA</span>
+               </span>
+               at
+               <span itemprop="name">Greensboro County School System</span>
+               </span>
                </span>
                <!-- Full Date & Time -->
                <span class="full-date">05/08/16 - 05/09/16</span>
@@ -112,11 +112,11 @@
                   <span itemprop="location" itemscope itemtype="http://schema.org/Place">
                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="addressLocality">Greensboro</span>,
-                        <span itemprop="addressRegion">GA</span>
-                     </span>
-                     at
-                     <span itemprop="name">Greensboro County School System</span>
-                  </span>
+               <span itemprop="addressRegion">GA</span>
+               </span>
+               at
+               <span itemprop="name">Greensboro County School System</span>
+               </span>
                </span>
                <!-- Full Date & Time -->
                <span class="full-date">05/08/16</span>
@@ -142,11 +142,11 @@
                   <span itemprop="location" itemscope itemtype="http://schema.org/Place">
                      <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                         <span itemprop="addressLocality">Greensboro</span>,
-                        <span itemprop="addressRegion">GA</span>
-                     </span>
-                     at
-                     <span itemprop="name">Greensboro County School System</span>
-                  </span>
+               <span itemprop="addressRegion">GA</span>
+               </span>
+               at
+               <span itemprop="name">Greensboro County School System</span>
+               </span>
                </span>
                <!-- Full Date & Time -->
                <span class="full-date">05/08/16 - 05/09/16</span>
@@ -156,7 +156,17 @@
             </div>
 
             <hr />
-            <a class="button small hollow read-more" href="#">See More Events</a>
+            <ul class="pagination" role="navigation" aria-label="Pagination">
+               <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+               <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+               <li><a href="#" aria-label="Page 2">2</a></li>
+               <li><a href="#" aria-label="Page 3">3</a></li>
+               <li><a href="#" aria-label="Page 4">4</a></li>
+               <li class="ellipsis" aria-hidden="true"></li>
+               <li><a href="#" aria-label="Page 12">12</a></li>
+               <li><a href="#" aria-label="Page 13">13</a></li>
+               <li class="pagination-next"><a href="#" aria-label="Next page">Next <span class="show-for-sr">page</span></a></li>
+            </ul>
 
          </div>
       </div>
@@ -187,9 +197,9 @@
    </script>
 
    <script>
-   $(function() {
-     $( "#datepicker" ).datepicker();
-   });
+      $(function() {
+         $("#datepicker").datepicker();
+      });
    </script>
 
 </body>
