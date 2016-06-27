@@ -500,6 +500,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    @include event;
    padding: 0;
    margin-bottom: 4em;
+   img { max-height: 400px; }
    .event { margin-top: 1em; }
 }
 

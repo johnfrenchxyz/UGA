@@ -4,7 +4,6 @@
 ##In Progress:
 - Ask William about the campuses students alumni menu on departmental pages.
 - Try to make our own "Donate Now" Button.
-- Calendar Page - add a max height to the featured image
 - Event Page - social like sharing service
 - Event Page - make time and location more prominent
 - Make a button component - and add color classes that match the home page sections.
@@ -24,3 +23,4 @@
 
 - Events Sidebar - added "full date" below the location.
 - Calendar Page - added pagination to event list component.
+- Calendar Page - added a max height to the featured image
