@@ -4953,6 +4953,8 @@ footer {
     background: #fefefe;
     color: #5e5e5e;
     padding: .1em .3em .1em .3em; }
+  .featured-event img {
+    max-height: 400px; }
   .featured-event .event {
     margin-top: 1em; }
 
