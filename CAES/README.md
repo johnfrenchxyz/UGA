@@ -4,7 +4,6 @@
 ##In Progress:
 - Ask William about the campuses students alumni menu on departmental pages.
 - Try to make our own "Donate Now" Button.
-- Event Page - social like sharing service
 - Make a button component - and add color classes that match the home page sections.
 - Profile Component - change to "Profile Page Template"
 - Profile Component - convert to be an actual component that can be used in a sidebar
@@ -24,3 +23,4 @@
 - Calendar Page - added pagination to event list component.
 - Calendar Page - added a max height to the featured image
 - Event Page - made time and location more prominent
+- Event Page - I actually do not think we should have social sharing for the events. It increases page load time, and I am not sure that many people will find it useful.
