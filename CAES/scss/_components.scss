@@ -66,7 +66,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    // Subtitle
    .subtitle {
       font-weight: 500;
-      color: $dark-gray;
+      // color: $dark-gray;
       text-transform: uppercase;
       font-size: rem-calc(12);
       display: block;
@@ -472,6 +472,23 @@ $component-title-default-color: darken($caes-gray, 10%);
    .title { margin-top: -5px; }
    .event {
       @include event();
+   }
+   .full-date {
+      background: lighten($light-gray, 5%);
+      color: $caes-red;
+      padding: .3em;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: rem-calc(12);
+      margin-right: .5em;
+   }
+   .event-time {
+      background: lighten($light-gray, 5%);
+      color: $caes-red;
+      padding: .3em;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: rem-calc(12);
    }
 }
 
