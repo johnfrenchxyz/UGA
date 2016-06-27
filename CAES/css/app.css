@@ -4277,7 +4277,6 @@ footer {
           font-size: 1rem; } }
     .plain-list-container .plain-list-item .subtitle {
       font-weight: 500;
-      color: #8a8a8a;
       text-transform: uppercase;
       font-size: 0.75rem;
       display: block; }
@@ -4373,7 +4372,6 @@ footer {
           font-size: 1rem; } }
     .tiled-list-container .tiled-list-item .subtitle {
       font-weight: 500;
-      color: #8a8a8a;
       text-transform: uppercase;
       font-size: 0.75rem;
       display: block; }
@@ -4419,7 +4417,6 @@ footer {
         font-size: 1rem; } }
   .academics .subtitle {
     font-weight: 500;
-    color: #8a8a8a;
     text-transform: uppercase;
     font-size: 0.75rem;
     display: block; }
@@ -4482,7 +4479,6 @@ footer {
         font-size: 1rem; } }
   .research .subtitle {
     font-weight: 500;
-    color: #8a8a8a;
     text-transform: uppercase;
     font-size: 0.75rem;
     display: block; }
@@ -4545,7 +4541,6 @@ footer {
         font-size: 1rem; } }
   .extension .subtitle {
     font-weight: 500;
-    color: #8a8a8a;
     text-transform: uppercase;
     font-size: 0.75rem;
     display: block; }
@@ -4893,6 +4888,23 @@ footer {
   color: #5e5e5e;
   padding: .1em .3em .1em .3em; }
 
+.event-list .full-date {
+  background: #f3f3f3;
+  color: #c41039;
+  padding: .3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  margin-right: .5em; }
+
+.event-list .event-time {
+  background: #f3f3f3;
+  color: #c41039;
+  padding: .3em;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75rem; }
+
 .featured-event {
   padding: 1em;
   padding: 0;
@@ -4907,7 +4919,6 @@ footer {
         font-size: 1rem; } }
   .featured-event .subtitle {
     font-weight: 500;
-    color: #8a8a8a;
     text-transform: uppercase;
     font-size: 0.75rem;
     display: block; }
