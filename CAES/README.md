@@ -5,8 +5,6 @@
 - Ask William about the campuses students alumni menu on departmental pages.
 - Try to make our own "Donate Now" Button.
 - Make a button component - and add color classes that match the home page sections.
-- Profile Component - change to "Profile Page Template"
-- Profile Component - convert to be an actual component that can be used in a sidebar
 - Re-style Side Nav, and add margin-bottom.
 - Hall of fame component - add default avatar and fix column issues.
 - Add "CAES" back into the header and make most of that bar gray on the subsite template.
@@ -24,3 +22,5 @@
 - Calendar Page - added a max height to the featured image
 - Event Page - made time and location more prominent
 - Event Page - I actually do not think we should have social sharing for the events. It increases page load time, and I am not sure that many people will find it useful.
+- Profile Component - changed to "Profile Page Template"
+- Profile Component - converted to be an actual component that can be used in a sidebar
