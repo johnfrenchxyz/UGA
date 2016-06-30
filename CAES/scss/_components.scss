@@ -443,6 +443,50 @@ $component-title-default-color: darken($caes-gray, 10%);
    font-size: rem-calc(16);
 }
 
+// Featured Conent Mixin (For News & Events)
+@mixin featured-content {
+   position: relative;
+   margin: 0 0 2em 0;
+   transition: 250ms ease;
+   max-height: 300px;
+   overflow: hidden;
+   &:hover {
+      figcaption {
+         background: rgba(65, 65, 65, 1);
+         padding-left: 2em;
+      }
+   }
+}
+img {
+   display: block;
+}
+figcaption {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: rgba(65, 65, 65, 0.78);
+   display: block;
+   margin-bottom: 0;
+   transition: 250ms ease;
+   font-family: 'Roboto Slab', serif;
+   font-weight: 700;
+   font-size: rem-calc(36);
+   @include breakpoint(small only) {
+      font-size: rem-calc(24);
+   }
+   padding: 1em;
+   color: $white;
+   .caption-tagline {
+      font-family: 'Roboto', sans-serif;
+      font-size: rem-calc(24);
+      @include breakpoint(small only) {
+         font-size: rem-calc(18);
+      }
+      display: block;
+      margin-top: -10px;
+   }
+}
+
 
 
 // Event List
@@ -578,46 +622,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 //---------------
 .news-main-page {
    .featured-story {
-      position: relative;
-      margin: 0 0 2em 0;
-      transition: 250ms ease;
-      max-height: 300px;
-      overflow: hidden;
-      &:hover {
-         figcaption {
-            background: rgba(65, 65, 65, 1);
-            padding-left: 2em;
-         }
-      }
-   }
-   img {
-      display: block;
-   }
-   figcaption {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background: rgba(65, 65, 65, 0.78);
-      display: block;
-      margin-bottom: 0;
-      transition: 250ms ease;
-      font-family: 'Roboto Slab', serif;
-      font-weight: 700;
-      font-size: rem-calc(36);
-      @include breakpoint(small only) {
-         font-size: rem-calc(24);
-      }
-      padding: 1em;
-      color: $white;
-      .caption-tagline {
-         font-family: 'Roboto', sans-serif;
-         font-size: rem-calc(24);
-         @include breakpoint(small only) {
-            font-size: rem-calc(18);
-         }
-         display: block;
-         margin-top: -10px;
-      }
+      @include featured-content;
    }
    // News Filters
    .filters-container {
