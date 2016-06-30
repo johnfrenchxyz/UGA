@@ -4988,3 +4988,62 @@ footer {
 
 .news-list p {
   margin-bottom: 5px; }
+
+.news-story-page {
+  padding: 1em;
+  padding: 0;
+  margin-bottom: 4em; }
+  .news-story-page .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .news-story-page .title {
+        font-size: 1rem; } }
+  .news-story-page .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .news-story-page .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .news-story-page .description {
+    overflow: auto; }
+  .news-story-page .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .news-story-page .calendar-icon {
+    background: #c41039;
+    color: #fefefe;
+    float: left;
+    width: 50px;
+    height: 55px;
+    line-height: 1.3;
+    margin-right: 1em;
+    text-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center; }
+  .news-story-page .calendar-icon .month {
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase; }
+  .news-story-page .calendar-icon .day {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: #fefefe;
+    color: #5e5e5e;
+    padding: .1em .3em .1em .3em; }
+  .news-story-page h2 {
+    margin-bottom: -5px; }
+  .news-story-page .tagline {
+    margin-bottom: 1em; }
+  .news-story-page .description {
+    margin-top: 1em; }
+  .news-story-page .news-lightbox {
+    text-align: center; }
+    .news-story-page .news-lightbox img {
+      width: 100%; }

@@ -533,10 +533,25 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
 }
 
-
-
 // News List
 //----------
 .news-list {
    p { margin-bottom: 5px; }
+}
+
+// News Story Page
+//----------------
+.news-story-page {
+   @include caes-list-style;
+   @include event;
+   padding: 0;
+   margin-bottom: 4em;
+   h2 { margin-bottom: -5px; }
+   .tagline { margin-bottom: 1em; }
+   // img { max-height: 400px; }
+   .description { margin-top: 1em; }
+   .news-lightbox {
+      text-align: center;
+      img { width: 100%; }
+   }
 }
