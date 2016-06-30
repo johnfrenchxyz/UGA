@@ -6,7 +6,6 @@
 - Event Page - Add a "Contact Person" field for the event.
 - News Story Page - Hide "About the Author," but ask what to do with FACES database.
 - News Story Page - Show "Related Stories" instead of just the button.
-- Event Calendar - Change the layout to match the News Main page layout.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
 - News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
 - Home page - Make "Academics" and "Research" sections text bigger.
@@ -25,10 +24,10 @@
 - Expanding Search needs to autofocus on safari mobile.
 
 ##Recently Completed:
-
+- Event Calendar - Changed the layout to match the News Main page layout.
+- Event Calendar - added pagination to event list component.
+- Event Calendar - added a max height to the featured image
 - Events Sidebar - added "full date" below the location.
-- Calendar Page - added pagination to event list component.
-- Calendar Page - added a max height to the featured image
 - Event Page - made time and location more prominent
 - Event Page - I actually do not think we should have social sharing for the events. It increases page load time, and I am not sure that many people will find it useful.
 - Profile Component - changed to "Profile Page Template"
