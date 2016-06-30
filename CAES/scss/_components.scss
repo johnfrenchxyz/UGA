@@ -620,9 +620,11 @@ $component-title-default-color: darken($caes-gray, 10%);
       }
    }
    // News Filters
-   .filters {
-      // .component-title { @include component-title( $caes-red, $white );
-      padding: 1em;
+   .filters-container {
+      .component-title { @include component-title( $body-font-color, $white ); }
+      .filters {
+         padding: 1em;
+      }
       .filter-control {
 
       }
@@ -630,6 +632,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 
    // News List
    .news-list {
+      .component-title { @include component-title( $caes-red, $white ); }
       margin-bottom: 2em;
    }
 }
