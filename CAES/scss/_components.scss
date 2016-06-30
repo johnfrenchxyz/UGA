@@ -553,27 +553,24 @@ figcaption {
 // Events Calendar (Main Page)
 //----------------------------
 .featured-event {
-   @include caes-list-style;
-   @include event;
-   padding: 0;
-   margin-bottom: 4em;
-   img { max-height: 400px; }
-   .event { margin-top: 1em; }
+   @include featured-content;
 }
 
 // Event Page
 //-----------
 // Takes styles from .featured-event
-.event-info {
-   margin-left: 4em;
-   @include breakpoint(small only) { margin-left: 0; }
-   .title {
-      font-family: 'Roboto', sans-serif;
-   }
-   .event-map {
-      margin-top: 1em;
-      display: block;
+.event-page {
+   .event-info {
+      margin-left: 4em;
+      @include breakpoint(small only) { margin-left: 0; }
+      .title {
+         font-family: 'Roboto', sans-serif;
+      }
+      .event-map {
+         margin-top: 1em;
+         display: block;
 
+      }
    }
 }
 

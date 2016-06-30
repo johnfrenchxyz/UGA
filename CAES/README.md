@@ -2,6 +2,7 @@
 
 
 ##In Progress:
+- Do windows test for nav and calendar icons.
 - Event Page - Add a "Contact Person" field for the event.
 - News Story Page - Hide "About the Author," but ask what to do with FACES database.
 - News Story Page - Show "Related Stories" instead of just the button.
