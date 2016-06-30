@@ -4,9 +4,10 @@
 ##In Progress:
 - Do windows test for nav and calendar icons.
 - Event Page - Add a "Contact Person" field for the event.
-- News Story Page - Hide "About the Author," but ask what to do with FACES database.
+- News Story Page - Add "About the Author" to match what is currently on FACES.
 - News Story Page - Show "Related Stories" instead of just the button.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
+- News Main Page - Add several "Related Stories" at the bottom instead of just a button.
 - News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
 - Home page - Make "Academics" and "Research" sections text bigger.
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
