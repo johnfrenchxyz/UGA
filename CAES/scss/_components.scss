@@ -573,3 +573,63 @@ $component-title-default-color: darken($caes-gray, 10%);
       }
    }
 }
+
+// News Main Page
+//---------------
+.news-main-page {
+   .featured-story {
+      position: relative;
+      margin: 0 0 2em 0;
+      transition: 250ms ease;
+      max-height: 300px;
+      overflow: hidden;
+      &:hover {
+         figcaption {
+            background: rgba(65, 65, 65, 1);
+            padding-left: 2em;
+         }
+      }
+   }
+   img {
+      display: block;
+   }
+   figcaption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: rgba(65, 65, 65, 0.78);
+      display: block;
+      margin-bottom: 0;
+      transition: 250ms ease;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+      font-size: rem-calc(36);
+      @include breakpoint(small only) {
+         font-size: rem-calc(24);
+      }
+      padding: 1em;
+      color: $white;
+      .caption-tagline {
+         font-family: 'Roboto', sans-serif;
+         font-size: rem-calc(24);
+         @include breakpoint(small only) {
+            font-size: rem-calc(18);
+         }
+         display: block;
+         margin-top: -10px;
+      }
+   }
+   // News Filters
+   .filters {
+      // .component-title { @include component-title( $caes-red, $white );
+      padding: 1em;
+      .filter-control {
+
+      }
+   }
+
+   // News List
+   .news-list {
+      margin-bottom: 2em;
+   }
+}
