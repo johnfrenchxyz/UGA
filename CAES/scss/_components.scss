@@ -552,6 +552,24 @@ $component-title-default-color: darken($caes-gray, 10%);
    .description { margin-top: 1em; }
    .news-lightbox {
       text-align: center;
-      img { width: 100%; }
+      img {
+         margin-top: 2em;
+         width: 100%;
+      }
+      .description {
+         float: left;
+      }
+      .img-download {
+         float: right;
+         margin-top: 1em;
+      }
+   }
+   .read-more {
+      margin-top: 1em;
+   }
+   .story-sharing {
+      @include breakpoint(medium up) {
+         margin-top: 5em;
+      }
    }
 }

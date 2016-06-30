@@ -19,58 +19,72 @@
       </div>
    </div>
 
-   <div class="row">
-      <div class="large-9 medium-12 columns">
-         <div class="news-story-page">
-            <h2>Beekeeping Basics Vol. I</h2>
+   <div class="news-story-page" itemscope itemtype="https://schema.org/NewsArticle">
+      <div class="row">
+         <div class="large-9 medium-9 columns">
+            <!-- Story Title -->
+            <h2 itemprop="headline">Beekeeping Basics</h2>
+            <!-- Story Author -->
             <span class="subtitle tagline">Story By John Doe</span>
-            <a data-open="exampleModal11">
-               <img src="https://pixabay.com/static/uploads/photo/2014/11/14/16/39/honeycomb-530987_960_720.jpg" alt="Featured Event Image Description" /></a>
-
-            <!-- <p><a data-open="exampleModal11">Click me for a modal</a></p> -->
-
-            <div class="reveal large news-lightbox" id="exampleModal11" aria-labelledby="exampleModalHeader11" data-reveal>
-               <img src="https://pixabay.com/static/uploads/photo/2014/11/14/16/39/honeycomb-530987_960_720.jpg" alt="Featured Event Image Description" />
-               <p class="float-left" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-               <a href="#" class="button float-right">Download Image</a>
+            <!-- Story Image -->
+            <a data-open="storyImage">
+               <img src="https://goo.gl/vB0nRe" alt="Honeycomb" itemtype="image" />
+            </a>
+            <!-- Story Image Lightbox -->
+            <div class="reveal large news-lightbox" id="storyImage" aria-labelledby="storyImage" data-reveal>
+               <img src="https://goo.gl/vB0nRe" alt="Honeycomb" />
+               <p class="description" style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+               <a href="#" download="https://pixabay.com/static/uploads/photo/2014/11/14/16/39/honeycomb-530987_960_720.jpg" class="button img-download"><i class="fi-download"></i> Download Image</a>
                <button class="close-button" data-close aria-label="Close Accessible Modal" type="button">
                   <span aria-hidden="true">&times;</span>
                </button>
             </div>
-
-
-            <div class="event" itemscope itemtype="http://schema.org/Event">
-               <!-- Title -->
-               <!-- <a class="title" itemprop="headline">Beekeeping Basics</a> -->
-               <!-- Description / Summary -->
-               <p class="description" itemprop="description">Aliquam aliquam posuere nisl nec molestie. Fusce dapibus finibus mi, elementum commodo diam fermentum et. Aliquam ligula mauris, lacinia eu mi et, convallis laoreet mauris. Suspendisse pretium justo est. Nulla ipsum odio. Lorem ipsum dolor
-                  sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <!-- Story Text / Content -->
+            <div class="description" itemprop="description">
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
                   aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-               <span class="subtitle">About the Author: <span itemprop="author">John Doe</span> is a classy writer guy who happens to write for UGA and he does it really well.</span>
-               <!-- Subtitle / Publish Information -->
-               <meta itemprop="datePublished" content="2009-05-08" />
-               <span class="subtitle">Published 05/08/1931 by <span itemprop="publisher">UGA FACES</span></span>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                  aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <!-- Subtitle / Publish Information -->
+            <meta itemprop="datePublished" content="2009-05-08" />
+            <span class="subtitle">Published 05/08/1931 by <span itemprop="publisher">UGA FACES</span></span>
+            <!-- Author Information -->
+            <span class="subtitle">About the Author: <span itemprop="author">John Doe</span> is a classy writer guy who happens to write for UGA and he does it really well.</span>
+            <!-- Related Stories Button -->
+            <a class="button large hollow read-more" href="#">See Related Stories</a>
+
+         </div>
+         <div class="large-3 medium-3 columns">
+            <div class="story-sharing">
+               <span class="subtitle">Share Story:</span>
+               <!-- Social Media Icons -->
+               <ul class="social-media-icons">
+                  <li title="facebook"><a><i class="fi-social-facebook"></i></a></li>
+                  <li title="twitter"><a><i class="fi-social-twitter"></i></a></li>
+                  <li title="instagram"><a><i class="fi-social-instagram"></i></a></li>
+                  <li title="email"><a><i class="fi-mail"></i></a></li>
+               </ul>
             </div>
          </div>
       </div>
+   </div>
 
 
 
 
-      <script src="../bower_components/jquery/dist/jquery.js"></script>
-      <script src="../bower_components/what-input/what-input.js"></script>
-      <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
-      <script src="../js/app.js"></script>
-      <!-- For Expanding Search -->
-      <script src="../js/search/classie.js"></script>
-      <script src="../js/search/uisearch.js"></script>
-      <script>
-         new UISearch(document.getElementById('sb-search'));
-      </script>
+   <script src="../bower_components/jquery/dist/jquery.js"></script>
+   <script src="../bower_components/what-input/what-input.js"></script>
+   <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+   <script src="../js/app.js"></script>
+   <!-- For Expanding Search -->
+   <script src="../js/search/classie.js"></script>
+   <script src="../js/search/uisearch.js"></script>
+   <script>
+      new UISearch(document.getElementById('sb-search'));
+   </script>
 </body>
 
 </html>
