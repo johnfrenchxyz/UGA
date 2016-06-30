@@ -5046,4 +5046,15 @@ footer {
   .news-story-page .news-lightbox {
     text-align: center; }
     .news-story-page .news-lightbox img {
+      margin-top: 2em;
       width: 100%; }
+    .news-story-page .news-lightbox .description {
+      float: left; }
+    .news-story-page .news-lightbox .img-download {
+      float: right;
+      margin-top: 1em; }
+  .news-story-page .read-more {
+    margin-top: 1em; }
+  @media screen and (min-width: 40em) {
+    .news-story-page .story-sharing {
+      margin-top: 5em; } }
