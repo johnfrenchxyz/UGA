@@ -6,10 +6,8 @@
 - News Story Page - Hide "About the Author," but ask what to do with FACES database.
 - News Story Page - Show "Related Stories" instead of just the button.
 - Event Calendar - Change the layout to match the News Main page layout.
-- Tell Robby that on the News Main page, the featured story will change on refresh.
-- Consult Robby and Ben about News filters. Check search data and where the embedded FACES plugin is used.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
-- News Main Page - Add a "For the Media" section and inqure where to put it and possibly consolidate it with "Special Sections."
+- News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
 - Home page - Make "Academics" and "Research" sections text bigger.
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
 - Ask William about the campuses students alumni menu on departmental pages.
