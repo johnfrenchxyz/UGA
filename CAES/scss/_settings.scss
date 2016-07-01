@@ -51,6 +51,7 @@ $caes-green: rgb(51, 153, 102);     // Green (Used for "Extension" Section)
 $caes-yellow: #ffa02f;              // Yellow (Used for "Research" Section)
 $caes-blue: #0083aa;                // Blue (Used for the "Academics Section")
 
+
 // Global Foundation Colors:
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
@@ -75,6 +76,8 @@ $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
 $global-text-direction: ltr;
+
+$caes-dark-gray: darken($dark-gray, 30%);
 
 // 2. Breakpoints
 // --------------
