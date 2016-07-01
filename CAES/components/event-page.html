@@ -19,76 +19,94 @@
       </div>
    </div>
 
-   <div class="row">
-      <div class="large-9 medium-12 columns">
-         <div class="featured-event">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/68/Peugeot_203_black_and_white_picture.jpg" alt="Featured Event Image Description" />
-            <div class="event" itemscope itemtype="http://schema.org/Event">
-               <!-- Calendar Icon -->
-               <div class="calendar-icon" itemprop="startDate" content="2016-08-21T13:00">
-                  <span class="month">May</span>
-                  <span class="day">08</span>
-               </div>
-               <!-- Title -->
-               <a class="title" itemprop="url">
-                  <span itemprop="name">Agroforestry & Wildlife Field Day</span>
-               </a>
-               <!-- Subtitle / Publish Information -->
-               <span class="subtitle">
-                  3pm |
-                  <span itemprop="location" itemscope itemtype="http://schema.org/Place">
-                     <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="addressLocality">Greensboro</span>,
-               <span itemprop="addressRegion">GA</span>
-               </span>
-               at
-               <span itemprop="name">Greensboro County School System</span>
-               </span>
-               </span>
-               <!-- Description / Summary -->
-               <p class="description" itemprop="description">Aliquam aliquam posuere nisl nec molestie. Fusce dapibus finibus mi, elementum commodo diam fermentum et. Aliquam ligula mauris, lacinia eu mi et, convallis laoreet mauris. Suspendisse pretium justo est. Nulla ipsum odio.</p>
+   <div class="event-page" itemscope itemtype="http://schema.org/Event">
+
+      <div class="row">
+         <div class="large-12 columns">
+            <h2 itemprop="name">Agroforestry &amp; Wildlife Field Day</h2>
+         </div>
+      </div>
+      <div class="row">
+         <div class="large-6 columns">
+            <div>
+               <span class="date">05/08/16 - 05/09/16</span>
+               <span class="time">3pm - 5pm</span>
             </div>
-            <div class="event-info">
-               <span class="title">Additional Information:</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-               id est laborum.
-               <!-- Map -->
-               <div class="event-map" itemprop="hasMap">
+            <div class="address">
+               <span class="place">Greensboro County School System</span>
+               <span class="city">Greensboro, GA</span>
+            </div>
 
-                  <style>
-                     .embed-container {
-                        position: relative;
-                        padding-bottom: 56.25%;
-                        height: 0;
-                        overflow: hidden;
-                        max-width: 100%;
-                     }
-                     .embed-container iframe {
-                        position: absolute;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        height: 100%;
-                     }
-                  </style>
-                  <!-- Added to fix Google map scroll thing function-->
-                  <style>
-                     .scrolloff {
-                        pointer-events: none;
-                     }
-                  </style>
-                  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+         </div>
+         <div class="large-6 columns">
+            <div class="contact">
+               <span class="title">Contact:</span>
+               <span class="name">John Doe</span>
+               <ul class="contact-items">
+                  <li class=""><a><i class="fi-mail"></i> <span itemprop="email">mkellett.edu</span></a></li>
+                  <li class=""><a><i class="fi-telephone"></i> <span itemprop="telephone">706-867-5309</span></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
 
-                  <div class="embed-container overlay">
+      <div class="row">
+         <div class="large-12 columns">
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                     <iframe id="map" scrolling="no" marginheight="0" marginwidth="0" style="border:#CCCCCC 1px solid;" src="http://maps.google.com/maps?q=+2152 West Broad Street+Athens+GA+30606&amp;hl=en&amp;ie=UTF8&amp;z=12&amp;iwloc=near&amp;output=embed&amp;z=15" frameborder="0"
-                        width="600" height="450" class="scrolloff"></iframe>
+            <!-- Map -->
+            <div class="event-map" itemprop="hasMap">
 
-                  </div>
+               <style>
+                  .embed-container {
+                     position: relative;
+                     padding-bottom: 56.25%;
+                     height: 0;
+                     overflow: hidden;
+                     max-width: 100%;
+                  }
+
+                  .embed-container iframe {
+                     position: absolute;
+                     top: 0;
+                     left: 0;
+                     width: 100%;
+                     height: 100%;
+                  }
+               </style>
+               <!-- Added to fix Google map scroll thing function-->
+               <style>
+                  .scrolloff {
+                     pointer-events: none;
+                  }
+               </style>
+               <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+
+               <div class="embed-container overlay">
+
+                  <iframe id="map" scrolling="no" marginheight="0" marginwidth="0" style="border:#CCCCCC 1px solid;" src="http://maps.google.com/maps?q=+2152 West Broad Street+Athens+GA+30606&amp;hl=en&amp;ie=UTF8&amp;z=12&amp;iwloc=near&amp;output=embed&amp;z=15" frameborder="0"
+                     width="600" height="450" class="scrolloff"></iframe>
+
                </div>
             </div>
          </div>
       </div>
+
+
+
+   </div>
+
+
+
+   <div class="event-page">
+      <div class="row event">
+         <div class="large-6 columns">
+
+         </div>
+      </div>
+   </div>
+
+
    </div>
 
 

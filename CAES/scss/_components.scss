@@ -443,6 +443,14 @@ $component-title-default-color: darken($caes-gray, 10%);
    font-size: rem-calc(16);
 }
 
+
+
+
+// EVENTS & NEWS
+//--------------
+// 1. Mixins
+// 2.
+
 // Featured Conent Mixin (For News & Events)
 @mixin featured-content {
    position: relative;
@@ -487,12 +495,7 @@ figcaption {
    }
 }
 
-
-
-// Event List
-//-----------
-
-// Mixin For Calendar Icon
+// Mixin For Single Event
 @mixin event {
    // Calendar Icon
    .calendar-icon {
@@ -558,21 +561,82 @@ figcaption {
 
 // Event Page
 //-----------
-// Takes styles from .featured-event
 .event-page {
-   .event-info {
-      margin-left: 4em;
-      @include breakpoint(small only) { margin-left: 0; }
-      .title {
-         font-family: 'Roboto', sans-serif;
+   h2 {
+      margin-bottom: 0;
+   }
+   .date {
+      color: $caes-red;
+      font-family: 'Roboto Slab', serif;
+      float: left;
+      margin-right: 2em;
+      // font-weight: 700;
+      transition: 250ms ease;
+      font-size: rem-calc(22);
+      @include breakpoint(small only) {
+         font-size: rem-calc(18)
       }
-      .event-map {
-         margin-top: 1em;
+      display: block;
+   }
+   .time {
+      @extend .date;
+      float: left;
+   }
+   .address {
+      margin-top: 3em;
+      margin-bottom: 1em;
+      .place {
+         font-weight: 700;
          display: block;
-
+      }
+      .city {
+         font-weight: 500;
+         color: $caes-dark-gray;
+         text-transform: uppercase;
+         font-size: rem-calc(12);
+         display: block;
+      }
+   }
+   .contact {
+      .title {
+         @extend .date;
+         color: $caes-dark-gray;
+         float: none;
+      }
+      .name {
+         font-weight: 700;
+      }
+   }
+   .contact-items {
+      list-style: none;
+      margin-left: 0;
+      li {
+         @include breakpoint(medium up) {
+            display: inline-block;
+            margin-right: 1em;
+         }
       }
    }
 }
+// .event-page {
+//    margin-bottom: 1em;
+//    @include caes-list-style;
+//    .event {
+//       @include event;
+//    }
+//    .event-info {
+//       margin-left: 4em;
+//       @include breakpoint(small only) { margin-left: 0; }
+//       .title {
+//          font-family: 'Roboto', sans-serif;
+//       }
+//       .event-map {
+//          margin-top: 1em;
+//          display: block;
+//
+//       }
+//    }
+// }
 
 // News List
 //----------

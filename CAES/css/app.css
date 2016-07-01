@@ -4818,7 +4818,7 @@ footer {
       margin-top: 0;
       font-weight: 700;
       font-size: 1rem; }
-    .hall-of-fame-container .hall-of-famer .date {
+    .hall-of-fame-container .hall-of-famer .date, .hall-of-fame-container .hall-of-famer .event-page .time, .event-page .hall-of-fame-container .hall-of-famer .time, .hall-of-fame-container .hall-of-famer .event-page .contact .title, .event-page .contact .hall-of-fame-container .hall-of-famer .title {
       margin-bottom: 2em; }
 
 .image-gallery-container {
@@ -4960,16 +4960,51 @@ figcaption {
     background: #414141;
     padding-left: 2em; }
 
-.event-page .event-info {
-  margin-left: 4em; }
+.event-page h2 {
+  margin-bottom: 0; }
+
+.event-page .date, .event-page .time, .event-page .contact .title {
+  color: #c41039;
+  font-family: 'Roboto Slab', serif;
+  float: left;
+  margin-right: 2em;
+  transition: 250ms ease;
+  font-size: 1.375rem;
+  display: block; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    .event-page .event-info {
-      margin-left: 0; } }
-  .event-page .event-info .title {
-    font-family: 'Roboto', sans-serif; }
-  .event-page .event-info .event-map {
-    margin-top: 1em;
+    .event-page .date, .event-page .time, .event-page .contact .title {
+      font-size: 1.125rem; } }
+
+.event-page .time {
+  float: left; }
+
+.event-page .address {
+  margin-top: 3em;
+  margin-bottom: 1em; }
+  .event-page .address .place {
+    font-weight: 700;
     display: block; }
+  .event-page .address .city {
+    font-weight: 500;
+    color: #3e3e3e;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+
+.event-page .contact .title {
+  color: #3e3e3e;
+  float: none; }
+
+.event-page .contact .name {
+  font-weight: 700; }
+
+.event-page .contact-items {
+  list-style: none;
+  margin-left: 0; }
+  @media screen and (min-width: 40em) {
+    .event-page .contact-items li {
+      display: inline-block;
+      margin-right: 1em; } }
 
 .news-list p {
   margin-bottom: 5px; }
