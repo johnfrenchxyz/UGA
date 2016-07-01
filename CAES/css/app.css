@@ -3916,8 +3916,14 @@ h2 {
     font-size: 0.875rem;
     font-weight: bold; }
   .uga-button img {
+    width: 18px;
     padding-bottom: 15px;
     margin-right: 3px; }
+  .uga-button #ugaText {
+    position: absolute;
+    top: 0;
+    margin-top: 1.5em;
+    margin-left: 2em; }
   .uga-button:hover {
     background: #950c2b;
     transition: all 250ms ease; }

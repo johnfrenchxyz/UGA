@@ -49,7 +49,16 @@ h2 {
    text-align: left;
    z-index: -1;
    // UGA Icon
-   img { padding-bottom: 15px; margin-right: 3px; }
+   img { width: 18px;
+      padding-bottom: 15px;
+      margin-right: 3px;
+   }
+   #ugaText {
+      position: absolute;
+      top: 0;
+      margin-top: 1.5em;
+      margin-left: 2em;
+   }
    &:hover {
       // border-bottom: solid 5px darken($caes-red, 15%);
       background: darken($caes-red, 10%);
