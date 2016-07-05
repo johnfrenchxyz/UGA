@@ -3,7 +3,6 @@
 
 ##In Progress:
 - Do windows test for nav and calendar icons.
-- Event Page - Add a "Contact Person" field for the event.
 - News Story Page - Add "About the Author" to match what is currently on FACES.
 - News Story Page - Show "Related Stories" instead of just the button.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
@@ -26,10 +25,11 @@
 
 ##Recently Completed:
 - Event Calendar - Changed the layout to match the News Main page layout.
-- Event Calendar - added pagination to event list component.
-- Event Calendar - added a max height to the featured image
-- Events Sidebar - added "full date" below the location.
-- Event Page - made time and location more prominent
+- Event Calendar - Added pagination to event list component.
+- Event Calendar - Added a max height to the featured image
+- Events Sidebar - Added "full date" below the location.
+- Event Page - Made time and location more prominent
+- Event Page - Added a "Contact Person" field for the event.
 - Event Page - I actually do not think we should have social sharing for the events. It increases page load time, and I am not sure that many people will find it useful.
 - Profile Component - changed to "Profile Page Template"
 - Profile Component - converted to be an actual component that can be used in a sidebar
