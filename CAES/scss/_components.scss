@@ -655,6 +655,7 @@ figcaption {
    .tagline { margin-bottom: 1em; }
    // img { max-height: 400px; }
    .description { margin-top: 1em; }
+   // Image Lightbox
    .news-lightbox {
       text-align: center;
       img {
@@ -669,9 +670,16 @@ figcaption {
          margin-top: 1em;
       }
    }
+   // About the Author
+   .author {
+      font-size: rem-calc(18);
+      font-weight: bold;
+   }
+   // Read More Section
    .read-more {
       margin-top: 1em;
    }
+   // Social Media Icons (for story sharing)
    .story-sharing {
       @include breakpoint(medium up) {
          margin-top: 5em;

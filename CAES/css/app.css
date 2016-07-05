@@ -5079,6 +5079,9 @@ figcaption {
     .news-story-page .news-lightbox .img-download {
       float: right;
       margin-top: 1em; }
+  .news-story-page .author {
+    font-size: 1.125rem;
+    font-weight: bold; }
   .news-story-page .read-more {
     margin-top: 1em; }
   @media screen and (min-width: 40em) {
