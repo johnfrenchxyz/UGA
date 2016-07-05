@@ -695,10 +695,10 @@ figcaption {
 
       }
    }
+}
 
-   // News List
-   .news-list {
-      .component-title { @include component-title( $caes-red, $white ); }
-      margin-bottom: 2em;
-   }
+// News Sidebar
+//-------------
+.news-list {
+   .component-title { @include component-title( $caes-red, $white ); }
 }
