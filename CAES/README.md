@@ -3,8 +3,6 @@
 
 ##In Progress:
 - Do windows test for nav and calendar icons.
-- News Story Page - Add "About the Author" to match what is currently on FACES.
-- News Story Page - Show "Related Stories" instead of just the button.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
 - News Main Page - Add several "Related Stories" at the bottom instead of just a button.
 - News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
@@ -24,6 +22,8 @@
 - Expanding Search needs to autofocus on safari mobile.
 
 ##Recently Completed:
+- News Story Page - Added "About the Author" to match what is currently on FACES.
+- News Story Page - Added "Related Stories" list, instead of just the "Read More" button.
 - Event Calendar - Changed the layout to match the News Main page layout.
 - Event Calendar - Added pagination to event list component.
 - Event Calendar - Added a max height to the featured image
