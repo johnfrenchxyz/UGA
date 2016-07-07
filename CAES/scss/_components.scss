@@ -693,15 +693,26 @@ figcaption {
    .featured-story {
       @include featured-content;
    }
+   // Additional Articles
+   .news-list {
+      margin-bottom: 2em;
+   }
    // News Filters
    .filters-container {
       .component-title { @include component-title( $body-font-color, $white ); }
+      margin-bottom: 1em;
       .filters {
          padding: 1em;
+         list-style: none;
+         margin-left: 0;
       }
       .filter-control {
 
       }
+   }
+   // Subscribe / Subscriptions
+   .subscribe {
+      font-weight: bold;
    }
 }
 

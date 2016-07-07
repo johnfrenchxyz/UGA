@@ -8,9 +8,7 @@
 - News Story Page - Build out the social media sharing icons icons URLS
 - News Story Page - Give the social media sharing icons a unique look and feel.
 - Do windows test for nav and calendar icons.
-- News Main Page - Add a "subscription" button. How does this work in FACES now?
-- News Main Page - Add several "Related Stories" at the bottom instead of just a button.
-- News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
+- News Subscription Page - Need to build.
 - Home page - Make "Academics" and "Research" sections text bigger.
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
 - Ask William about the campuses students alumni menu on departmental pages.
@@ -29,6 +27,8 @@
 ##Recently Completed:
 - News Story Page - Added "About the Author" to match what is currently on FACES.
 - News Story Page - Added "Related Stories" list, instead of just the "Read More" button.
+- News Main Page - Added a "subscription" button.
+- News Main Page - Added a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
 - Event Calendar - Changed the layout to match the News Main page layout.
 - Event Calendar - Added pagination to event list component.
 - Event Calendar - Added a max height to the featured image
