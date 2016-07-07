@@ -2,8 +2,12 @@
 
 
 ##In Progress:
+- Event Calendar - Changed caption on featured item to say "event"
+- Build Personnel Directory component.
 - Do windows test for nav and calendar icons.
-- News Subscription Page - Need to build.
+- News Main Page - Add a "subscription" button. How does this work in FACES now?
+- News Main Page - Add several "Related Stories" at the bottom instead of just a button.
+- News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
 - Home page - Make "Academics" and "Research" sections text bigger.
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
 - Ask William about the campuses students alumni menu on departmental pages.
@@ -20,16 +24,8 @@
 - Expanding Search needs to autofocus on safari mobile.
 
 ##Recently Completed:
-- News Story Page - Added "About the Author" to match what is currently on FACES.
-- News Story Page - Added "Related Stories" list, instead of just the "Read More" button.
-- News Main Page - Added a "subscription" button.
-- News Main Page - Added a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
-- Event Calendar - Changed the layout to match the News Main page layout.
-- Event Calendar - Added pagination to event list component.
-- Event Calendar - Added a max height to the featured image
-- Events Sidebar - Added "full date" below the location.
-- Event Page - Made time and location more prominent
-- Event Page - Added a "Contact Person" field for the event.
-- Event Page - I actually do not think we should have social sharing for the events. It increases page load time, and I am not sure that many people will find it useful.
-- Profile Component - changed to "Profile Page Template"
-- Profile Component - converted to be an actual component that can be used in a sidebar
+- News Story Page - Improved the column layout of the page.
+- News Story Page - Added "For the media" section.
+- News Story Page - Changed out "UGA FACES" to "CAES NEWS".
+- News Story Page - Give the social media sharing icons a unique look and feel.
+- News Story Page - Built out the social media sharing icons icons URLS

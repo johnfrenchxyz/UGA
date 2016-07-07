@@ -684,6 +684,31 @@ figcaption {
       @include breakpoint(medium up) {
          margin-top: 5em;
       }
+      margin-top: 1em;
+      margin-bottom: 1em;
+      padding-top: .5em;
+      text-align: center;
+      background: $body-font-color;
+      color: $white;
+      span {
+         font-weight: bold;
+         font-size: 0.875rem;
+         text-transform: uppercase;
+      }
+      a {
+         color: $white;
+         transition: 250ms ease;
+         &:hover {
+            color: darken($white, 20%);
+         }
+      }
+   }
+   // For the Media
+   .for-the-media {
+      .component-title { @include component-title( $body-font-color, $white ); }
+      ul {
+         list-style: none;
+      }
    }
 }
 
