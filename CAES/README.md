@@ -2,6 +2,11 @@
 
 
 ##In Progress:
+- News Story Page - Make the image 6 column, but keep the text and related stories at 12.
+- News Story Page - Add "For the media" section.
+- News Story Page - Change out "UGA FACES" to "CAES NEWS"
+- News Story Page - Build out the social media sharing icons icons URLS
+- News Story Page - Give the social media sharing icons a unique look and feel.
 - Do windows test for nav and calendar icons.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
 - News Main Page - Add several "Related Stories" at the bottom instead of just a button.
