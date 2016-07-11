@@ -4,9 +4,6 @@
 ##In Progress:
 - Build Personnel Directory component.
 - Do windows test for nav and calendar icons.
-- News Main Page - Add a "subscription" button. How does this work in FACES now?
-- News Main Page - Add several "Related Stories" at the bottom instead of just a button.
-- News Main Page - Add a "For the Media" section and inquire where to put it and possibly consolidate it with "Special Sections."
 - Home page - Make "Academics" and "Research" sections text bigger.
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
 - Ask William about the campuses students alumni menu on departmental pages.
@@ -28,4 +25,7 @@
 - News Story Page - Changed out "UGA FACES" to "CAES NEWS".
 - News Story Page - Give the social media sharing icons a unique look and feel.
 - News Story Page - Built out the social media sharing icons icons URLS
+- News Main Page - Added a "subscribe" button.
+- News Main Page - Added several "Related Stories" at the bottom instead of just a button.
+- News Main Page - Added a "For the Media" section.
 - Event Calendar - Changed caption on featured item to say "event"
