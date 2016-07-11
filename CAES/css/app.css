@@ -5207,3 +5207,25 @@ figcaption {
     border-top: solid 10px #c41039;
     border-left: solid 10px transparent;
     border-right: solid 10px transparent; }
+
+.news-accordion-item {
+  margin-bottom: 1em; }
+
+.news-accordion-title {
+  display: block;
+  width: 100%;
+  padding: 1em;
+  background: #3e3e3e;
+  color: #fefefe;
+  cursor: pointer;
+  transition: 250ms ease; }
+  .news-accordion-title:hover {
+    background: #585858; }
+
+.news-accordion-body {
+  padding: 1em;
+  display: none;
+  border: 1px solid #e4e4e4; }
+
+.spacer {
+  height: 1000px; }

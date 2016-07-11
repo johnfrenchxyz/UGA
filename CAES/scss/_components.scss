@@ -746,3 +746,51 @@ figcaption {
 .news-list {
    .component-title { @include component-title( $caes-red, $white ); }
 }
+
+
+// News Subscription Page
+//-----------------------
+
+// News Accordion
+.news-accordion-item {
+   margin-bottom: 1em;
+}
+.news-accordion-title {
+   display: block;
+   width: 100%;
+   padding: 1em;
+   background: $caes-dark-gray;
+   color: $white;
+   cursor: pointer;
+   transition: 250ms ease;
+   &:hover {
+      background: lighten($caes-dark-gray, 10%);
+   }
+}
+.news-accordion-body {
+   padding: 1em;
+   display: none;
+   border: 1px solid $caes-light-gray;
+}
+.news-subscription-form {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Utility Classes
+.spacer {
+   height: 1000px;
+}
