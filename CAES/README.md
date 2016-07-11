@@ -2,7 +2,6 @@
 
 
 ##In Progress:
-- Event Calendar - Changed caption on featured item to say "event"
 - Build Personnel Directory component.
 - Do windows test for nav and calendar icons.
 - News Main Page - Add a "subscription" button. How does this work in FACES now?
@@ -29,3 +28,4 @@
 - News Story Page - Changed out "UGA FACES" to "CAES NEWS".
 - News Story Page - Give the social media sharing icons a unique look and feel.
 - News Story Page - Built out the social media sharing icons icons URLS
+- Event Calendar - Changed caption on featured item to say "event"
