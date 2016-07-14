@@ -2,17 +2,16 @@
 
 
 ##In Progress:
+- Made "Donate Now" button - see if it is what we are looking for.
+- Ask group - should the Featured News Stories be a slider?
+- Hall of fame component - add default avatar and fix column issues.
 - Build Personnel Directory component.
 - Do windows test for nav and calendar icons.
-- Home page - Make "Academics" and "Research" sections text bigger.
+
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
 - Ask William about the campuses students alumni menu on departmental pages.
-- Try to make our own "Donate Now" Button.
-- Make a button component - and add color classes that match the home page sections.
 - Re-style Side Nav, and add margin-bottom.
-- Hall of fame component - add default avatar and fix column issues.
 - Add "CAES" back into the header and make most of that bar gray on the subsite template.
-- For news, blogpost, pub, etc make the order > Title of article > text > author info and date.
 - Fix dialog text in AEM. It is currently being cut off.
 - Address the column issue for the tiled list / personnel component.  Maybe default the columns to four.
 - Tiled version of personnel component, or all components, displays images that are too large.  Try to reduce column size.
