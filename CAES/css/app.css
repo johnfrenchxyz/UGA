@@ -5227,5 +5227,11 @@ figcaption {
   display: none;
   border: 1px solid #e4e4e4; }
 
+.personnel-directory .title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5rem;
+  margin-bottom: .5em;
+  display: block; }
+
 .spacer {
   height: 1000px; }
