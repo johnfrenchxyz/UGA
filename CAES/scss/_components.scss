@@ -778,8 +778,16 @@ figcaption {
 
 
 
-
-
+// Personnel Directory
+//--------------------
+.personnel-directory {
+   .title {
+      font-family: 'Roboto Slab', serif;
+      font-size: rem-calc(24);
+      margin-bottom: .5em;
+      display: block;
+   }
+}
 
 
 

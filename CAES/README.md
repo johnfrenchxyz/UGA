@@ -6,6 +6,7 @@
 - Ask group - should the Featured News Stories be a slider?
 - Hall of fame component - add default avatar and fix column issues.
 - Build Personnel Directory component.
+- Add search field to news filter section.
 - Do windows test for nav and calendar icons.
 
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
