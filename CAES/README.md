@@ -2,10 +2,10 @@
 
 
 ##In Progress:
-- Made "Donate Now" button - see if it is what we are looking for.
-- Ask group - should the Featured News Stories be a slider?
+- Improve "Donate Now" button and make component.
+- Make slider for "featured stories" on news main page.
 - Hall of fame component - add default avatar and fix column issues.
-- Build Personnel Directory component.
+- Add filter options for news main page and personnel directory.
 - Add search field to news filter section.
 - Do windows test for nav and calendar icons.
 
