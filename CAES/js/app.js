@@ -67,3 +67,12 @@ $(window).resize(function(){
 $('.news-accordion-title').click(function(){
    $(this).next('.news-accordion-body').slideToggle("fast");
 });
+
+
+// Filter Accordion (for News Main page)
+//--------------------------------------
+// Hude .subfilters by default for JS fallback
+$('.subfilters').hide();
+$('.filter-control').click(function(){
+   $(this).next('.subfilters').slideToggle("fast");
+});
