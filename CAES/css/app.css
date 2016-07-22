@@ -5173,10 +5173,16 @@ figcaption {
       border-top: solid 10px #3e3e3e;
       border-left: solid 10px transparent;
       border-right: solid 10px transparent; }
+  .news-main-page .filters-container .news-search {
+    margin: 0 .5em 0 .5em; }
   .news-main-page .filters-container .filters {
     padding: 1em;
     list-style: none;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-bottom: 2em; }
+    .news-main-page .filters-container .filters ul {
+      list-style: none;
+      margin-bottom: -1.5em; }
 
 .news-main-page .subscribe {
   font-weight: bold; }

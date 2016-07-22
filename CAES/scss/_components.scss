@@ -726,13 +726,18 @@ figcaption {
    .filters-container {
       .component-title { @include component-title( $body-font-color, $white ); }
       margin-bottom: 1em;
+      .news-search {
+         margin: 0 .5em 0 .5em;
+      }
       .filters {
          padding: 1em;
          list-style: none;
          margin-left: 0;
-      }
-      .filter-control {
-
+         margin-bottom: 2em;
+         ul {
+            list-style: none;
+            margin-bottom: -1.5em;
+         }
       }
    }
    // Subscribe / Subscriptions
