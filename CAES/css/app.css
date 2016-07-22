@@ -5233,5 +5233,9 @@ figcaption {
   margin-bottom: .5em;
   display: block; }
 
+.donate-now-container {
+  width: 50%;
+  margin: 0 auto 0 auto; }
+
 .spacer {
   height: 1000px; }
