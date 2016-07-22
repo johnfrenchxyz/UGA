@@ -4958,7 +4958,6 @@ figcaption {
 
 .featured-event {
   position: relative;
-  margin: 0 0 2em 0;
   transition: 250ms ease;
   max-height: 300px;
   overflow: hidden; }
@@ -5132,9 +5131,19 @@ figcaption {
   .news-story-page .for-the-media ul {
     list-style: none; }
 
+.news-main-page .orbit {
+  margin-bottom: 2em; }
+  .news-main-page .orbit .orbit-container li {
+    position: relative;
+    transition: 250ms ease;
+    max-height: 300px;
+    overflow: hidden; }
+    .news-main-page .orbit .orbit-container li:hover figcaption {
+      background: #414141;
+      padding-left: 2em; }
+
 .news-main-page .featured-story {
   position: relative;
-  margin: 0 0 2em 0;
   transition: 250ms ease;
   max-height: 300px;
   overflow: hidden; }
