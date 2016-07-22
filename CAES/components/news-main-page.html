@@ -23,11 +23,9 @@
       <div class="row">
          <div class="large-9 columns">
             <!-- Featured Story -->
-            <a href="#">
+            <!-- <a href="#">
                <figure class="featured-story">
-                  <!-- Image -->
                   <img class="featured-image" src="https://goo.gl/vB0nRe" alt="honeycomb" />
-                  <!-- Caption -->
                   <figcaption>
                      Featured Story:
                      <span class="caption-tagline">
@@ -35,7 +33,37 @@
                      </span>
                   </figcaption>
                </figure>
-            </a>
+            </a> -->
+            <!-- Image Slider -->
+            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+               <ul class="orbit-container">
+                  <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                  <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                  <li class="is-active orbit-slide">
+                     <a href="#">
+                        <img class="orbit-image" src="https://static.pexels.com/photos/1151/black-and-white-hills-fence-border.jpg" alt="Space" />
+                        <figcaption class="orbit-caption">
+                           Sample Caption
+                           <span class="caption-tagline">This is the story</span>
+                        </figcaption>
+                     </a>
+                  </li>
+                  <li class="orbit-slide">
+                     <a href="#">
+                        <img class="orbit-image" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Beautiful_landscape_in_black_and_white,_Scotland_(5831890202).jpg" alt="Space" />
+                        <figcaption class="orbit-caption">Sample Caption</figcaption>
+                     </a>
+                  </li>
+                  <li class="orbit-slide">
+                     <img class="orbit-image" src="https://static.pexels.com/photos/2312/sea-black-and-white-nature-forest.jpg" alt="Space" />
+                     <figcaption class="orbit-caption">Sample Caption</figcaption>
+               </ul>
+               <!-- <nav class="orbit-bullets">
+                  <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                  <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                  <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+               </nav> -->
+            </div>
 
             <!-- Additional Stories -->
             <div class="news-list">

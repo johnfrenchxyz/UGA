@@ -454,7 +454,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 // Featured Conent Mixin (For News & Events)
 @mixin featured-content {
    position: relative;
-   margin: 0 0 2em 0;
+   // margin: 0 0 2em 0;
    transition: 250ms ease;
    max-height: 300px;
    overflow: hidden;
@@ -715,6 +715,12 @@ figcaption {
 // News Main Page
 //---------------
 .news-main-page {
+   .orbit {
+      margin-bottom: 2em;
+      .orbit-container li {
+         @include featured-content;
+      }
+   }
    .featured-story {
       @include featured-content;
    }
