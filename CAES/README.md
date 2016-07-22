@@ -2,7 +2,6 @@
 
 
 ##In Progress:
-- Make slider for "featured stories" on news main page.
 - Hall of fame component - add default avatar and fix column issues.
 - Do windows test for nav and calendar icons.
 
@@ -28,4 +27,5 @@
 - News Main Page - Added a "For the Media" section.
 - News Main Page - Added search field to news filter section.
 - News Main Page - Added toggle for filter options.
+- News Main Page - Added a slider for the featured story.
 - Event Calendar - Changed caption on featured item to say "event"
