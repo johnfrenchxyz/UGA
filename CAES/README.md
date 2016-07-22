@@ -4,8 +4,6 @@
 ##In Progress:
 - Make slider for "featured stories" on news main page.
 - Hall of fame component - add default avatar and fix column issues.
-- Add filter options for news main page and personnel directory.
-- Add search field to news filter section.
 - Do windows test for nav and calendar icons.
 
 - Home page - Make the top margin of the "Academics/Research" section the same as the side padding for design consistency.
@@ -28,4 +26,6 @@
 - News Main Page - Added a "subscribe" button.
 - News Main Page - Added several "Related Stories" at the bottom instead of just a button.
 - News Main Page - Added a "For the Media" section.
+- News Main Page - Added search field to news filter section.
+- News Main Page - Added toggle for filter options.
 - Event Calendar - Changed caption on featured item to say "event"
