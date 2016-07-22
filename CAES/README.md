@@ -2,7 +2,6 @@
 
 
 ##In Progress:
-- Improve "Donate Now" button and make component.
 - Make slider for "featured stories" on news main page.
 - Hall of fame component - add default avatar and fix column issues.
 - Add filter options for news main page and personnel directory.
@@ -20,6 +19,7 @@
 - Expanding Search needs to autofocus on safari mobile.
 
 ##Recently Completed:
+- Donate Now - Adds component.
 - News Story Page - Improved the column layout of the page.
 - News Story Page - Added "For the media" section.
 - News Story Page - Changed out "UGA FACES" to "CAES NEWS".
