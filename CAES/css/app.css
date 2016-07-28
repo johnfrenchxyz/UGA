@@ -4182,37 +4182,6 @@ main {
     main {
       padding: 1em; } }
 
-.side-nav {
-  margin-right: -15px; }
-  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
-    .side-nav {
-      margin-right: 0px; } }
-
-.side-nav ul .parent {
-  font-weight: 700;
-  background: #e4e4e4;
-  border-bottom: solid 1px #cacaca;
-  font-size: 1rem; }
-  .side-nav ul .parent:hover {
-    background: #d7d7d7; }
-
-.side-nav ul li {
-  font-size: 0.875rem; }
-  .side-nav ul li:hover {
-    background: #d7d7d7; }
-
-.side-nav ul .active {
-  font-weight: 700;
-  background: #e4e4e4; }
-  .side-nav ul .active a {
-    color: #3e3e3e; }
-  .side-nav ul .active ul {
-    background: none; }
-
-.side-nav ul .children a {
-  padding-left: 2em;
-  font-weight: 700; }
-
 footer {
   margin-top: 5em;
   font-family: 'Nunito', sans-serif;
@@ -4229,6 +4198,48 @@ footer {
         text-decoration: underline; }
         footer .footer-links li a:hover {
           color: #0a0a0a; }
+
+.side-nav ul {
+  list-style: none; }
+
+.side-nav ul li a {
+  line-height: 1em;
+  padding: 1em;
+  display: block;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: .9em; }
+  .side-nav ul li a:hover {
+    background: #f7f7f7; }
+
+.side-nav .parent {
+  background: #f7f7f7;
+  font-weight: bold;
+  font-size: 1em;
+  border-bottom: 2px solid #c41039; }
+
+.side-nav .active {
+  background: #e2e2e2;
+  color: #3e3e3e;
+  font-weight: bold; }
+  .side-nav .active:hover {
+    background: #e2e2e2; }
+
+.side-nav .has-more::after {
+  content: "\▸";
+  float: right;
+  font-size: 1em; }
+
+.side-nav .has-more-expanded::after {
+  content: "\▾";
+  float: right;
+  font-size: 1em; }
+
+.side-nav .children {
+  margin: 0;
+  background: #f4f4f4;
+  border-bottom: 2px solid #e2e2e2; }
+  .side-nav .children li a:hover {
+    background: #f9f9f9; }
 
 /*
    Components Styling
@@ -5235,7 +5246,7 @@ figcaption {
   cursor: pointer;
   transition: 250ms ease; }
   .news-accordion-title:hover {
-    background: #585858; }
+    background: #575757; }
 
 .news-accordion-body {
   padding: 1em;

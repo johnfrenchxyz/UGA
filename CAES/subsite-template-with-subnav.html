@@ -190,25 +190,39 @@
                vestibulum. Suspendisse ante est, dictum in arcu id, finibus convallis tortor. Duis interdum, mauris ut aliquam interdum, tortor ipsum pellentesque felis, consectetur tempus nibh augue vitae felis.
             </p>
          </div>
-         <!-- Subsite Side-Nav -->
-         <div class="large-3 medium-4 small-12 columns side-nav">
-            <!-- <div class="submenu"> -->
-               <ul class="menu vertical">
-                  <li><a class="parent">Research</a></li>
+         <div class="large-3 medium-4 small-12 columns">
+            <nav class="side-nav">
+               <ul>
+                  <li><a class="parent" href="#">Research</a></li>
                   <li><a href="#">Sibling 1</a></li>
-                  <li class="active">
-                     <a href="#">Centers & Institutes</a>
-                     <ul class="children vertical menu">
+                  <li><a class="has-more" href="#">Centers &amp; Institutes</a></li>
+                  <li><a href="#">Sibling 2</a></li>
+                  <li><a class="active" href="#">Sibling 3</a></li>
+                  <li><a href="#">Sibling 4</a></li>
+               </ul>
+            </nav>
+
+            <br /><br />
+
+            <nav class="side-nav">
+               <ul>
+                  <li><a class="parent" href="#">Research</a></li>
+                  <li><a href="#">Sibling 1</a></li>
+                  <li>
+                     <a class="has-more-expanded active" href="#">Centers &amp; Institutes</a>
+                     <!-- Children -->
+                     <ul class="children">
                         <li><a href="#">Child 1</a></li>
                         <li><a href="#">Child 2</a></li>
                         <li><a href="#">Child 3</a></li>
+                        <li><a href="#">Child 4</a></li>
                      </ul>
                   </li>
                   <li><a href="#">Sibling 2</a></li>
-                  <li><a href="#">Sibling 3</a></li>
+                  <li><a class="" href="#">Sibling 3</a></li>
                   <li><a href="#">Sibling 4</a></li>
                </ul>
-            <!-- </div> -->
+            </nav>
          </div>
       </div>
    </main>

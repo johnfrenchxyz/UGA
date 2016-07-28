@@ -402,44 +402,6 @@ main {
    }
 }
 
-// Subsite Side Navigation
-//------------------------
-$caes-dark-gray: #3e3e3e;
-$caes-light-gray: lighten($medium-gray, 10%);
-.side-nav {
-   // margin-top: 2em;
-   // Medium/Large Collapse
-   margin-right: -15px;
-   // Small Uncollapse
-   @include breakpoint (small only) { margin-right: 0px; }
-}
-.side-nav ul {
-   // Hover Mixin
-   @mixin submenuHover() { &:hover { background: darken($caes-light-gray, 5%); } }
-   // Parent
-   .parent {
-      font-weight: 700;
-      background: $caes-light-gray;
-      border-bottom: solid 1px darken($caes-light-gray, 10%);
-      font-size: rem-calc(16);
-      @include submenuHover();
-   }
-   // Silbings
-   li {
-      font-size: rem-calc(14);
-      @include submenuHover();
-   }
-   // Active
-   .active {
-      font-weight: 700;
-      background: $caes-light-gray;
-      a { color: $caes-dark-gray; }
-      ul { background: none; }
-   }
-   // Children
-   .children a { padding-left: 2em; font-weight: 700; }
-}
-
 
 // Footer Section
 // ---------------
@@ -455,6 +417,74 @@ footer {
          padding-left: .5em;
          border-right: solid 1px $light-gray;
          a { color: $nav-bg-color; text-decoration: underline; &:hover { color: $black; } }
+      }
+   }
+}
+
+
+// Side Nav
+//---------
+
+// Variables:
+$parent-bg-color: #f7f7f7;
+$sibling-border-color: #e2e2e2;
+$sibiling-hover-bg-color: $parent-bg-color;
+$active-bg-color: $sibling-border-color;
+$children-bg-color: #f4f4f4;
+$children-hover-bg-color: lighten($children-bg-color, 2%);
+
+.side-nav {
+   ul {
+      list-style: none;
+   }
+   ul li a {
+      line-height: 1em;
+      padding: 1em;
+      display: block;
+      border-bottom: 1px solid $sibling-border-color;
+      font-size: .9em;
+      // Hover
+      &:hover {
+         background: $sibiling-hover-bg-color;
+      }
+   }
+   // Parent
+   .parent {
+      background: $parent-bg-color;
+      font-weight: bold;
+      font-size: 1em;
+      border-bottom: 2px solid $caes-red;
+   }
+   // Active
+   .active {
+      background: $active-bg-color;
+      color: $caes-dark-gray;
+      font-weight: bold;
+      // Hover
+      &:hover {
+         background: $active-bg-color;
+      }
+   }
+   // Has More (Children)
+   .has-more::after {
+      content: "\▸";
+      float: right;
+      font-size: 1em;
+   }
+   .has-more-expanded {
+      &::after {
+         content: "\▾";
+         float: right;
+         font-size: 1em;
+      }
+   }
+   // Children
+   .children {
+      margin: 0;
+      background: $children-bg-color;
+      border-bottom: 2px solid $sibling-border-color;
+      li a:hover {
+         background: $children-hover-bg-color;
       }
    }
 }
