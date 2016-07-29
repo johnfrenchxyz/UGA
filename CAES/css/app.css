@@ -4229,14 +4229,14 @@ footer {
     background: #e2e2e2; }
 
 .side-nav .has-more::after {
-  content: "\▸";
+  content: "\25b8";
   float: right;
-  font-size: 1em; }
+  font-size: 1.1em; }
 
 .side-nav .has-more-expanded::after {
-  content: "\▾";
+  content: "\25be";
   float: right;
-  font-size: 1em; }
+  font-size: 1.1em; }
 
 .side-nav .children {
   margin: 0;
