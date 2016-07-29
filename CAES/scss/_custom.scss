@@ -475,15 +475,15 @@ $children-hover-bg-color: lighten($children-bg-color, 2%);
    }
    // Has More (Children)
    .has-more::after {
-      content: "\▸";
+      content: "\25b8";
       float: right;
-      font-size: 1em;
+      font-size: 1.1em;
    }
    .has-more-expanded {
       &::after {
-         content: "\▾";
+         content: "\25be";
          float: right;
-         font-size: 1em;
+         font-size: 1.1em;
       }
    }
    // Children
