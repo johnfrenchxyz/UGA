@@ -4199,6 +4199,10 @@ footer {
         footer .footer-links li a:hover {
           color: #0a0a0a; }
 
+@media screen and (min-width: 64em) {
+  .side-nav-container {
+    margin-right: -15px; } }
+
 .side-nav ul {
   list-style: none; }
 

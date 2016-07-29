@@ -433,6 +433,14 @@ $active-bg-color: $sibling-border-color;
 $children-bg-color: #f4f4f4;
 $children-hover-bg-color: lighten($children-bg-color, 2%);
 
+// Side Nav Column Container
+.side-nav-container {
+    // Removes default column margin on large screens
+    @include breakpoint(large up) {
+        margin-right: -15px;
+    }
+}
+
 .side-nav {
    ul {
       list-style: none;
