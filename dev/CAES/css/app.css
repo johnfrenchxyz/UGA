@@ -4481,6 +4481,8 @@ footer {
   .academics .title, .academics .subtitle, .academics .description {
     margin-left: 1em;
     margin-right: 1em; }
+  .academics .description {
+    overflow-x: hidden; }
 
 .research {
   overflow: hidden;
@@ -4543,6 +4545,8 @@ footer {
   .research .title, .research .subtitle, .research .description {
     margin-left: 1em;
     margin-right: 1em; }
+  .research .description {
+    overflow-x: hidden; }
 
 .extension {
   overflow: hidden;
@@ -4605,6 +4609,8 @@ footer {
   .extension .title, .extension .subtitle, .extension .description {
     margin-left: 1em;
     margin-right: 1em; }
+  .extension .description {
+    overflow-x: hidden; }
 
 .blog-post-list .blog-post:after {
   height: 0;

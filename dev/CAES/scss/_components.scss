@@ -178,6 +178,9 @@ $component-title-default-color: darken($caes-gray, 10%);
       margin-left: 1em;
       margin-right: 1em;
    }
+   .description {
+       overflow-x: hidden;
+   }
 }
 
 // Homepage Academics Section
