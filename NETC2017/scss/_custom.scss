@@ -1,10 +1,12 @@
 // Color Variables
 $dark-green: #77806A;
 $light-green: #8DC397;
-// $light-green: #6c9a75;
+$green: #4b6c50;
 $dark-blue: #5D97B5;
+$blue: #327c9c;
 $light-blue: #8AC8E8;
-$dark-red: #BE5353;
+$dark-red: #aa4b4b;
+$red: #c84b4b;
 $light-red: #DD7F7F;
 $black: #2E2E2E;
 $white: #ffffff;
@@ -13,6 +15,7 @@ $white: #ffffff;
 @import url("../fonts/foundation-icons/foundation-icons.css");
 $raleway: 'Raleway', sans-serif;
 $heading-font: $raleway;
+$nav-font: $raleway;
 $button-font: $raleway;
 h1,
 h2,
@@ -22,6 +25,38 @@ h5,
 h6 {
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
+}
+
+header {
+   margin-bottom: 4em;
+   img {
+      float: left;
+      max-width: 400px;
+   }
+}
+
+// Navigation
+//-----------
+nav {
+   float: right;
+   ul {
+      list-style: none;
+   }
+   ul li {
+      display: inline;
+   }
+   ul li a {
+      font-family: $nav-font;
+      font-weight: 700;
+      font-size: .8rem;
+      color: $black;
+      display: inline-block;
+      padding: 1em;
+   }
+   .register {
+      background: $green;
+      color: $white;
+   }
 }
 
 
@@ -49,64 +84,62 @@ h6 {
 
 // Homepage
 //---------
-// Register Section
-.register-section {
+
+// Section Title Mixin
+@mixin sectionText($color) {
    h1 {
-      color: $dark-green;
+      color: $color;
       line-height: 1.1;
       margin-bottom: .5em;
+      @include breakpoint(medium only) {
+         font-size: 2rem !important;
+      }
    }
-   .custom-button {
-      @include buttonColor($light-green, $white, $dark-green, $white);
+   h2 {
+      font-size: 3rem;
+      @include breakpoint(medium only) {
+         font-size: 2rem;
+      }
+      @include breakpoint(small only) {
+         font-size: 1.5rem;
+      }
+      color: $color;
+      line-height: 1.1;
+      margin-bottom: .5em;
    }
    p {
       margin-top: 1em;
       font-family: $heading-font;
       font-weight: 700;
-      color: $dark-green;
+      color: darken($color, 10%);
+   }
+}
+
+// Register Section
+.register-section {
+   @include sectionText($dark-green);
+   .custom-button {
+      @include buttonColor($green, $white, $dark-green, $white);
    }
 }
 // Hotel Booking Section
 .hotel-booking-section {
-   h2 {
-      font-size: 3rem;
-      @include breakpoint(small only) {
-         font-size: 1.5rem;
-      }
-      color: $dark-blue;
-      line-height: 1.1;
-      margin-bottom: .5em;
-   }
+   @include sectionText($dark-blue);
    .custom-button {
-      @include buttonColor($light-blue, $white, $dark-blue, $white);
-   }
-   p {
-      margin-top: 1em;
-      font-family: $heading-font;
-      font-weight: 700;
-      color: $dark-blue;
+      @include buttonColor($blue, $white, $dark-blue, $white);
    }
 }
 // Hotel Booking Section
 .sponsor-section {
-   h2 {
-      font-size: 3rem;
-      @include breakpoint(small only) {
-         font-size: 1.5rem;
-      }
-      color: $dark-red;
-      line-height: 1.1;
-      margin-bottom: .5em;
-   }
+   @include sectionText($dark-red);
    .custom-button {
-      @include buttonColor($light-red, $white, $dark-red, $white);
+      @include buttonColor($red, $white, $dark-red, $white);
    }
-   p {
-      margin-top: 1em;
-      font-family: $heading-font;
-      font-weight: 700;
-      color: $dark-red;
-   }
+}
+
+// Tech Drawing Graphic
+.tech-window {
+   margin-left: 2em;
 }
 
 
@@ -115,6 +148,21 @@ h6 {
 
 // Footer
 //-------
+
+main {
+   margin-bottom: -5em;
+}
+
+// Spacer (for footer margin)
+.spacer {
+   height: 5em;
+   margin-top: 5em;
+}
+
+footer, main:after {
+  height: 10em;
+}
+
 footer {
    height: 10em;
    background: $light-green;
