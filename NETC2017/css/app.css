@@ -11,8 +11,7 @@
    * 2. Prevent iOS and IE text size adjust after device orientation change,
    *    without disabling user zoom.
    */
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,700';
 @import url("../fonts/foundation-icons/foundation-icons.css");
 html {
   font-family: sans-serif;
@@ -4021,102 +4020,102 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300; }
 
-p {
-  font-family: 'Poppins'; }
+.register-section h1 {
+  color: #77806A;
+  line-height: 1.1;
+  margin-bottom: .5em; }
 
-body {
-  background: #855322; }
-
-header {
-  width: 100vw;
-  height: 100vh;
-  background: #284405;
+.register-section .custom-button {
+  display: block;
+  background: #8DC397;
+  color: #ffffff;
+  padding: 1em;
   text-align: center;
-  margin: 0 auto;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  overflow: auto; }
-  header #mainLogo {
-    width: 50%;
-    margin: 1em;
-    min-width: 300px; }
-  header #findOutMore {
-    border-color: #fefefe;
-    color: #fefefe;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin: 1em; }
-    header #findOutMore, header #findOutMore:hover, header #findOutMore:focus {
-      background-color: transparent; }
-    header #findOutMore:hover {
-      background: #fefefe;
-      color: #284405; }
-    @media screen and (max-width: 39.9375em) {
-      header #findOutMore {
-        width: 80%; } }
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  transition: 250ms ease; }
+  @media screen and (max-width: 39.9375em) {
+    .register-section .custom-button {
+      font-size: 1rem; } }
+  .register-section .custom-button:hover {
+    background: #77806A;
+    color: #ffffff; }
 
-.flex-center {
-  resize: both; }
+.register-section p {
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #77806A; }
 
-main {
-  height: 100vh;
-  width: 100vw;
-  background: #855322;
-  color: #fff;
-  text-align: center; }
-  main h1 {
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    margin-top: 1em; }
-  main h2 {
-    font-weight: 700;
-    letter-spacing: 5px;
-    text-transform: uppercase; }
-  main #netcPromo {
-    width: 100vw;
-    height: auto; }
-  main .stay-connected {
-    list-style: none;
-    margin-bottom: 0px; }
-    main .stay-connected li {
-      display: inline-block;
-      padding: 1em; }
-    main .stay-connected i {
-      color: #fff;
-      font-size: 2.25rem; }
-    main .stay-connected a i {
-      transition: 250ms ease; }
-    main .stay-connected a:hover i {
-      color: #bfbfbf; }
-  main a {
-    color: #fff;
-    text-decoration: underline;
-    font-weight: bold;
-    transition: 250ms ease; }
-    main a:hover {
-      color: #bfbfbf; }
-  main #mailingList {
-    border-color: #fff;
-    color: #fff;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-left: 1em;
-    margin-right: 1em;
-    text-decoration: none; }
-    main #mailingList, main #mailingList:hover, main #mailingList:focus {
-      background-color: transparent; }
-    main #mailingList:hover {
-      background: #fff;
-      color: #855322; }
-    @media screen and (max-width: 39.9375em) {
-      main #mailingList {
-        width: 80%; } }
+.hotel-booking-section h2 {
+  font-size: 3rem;
+  color: #5D97B5;
+  line-height: 1.1;
+  margin-bottom: .5em; }
+  @media screen and (max-width: 39.9375em) {
+    .hotel-booking-section h2 {
+      font-size: 1.5rem; } }
+
+.hotel-booking-section .custom-button {
+  display: block;
+  background: #8AC8E8;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  transition: 250ms ease; }
+  @media screen and (max-width: 39.9375em) {
+    .hotel-booking-section .custom-button {
+      font-size: 1rem; } }
+  .hotel-booking-section .custom-button:hover {
+    background: #5D97B5;
+    color: #ffffff; }
+
+.hotel-booking-section p {
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #5D97B5; }
+
+.sponsor-section h2 {
+  font-size: 3rem;
+  color: #BE5353;
+  line-height: 1.1;
+  margin-bottom: .5em; }
+  @media screen and (max-width: 39.9375em) {
+    .sponsor-section h2 {
+      font-size: 1.5rem; } }
+
+.sponsor-section .custom-button {
+  display: block;
+  background: #DD7F7F;
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  transition: 250ms ease; }
+  @media screen and (max-width: 39.9375em) {
+    .sponsor-section .custom-button {
+      font-size: 1rem; } }
+  .sponsor-section .custom-button:hover {
+    background: #BE5353;
+    color: #ffffff; }
+
+.sponsor-section p {
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #BE5353; }
+
+footer {
+  height: 10em;
+  background: #8DC397;
+  color: #ffffff; }

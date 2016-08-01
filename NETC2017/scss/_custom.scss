@@ -1,106 +1,122 @@
 // Color Variables
-$netc-green: #284405;
-$netc-gray: #6c6c6c;
-$netc-dark-gray: #535353;
-$netc-yellow: #ffc853;
-$netc-black: #000;
-$netc-white: #fff;
-$netc-brown: #855322;
+$dark-green: #77806A;
+$light-green: #8DC397;
+// $light-green: #6c9a75;
+$dark-blue: #5D97B5;
+$light-blue: #8AC8E8;
+$dark-red: #BE5353;
+$light-red: #DD7F7F;
+$black: #2E2E2E;
+$white: #ffffff;
 // Typography
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,700';
 @import url("../fonts/foundation-icons/foundation-icons.css");
+$raleway: 'Raleway', sans-serif;
+$heading-font: $raleway;
+$button-font: $raleway;
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Roboto', sans-serif;
-}
-p { font-family: 'Poppins';}
-body { background: $netc-brown; }
-header {
-    width: 100vw;
-    height: 100vh;
-    background: $netc-green;
-    text-align: center;
-    margin: 0 auto;
-    // padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // resize: both;
-    overflow: auto;
-    #mainLogo {
-        width: 50%;
-        margin: 1em;
-        min-width: 300px;
-    }
-    #findOutMore {
-        @include button-hollow;
-        border-color: $white;
-        color: $white;
-        font-weight: bold;
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        margin: 1em;
-        &:hover {
-            background: $white;
-            color: $netc-green;
-        }
-        // Sizing
-        @include breakpoint(small only) {
-            width: 80%;
-        }
-    }
-}
-.flex-center {
-    resize: both;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
 }
 
-main {
-  height: 100vh;
-  width: 100vw;
-  background: $netc-brown;
-  color: $netc-white;
-  h1 { font-weight: 700; letter-spacing: 5px; text-transform: uppercase; margin-top: 1em; }
-  h2 { font-weight: 700; letter-spacing: 5px; text-transform: uppercase; }
-  text-align: center;
-  #netcPromo { width: 100vw; height: auto; }
-  // Stay Connected Section
-  .stay-connected {
-    list-style: none;
-    margin-bottom: 0px;
-    li { display: inline-block; padding: 1em; }
-    i { color: $netc-white; font-size: rem-calc(36); }
-    a { i { transition: 250ms ease; }
-    &:hover { i { color: darken($netc-white, 25%); } } }
-  }
-  a {
-    color: $netc-white;
-    text-decoration: underline;
-    font-weight: bold;
-    transition: 250ms ease;
-    &:hover { color: darken($netc-white, 25%); }
-  }
-  #mailingList {
-    @include button-hollow;
-    border-color: $netc-white;
-    color: $netc-white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-left: 1em;
-    margin-right: 1em;
-    text-decoration: none;
-    &:hover {
-        background: $netc-white;
-        color: $netc-brown;
-    }
-    // Sizing
-    @include breakpoint(small only) {
-        width: 80%;
-    }
-  }
+
+// Button Mixin
+//-------------
+@mixin buttonColor($bg, $color, $hover-bg, $hover-color) {
+   display: block;
+   background: $bg;
+   color: $color;
+   padding: 1em;
+   text-align: center;
+   font-size: 1.5em;
+   font-family: $button-font;
+   font-weight: 700;
+   transition: 250ms ease;
+   // For Small
+   @include breakpoint(small only) {
+      font-size: 1rem;
+   }
+   &:hover {
+      background: $hover-bg;
+      color: $hover-color;
+   }
+}
+
+// Homepage
+//---------
+// Register Section
+.register-section {
+   h1 {
+      color: $dark-green;
+      line-height: 1.1;
+      margin-bottom: .5em;
+   }
+   .custom-button {
+      @include buttonColor($light-green, $white, $dark-green, $white);
+   }
+   p {
+      margin-top: 1em;
+      font-family: $heading-font;
+      font-weight: 700;
+      color: $dark-green;
+   }
+}
+// Hotel Booking Section
+.hotel-booking-section {
+   h2 {
+      font-size: 3rem;
+      @include breakpoint(small only) {
+         font-size: 1.5rem;
+      }
+      color: $dark-blue;
+      line-height: 1.1;
+      margin-bottom: .5em;
+   }
+   .custom-button {
+      @include buttonColor($light-blue, $white, $dark-blue, $white);
+   }
+   p {
+      margin-top: 1em;
+      font-family: $heading-font;
+      font-weight: 700;
+      color: $dark-blue;
+   }
+}
+// Hotel Booking Section
+.sponsor-section {
+   h2 {
+      font-size: 3rem;
+      @include breakpoint(small only) {
+         font-size: 1.5rem;
+      }
+      color: $dark-red;
+      line-height: 1.1;
+      margin-bottom: .5em;
+   }
+   .custom-button {
+      @include buttonColor($light-red, $white, $dark-red, $white);
+   }
+   p {
+      margin-top: 1em;
+      font-family: $heading-font;
+      font-weight: 700;
+      color: $dark-red;
+   }
+}
+
+
+
+
+
+// Footer
+//-------
+footer {
+   height: 10em;
+   background: $light-green;
+   color: $white;
 }
