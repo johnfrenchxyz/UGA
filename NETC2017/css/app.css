@@ -4023,14 +4023,58 @@ h6 {
   font-family: 'Raleway', sans-serif;
   font-weight: 300; }
 
+header {
+  margin-bottom: 4em; }
+  header img {
+    float: left;
+    max-width: 400px; }
+
+nav {
+  float: right; }
+  nav ul {
+    list-style: none; }
+  nav ul li {
+    display: inline; }
+  nav ul li a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: .8rem;
+    color: #2E2E2E;
+    display: inline-block;
+    padding: 1em; }
+  nav .register {
+    background: #4b6c50;
+    color: #ffffff; }
+
 .register-section h1 {
   color: #77806A;
   line-height: 1.1;
   margin-bottom: .5em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .register-section h1 {
+      font-size: 2rem !important; } }
+
+.register-section h2 {
+  font-size: 3rem;
+  color: #77806A;
+  line-height: 1.1;
+  margin-bottom: .5em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .register-section h2 {
+      font-size: 2rem; } }
+  @media screen and (max-width: 39.9375em) {
+    .register-section h2 {
+      font-size: 1.5rem; } }
+
+.register-section p {
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #5d6453; }
 
 .register-section .custom-button {
   display: block;
-  background: #8DC397;
+  background: #4b6c50;
   color: #ffffff;
   padding: 1em;
   text-align: center;
@@ -4045,24 +4089,35 @@ h6 {
     background: #77806A;
     color: #ffffff; }
 
-.register-section p {
-  margin-top: 1em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #77806A; }
+.hotel-booking-section h1 {
+  color: #5D97B5;
+  line-height: 1.1;
+  margin-bottom: .5em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .hotel-booking-section h1 {
+      font-size: 2rem !important; } }
 
 .hotel-booking-section h2 {
   font-size: 3rem;
   color: #5D97B5;
   line-height: 1.1;
   margin-bottom: .5em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .hotel-booking-section h2 {
+      font-size: 2rem; } }
   @media screen and (max-width: 39.9375em) {
     .hotel-booking-section h2 {
       font-size: 1.5rem; } }
 
+.hotel-booking-section p {
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #467d99; }
+
 .hotel-booking-section .custom-button {
   display: block;
-  background: #8AC8E8;
+  background: #327c9c;
   color: #ffffff;
   padding: 1em;
   text-align: center;
@@ -4077,24 +4132,35 @@ h6 {
     background: #5D97B5;
     color: #ffffff; }
 
-.hotel-booking-section p {
-  margin-top: 1em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #5D97B5; }
+.sponsor-section h1 {
+  color: #aa4b4b;
+  line-height: 1.1;
+  margin-bottom: .5em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .sponsor-section h1 {
+      font-size: 2rem !important; } }
 
 .sponsor-section h2 {
   font-size: 3rem;
-  color: #BE5353;
+  color: #aa4b4b;
   line-height: 1.1;
   margin-bottom: .5em; }
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    .sponsor-section h2 {
+      font-size: 2rem; } }
   @media screen and (max-width: 39.9375em) {
     .sponsor-section h2 {
       font-size: 1.5rem; } }
 
+.sponsor-section p {
+  margin-top: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #873b3b; }
+
 .sponsor-section .custom-button {
   display: block;
-  background: #DD7F7F;
+  background: #c84b4b;
   color: #ffffff;
   padding: 1em;
   text-align: center;
@@ -4106,14 +4172,21 @@ h6 {
     .sponsor-section .custom-button {
       font-size: 1rem; } }
   .sponsor-section .custom-button:hover {
-    background: #BE5353;
+    background: #aa4b4b;
     color: #ffffff; }
 
-.sponsor-section p {
-  margin-top: 1em;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  color: #BE5353; }
+.tech-window {
+  margin-left: 2em; }
+
+main {
+  margin-bottom: -5em; }
+
+.spacer {
+  height: 5em;
+  margin-top: 5em; }
+
+footer, main:after {
+  height: 10em; }
 
 footer {
   height: 10em;
