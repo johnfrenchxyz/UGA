@@ -4190,5 +4190,8 @@ footer, main:after {
 
 footer {
   height: 10em;
-  background: #8DC397;
-  color: #ffffff; }
+  background: #4b6c50;
+  color: #ffffff;
+  padding-top: 3em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; }

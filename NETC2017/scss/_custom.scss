@@ -165,6 +165,9 @@ footer, main:after {
 
 footer {
    height: 10em;
-   background: $light-green;
+   background: $green;
    color: $white;
+   padding-top: 3em;
+   font-family: $heading-font;
+   font-weight: 700;
 }
