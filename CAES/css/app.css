@@ -4823,16 +4823,20 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: .2em;
-    width: 190px;
-    height: 190px;
-    overflow: hidden; }
+    width: 150px;
+    height: 200px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .hall-of-fame-container .hall-of-famer .img-container:hover {
       box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
   .hall-of-fame-container .hall-of-famer img {
-    object-position: center;
-    object-fit: cover;
-    min-height: 100%;
-    width: auto; }
+    margin: 0 auto 0 auto;
+    height: 200px;
+    object-fit: cover; }
   .hall-of-fame-container .hall-of-famer .name {
     margin-top: 0;
     font-weight: 700;
