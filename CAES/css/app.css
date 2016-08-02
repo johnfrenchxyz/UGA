@@ -4822,7 +4822,7 @@ footer {
     margin-top: 1em;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: .2em;
+    margin-bottom: -1em;
     width: 150px;
     height: 200px;
     display: -webkit-flex;
