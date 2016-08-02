@@ -4809,44 +4809,36 @@ footer {
   .scholarship-container .button {
     margin-top: 1em; }
 
-.hall-of-fame-container {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  width: 100%; }
-  .hall-of-fame-container .hall-of-famer {
-    text-align: center;
-    -webkit-flex-grow: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-flex-basis: 25%;
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%; }
-    .hall-of-fame-container .hall-of-famer .img-container {
-      overflow: hidden;
-      margin-top: 1em;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: .2em;
-      width: 190px;
-      height: 190px;
-      overflow: hidden; }
-      .hall-of-fame-container .hall-of-famer .img-container:hover {
-        box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
-    .hall-of-fame-container .hall-of-famer img {
-      object-position: center;
-      object-fit: cover;
-      min-height: 100%;
-      width: auto; }
-    .hall-of-fame-container .hall-of-famer .name {
-      margin-top: 0;
-      font-weight: 700;
-      font-size: 1rem; }
-    .hall-of-fame-container .hall-of-famer .date, .hall-of-fame-container .hall-of-famer .event-page .time, .event-page .hall-of-fame-container .hall-of-famer .time, .hall-of-fame-container .hall-of-famer .event-page .contact .title, .event-page .contact .hall-of-fame-container .hall-of-famer .title {
-      margin-bottom: 2em; }
+.hall-of-fame-container .hall-of-famer {
+  text-align: center;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-flex-basis: 25%;
+      -ms-flex-preferred-size: 25%;
+          flex-basis: 25%; }
+  .hall-of-fame-container .hall-of-famer .img-container {
+    overflow: hidden;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .2em;
+    width: 190px;
+    height: 190px;
+    overflow: hidden; }
+    .hall-of-fame-container .hall-of-famer .img-container:hover {
+      box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
+  .hall-of-fame-container .hall-of-famer img {
+    object-position: center;
+    object-fit: cover;
+    min-height: 100%;
+    width: auto; }
+  .hall-of-fame-container .hall-of-famer .name {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 1rem; }
+  .hall-of-fame-container .hall-of-famer .date, .hall-of-fame-container .hall-of-famer .event-page .time, .event-page .hall-of-fame-container .hall-of-famer .time, .hall-of-fame-container .hall-of-famer .event-page .contact .title, .event-page .contact .hall-of-fame-container .hall-of-famer .title {
+    margin-bottom: 2em; }
 
 .image-gallery-container {
   column-width: 300px;

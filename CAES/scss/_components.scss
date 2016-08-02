@@ -383,9 +383,6 @@ $component-title-default-color: darken($caes-gray, 10%);
 // Hall of Fame Gallery
 //---------------------
 .hall-of-fame-container {
-   display: flex;
-   flex-wrap: wrap;
-   width: 100%;
    .hall-of-famer {
       text-align: center;
       flex-grow: 1;
@@ -825,7 +822,7 @@ figcaption {
       margin: 0 !important;
       padding-left: 1em !important;
       padding-right: 1em;
-      
+
    }
 }
 
