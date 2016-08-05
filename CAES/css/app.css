@@ -4106,7 +4106,7 @@ h2 {
       background: #575757; }
     #mainNav li a {
       color: #e6e6e6;
-      font-size: 0.875rem;
+      font-size: .875rem;
       font-weight: bold;
       transition: 250ms ease; }
       @media (max-width: 750px) {
@@ -4459,7 +4459,7 @@ footer {
     line-height: 56px;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -4523,7 +4523,7 @@ footer {
     line-height: 56px;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -4587,7 +4587,7 @@ footer {
     line-height: 56px;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
