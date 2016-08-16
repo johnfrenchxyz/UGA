@@ -71,7 +71,7 @@ $('.news-accordion-title').click(function(){
 
 // Filter Accordion (for News Main page)
 //--------------------------------------
-// Hude .subfilters by default for JS fallback
+// Hide .subfilters by default for JS fallback
 $('.subfilters').hide();
 $('.filter-control').click(function(){
    $(this).next('.subfilters').slideToggle("fast");

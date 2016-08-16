@@ -4106,7 +4106,7 @@ h2 {
       background: #575757; }
     #mainNav li a {
       color: #e6e6e6;
-      font-size: .875rem;
+      font-size: 0.875rem;
       font-weight: bold;
       transition: 250ms ease; }
       @media (max-width: 750px) {
@@ -4300,14 +4300,12 @@ footer {
       font-weight: 500;
       text-transform: uppercase;
       font-size: 0.75rem;
-      display: block;
-			max-width: 90%; }
+      display: block; }
     .plain-list-container .plain-list-item .subtitle:after {
       content: "\000A";
       white-space: pre; }
     .plain-list-container .plain-list-item .description {
-      overflow: auto;
-			display: flex; }
+      overflow: auto; }
     .plain-list-container .plain-list-item .description:after {
       content: "\000A";
       white-space: pre; }
@@ -4461,7 +4459,7 @@ footer {
     line-height: 56px;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -4525,7 +4523,7 @@ footer {
     line-height: 56px;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -4589,7 +4587,7 @@ footer {
     line-height: 56px;
     vertical-align: middle;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 0.875rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 1em;
@@ -4659,11 +4657,14 @@ footer {
 
 @media screen and (max-width: 63.9375em) {
   .profile img {
-    width: 100%; } }
+    width: 50vm;
+    width: 50vmin; } }
 
 @media screen and (min-width: 64em) {
   .profile img {
-    width: 50%; } }
+    width: 50vm;
+    width: 50vmin;
+    margin: auto; } }
 
 .profile .affiliations li {
   display: inline;
@@ -4676,7 +4677,8 @@ footer {
   font-family: 'Roboto Slab', serif;
   font-size: 1.125rem;
   font-weight: 700;
-  margin: 0 0 0 0; }
+  margin: 0 0 0 0;
+  color: #c41039; }
 
 .profile .subtitle {
   font-weight: 500;
@@ -4686,7 +4688,7 @@ footer {
 
 .profile .profile-contact-items {
   border-bottom: solid 1px #cacaca;
-  width: 50%;
+  width: 100%;
   padding-bottom: 1em; }
 
 .profile .profile-contact-items li {
@@ -4811,40 +4813,44 @@ footer {
   .scholarship-container .button {
     margin-top: 1em; }
 
-.hall-of-fame-container .hall-of-famer {
-  text-align: center;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-flex-basis: 25%;
-      -ms-flex-preferred-size: 25%;
-          flex-basis: 25%; }
-  .hall-of-fame-container .hall-of-famer .img-container {
-    overflow: hidden;
-    margin-top: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -1em;
-    width: 150px;
-    height: 200px;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .hall-of-fame-container .hall-of-famer .img-container:hover {
-      box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
-  .hall-of-fame-container .hall-of-famer img {
-    margin: 0 auto 0 auto;
-    height: 200px;
-    object-fit: cover; }
-  .hall-of-fame-container .hall-of-famer .name {
-    margin-top: 0;
-    font-weight: 700;
-    font-size: 1rem; }
-  .hall-of-fame-container .hall-of-famer .date, .hall-of-fame-container .hall-of-famer .event-page .time, .event-page .hall-of-fame-container .hall-of-famer .time, .hall-of-fame-container .hall-of-famer .event-page .contact .title, .event-page .contact .hall-of-fame-container .hall-of-famer .title {
-    margin-bottom: 2em; }
+.hall-of-fame-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  width: 100%; }
+  .hall-of-fame-container .hall-of-famer {
+    text-align: center;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-basis: 25%;
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; }
+    .hall-of-fame-container .hall-of-famer .img-container {
+      overflow: hidden;
+      margin-top: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: .2em;
+      width: 190px;
+      height: 190px;
+      overflow: hidden; }
+      .hall-of-fame-container .hall-of-famer .img-container:hover {
+        box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
+    .hall-of-fame-container .hall-of-famer img {
+      object-position: center;
+      object-fit: cover;
+      min-height: 100%;
+      width: auto; }
+    .hall-of-fame-container .hall-of-famer .name {
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 1rem; }
+    .hall-of-fame-container .hall-of-famer .date, .hall-of-fame-container .hall-of-famer .event-page .time, .event-page .hall-of-fame-container .hall-of-famer .time, .hall-of-fame-container .hall-of-famer .event-page .contact .title, .event-page .contact .hall-of-fame-container .hall-of-famer .title {
+      margin-bottom: 2em; }
 
 .image-gallery-container {
   column-width: 300px;
@@ -4912,7 +4918,7 @@ figcaption {
   line-height: 56px;
   vertical-align: middle;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1em;
@@ -5225,7 +5231,7 @@ figcaption {
   line-height: 56px;
   vertical-align: middle;
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 1em;
