@@ -454,6 +454,10 @@ $component-title-default-color: darken($caes-gray, 10%);
    margin: 0;
    font-weight: 700;
    font-size: rem-calc(16);
+   border: none;
+   .image {
+      margin-bottom: 1em;
+   }
 }
 
 
