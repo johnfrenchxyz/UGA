@@ -832,14 +832,39 @@ figcaption {
 .panel {
    border: 1px solid $caes-light-gray;
    font-family: 'Roboto', sans-serif;
+   padding: .5em;
    p.image {
       padding: 0;
    }
-   h3, h4 {
-      margin: 0 !important;
-      padding-left: 1em !important;
-      padding-right: 1em;
+}
 
+// Panel Quote Styles:
+.quote {
+   background: $caes-red;
+   color: $white;
+   a {
+      color: $white;
+      text-decoration: underline;
+   }
+   blockquote {
+      color: $white;
+      margin: 1.5em 10px;
+      padding: 0.5em 10px;
+      quotes: "\201C""\201D""\2018""\2019";
+      border-left: solid 5px $white;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      &:before {
+         color: $white;
+         content: open-quote;
+         font-size: 4em;
+         line-height: 0.1em;
+         margin-right: 0.15em;
+         vertical-align: -0.4em;
+      }
+      cite {
+         color: $white;
+      }
    }
 }
 
