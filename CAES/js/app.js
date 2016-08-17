@@ -43,7 +43,7 @@ function responsivePlainList() {
    $('.plain-list-item').each(function(){
       if ( $(this).parent().width() < 700 ) {
          $(this).find('img').css('float', 'none');
-         $(this).find('img').css('min-width', '100%');
+         $(this).find('img').css('max-width', '100%');
          $(this).find('img').css('padding-right', '0');
       } else {
          $(this).find('img').css('float', 'left');

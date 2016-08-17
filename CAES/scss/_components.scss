@@ -83,13 +83,23 @@ $component-title-default-color: darken($caes-gray, 10%);
    border: solid 1px #d6d6d6;
    margin-bottom: 3em;
    // Component Title
-   .component-title { @include component-title( $component-title-default-bg, $component-title-default-color ) }
+   .component-title {
+      @include component-title( $component-title-default-bg, $component-title-default-color );
+      // font-size: 1.25rem;
+   }
+
    @include clear;
 
    .plain-list-item {
       display: block;
       margin-bottom: 1em;
       @include caes-list-style;
+      .subtitle {
+         max-width: 90%;
+      }
+      .description {
+         display: flex;
+      }
       img { float: left; max-width: 200px; height: auto; padding-right: 1em; margin-bottom: 1em; }
    }
 
@@ -383,13 +393,13 @@ $component-title-default-color: darken($caes-gray, 10%);
 // Hall of Fame Gallery
 //---------------------
 .hall-of-fame-container {
-   display: flex;
-   flex-wrap: wrap;
+   // display: flex;
+   // flex-wrap: wrap;
    width: 100%;
    .hall-of-famer {
       text-align: center;
-      flex-grow: 1;
-      flex-basis: 25%;
+      // flex-grow: 1;
+      // flex-basis: 25%;
       .img-container {
          overflow: hidden;
          margin-top: 1em;
