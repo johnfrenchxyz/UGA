@@ -4715,7 +4715,7 @@ footer {
   margin-top: 1em;
   float: left;
   margin-right: 1em;
-  width: 25%; }
+  margin-bottom: 1em; }
   .profile .profile-address span:after {
     height: 0;
     visibility: hidden;
