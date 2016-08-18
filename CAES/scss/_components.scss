@@ -863,13 +863,22 @@ figcaption {
          vertical-align: -0.4em;
       }
       cite {
-         color: $white;
+         color: $white !important;
+         font-weight: bold !important;
       }
    }
 }
 // Temporary Fix for Quote Option
 cite {
    color: $white !important;
+}
+
+
+// Rich Text
+.span-button {
+   a {
+      color: $white;
+   }
 }
 
 
