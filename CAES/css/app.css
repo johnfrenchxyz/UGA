@@ -5310,10 +5310,14 @@ figcaption {
       margin-right: 0.15em;
       vertical-align: -0.4em; }
     .quote blockquote cite {
-      color: #fefefe; }
+      color: #fefefe !important;
+      font-weight: bold !important; }
 
 cite {
   color: #fefefe !important; }
+
+.span-button a {
+  color: #fefefe; }
 
 .spacer {
   height: 1000px; }
