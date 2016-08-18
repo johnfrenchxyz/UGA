@@ -307,6 +307,12 @@ $nav-arrow-color: $nav-link-color;
    ul {
       @include breakpoint(medium up) {
          margin-top: 36px;
+         height: 56px;
+         a {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+         }
       }
       @include breakpoint(small only) {
          margin-top: 0px;
