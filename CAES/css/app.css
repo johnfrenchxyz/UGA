@@ -5304,13 +5304,16 @@ figcaption {
     font-weight: bold; }
     .quote blockquote:before {
       color: #fefefe;
-      content: open-quote;
+      content: "\201C";
       font-size: 4em;
       line-height: 0.1em;
       margin-right: 0.15em;
       vertical-align: -0.4em; }
     .quote blockquote cite {
       color: #fefefe; }
+
+cite {
+  color: #fefefe !important; }
 
 .spacer {
   height: 1000px; }
