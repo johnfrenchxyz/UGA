@@ -4705,11 +4705,8 @@ footer {
   padding-bottom: 1em; }
 
 .profile .profile-contact-items li {
-  display: inline;
+  display: block;
   padding-right: 1em; }
-  @media screen and (max-width: 63.9375em) {
-    .profile .profile-contact-items li {
-      display: block; } }
 
 .profile .profile-address {
   margin-top: 1em;
@@ -4737,12 +4734,7 @@ footer {
 .profile-component .profile-contact-items {
   margin-left: 0; }
   .profile-component .profile-contact-items li {
-    display: inline;
-    padding-right: 1em; }
-    @media screen and (max-width: 39.9375em) {
-      .profile-component .profile-contact-items li {
-        display: block;
-        margin-left: 0; } }
+    display: block; }
 
 .social-media-icons {
   list-style: none;
@@ -4811,8 +4803,7 @@ footer {
   border: 1px solid rgba(10, 10, 10, 0.25);
   border-radius: 0;
   position: relative;
-  color: #3e3e3e;
-  width: 250px; }
+  color: #3e3e3e; }
   .scholarship-container > :first-child {
     margin-top: 0; }
   .scholarship-container > :last-child {
@@ -5314,7 +5305,8 @@ figcaption {
       font-weight: bold !important; }
 
 cite {
-  color: #fefefe !important; }
+  color: #fefefe !important;
+  font-weight: bold !important; }
 
 .span-button a {
   color: #fefefe; }

@@ -267,9 +267,9 @@ $component-title-default-color: darken($caes-gray, 10%);
    .subtitle { font-weight: 500; color: $dark-gray; text-transform: uppercase; font-size: rem-calc(14); }
    .profile-contact-items { border-bottom: solid 1px $medium-gray; width: 100%; padding-bottom: 1em; }
    .profile-contact-items li {
-      display: inline;
+      display: block;
       padding-right: 1em;
-      @include breakpoint(medium down) { display: block; }
+      // @include breakpoint(medium down) { display: block; }
    }
    .profile-address {
       span { @include clear(); }
@@ -287,9 +287,9 @@ $component-title-default-color: darken($caes-gray, 10%);
    .profile-contact-items {
       margin-left: 0;
       li {
-         display: inline;
-         padding-right: 1em;
-         @include breakpoint(small down) { display: block; margin-left: 0; }
+         display: block;
+         // padding-right: 1em;
+         // @include breakpoint(small down) { display: block; margin-left: 0; }
       }
    }
 }
@@ -383,7 +383,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    @include callout-base();
    // float: right;
    // margin-left: 1em;
-   width: 250px;
+   // width: 250px;
    .title { font-weight: 700; font-size: rem-calc(18); margin-bottom: .5em; }
    .description { font-size: rem-calc(14); }
    .button { margin-top: 1em; }
@@ -871,6 +871,7 @@ figcaption {
 // Temporary Fix for Quote Option
 cite {
    color: $white !important;
+   font-weight: bold !important;
 }
 
 
