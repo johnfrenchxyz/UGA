@@ -55,6 +55,7 @@ $component-title-default-color: darken($caes-gray, 10%);
 @mixin caes-list-style {
    // Margins & Padding
    padding: 1em;
+   // margin-bottom: 1em !important;
    // Title
    .title {
       font-family: 'Roboto Slab', serif;
