@@ -5289,6 +5289,7 @@ figcaption {
       font-size: 4em;
       line-height: 0.2em;
       margin-right: 0.15em;
+      margin-left: 0.15em;
       vertical-align: -0.5em; }
     .quote blockquote cite {
       color: #fefefe !important;
