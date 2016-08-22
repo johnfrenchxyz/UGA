@@ -4700,7 +4700,6 @@ footer {
   font-size: 0.875rem; }
 
 .profile .profile-contact-items {
-  border-bottom: solid 1px #cacaca;
   width: 100%;
   padding-bottom: 1em; }
 
@@ -4763,26 +4762,16 @@ footer {
   background: #000000; }
 
 .orbit-container .orbit-slide img {
-  position: relative;
-  max-height: 100%;
-  left: 50%;
-  -ms-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%); }
-  @media (min-width: 100px) {
+  min-width: 600px; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .orbit-container .orbit-slide img {
-      top: 50%;
-      left: 0;
-      max-height: none;
-      width: 100%;
-      -ms-transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%); } }
+      min-height: 100%; } }
 
 .orbit-container .caption-top-left {
   top: 0;
   bottom: 90 !important;
-  margin-bottom: 345px; }
+  margin-bottom: 345px;
+  margin-top: -.4em; }
 
 .orbit-container .caption-bottom-right {
   text-align: right; }
@@ -4791,7 +4780,8 @@ footer {
   top: 0;
   bottom: 90 !important;
   margin-bottom: 345px;
-  text-align: right; }
+  text-align: right;
+  margin-top: -.4em; }
 
 .orbit-bullets button {
   width: .5em;
@@ -4817,6 +4807,9 @@ footer {
   .scholarship-container .button {
     margin-top: 1em; }
 
+.portraitgallery {
+  margin-bottom: 2em !important; }
+
 .hall-of-fame-container {
   width: 100%; }
   .hall-of-fame-container .hall-of-famer {
@@ -4840,31 +4833,21 @@ footer {
     .hall-of-fame-container .hall-of-famer .name {
       margin-top: 0;
       font-weight: 700;
-      font-size: 1rem; }
+      font-size: 1rem;
+      display: block; }
     .hall-of-fame-container .hall-of-famer .date, .hall-of-fame-container .hall-of-famer .event-page .time, .event-page .hall-of-fame-container .hall-of-famer .time, .hall-of-fame-container .hall-of-famer .event-page .contact .title, .event-page .contact .hall-of-fame-container .hall-of-famer .title {
       margin-bottom: 2em; }
 
 .image-gallery-container {
-  column-width: 300px;
-  -moz-column-width: 300px;
-  -webkit-column-width: 300px;
-  -webkit-column-count: 3;
-     -moz-column-count: 3;
-          column-count: 3; }
-  .image-gallery-container div {
-    margin-top: 1em;
-    column-break-inside: avoid;
-    display: inline-block; }
-    .image-gallery-container div img {
-      width: 100%;
-      height: auto;
-      display: block;
-      margin-top: 1em;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: .2em; }
-    .image-gallery-container div img.thumbnail:hover {
-      box-shadow: 0 0 6px 1px rgba(100, 100, 100, 0.5); }
+  margin-bottom: 2em; }
+  .image-gallery-container .tiled-list-item {
+    transition: 250ms ease; }
+    .image-gallery-container .tiled-list-item:hover {
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  .image-gallery-container div img {
+    width: 100%;
+    height: auto;
+    display: block; }
 
 .google-map-container {
   list-style: none;
@@ -4888,20 +4871,20 @@ figcaption {
   transition: 250ms ease;
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
-  font-size: 2.25rem;
+  font-size: 1.625rem;
   padding: 1em;
   color: #fefefe; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     figcaption {
-      font-size: 1.5rem; } }
+      font-size: 1.125rem; } }
   figcaption .caption-tagline {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     display: block;
     margin-top: -10px; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       figcaption .caption-tagline {
-        font-size: 1.125rem; } }
+        font-size: 0.875rem; } }
 
 .event-list .component-title {
   background: #c41039;
@@ -5300,6 +5283,13 @@ figcaption {
       line-height: 0.1em;
       margin-right: 0.15em;
       vertical-align: -0.4em; }
+    .quote blockquote:after {
+      color: #fefefe;
+      content: "\201D";
+      font-size: 4em;
+      line-height: 0.2em;
+      margin-right: 0.15em;
+      vertical-align: -0.5em; }
     .quote blockquote cite {
       color: #fefefe !important;
       font-weight: bold !important; }
