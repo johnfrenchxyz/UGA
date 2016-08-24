@@ -895,7 +895,9 @@ cite {
 .featured-yellow {
    @include homepage-featured($caes-yellow, $white);
 }
-
+.featured-gray {
+@include homepage-featured($caes-light-gray, $caes-dark-gray);
+}
 
 
 
