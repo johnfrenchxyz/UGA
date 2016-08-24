@@ -5302,5 +5302,261 @@ cite {
 .span-button a {
   color: #fefefe; }
 
+.featured-blue {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .featured-blue .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .featured-blue .title {
+        font-size: 1rem; } }
+  .featured-blue .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .featured-blue .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-blue .description {
+    overflow: auto; }
+  .featured-blue .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-blue .component-title {
+    background: #0083aa;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .featured-blue .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #0083aa;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .featured-blue img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .featured-blue .title, .featured-blue .subtitle, .featured-blue .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+  .featured-blue .description {
+    overflow-x: hidden; }
+
+.featured-red {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .featured-red .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .featured-red .title {
+        font-size: 1rem; } }
+  .featured-red .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .featured-red .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-red .description {
+    overflow: auto; }
+  .featured-red .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-red .component-title {
+    background: #c41039;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .featured-red .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #c41039;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .featured-red img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .featured-red .title, .featured-red .subtitle, .featured-red .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+  .featured-red .description {
+    overflow-x: hidden; }
+
+.featured-green {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .featured-green .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .featured-green .title {
+        font-size: 1rem; } }
+  .featured-green .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .featured-green .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-green .description {
+    overflow: auto; }
+  .featured-green .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-green .component-title {
+    background: #339966;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .featured-green .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #339966;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .featured-green img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .featured-green .title, .featured-green .subtitle, .featured-green .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+  .featured-green .description {
+    overflow-x: hidden; }
+
+.featured-yellow {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .featured-yellow .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .featured-yellow .title {
+        font-size: 1rem; } }
+  .featured-yellow .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .featured-yellow .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-yellow .description {
+    overflow: auto; }
+  .featured-yellow .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-yellow .component-title {
+    background: #ffa02f;
+    position: relative;
+    color: #fefefe;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .featured-yellow .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #ffa02f;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .featured-yellow img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .featured-yellow .title, .featured-yellow .subtitle, .featured-yellow .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+  .featured-yellow .description {
+    overflow-x: hidden; }
+
 .spacer {
   height: 1000px; }

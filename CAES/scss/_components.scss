@@ -170,7 +170,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    margin-right: -30px !important;
 }
 
-@mixin hompage-featured($title-bg, $title-color) {
+@mixin homepage-featured($title-bg, $title-color) {
    overflow: hidden;
    @include caes-list-style;
    padding: 0;
@@ -194,22 +194,22 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
 }
 
-// Homepage Academics Section
+// Homepage homepage Section
 //---------------------------
 .academics {
-   @include hompage-featured($caes-blue, $white);
+   @include homepage-featured($caes-blue, $white);
 }
 
 // Homepage Research Section
 //---------------------------
 .research {
-   @include hompage-featured($caes-yellow, $white);
+   @include homepage-featured($caes-yellow, $white);
 }
 
 // Homepage Extension Section
 //---------------------------
 .extension {
-   @include hompage-featured($caes-green, $white);
+   @include homepage-featured($caes-green, $white);
 }
 
 // Publication List
@@ -881,7 +881,20 @@ cite {
 }
 
 
-
+// Featured Content Component
+//---------------------------
+.featured-blue {
+   @include homepage-featured($caes-blue, $white);
+}
+.featured-red {
+   @include homepage-featured($caes-red, $white);
+}
+.featured-green {
+   @include homepage-featured($caes-green, $white);
+}
+.featured-yellow {
+   @include homepage-featured($caes-yellow, $white);
+}
 
 
 
