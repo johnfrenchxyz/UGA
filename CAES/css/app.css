@@ -5558,5 +5558,69 @@ cite {
   .featured-yellow .description {
     overflow-x: hidden; }
 
+.featured-gray {
+  overflow: hidden;
+  padding: 1em;
+  padding: 0; }
+  .featured-gray .title {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: block; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .featured-gray .title {
+        font-size: 1rem; } }
+  .featured-gray .subtitle {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    display: block; }
+  .featured-gray .subtitle:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-gray .description {
+    overflow: auto; }
+  .featured-gray .description:after {
+    content: "\000A";
+    white-space: pre; }
+  .featured-gray .component-title {
+    background: #e4e4e4;
+    position: relative;
+    color: #3e3e3e;
+    width: calc(100% + 2px);
+    margin-left: -1px;
+    height: 56px;
+    line-height: 56px;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+    margin-bottom: 0em; }
+    .featured-gray .component-title:after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -10px;
+      width: 0;
+      height: 0;
+      border-top: solid 10px #e4e4e4;
+      border-left: solid 10px transparent;
+      border-right: solid 10px transparent; }
+  .featured-gray img {
+    float: none;
+    max-width: 100%;
+    height: auto;
+    padding-right: 0;
+    margin-bottom: 1em; }
+  .featured-gray .title, .featured-gray .subtitle, .featured-gray .description {
+    margin-left: 1em;
+    margin-right: 1em; }
+  .featured-gray .description {
+    overflow-x: hidden; }
+
 .spacer {
   height: 1000px; }
