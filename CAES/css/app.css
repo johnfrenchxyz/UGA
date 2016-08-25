@@ -4492,6 +4492,7 @@ footer {
   .academics img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -4556,6 +4557,7 @@ footer {
   .research img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -4620,6 +4622,7 @@ footer {
   .extension img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -5357,6 +5360,7 @@ cite {
   .featured-blue img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -5421,6 +5425,7 @@ cite {
   .featured-red img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -5485,6 +5490,7 @@ cite {
   .featured-green img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -5549,6 +5555,7 @@ cite {
   .featured-yellow img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
@@ -5613,6 +5620,7 @@ cite {
   .featured-gray img {
     float: none;
     max-width: 100%;
+    width: 100%;
     height: auto;
     padding-right: 0;
     margin-bottom: 1em; }
