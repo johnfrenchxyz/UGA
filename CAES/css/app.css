@@ -5258,13 +5258,14 @@ figcaption {
   width: 50%;
   margin: 0 auto 0 auto; }
 
-.panel {
+.content-panel {
   border: 1px solid #e4e4e4;
   font-family: 'Roboto', sans-serif;
   padding: .5em;
   margin-bottom: 2em; }
-  .panel p.image {
-    padding: 0; }
+  .content-panel p.image {
+    padding: 0;
+    background: pink; }
 
 .quote {
   background: #c41039;
