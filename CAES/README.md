@@ -12,3 +12,4 @@
 - **Panel Component:** Removed double border caused by conflict with AEM class.
 - **Panel Component:** Added bottom padding that was causing the panels to stack on each other.
 - **Panel Component:** Centered the image when it was smaller than the container and added a slightly gray background to set it apart from the other content.
+- **Button Component:** In AEM's rich text box, you can now preview the buttons before you finish editing them. 
