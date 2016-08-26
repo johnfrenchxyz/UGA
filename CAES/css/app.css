@@ -4857,7 +4857,8 @@ footer {
   margin: 0;
   font-weight: 700;
   font-size: 1rem;
-  border: none; }
+  border: none;
+  margin-bottom: 2em; }
   .google-map-container .image {
     margin-bottom: 1em; }
 
