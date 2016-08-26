@@ -97,7 +97,7 @@ $caes-red: #c41039;
 		font-size: .8rem;
 		// color: $caes-red;
 		color: #333333;
-		transition: 150ms ease;
+		// transition: 150ms ease;
 		&:hover {
 			// background: darken($shield-menu-gray, 5%);
 			border-bottom: 2px solid $caes-red;
@@ -108,8 +108,4 @@ $caes-red: #c41039;
 		vertical-align: middle;
 		padding: 0 .5em 0 .5em;
 	}
-}
-
-body {
-	background: pink !important;
 }

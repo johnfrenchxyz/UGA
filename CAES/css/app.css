@@ -5724,14 +5724,10 @@ cite {
     line-height: 56px;
     font-weight: bold;
     font-size: .8rem;
-    color: #333333;
-    transition: 150ms ease; }
+    color: #333333; }
     .shield-menu-container ul li a:hover {
       border-bottom: 2px solid #c41039;
       color: #c41039; }
   .shield-menu-container .search {
     vertical-align: middle;
     padding: 0 .5em 0 .5em; }
-
-body {
-  background: pink !important; }
