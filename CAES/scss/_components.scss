@@ -826,7 +826,9 @@ figcaption {
    margin-bottom: 2em;
    p.image {
       padding: 0;
-      background: pink;
+      background: $caes-light-gray;
+      display: flex;
+      justify-content: center;
    }
 }
 

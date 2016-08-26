@@ -5265,7 +5265,13 @@ figcaption {
   margin-bottom: 2em; }
   .content-panel p.image {
     padding: 0;
-    background: pink; }
+    background: #e4e4e4;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .quote {
   background: #c41039;
