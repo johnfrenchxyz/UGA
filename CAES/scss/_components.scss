@@ -278,8 +278,10 @@ $component-title-default-color: darken($caes-gray, 10%);
       margin-top: 1em;
       float: left;
       margin-right: 1em;
-      margin-bottom: 1em;
-      @include breakpoint(medium down) { width: 100%; float: none; }
+      @include breakpoint(medium down) {
+         width: 100%;
+         float: none;
+      }
    }
 }
 
