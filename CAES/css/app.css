@@ -3982,7 +3982,7 @@ h2 {
   border: none;
   outline: none;
   background: #c41039;
-  width: 100%;
+  width: 1000px;
   height: 56px;
   margin: 0;
   z-index: 10;
@@ -4049,7 +4049,7 @@ h2 {
 /* Open state */
 .sb-search.sb-search-open,
 .no-js .sb-search {
-  width: 100%;
+  width: 1000px !important;
   background: #c41039;
   color: #fefefe; }
 
@@ -5731,3 +5731,40 @@ cite {
   .shield-menu-container .search {
     vertical-align: middle;
     padding: 0 .5em 0 .5em; }
+
+.search-form {
+  display: none; }
+  .search-form form label span {
+    display: none; }
+  .search-form form input[type=text] {
+    height: 56px;
+    width: 73%;
+    float: left;
+    border: none;
+    background: #EBEBEB;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: .8rem;
+    color: #c41039; }
+    .search-form form input[type=text]:active, .search-form form input[type=text]:focus {
+      background: #EBEBEB;
+      border: none;
+      box-shadow: none; }
+  .search-form form input[type=submit] {
+    height: 56px;
+    width: 20%;
+    border: none;
+    box-shadow: none;
+    background: #c41039;
+    color: #fefefe;
+    font-weight: bold; }
+
+#searchClose {
+  float: left;
+  width: 7%;
+  height: 56px;
+  line-height: 56px;
+  padding: .4em 1em 0 0; }
+  @media (min-width: 0px) and (max-width: 260px) {
+    #searchClose {
+      display: none; } }

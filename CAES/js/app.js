@@ -76,3 +76,28 @@ $('.subfilters').hide();
 $('.filter-control').click(function(){
    $(this).next('.subfilters').slideToggle("fast");
 });
+
+
+// Search
+//-------
+$('#searchTrigger').click(function(){
+   if ( $(this).parent().siblings().hasClass("search-hidden") === false ) {
+      // Hide the siblings
+      $(this).parent().siblings().css("visibility", "hidden");
+      $(this).parent().siblings().addClass('search-hidden');
+      // Show the search
+      $('.search-form').css("display", "block");
+      // Focus the cursor
+      $('#searchInput').focus();
+      // Close the search
+      $('#searchClose').click(function(){
+         $('.search-form').css("display", "none");
+         $('#searchTrigger').parent().siblings().css("visibility", "visible");
+         $('#searchTrigger').parent().siblings().removeClass('search-hidden');
+      });
+   } else {
+      $(this).parent().siblings().css("visibility", "visible");
+      $(this).parent().siblings().removeClass('search-hidden');
+      // Hide the search
+   }
+});

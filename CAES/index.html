@@ -25,6 +25,15 @@
 				</div>
 				<div class="right-section">
 					<div class="shield-menu-container">
+						<div class="search-form">
+							<form>
+								<label><span>Search</span>
+        							<input id="searchInput" type="text" placeholder="Search" autofocus>
+									<a id="searchClose"><i class="material-icons">clear</i></a>
+									<input type="submit" value="Go!">
+      						</label>
+							</form>
+						</div>
 						<ul>
 							<li class="hide-for-small-only"><a>Campuses</a></li>
 							<!--
@@ -38,7 +47,9 @@
 							<li class="hide-for-small-only"><a>Faculty/Staff</a></li>
 							<!--
 				  -->
-							<li><a><i class="material-icons search">search</i></a></li>
+							<li>
+								<a id="searchTrigger"><i class="material-icons search">search</i></a>
+							</li>
 						</ul>
 					</div>
 					<div id="parent">
@@ -47,7 +58,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<!-- Main Branding Section -->
