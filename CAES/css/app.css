@@ -4713,8 +4713,7 @@ footer {
 .profile .profile-address {
   margin-top: 1em;
   float: left;
-  margin-right: 1em;
-  margin-bottom: 1em; }
+  margin-right: 1em; }
   .profile .profile-address span:after {
     height: 0;
     visibility: hidden;
@@ -5735,6 +5734,3 @@ cite {
   .shield-menu-container .search {
     vertical-align: middle;
     padding: 0 .5em 0 .5em; }
-
-body {
-  background: pink !important; }
