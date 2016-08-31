@@ -3897,6 +3897,9 @@ h2 {
   font-weight: 700;
   margin-top: .5em; }
 
+.button {
+  font-weight: bold; }
+
 .uga-button {
   background-color: #c41039;
   color: #fefefe;
