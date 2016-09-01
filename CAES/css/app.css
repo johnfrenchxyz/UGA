@@ -4497,11 +4497,9 @@ footer {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .academics .title, .academics .subtitle, .academics .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .academics .description {
     overflow-x: hidden; }
 
@@ -4562,11 +4560,9 @@ footer {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .research .title, .research .subtitle, .research .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .research .description {
     overflow-x: hidden; }
 
@@ -4627,11 +4623,9 @@ footer {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .extension .title, .extension .subtitle, .extension .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .extension .description {
     overflow-x: hidden; }
 
@@ -5376,11 +5370,9 @@ cite {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .featured-blue .title, .featured-blue .subtitle, .featured-blue .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .featured-blue .description {
     overflow-x: hidden; }
 
@@ -5441,11 +5433,9 @@ cite {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .featured-red .title, .featured-red .subtitle, .featured-red .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .featured-red .description {
     overflow-x: hidden; }
 
@@ -5506,11 +5496,9 @@ cite {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .featured-green .title, .featured-green .subtitle, .featured-green .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .featured-green .description {
     overflow-x: hidden; }
 
@@ -5571,11 +5559,9 @@ cite {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .featured-yellow .title, .featured-yellow .subtitle, .featured-yellow .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .featured-yellow .description {
     overflow-x: hidden; }
 
@@ -5636,11 +5622,9 @@ cite {
     width: 100%;
     max-width: 100%;
     height: auto;
-    padding-right: 0;
-    margin-bottom: 1em; }
+    padding-right: 0; }
   .featured-gray .title, .featured-gray .subtitle, .featured-gray .description {
-    margin-left: 1em;
-    margin-right: 1em; }
+    margin: 1em 1em 1em 1em; }
   .featured-gray .description {
     overflow-x: hidden; }
 

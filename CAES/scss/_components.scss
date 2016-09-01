@@ -184,11 +184,10 @@ $component-title-default-color: darken($caes-gray, 10%);
       max-width: 100%;
       height: auto;
       padding-right: 0;
-      margin-bottom: 1em;
+      // margin-bottom: 1em;
    }
    .title, .subtitle, .description {
-      margin-left: 1em;
-      margin-right: 1em;
+      margin: 1em 1em 1em 1em;
    }
    .description {
        overflow-x: hidden;
