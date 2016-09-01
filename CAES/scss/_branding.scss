@@ -73,6 +73,7 @@ $caes-red: #c41039;
     transform-origin :100% 100%;
 		@media #{$super-small-screen} {
 		display: none;
+		white-space: nowrap;
 	}
 }
 .shield-menu-container {
@@ -81,6 +82,12 @@ $caes-red: #c41039;
 	height: 56px;
 	float: right;
 	overflow: hidden;
+	@include breakpoint(small only) {
+		width: 35%;
+	}
+	@media #{$super-small-screen} {
+		width: 100%;
+	}
 	ul {
 		list-style: none;
 		text-align: right;
@@ -112,6 +119,7 @@ $caes-red: #c41039;
 
 .search-form {
 	display: none;
+	white-space: nowrap;
 	form {
 		label span {
 			display: none;
@@ -119,6 +127,10 @@ $caes-red: #c41039;
 		input[type=text] {
 			height: 56px;
 			width: 73%;
+			@include breakpoint(small only) {
+				width: 60%;
+				white-space: nowrap;
+			}
 			float: left;
 			border: none;
 			background: $shield-menu-gray;
@@ -135,6 +147,9 @@ $caes-red: #c41039;
 		input[type=submit] {
 			height: 56px;
 			width: 20%;
+			@media #{$super-small-screen} {
+				width: 40%;
+			}
 			border: none;
 			box-shadow: none;
 			background: $caes-red;
@@ -150,6 +165,9 @@ $caes-red: #c41039;
 	height: 56px;
 	line-height: 56px;
 	padding: .4em 1em 0 0;
+	@include breakpoint(small only) {
+		width: 20%
+	}
 	@media #{$super-small-screen} {
 		display: none;
 	}

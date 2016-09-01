@@ -5704,7 +5704,8 @@ cite {
   transform-origin: 100% 100%; }
   @media (min-width: 0px) and (max-width: 260px) {
     #shield:after {
-      display: none; } }
+      display: none;
+      white-space: nowrap; } }
 
 .shield-menu-container {
   margin-top: 1em;
@@ -5712,6 +5713,12 @@ cite {
   height: 56px;
   float: right;
   overflow: hidden; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    .shield-menu-container {
+      width: 35%; } }
+  @media (min-width: 0px) and (max-width: 260px) {
+    .shield-menu-container {
+      width: 100%; } }
   .shield-menu-container ul {
     list-style: none;
     text-align: right; }
@@ -5733,7 +5740,8 @@ cite {
     padding: 0 .5em 0 .5em; }
 
 .search-form {
-  display: none; }
+  display: none;
+  white-space: nowrap; }
   .search-form form label span {
     display: none; }
   .search-form form input[type=text] {
@@ -5746,6 +5754,10 @@ cite {
     font-weight: bold;
     font-size: .8rem;
     color: #c41039; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .search-form form input[type=text] {
+        width: 60%;
+        white-space: nowrap; } }
     .search-form form input[type=text]:active, .search-form form input[type=text]:focus {
       background: #EBEBEB;
       border: none;
@@ -5758,6 +5770,9 @@ cite {
     background: #c41039;
     color: #fefefe;
     font-weight: bold; }
+    @media (min-width: 0px) and (max-width: 260px) {
+      .search-form form input[type=submit] {
+        width: 40%; } }
 
 #searchClose {
   float: left;
@@ -5765,6 +5780,9 @@ cite {
   height: 56px;
   line-height: 56px;
   padding: .4em 1em 0 0; }
+  @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+    #searchClose {
+      width: 20%; } }
   @media (min-width: 0px) and (max-width: 260px) {
     #searchClose {
       display: none; } }
