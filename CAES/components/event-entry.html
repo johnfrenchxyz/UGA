@@ -1,0 +1,988 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAES Components</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="large-12 columns">
+
+            <form method="post" action="">
+                <input name="IsPostBack" value="true" type="hidden">
+                <h2>CAES Calendar Event Entry</h2>
+                <hr />
+                <h3 class="head">General Info</h3>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <div id="general-info" class="formElement">
+                            <input name="EventForm_1" type="hidden">
+                            <label for="TITLE">Event Title</label>
+                            <input name="EventForm_1_TITLE" id="EventForm_1_TITLE" size="70" type="text">
+
+                            <label for="SHORT_DESCRIPTION">Short Description</label>
+                            <textarea name="EventForm_1_SHORT_DESCRIPTION" id="EventForm_1_SHORT_DESCRIPTION" rows="3" cols="30"> </textarea>
+
+                            <label for="LONG_DESCRIPTION">Long Description</label>
+                            <textarea name="EventForm_1_LONG_DESCRIPTION" id="EventForm_1_LONG_DESCRIPTION" rows="10" cols="30"> </textarea>
+
+                            <hr />
+
+                            <h3>Calendar Display Information</h3>
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <p>Display Event on Public Calendar?</p>
+                                    <div class="switch large">
+                                        <input name="EventForm_1_SUBMITTED_BY" value="14599" type="hidden">
+                                        <input class="switch-input" id="yes-no" type="checkbox" name="EventForm_1_IS_PUBLIC" id="EventForm_1_IS_PUBLIC" value="1">
+                                        <label class="switch-paddle" for="yes-no">
+                                            <span class="show-for-sr">Display Event on Public Calendar</span>
+                                            <span class="switch-active" aria-hidden="true">Yes</span>
+                                            <span class="switch-inactive" aria-hidden="true">No</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-12 columns">
+                                    <label for="WEB_ADDRESS">Web Address For Event Information</label>
+                                    <div class="input-group">
+                                        <span class="input-group-label">URL:</span>
+                                        <input id="EventForm_1_WEB_ADDRESS" class="input-group-field" type="url" placeholder="http://www.event.com">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="large-6 medium-6 columns">
+                                    <label for="EventForm_1_DISPLAY_START">Date to Begin Displaying Event</label>
+                                    <div class="input-group">
+                                        <span class="input-group-label"><i class="fi-calendar"></i></span>
+                                        <input class="date-pick hasDatepicker input-group-field" name="EventForm_1_DISPLAY_START" id="EventForm_1_DISPLAY_START" type="date" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="large-6 medium-6 columns">
+                                    <label for="EventForm_1_DISPLAY_END">Date to Stop Displaying Event</label>
+                                    <div class="input-group">
+                                        <span class="input-group-label"><i class="fi-calendar"></i></span>
+                                        <input class="date-pick hasDatepicker input-group-field" name="EventForm_1_DISPLAY_END" id="EventForm_1_DISPLAY_END" type="date" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <hr />
+
+                    </div>
+                </div>
+
+                <h3 class="head">Contact Information</h3>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <div>
+                            <label for="CONTACT_NAME">Contact Name</label>
+                            <input name="EventForm_1_CONTACT_NAME" id="EventForm_1_CONTACT_NAME" size="70" value="" type="text">
+
+                            <label for="CONTACT_PHONE">Contact Phone</label>
+                            <input name="EventForm_1_CONTACT_PHONE" id="EventForm_1_CONTACT_PHONE" size="20" value="" type="text">
+
+                            <label for="CONTACT_EMAIL">Contact Email</label>
+                            <input name="EventForm_1_CONTACT_EMAIL" id="EventForm_1_CONTACT_EMAIL" size="20" value="" type="text">
+
+                            <!-- <label for="SHOW_CONTACT_INFORMATION">Show Contact Information</label>
+                            <input name="EventForm_1_SHOW_CONTACT_INFORMATION" id="EventForm_1_SHOW_CONTACT_INFORMATION" value="1" type="checkbox"> -->
+
+                            <p>Display Contact Information on Event Page?</p>
+                            <div class="switch large">
+                                <input class="switch-input" id="Show_CONTACT_INFORMATION" type="checkbox" name="EventForm_1_SHOW_CONTACT_INFORMATION">
+                                <label class="switch-paddle" for="Show_CONTACT_INFORMATION">
+                                    <span class="show-for-sr">Display Contact Information on Event Page?</span>
+                                    <span class="switch-active" aria-hidden="true">Yes</span>
+                                    <span class="switch-inactive" aria-hidden="true">No</span>
+                                </label>
+                            </div>
+
+                            <hr />
+
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="head">Event Dates</h3>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div class="event-block-container">
+                            <div class="block">
+                                <div class="row">
+                                    <div class="large-3 medium-3 small-6 columns">
+                                        <label for="EventForm_1_START_DATE">Start Date</label>
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fi-calendar"></i></span>
+                                            <input class="date-pick hasDatepicker input-group-field" name="EventForm_1_START_DATE" id="EventForm_1_START_DATE" type="date" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="large-3 medium-3 small-6 columns end">
+                                        <label for="EventForm_1_START_TIME">Start Time</label>
+                                        <select name="EventForm_1_START_TIME" id="EventForm_1_START_TIME">
+                                            <option value="8:00 am">8:00 am</option>
+                                            <option value="8:15 am">8:15 am</option>
+                                            <option value="8:30 am">8:30 am</option>
+                                            <option value="8:45 am">8:45 am</option>
+                                            <option value="9:00 am">9:00 am</option>
+                                            <option value="9:15 am">9:15 am</option>
+                                            <option value="9:30 am">9:30 am</option>
+                                            <option value="9:45 am">9:45 am</option>
+                                            <option value="10:00 am">10:00 am</option>
+                                            <option value="10:15 am">10:15 am</option>
+                                            <option value="10:30 am">10:30 am</option>
+                                            <option value="10:45 am">10:45 am</option>
+                                            <option value="11:00 am">11:00 am</option>
+                                            <option value="11:15 am">11:15 am</option>
+                                            <option value="11:30 am">11:30 am</option>
+                                            <option value="11:45 am">11:45 am</option>
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="12:15 PM">12:15 PM</option>
+                                            <option value="12:30 PM">12:30 PM</option>
+                                            <option value="12:45 PM">12:45 PM</option>
+                                            <option value="1:00 PM">1:00 PM</option>
+                                            <option value="1:15 PM">1:15 PM</option>
+                                            <option value="1:30 PM">1:30 PM</option>
+                                            <option value="1:45 PM">1:45 PM</option>
+                                            <option value="2:00 PM">2:00 PM</option>
+                                            <option value="2:15 PM">2:15 PM</option>
+                                            <option value="2:30 PM">2:30 PM</option>
+                                            <option value="2:45 PM">2:45 PM</option>
+                                            <option value="3:00 PM">3:00 PM</option>
+                                            <option value="3:15 PM">3:15 PM</option>
+                                            <option value="3:30 PM">3:30 PM</option>
+                                            <option value="3:45 PM">3:45 PM</option>
+                                            <option value="4:00 PM">4:00 PM</option>
+                                            <option value="4:15 PM">4:15 PM</option>
+                                            <option value="4:30 PM">4:30 PM</option>
+                                            <option value="4:45 PM">4:45 PM</option>
+                                            <option value="5:00 PM">5:00 PM</option>
+                                            <option value="5:15 PM">5:15 PM</option>
+                                            <option value="5:30 PM">5:30 PM</option>
+                                            <option value="5:45 PM">5:45 PM</option>
+                                            <option value="6:00 PM">6:00 PM</option>
+                                            <option value="6:15 PM">6:15 PM</option>
+                                            <option value="6:30 PM">6:30 PM</option>
+                                            <option value="6:45 PM">6:45 PM</option>
+                                            <option value="7:00 PM">7:00 PM</option>
+                                            <option value="7:15 PM">7:15 PM</option>
+                                            <option value="7:30 PM">7:30 PM</option>
+                                            <option value="7:45 PM">7:45 PM</option>
+                                            <option value="8:00 PM">8:00 PM</option>
+                                            <option value="8:15 PM">8:15 PM</option>
+                                            <option value="8:30 PM">8:30 PM</option>
+                                            <option value="8:45 PM">8:45 PM</option>
+                                            <option value="9:00 PM">9:00 PM</option>
+                                            <option value="9:15 PM">9:15 PM</option>
+                                            <option value="9:30 PM">9:30 PM</option>
+                                            <option value="9:45 PM">9:45 PM</option>
+                                            <option value="10:00 PM">10:00 PM</option>
+                                            <option value="10:15 PM">10:15 PM</option>
+                                            <option value="10:30 PM">10:30 PM</option>
+                                            <option value="10:45 PM">10:45 PM</option>
+                                            <option value="11:00 PM">11:00 PM</option>
+                                            <option value="11:15 PM">11:15 PM</option>
+                                            <option value="11:30 PM">11:30 PM</option>
+                                            <option value="11:45 PM">11:45 PM</option>
+                                            <option value="12:00 am">12:00 am</option>
+                                            <option value="12:15 am">12:15 am</option>
+                                            <option value="12:30 am">12:30 am</option>
+                                            <option value="12:45 am">12:45 am</option>
+                                            <option value="1:00 am">1:00 am</option>
+                                            <option value="1:15 am">1:15 am</option>
+                                            <option value="1:30 am">1:30 am</option>
+                                            <option value="1:45 am">1:45 am</option>
+                                            <option value="2:00 am">2:00 am</option>
+                                            <option value="2:15 am">2:15 am</option>
+                                            <option value="2:30 am">2:30 am</option>
+                                            <option value="2:45 am">2:45 am</option>
+                                            <option value="3:00 am">3:00 am</option>
+                                            <option value="3:15 am">3:15 am</option>
+                                            <option value="3:30 am">3:30 am</option>
+                                            <option value="3:45 am">3:45 am</option>
+                                            <option value="4:00 am">4:00 am</option>
+                                            <option value="4:15 am">4:15 am</option>
+                                            <option value="4:30 am">4:30 am</option>
+                                            <option value="4:45 am">4:45 am</option>
+                                            <option value="5:00 am">5:00 am</option>
+                                            <option value="5:15 am">5:15 am</option>
+                                            <option value="5:30 am">5:30 am</option>
+                                            <option value="5:45 am">5:45 am</option>
+                                            <option value="6:00 am">6:00 am</option>
+                                            <option value="6:15 am">6:15 am</option>
+                                            <option value="6:30 am">6:30 am</option>
+                                            <option value="6:45 am">6:45 am</option>
+                                            <option value="7:00 am">7:00 am</option>
+                                            <option value="7:15 am">7:15 am</option>
+                                            <option value="7:30 am">7:30 am</option>
+                                            <option value="7:45 am">7:45 am</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-3 medium-3 small-6 columns">
+                                        <label for="EventForm_1_END_DATE">End Date</label>
+                                        <div class="input-group">
+                                            <span class="input-group-label"><i class="fi-calendar"></i></span>
+                                            <input class="date-pick hasDatepicker input-group-field" name="EventForm_1_END_DATE" id="EventForm_1_START_END" type="date" placeholder="">
+                                        </div>
+                                    </div>
+                                    <div class="large-3 medium-3 small-6 columns end">
+                                        <label for="EventForm_1_END_TIME">End Time</label>
+                                        <select name="EventForm_1_END_TIME" id="EventForm_1_END_TIME">
+                                            <option value="8:00 am">8:00 am</option>
+                                            <option value="8:15 am">8:15 am</option>
+                                            <option value="8:30 am">8:30 am</option>
+                                            <option value="8:45 am">8:45 am</option>
+                                            <option value="9:00 am">9:00 am</option>
+                                            <option value="9:15 am">9:15 am</option>
+                                            <option value="9:30 am">9:30 am</option>
+                                            <option value="9:45 am">9:45 am</option>
+                                            <option value="10:00 am">10:00 am</option>
+                                            <option value="10:15 am">10:15 am</option>
+                                            <option value="10:30 am">10:30 am</option>
+                                            <option value="10:45 am">10:45 am</option>
+                                            <option value="11:00 am">11:00 am</option>
+                                            <option value="11:15 am">11:15 am</option>
+                                            <option value="11:30 am">11:30 am</option>
+                                            <option value="11:45 am">11:45 am</option>
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="12:15 PM">12:15 PM</option>
+                                            <option value="12:30 PM">12:30 PM</option>
+                                            <option value="12:45 PM">12:45 PM</option>
+                                            <option value="1:00 PM">1:00 PM</option>
+                                            <option value="1:15 PM">1:15 PM</option>
+                                            <option value="1:30 PM">1:30 PM</option>
+                                            <option value="1:45 PM">1:45 PM</option>
+                                            <option value="2:00 PM">2:00 PM</option>
+                                            <option value="2:15 PM">2:15 PM</option>
+                                            <option value="2:30 PM">2:30 PM</option>
+                                            <option value="2:45 PM">2:45 PM</option>
+                                            <option value="3:00 PM">3:00 PM</option>
+                                            <option value="3:15 PM">3:15 PM</option>
+                                            <option value="3:30 PM">3:30 PM</option>
+                                            <option value="3:45 PM">3:45 PM</option>
+                                            <option value="4:00 PM">4:00 PM</option>
+                                            <option value="4:15 PM">4:15 PM</option>
+                                            <option value="4:30 PM">4:30 PM</option>
+                                            <option value="4:45 PM">4:45 PM</option>
+                                            <option value="5:00 PM">5:00 PM</option>
+                                            <option value="5:15 PM">5:15 PM</option>
+                                            <option value="5:30 PM">5:30 PM</option>
+                                            <option value="5:45 PM">5:45 PM</option>
+                                            <option value="6:00 PM">6:00 PM</option>
+                                            <option value="6:15 PM">6:15 PM</option>
+                                            <option value="6:30 PM">6:30 PM</option>
+                                            <option value="6:45 PM">6:45 PM</option>
+                                            <option value="7:00 PM">7:00 PM</option>
+                                            <option value="7:15 PM">7:15 PM</option>
+                                            <option value="7:30 PM">7:30 PM</option>
+                                            <option value="7:45 PM">7:45 PM</option>
+                                            <option value="8:00 PM">8:00 PM</option>
+                                            <option value="8:15 PM">8:15 PM</option>
+                                            <option value="8:30 PM">8:30 PM</option>
+                                            <option value="8:45 PM">8:45 PM</option>
+                                            <option value="9:00 PM">9:00 PM</option>
+                                            <option value="9:15 PM">9:15 PM</option>
+                                            <option value="9:30 PM">9:30 PM</option>
+                                            <option value="9:45 PM">9:45 PM</option>
+                                            <option value="10:00 PM">10:00 PM</option>
+                                            <option value="10:15 PM">10:15 PM</option>
+                                            <option value="10:30 PM">10:30 PM</option>
+                                            <option value="10:45 PM">10:45 PM</option>
+                                            <option value="11:00 PM">11:00 PM</option>
+                                            <option value="11:15 PM">11:15 PM</option>
+                                            <option value="11:30 PM">11:30 PM</option>
+                                            <option value="11:45 PM">11:45 PM</option>
+                                            <option value="12:00 am">12:00 am</option>
+                                            <option value="12:15 am">12:15 am</option>
+                                            <option value="12:30 am">12:30 am</option>
+                                            <option value="12:45 am">12:45 am</option>
+                                            <option value="1:00 am">1:00 am</option>
+                                            <option value="1:15 am">1:15 am</option>
+                                            <option value="1:30 am">1:30 am</option>
+                                            <option value="1:45 am">1:45 am</option>
+                                            <option value="2:00 am">2:00 am</option>
+                                            <option value="2:15 am">2:15 am</option>
+                                            <option value="2:30 am">2:30 am</option>
+                                            <option value="2:45 am">2:45 am</option>
+                                            <option value="3:00 am">3:00 am</option>
+                                            <option value="3:15 am">3:15 am</option>
+                                            <option value="3:30 am">3:30 am</option>
+                                            <option value="3:45 am">3:45 am</option>
+                                            <option value="4:00 am">4:00 am</option>
+                                            <option value="4:15 am">4:15 am</option>
+                                            <option value="4:30 am">4:30 am</option>
+                                            <option value="4:45 am">4:45 am</option>
+                                            <option value="5:00 am">5:00 am</option>
+                                            <option value="5:15 am">5:15 am</option>
+                                            <option value="5:30 am">5:30 am</option>
+                                            <option value="5:45 am">5:45 am</option>
+                                            <option value="6:00 am">6:00 am</option>
+                                            <option value="6:15 am">6:15 am</option>
+                                            <option value="6:30 am">6:30 am</option>
+                                            <option value="6:45 am">6:45 am</option>
+                                            <option value="7:00 am">7:00 am</option>
+                                            <option value="7:15 am">7:15 am</option>
+                                            <option value="7:30 am">7:30 am</option>
+                                            <option value="7:45 am">7:45 am</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="large-6 columns">
+                                        <div class="remove-date">
+                                            <a class="remove-date-button"><i class="fi-x"></i> Remove</a>
+                                            <hr />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="large-6 columns">
+                                <!-- <span class="link" id="add-eventtime">+ Add Date/Time</span> -->
+                                <a id="addDate" class="button small"><i class="fi-plus"></i> Add Another Date &amp; Time</a>
+                                <hr />
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+
+                <h3 class="head">Event Location</h3>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <div class="location-container">
+                            <div class="location">
+                                <p>Is the Event an Online Event?</p>
+                                <div class="switch large">
+                                    <input class="switch-input is-online-event" name="EventForm_1_IS_ONLINE" id="EventForm_1_IS_ONLINE" value="1" type="checkbox">
+                                    <label class="switch-paddle" for="EventForm_1_IS_ONLINE">
+                                        <span class="show-for-sr">Is the Event an Online Event?</span>
+                                        <span class="switch-active" aria-hidden="true">Yes</span>
+                                        <span class="switch-inactive" aria-hidden="true">No</span>
+                                    </label>
+                                </div>
+                                <div id="online-event" class="online-event" style="display:none">
+                                    <label for="ONLINE_WEB_ADDRESS">Web Address of Online Event</label>
+                                    <input name="EventForm_1_ONLINE_WEB_ADDRESS" id="EventForm_1_ONLINE_WEB_ADDRESS" size="70" type="text">
+
+                                    <label for="ONLINE_INSTRUCTIONS">Instructions for Attending Online Event</label>
+                                    <textarea name="EventForm_1_ONLINE_INSTRUCTIONS" id="EventForm_1_ONLINE_INSTRUCTIONS" rows="3" cols="30"> </textarea>
+
+                                </div>
+                                <div id="physical-location" class="physical-location">
+                                    <label for="EventForm_1_BUILDING_ID">UGA Building</label>
+                                    <select id="EventForm_1_BUILDING_ID" class="building-id-checkbox" name="EventForm_1_BUILDING_ID">
+                                        <option value="">Select Building</option>
+                                        <option value="39">Aderhold Hall</option>
+                                        <option value="99">Administration Building</option>
+                                        <option value="159">Administration Building</option>
+                                        <option value="95">Administration Ga Mtn Brnch Station</option>
+                                        <option value="126">Administration Office</option>
+                                        <option value="65">Administrative Services Annex</option>
+                                        <option value="90">Agricultural And Environmental Services Laboratories</option>
+                                        <option value="92">Agronomy Dwelling</option>
+                                        <option value="78">Agronomy Seed Laboratory</option>
+                                        <option value="110">Alamo Building</option>
+                                        <option value="138">Animal Science Farm Shed</option>
+                                        <option value="166">Appling County Coop Ext Off</option>
+                                        <option value="140">Aquaculture Headquarters</option>
+                                        <option value="85">Aquatic Biotecthnology And Environmental Laboratory</option>
+                                        <option value="167">Atkinson County Coop Ext Off</option>
+                                        <option value="152">Attapulgus Rresearch Center</option>
+                                        <option value="168">Bacon County Coop Ext Off</option>
+                                        <option value="169">Baker County Coop Ext Off</option>
+                                        <option value="170">Baldwin County Coop Ext Off</option>
+                                        <option value="6">Baldwin Hall</option>
+                                        <option value="171">Banks County Coop Ext Off</option>
+                                        <option value="149">Barn Alapaha</option>
+                                        <option value="172">Barrow County Coop Ext Off</option>
+                                        <option value="26">Barrow Hall</option>
+                                        <option value="173">Bartow County Coop Ext Off</option>
+                                        <option value="133">Beef Evaluation Barn</option>
+                                        <option value="174">Ben Hill County Coop Ext Off</option>
+                                        <option value="175">Berrien County Coop Ext Off</option>
+                                        <option value="176">Bibb County Coop Ext Off</option>
+                                        <option value="80">Bio Conversion Laboratory</option>
+                                        <option value="130">Biological &amp; Argicultural Engineering - Main Building</option>
+                                        <option value="112">Biological Agricultural Engineering Building</option>
+                                        <option value="17">Biological Sciences</option>
+                                        <option value="177">Bleckley County Coop Ext Off</option>
+                                        <option value="150">Blueberry Workshed</option>
+                                        <option value="68">Bolton Dining Commons</option>
+                                        <option value="178">Brantley County Coop Ext Off</option>
+                                        <option value="179">Brooks County Coop Ext Off</option>
+                                        <option value="8">Brooks Hall</option>
+                                        <option value="69">Brumby Hall</option>
+                                        <option value="180">Bryan County Coop Ext Off</option>
+                                        <option value="181">Bulloch County Extension Office</option>
+                                        <option value="319">Burke County Coop Ext Off</option>
+                                        <option value="323">Burton 4-h Center A-frame Pavilion</option>
+                                        <option value="322">Burton 4-h Center Dining Hall</option>
+                                        <option value="324">Burton 4h Center Maintenance Shop &amp; Storage Shed</option>
+                                        <option value="182">Butts County Coop Ext Off</option>
+                                        <option value="58">Butts-mehre Athletic Building Heritage Hall</option>
+                                        <option value="183">Calhoun County Coop Ext Off</option>
+                                        <option value="184">Camden County Coop Ext Off</option>
+                                        <option value="163">Camp Wahsega Dining Hall</option>
+                                        <option value="185">Candler County Coop Ext Off</option>
+                                        <option value="116">Canola Support Building</option>
+                                        <option value="186">Carroll County Coop Ext Off</option>
+                                        <option value="187">Catoosa County Coop Ext Off</option>
+                                        <option value="135">Cattle Feed Facility</option>
+                                        <option value="79">Center For Applied Genetic Technologies</option>
+                                        <option value="97">Central Ga Branch Station Headquarters Office Building</option>
+                                        <option value="316">Charlton County Coop Ext Off</option>
+                                        <option value="188">Chatham County Coop Ext Off</option>
+                                        <option value="189">Chattooga County Coop Ext Off</option>
+                                        <option value="18">Chemistry</option>
+                                        <option value="190">Cherokee County Coop Ext Off</option>
+                                        <option value="13">Chicopee Main Building No. 1</option>
+                                        <option value="313">Clarke County Coop Ext Off</option>
+                                        <option value="191">Clay County Coop Ext Off</option>
+                                        <option value="192">Clayton County Coop Ext Off</option>
+                                        <option value="193">Clinch County Coop Ext Off</option>
+                                        <option value="194">Cobb County Coop Ext Off</option>
+                                        <option value="195">Coffee County Coop Ext Off</option>
+                                        <option value="342">Cohutta Hatchery Laboaratory</option>
+                                        <option value="196">Colquitt County Coop Ext Off</option>
+                                        <option value="331">Columbia County Coop Ext Off</option>
+                                        <option value="77">Complex Carbohydrate Research Center</option>
+                                        <option value="22">Conner Hall</option>
+                                        <option value="48">Consumer Research Center</option>
+                                        <option value="197">Cook County Coop Ext Off</option>
+                                        <option value="45">Coverdell Center For Biomedical And Health Sciences</option>
+                                        <option value="109">Cowart Building</option>
+                                        <option value="198">Coweta County Coop Xt Off</option>
+                                        <option value="199">Crawford County Coop Ext Off</option>
+                                        <option value="200">Crisp County Coop Ext Off</option>
+                                        <option value="201">Dade County Coop Ext Off</option>
+                                        <option value="136">Dairy Cattle J31</option>
+                                        <option value="148">Dairy Research Center</option>
+                                        <option value="202">Dawson County Coop Ext Off</option>
+                                        <option value="21">Dawson Hall</option>
+                                        <option value="203">Decatur County Coop Ext Off</option>
+                                        <option value="311">Dekalb County Central Coop Ext Off</option>
+                                        <option value="4">Denmark Hall</option>
+                                        <option value="157">Dining Hall For Rock Eagle 4-h Center</option>
+                                        <option value="204">Dodge County Coop Ext Off</option>
+                                        <option value="205">Dooly County Coop Ext Off</option>
+                                        <option value="206">Dougherty County Coop Ext Off</option>
+                                        <option value="327">Douglas County Coop Ext Off</option>
+                                        <option value="43">Driftmier Agricultural Engineering Center</option>
+                                        <option value="44">Driftmier Engineering Annex</option>
+                                        <option value="87">E B Smith Clubhouse</option>
+                                        <option value="207">Early County Coop Ext Off</option>
+                                        <option value="55">East Village Mcwhorter Hall 1515</option>
+                                        <option value="208">Echols County Coop Ext Off</option>
+                                        <option value="30">Ecology</option>
+                                        <option value="53">Edgar L Rhodes Ctr - Anim &amp; Dairy Sci, Instrux &amp; Resch - B</option>
+                                        <option value="51">Edgar L Rhodes Ctr For Animal &amp; Dairy Sci, Ads Bldg - A</option>
+                                        <option value="52">Edgar L Rhodes Ctr For Animal &amp; Dairy Sci, Meat Sci Tech - C</option>
+                                        <option value="209">Effingham County Coop Ext Off</option>
+                                        <option value="210">Elbert County Coop Ext Off</option>
+                                        <option value="211">Emanuel County Coop Ext Off</option>
+                                        <option value="137">Entomology Annex Building</option>
+                                        <option value="131">Entomology Building Laboratory</option>
+                                        <option value="104">Entomology Greenhouse 3</option>
+                                        <option value="37">Environmental Health Science Building</option>
+                                        <option value="123">Envirotron Building And Coolers</option>
+                                        <option value="105">Envirotron Greenhouses</option>
+                                        <option value="153">Equipment Shed</option>
+                                        <option value="212">Evans County Coop Ext Off</option>
+                                        <option value="125">Facilities Services Building</option>
+                                        <option value="213">Fannin County Coop Ext Off</option>
+                                        <option value="214">Fayette County Coop Ext Off</option>
+                                        <option value="88">Feed Mill Whitehall</option>
+                                        <option value="215">Floyd County Coop Ext Off</option>
+                                        <option value="111">Flynt Building</option>
+                                        <option value="27">Food Processing Laboratory</option>
+                                        <option value="25">Food Science</option>
+                                        <option value="36">Forest Resources - 4</option>
+                                        <option value="31">Forest Resources 1</option>
+                                        <option value="46">Forest Resources 2</option>
+                                        <option value="35">Forest Resources 3</option>
+                                        <option value="216">Forsyth County Coop Ext Off</option>
+                                        <option value="343">Fort Valley State College</option>
+                                        <option value="335">Fortson 4h Center</option>
+                                        <option value="89">Four Towers</option>
+                                        <option value="217">Franklin County Coop Ext Off</option>
+                                        <option value="38">Fred C. Davison Life Sciences Complex</option>
+                                        <option value="312">Fulton Co Coop Ext Off - East Point</option>
+                                        <option value="310">Fulton County Coop Ext 4-h Camp - Camp Truitt</option>
+                                        <option value="218">Fulton County Coop Ext Off - Downtown</option>
+                                        <option value="318">Fulton County Coop Ext Off - North</option>
+                                        <option value="124">Garden Storage Building</option>
+                                        <option value="19">Geography Geology</option>
+                                        <option value="28">George H. Boyd Graduate Studies Research Center</option>
+                                        <option value="56">Georgia Center For Continuing Education</option>
+                                        <option value="219">Gilmer County Coop Ext Off</option>
+                                        <option value="220">Glascock County Coop Ext Off</option>
+                                        <option value="221">Glynn County Coop Ext Off</option>
+                                        <option value="222">Gordon County Coop Ext Off</option>
+                                        <option value="223">Grady County Coop Ext Off</option>
+                                        <option value="224">Greene County Coop Ext Off</option>
+                                        <option value="50">Greenhouse 2 (near Pharmacy)</option>
+                                        <option value="75">Greenhouse Research Botany - Pr# 0033845</option>
+                                        <option value="73">Greenhouse Research Plants Agronomy</option>
+                                        <option value="74">Greenhouse Research Plants Pathology</option>
+                                        <option value="225">Gwinnett County Coop Ext Off</option>
+                                        <option value="226">Habersham County Coop Ext Off</option>
+                                        <option value="317">Hall County Coop Ext Off</option>
+                                        <option value="336">Hampton Multi Purpose Facility</option>
+                                        <option value="227">Hancock County Coop Ext Off</option>
+                                        <option value="228">Haralson County Coop Ext Off</option>
+                                        <option value="5">Harmon W. Caldwell Hall</option>
+                                        <option value="229">Harris County Coop Ext Off</option>
+                                        <option value="315">Hart County Coop Ext Off</option>
+                                        <option value="134">Hay Drying Shed</option>
+                                        <option value="145">Headhouse Lab</option>
+                                        <option value="98">Headquarters Farm Services Center</option>
+                                        <option value="230">Heard County Coop Ext Off</option>
+                                        <option value="231">Henry County Coop Ext Off</option>
+                                        <option value="33">Hoke Smith Annex</option>
+                                        <option value="34">Hoke Smith Building</option>
+                                        <option value="128">Horticulture Building</option>
+                                        <option value="158">Housekeeping</option>
+                                        <option value="47">Housing Research Center</option>
+                                        <option value="232">Houston County Coop Ext Off</option>
+                                        <option value="7">Ilah Dunlap Little Library, Main</option>
+                                        <option value="70">International Education Building</option>
+                                        <option value="233">Irwin County Coop Ext Off</option>
+                                        <option value="94">J Phil Campbell R &amp; E Center</option>
+                                        <option value="60">J. W. Fanning Building</option>
+                                        <option value="234">Jackson County Coop Ext Off</option>
+                                        <option value="3">Jackson Street Building</option>
+                                        <option value="235">Jasper County Coop Ext Off</option>
+                                        <option value="236">Jeff Davis County Coop Ext Off</option>
+                                        <option value="237">Jefferson County Coop Ext Off</option>
+                                        <option value="238">Jenkins County Coop Ext Off</option>
+                                        <option value="54">Joe Frank Harris Commons East Village</option>
+                                        <option value="239">Johnson County Coop Ext Off</option>
+                                        <option value="240">Jones County Coop Ext Off</option>
+                                        <option value="10">Journalism</option>
+                                        <option value="84">L. L. Phillips Wood Utilization &amp; Plant Sciences Bldg.</option>
+                                        <option value="321">Lamar County Coop Ext Off</option>
+                                        <option value="241">Lanier County Coop Ext Off</option>
+                                        <option value="242">Laurens County Coop Ext Off</option>
+                                        <option value="243">Lee County Coop Ext Off</option>
+                                        <option value="244">Liberty County Coop Ext Off</option>
+                                        <option value="245">Lincoln County Coop Ext Off</option>
+                                        <option value="246">Long County Coop Ext Off</option>
+                                        <option value="247">Lowndes County Coop Ext Off</option>
+                                        <option value="64">Lucy Cobb</option>
+                                        <option value="248">Lumpkin County Coop Ext Off</option>
+                                        <option value="23">Lumpkin House</option>
+                                        <option value="132">Machine Shed</option>
+                                        <option value="102">Machine Shed I</option>
+                                        <option value="249">Macon County Coop Ext Off</option>
+                                        <option value="344">Madison - Morgan Co. H.s.</option>
+                                        <option value="250">Madison County Coop Ext Off</option>
+                                        <option value="63">Main Art Building For The Lamar Dodd School Of Art - Pvac</option>
+                                        <option value="329">Main Office Building</option>
+                                        <option value="165">Maintenance Shop</option>
+                                        <option value="162">Maintenance Shop And Storage</option>
+                                        <option value="29">Marine Sciences - Dance Building</option>
+                                        <option value="251">Marion County Coop Ext Off</option>
+                                        <option value="326">Mcduffie County Coop Ext Off</option>
+                                        <option value="325">Mcintosh County Coop Ext Off</option>
+                                        <option value="118">Melton Building</option>
+                                        <option value="252">Meriwether County Coop Ext Off</option>
+                                        <option value="66">Milledge Centre (old Bell South Bldg)</option>
+                                        <option value="14">Milledge Hall</option>
+                                        <option value="253">Miller County Coop Ext Off</option>
+                                        <option value="40">Miller Plant Science</option>
+                                        <option value="254">Mitchell County Coop Ext Off</option>
+                                        <option value="255">Monroe County Coop Ext Off</option>
+                                        <option value="256">Montgomery County Coop Ext Off</option>
+                                        <option value="1">Moore College</option>
+                                        <option value="257">Morgan County Coop Ext Off</option>
+                                        <option value="332">Motel A</option>
+                                        <option value="333">Motel B</option>
+                                        <option value="334">Motel C</option>
+                                        <option value="151">Multi Use Facility</option>
+                                        <option value="258">Murray County Coop Ext Off</option>
+                                        <option value="259">Muscogee County Coop Ext Off</option>
+                                        <option value="161">Museum Of Natural History</option>
+                                        <option value="146">National Environmentally Sound Production Agriculture Lab</option>
+                                        <option value="147">Natural Products Laboratory</option>
+                                        <option value="345">Nessmith Lane Cont Education Bldg Coop Ext South East Dist</option>
+                                        <option value="2">New College</option>
+                                        <option value="101">New Office And Audit</option>
+                                        <option value="260">Newton County Coop Ext Off</option>
+                                        <option value="96">Nw Ga Branch Station</option>
+                                        <option value="261">Oconee County Coop Ext Off</option>
+                                        <option value="262">Oglethorpe County Coop Ext Off</option>
+                                        <option value="71">Oglethorpe Dining Commons</option>
+                                        <option value="100">Old Office Building</option>
+                                        <option value="9">Park Hall</option>
+                                        <option value="263">Paulding County Coop Ext Off</option>
+                                        <option value="264">Peach County Coop Ext Off</option>
+                                        <option value="141">Physical Plant Building Cpes</option>
+                                        <option value="20">Physics</option>
+                                        <option value="265">Pickens County Coop Ext Off</option>
+                                        <option value="266">Pierce County Coop Ext Off</option>
+                                        <option value="267">Pike County Coop Ext Off</option>
+                                        <option value="143">Plant Pathology Drying House - Black Shank Farm</option>
+                                        <option value="93">Plant Pathology Nematode Laboratory</option>
+                                        <option value="139">Plant Science Annex</option>
+                                        <option value="129">Plant Science Building - Uga On Tifton Campus</option>
+                                        <option value="268">Polk County Coop Ext Off</option>
+                                        <option value="72">Poultry Diagnostic And Research Center</option>
+                                        <option value="24">Poultry Science</option>
+                                        <option value="91">Poultry Science Service Building A</option>
+                                        <option value="11">Psychology</option>
+                                        <option value="269">Pulaski County Coop Ext Off</option>
+                                        <option value="328">Putnam County Coop Ext Off</option>
+                                        <option value="270">Quitman County Coop Ext Off</option>
+                                        <option value="271">Rabun County Coop Ext Off</option>
+                                        <option value="61">Ramsey Student Center For Physical Activities</option>
+                                        <option value="272">Randolph County_coop Ext Off</option>
+                                        <option value="59">Rankin M Smith Student Athlete Academic Center</option>
+                                        <option value="120">Redding Building</option>
+                                        <option value="103">Redding Rpz</option>
+                                        <option value="15">Reed Hall</option>
+                                        <option value="127">Research Building For Animal Science</option>
+                                        <option value="16">Richard B Russell Building Special Collections Libraries</option>
+                                        <option value="273">Richmond County Coop Ext Off</option>
+                                        <option value="309">Richmond County Coop Ext Off - Efnep Division</option>
+                                        <option value="67">Riverbend Research Lab North</option>
+                                        <option value="76">Riverbend Research Lab South</option>
+                                        <option value="32">Robert C. Wilson Pharmacy Building</option>
+                                        <option value="160">Rock Eagle Dining Hall</option>
+                                        <option value="274">Rockdale County Coop Ext Off</option>
+                                        <option value="155">Rural Development Center</option>
+                                        <option value="115">S-9 Lab Building</option>
+                                        <option value="108">Sanford Barn</option>
+                                        <option value="275">Schley County Coop Ext Off</option>
+                                        <option value="62">School Of Music</option>
+                                        <option value="276">Screven County Coop Ext Off</option>
+                                        <option value="340">Se Fruit &amp; Nut Tree Research Complex</option>
+                                        <option value="121">Seed Storage Cooler</option>
+                                        <option value="277">Seminole County Coop Xt Off</option>
+                                        <option value="82">Shop - Forest Resources - Office/shop</option>
+                                        <option value="83">Silvicultural Building</option>
+                                        <option value="57">Snelling Hall</option>
+                                        <option value="86">Soil Testing Laboratory</option>
+                                        <option value="341">Souther Piedmont Experiment Station</option>
+                                        <option value="278">Spalding County Coop Ext Off</option>
+                                        <option value="339">Srel - Main Lab, Dept Of Energy (environmental Rsch Lab)</option>
+                                        <option value="320">Stephens County Coop Ext Off</option>
+                                        <option value="279">Stewart County Coop Ext Off</option>
+                                        <option value="113">Stress Physiology Building</option>
+                                        <option value="154">Stripling Office Building - Caes R&amp;e</option>
+                                        <option value="117">Stuckey Conference Center</option>
+                                        <option value="280">Sumter County Coop Ext Off</option>
+                                        <option value="107">Support Services Building</option>
+                                        <option value="281">Talbot County Coop Ext Off</option>
+                                        <option value="330">Tattnal County Coop Ext Off</option>
+                                        <option value="282">Tattnall County Coop Ext Main Off</option>
+                                        <option value="283">Taylor County Coop Ext Off</option>
+                                        <option value="156">Technology Development Center - Tifton Campus</option>
+                                        <option value="284">Telfair County Coop Ext Off</option>
+                                        <option value="285">Terrell County Coop Ext Off</option>
+                                        <option value="286">Thomas County Coop Ext Off</option>
+                                        <option value="287">Tift County Coop Ext Off</option>
+                                        <option value="314">Toombs County Coop Ext Off</option>
+                                        <option value="288">Towns County Coop Ext Off</option>
+                                        <option value="289">Treutlen County Coop Ext Off</option>
+                                        <option value="290">Troup County Coop Ext Off</option>
+                                        <option value="49">Tucker Hall</option>
+                                        <option value="114">Turf Science Building</option>
+                                        <option value="291">Turner County Coop Ext Off</option>
+                                        <option value="292">Twiggs County Coop Ext Off</option>
+                                        <option value="293">Union County Coop Ext Off</option>
+                                        <option value="294">Upson County Coop Ext Off</option>
+                                        <option value="106">Usda Greenhouse Complex</option>
+                                        <option value="122">Usda Seed Processing 2</option>
+                                        <option value="119">Usda Support Building</option>
+                                        <option value="41">Veterinary Medicine -1</option>
+                                        <option value="337">Vidalia Onion &amp; Vegetable Research Center Headquarters</option>
+                                        <option value="144">Vidalia Onion Storage Research Laboratory</option>
+                                        <option value="338">Vidalia Onion Vegetable Research Cntr Office Shop</option>
+                                        <option value="164">Wahsega Office</option>
+                                        <option value="295">Walker County Coop Ext Off</option>
+                                        <option value="296">Walton County Coop Ext Off</option>
+                                        <option value="297">Ware County Coop Ext Off</option>
+                                        <option value="298">Warren County Coop Ext Off</option>
+                                        <option value="299">Washington County Coop Ext Off</option>
+                                        <option value="300">Wayne County Coop Ext Off</option>
+                                        <option value="301">Webster County Coop Ext Off</option>
+                                        <option value="142">Weed Science Laboratory Cpes</option>
+                                        <option value="302">Wheeler County Coop Ext Off</option>
+                                        <option value="303">White County Coop Ext Off</option>
+                                        <option value="81">Whitehall Headquarters Forest Resources</option>
+                                        <option value="304">Whitfield County Coop Ext Off</option>
+                                        <option value="305">Wilcox County Coop Ext Off</option>
+                                        <option value="42">Wildlife Health</option>
+                                        <option value="306">Wilkes County Coop Ext Off</option>
+                                        <option value="307">Wilkinson County Coop Ext Off</option>
+                                        <option value="308">Worth County Coop Ext Off</option>
+                                        <option value="12">Zell B Miller Student Learning Center</option>
+                                    </select>
+
+                                    <div id="room-no" style="display:none" class="room-no">
+                                        <label for="ROOM_NO">Room Number</label>
+                                        <input name="EventForm_1_ROOM_NO" id="EventForm_1_ROOM_NO" size="10" type="text">
+
+                                    </div>
+                                    <div id="manual-location" class="manual-location">
+                                        <label for="LOCATION_NAME">Location Name</label>
+                                        <input name="EventForm_1_LOCATION_NAME" id="EventForm_1_LOCATION_NAME" size="70" type="text">
+
+                                        <label for="STREET_ADDRESS1">Street Address</label>
+                                        <input name="EventForm_1_STREET_ADDRESS1" id="EventForm_1_STREET_ADDRESS1" size="70" type="text">
+
+                                        <label for="STREET_ADDRESS2">Street Address 2</label>
+                                        <input name="EventForm_1_STREET_ADDRESS2" id="EventForm_1_STREET_ADDRESS2" size="70" type="text">
+
+                                        <label for="CITY">City</label>
+                                        <input name="EventForm_1_CITY" id="EventForm_1_CITY" size="70" type="text">
+
+                                        <label for="STATE">State</label>
+                                        <select id="EventForm_1_STATE" name="EventForm_1_STATE">
+                                            <option value="">Select State</option>
+                                            <option value="AL">Alabama</option>
+                                            <option value="AK">Alaska</option>
+                                            <option value="AZ">Arizona</option>
+                                            <option value="AR">Arkansas</option>
+                                            <option value="CA">California</option>
+                                            <option value="CO">Colorado</option>
+                                            <option value="CT">Connecticut</option>
+                                            <option value="DE">Delaware</option>
+                                            <option value="DC">District of Columbia</option>
+                                            <option value="FL">Florida</option>
+                                            <option value="GA">Georgia</option>
+                                            <option value="HI">Hawaii</option>
+                                            <option value="ID">Idaho</option>
+                                            <option value="IL">Illinois</option>
+                                            <option value="IN">Indiana</option>
+                                            <option value="IA">Iowa</option>
+                                            <option value="KS">Kansas</option>
+                                            <option value="KY">Kentucky</option>
+                                            <option value="LA">Louisiana</option>
+                                            <option value="ME">Maine</option>
+                                            <option value="MD">Maryland</option>
+                                            <option value="MA">Massachusetts</option>
+                                            <option value="MI">Michigan</option>
+                                            <option value="MN">Minnesota</option>
+                                            <option value="MS">Mississippi</option>
+                                            <option value="MO">Missouri</option>
+                                            <option value="MT">Montana</option>
+                                            <option value="NE">Nebraska</option>
+                                            <option value="NV">Nevada</option>
+                                            <option value="NH">New Hampshire</option>
+                                            <option value="NJ">New Jersey</option>
+                                            <option value="NM">New Mexico</option>
+                                            <option value="NY">New York</option>
+                                            <option value="NC">North Carolina</option>
+                                            <option value="ND">North Dakota</option>
+                                            <option value="OH">Ohio</option>
+                                            <option value="OK">Oklahoma</option>
+                                            <option value="OR">Oregon</option>
+                                            <option value="PA">Pennsylvania</option>
+                                            <option value="RI">Rhode Island</option>
+                                            <option value="SC">South Carolina</option>
+                                            <option value="SD">South Dakota</option>
+                                            <option value="TN">Tennessee</option>
+                                            <option value="TX">Texas</option>
+                                            <option value="UT">Utah</option>
+                                            <option value="VT">Vermont</option>
+                                            <option value="VA">Virginia</option>
+                                            <option value="WA">Washington</option>
+                                            <option value="WV">West Virginia</option>
+                                            <option value="WI">Wisconsin</option>
+                                            <option value="WY">Wyoming</option>
+                                        </select>
+
+                                        <label for="ZIP_CODE">Zip Code</label>
+                                        <input name="EventForm_1_ZIP_CODE" id="EventForm_1_ZIP_CODE" size="5" type="text">
+
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <div class="remove-location">
+                                            <a class="remove-location-button"><i class="fi-x"></i> Remove</a>
+                                            <hr />
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+                        <!-- <span id="add-eventlocation">+ Add Location</span> -->
+                        <a id="addLocation" class="button small"><i class="fi-plus"></i> Add Another Location</a>
+                        <hr />
+                    </div>
+                </div>
+
+                <h3 class="head">Select Calendars to Show Event</h3>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <div>
+                            <fieldset>
+                                <legend>Pick Calendars Relevant to Your Event Only:</legend>
+                                <!-- Agricultural & Applied Economics -->
+                                <label for="displayOnAAE">
+                                    <input name="EventForm_1_TAGS" id="displayOnAAE" value="1" type="checkbox">
+                                    Agricultural &amp; Applied Economics
+                                </label>
+                                <!-- Agricultural Leadership, Education & Communication -->
+                                <label for="displayOnALEC">
+                                    <input name="EventForm_1_TAGS" id="displayOnALEC" value="2" type="checkbox">
+                                    Agricultural Leadership, Education &amp; Communication
+                                </label>
+                                <!-- Animal & Dairy Science -->
+                                <label for="displayOnADS">
+                                    <input name="EventForm_1_TAGS" id="displayOnADS" value="3" type="checkbox">
+                                    Animal &amp; Dairy Science
+                                </label>
+                                <!-- Crop & Soil Sciences -->
+                                <label for="displayOnCSS">
+                                    <input name="EventForm_1_TAGS" id="displayOnCSS" value="4" type="checkbox">
+                                    Crop &amp; Soil Sciences
+                                </label>
+                                <!-- Entomology -->
+                                <label for="displayOnEntomology">
+                                    <input name="EventForm_1_TAGS" id="displayOnEntomology" value="5" type="checkbox">
+                                    Entomology
+                                </label>
+                                <!-- Food Science & Teachnology -->
+                                <label for="displayOnFST">
+                                    <input name="EventForm_1_TAGS" id="displayOnFST" value="6" type="checkbox">
+                                    Food Science &amp; Technology
+                                </label>
+                                <!-- Horticulture -->
+                                <label for="displayOnHorticulture">
+                                    <input name="EventForm_1_TAGS" id="displayOnHorticulture" value="7" type="checkbox">
+                                    Horticulture
+                                </label>
+                                <!-- Office of Global Programs -->
+                                <label for="displayOnOGP">
+                                    <input name="EventForm_1_TAGS" id="displayOnOGP" value="10" type="checkbox">
+                                    Office of Global Programs
+                                </label>
+                                <!-- Office of Information Technology -->
+                                <label for="displayOnOIT">
+                                    <input name="EventForm_1_TAGS" id="displayOnOIT" value="12" checked="checked" type="checkbox">
+                                    Office of Information Technology (OIT) - Athens
+                                </label>
+                                <!-- Mycotoxin Innovation Lab (PMIL) -->
+                                <label for="displayOnPMIL">
+                                    <input name="EventForm_1_TAGS" id="displayOnPMIL" value="11" type="checkbox">
+                                    Peanut &amp; Mycotoxin Innovation Lab (PMIL)
+                                </label>
+                                <!-- Plant Pathology -->
+                                <label for="displayOnPP">
+                                    <input name="EventForm_1_TAGS" id="displayOnPP" value="8" type="checkbox">
+                                    Plant Pathology
+                                </label>
+                                <!-- Poultry Science -->
+                                <label for="displayOnPS">
+                                    <input name="EventForm_1_TAGS" id="displayOnPS" value="9" type="checkbox">
+                                    Poultry Science
+                                </label>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-6 columns">
+                        <hr />
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="large-6 columns">
+                        <span style="display:none"><label for="webaddress">Enter a web address</label><input id="webaddress" name="webaddress"></span>
+                        <input id="hctesbsl" name="hctesbsl" value="{ts '2016-07-19 17:12:56'}" type="hidden">
+                        <input class="button large" name="SubmitForm" value="Submit Event" type="submit">
+                    </div>
+                </div>
+
+                <br /><br /><br /><br />
+
+
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <!-- For Expanding Search -->
+    <script src="../js/search/classie.js"></script>
+    <script src="../js/search/uisearch.js"></script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
+
+    <!-- For Calendar Entry -->
+    <script>
+        $(document).ready(function() {
+            // Add/Remove Event Dates
+            //----------------
+            $("#addDate").click(function() {
+                $('.block:last').clone().appendTo('.event-block-container');
+                $('.remove-date').css('display', 'block');
+                $('.block:first .remove-date-button').remove();
+                // Remove Button
+                $('.remove-date-button').each(function(){
+                    $(this).click(function(){
+                        $(this).closest('.block').remove();
+                    });
+                });
+            });
+            // Add/Remove Locations
+            $('#addLocation').click(function(){
+                $('.location:last').clone().appendTo('.location-container');
+                $('.remove-location').css('display', 'block');
+                $('.location:first .remove-location-button').remove();
+                // Remove Button
+                $('.remove-location-button').each(function(){
+                    $(this).click(function(){
+                        $(this).closest('.location').remove();
+                    });
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
