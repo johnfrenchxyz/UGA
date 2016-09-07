@@ -5014,6 +5014,12 @@ figcaption {
       display: inline-block;
       margin-right: 1em; } }
 
+.remove-date {
+  display: none; }
+
+.remove-location {
+  display: none; }
+
 .news-list p {
   margin-bottom: 5px; }
 
