@@ -3,6 +3,9 @@
    For CAES Template
 */
 
+
+@include link-underline;
+
 // Component Title
 //----------------
 $component-title-default-bg: #d6d6d6;
@@ -62,6 +65,7 @@ $component-title-default-color: darken($caes-gray, 10%);
       font-size: rem-calc(18);
       font-weight: 700;
       display: block;
+      @include link-underline;
       @include breakpoint(small only) { font-size: rem-calc(16); }
    }
    // Subtitle
@@ -74,7 +78,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
    .subtitle:after { content:"\000A"; white-space: pre; }
    // Description
-   .description { overflow: auto; }
+   .description { overflow: auto; @include link-underline; }
    .description:after { content:"\000A"; white-space: pre; }
 }
 
@@ -100,6 +104,7 @@ $component-title-default-color: darken($caes-gray, 10%);
       }
       .description {
          display: flex;
+         @include link-underline;
       }
       img { float: left; max-width: 200px; height: auto; padding-right: 1em; margin-bottom: 1em; }
    }
@@ -137,6 +142,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    .tiled-list-item {
       @include callout-base;
       @include caes-list-style;
+      @include link-underline;
       margin: 0;
       column-break-inside: avoid;
       -webkit-column-break-inside: avoid;
@@ -191,6 +197,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
    .description {
        overflow-x: hidden;
+       @include link-underline;
    }
 }
 

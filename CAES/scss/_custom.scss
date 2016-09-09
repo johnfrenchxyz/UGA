@@ -27,6 +27,41 @@
    }
 }
 
+// Link Underline Mixin
+//---------------------
+@mixin link-underline {
+    a {
+        text-decoration: underline;
+    }
+    a.button {
+        text-decoration: none;
+    }
+    .button {
+        text-decoration: none;
+    }
+    nav a {
+        text-decoration: none;
+    }
+    header a {
+        text-decoration: none;
+    }
+}
+
+@include link-underline;
+
+
+main {
+    a {
+        text-decoration: underline;
+    }
+    a.button {
+        text-decoration: none;
+    }
+    .button {
+        text-decoration: none;
+    }
+}
+
 // Headings
 // --------
 h1, h3, h4, h5, h6 { font-family: 'Roboto Slab', serif; }
