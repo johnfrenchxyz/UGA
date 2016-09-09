@@ -377,15 +377,13 @@
                     <div class="large-6 columns">
                         <div class="location-container">
                             <div class="location-block">
-                                <p>Is the Event an Online Event?</p>
-                                <div class="switch large">
-                                    <input class="switch-input is-online-event" name="EventForm_1_IS_ONLINE" id="EventForm_1_IS_ONLINE" value="1" type="checkbox">
-                                    <label class="switch-paddle" for="EventForm_1_IS_ONLINE">
-                                        <span class="show-for-sr">Is the Event an Online Event?</span>
-                                        <span class="switch-active" aria-hidden="true">Yes</span>
-                                        <span class="switch-inactive" aria-hidden="true">No</span>
-                                    </label>
-                                </div>
+                                <label for="onlineCheck"><strong>Is this an online event?</strong>
+                                    <select id="onlineCheck" class="is-online-event">
+                                        <option value="No">No</option>
+                                        <option value="Yes">Yes</option>
+                                    </select>
+                                </label>
+
                                 <div id="online-event" class="online-event" style="display:none">
                                     <label for="ONLINE_WEB_ADDRESS">Web Address of Online Event</label>
                                     <input name="EventForm_1_ONLINE_WEB_ADDRESS" id="EventForm_1_ONLINE_WEB_ADDRESS" size="70" type="text">
@@ -395,11 +393,16 @@
 
                                 </div>
 
-                                <p>
-                                    <strong>Select a UGA Building or Enter an Address Manually:</strong>
-                                </p>
+                                <hr />
+
+
 
                                 <div id="physical-location" class="physical-location">
+
+                                    <p>
+                                        <strong>Select a UGA Building or Enter an Address Manually:</strong>
+                                    </p>
+
                                     <label for="EventForm_1_BUILDING_ID">UGA Building</label>
                                     <select id="EventForm_1_BUILDING_ID" class="building-id-checkbox" name="EventForm_1_BUILDING_ID">
                                         <option value="">Select Building</option>
