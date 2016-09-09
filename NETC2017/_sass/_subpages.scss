@@ -1,0 +1,45 @@
+/*
+    Styling for the subpages of the NETC2017
+*/
+
+// Non-Heading Header
+@mixin non-heading($color) {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: $color;
+    margin-top: 2em;
+}
+
+.track-title {
+    @include non-heading($green);
+}
+
+// Highlighted Section
+//--------------------
+.highlight-section {
+    background: lighten($light-green, 30%);
+    margin: 1em 0 1em 0;
+    padding: 1em;
+
+    // Title
+    .title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $green;
+    }
+    // List
+    ul {
+        color: $green;
+        -moz-column-count: 2;
+        -moz-column-gap: 20px;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 20px;
+        column-count: 2;
+        column-gap: 20px;
+        @include breakpoint(small only) {
+            -moz-column-count: 1;
+            -webkit-column-count: 1;
+            column-count: 1;
+        }
+    }
+}
