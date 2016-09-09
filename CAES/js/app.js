@@ -76,3 +76,65 @@ $('.subfilters').hide();
 $('.filter-control').click(function(){
    $(this).next('.subfilters').slideToggle("fast");
 });
+
+
+// Event Entry for CAES Calendar
+//------------------------------
+
+// For Adding Additional Dates:
+$( function() {
+   $( ".datepicker" ).datepicker();
+} );
+
+var dateBlock = $('.date-block').html();
+
+$(document).ready(function() {
+    $('#addDate').click(function() {
+        $('.date-block-container').append('<div class="date-block">' + dateBlock + '</div>');
+        $(".datepicker").on('focus', function(){
+            var $this = $(this);
+            if(!$this.data('datepicker')) {
+                $this.removeClass("hasDatepicker");
+                $this.datepicker();
+                $this.datepicker("show");
+            }
+        });
+        // Show the Remove Date Button
+        $('.remove-date').css('display', 'block');
+        // Remove Button Action
+        $('.remove-date-button').each(function(){
+            $(this).click(function() {
+                $(this).closest('.date-block').remove();
+            });
+        });
+    });
+
+    $('body').on('focus',".datepicker", function(){
+        $(this).datepicker();
+    });
+});
+
+// For Adding Additional Locations
+var locationBlock = $('.location-block').html();
+$(document).ready(function() {
+    $('#addLocation').click(function() {
+        $('.location-container').append('<div class="location-block">'+ locationBlock +'</div>');
+        // Show the Remove Location Button
+        $('.remove-location').css('display', 'block');
+        // Remove Button Action
+        $('.remove-location-button').each(function() {
+            $(this).click(function() {
+                $(this).closest('.location-block').remove();
+            });
+        });
+    });
+    $(document).on("change", ".building-id-checkbox", function() {
+				if (this.value) {
+					$(this).siblings(".manual-location").hide();
+					$(this).siblings(".room-no").show();
+				} else {
+					$(this).siblings(".manual-location").show();
+					$(this).siblings(".room-no").hide();
+				}
+			});
+});
