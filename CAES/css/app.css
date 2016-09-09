@@ -5020,6 +5020,10 @@ figcaption {
 .remove-location {
   display: none; }
 
+#ui-datepicker-div {
+  background: #fefefe;
+  border: 1px solid #777; }
+
 .news-list p {
   margin-bottom: 5px; }
 

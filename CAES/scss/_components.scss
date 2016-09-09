@@ -657,6 +657,11 @@ figcaption {
     display: none;
 }
 
+#ui-datepicker-div {
+    background: $white;
+    border: 1px solid $caes-gray;
+}
+
 // News List
 //----------
 .news-list {
