@@ -1264,7 +1264,7 @@ h6 {
 
 a {
   color: #c41039;
-  text-decoration: none;
+  text-decoration: underline;
   line-height: inherit;
   cursor: pointer; }
   a:hover, a:focus {
@@ -3888,6 +3888,30 @@ table.hover tr:nth-of-type(even):hover {
   -webkit-animation-delay: 700ms !important;
           animation-delay: 700ms !important; }
 
+a {
+  text-decoration: underline; }
+
+a.button {
+  text-decoration: none; }
+
+.button {
+  text-decoration: none; }
+
+nav a {
+  text-decoration: none; }
+
+header a {
+  text-decoration: none; }
+
+main a {
+  text-decoration: underline; }
+
+main a.button {
+  text-decoration: none; }
+
+main .button {
+  text-decoration: none; }
+
 h1, h3, h4, h5, h6 {
   font-family: 'Roboto Slab', serif; }
 
@@ -4259,6 +4283,21 @@ footer {
    Components Styling
    For CAES Template
 */
+a {
+  text-decoration: underline; }
+
+a.button {
+  text-decoration: none; }
+
+.button {
+  text-decoration: none; }
+
+nav a {
+  text-decoration: none; }
+
+header a {
+  text-decoration: none; }
+
 .plain-list-container {
   border: solid 1px #d6d6d6;
   margin-bottom: 3em; }
@@ -4303,6 +4342,16 @@ footer {
       font-size: 1.125rem;
       font-weight: 700;
       display: block; }
+      .plain-list-container .plain-list-item .title a {
+        text-decoration: underline; }
+      .plain-list-container .plain-list-item .title a.button {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .title .button {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .title nav a {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .title header a {
+        text-decoration: none; }
       @media screen and (min-width: 0em) and (max-width: 39.9375em) {
         .plain-list-container .plain-list-item .title {
           font-size: 1rem; } }
@@ -4316,6 +4365,16 @@ footer {
       white-space: pre; }
     .plain-list-container .plain-list-item .description {
       overflow: auto; }
+      .plain-list-container .plain-list-item .description a {
+        text-decoration: underline; }
+      .plain-list-container .plain-list-item .description a.button {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .description .button {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .description nav a {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .description header a {
+        text-decoration: none; }
     .plain-list-container .plain-list-item .description:after {
       content: "\000A";
       white-space: pre; }
@@ -4325,6 +4384,16 @@ footer {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex; }
+      .plain-list-container .plain-list-item .description a {
+        text-decoration: underline; }
+      .plain-list-container .plain-list-item .description a.button {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .description .button {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .description nav a {
+        text-decoration: none; }
+      .plain-list-container .plain-list-item .description header a {
+        text-decoration: none; }
     .plain-list-container .plain-list-item img {
       float: left;
       max-width: 200px;
@@ -4404,6 +4473,16 @@ footer {
       font-size: 1.125rem;
       font-weight: 700;
       display: block; }
+      .tiled-list-container .tiled-list-item .title a {
+        text-decoration: underline; }
+      .tiled-list-container .tiled-list-item .title a.button {
+        text-decoration: none; }
+      .tiled-list-container .tiled-list-item .title .button {
+        text-decoration: none; }
+      .tiled-list-container .tiled-list-item .title nav a {
+        text-decoration: none; }
+      .tiled-list-container .tiled-list-item .title header a {
+        text-decoration: none; }
       @media screen and (min-width: 0em) and (max-width: 39.9375em) {
         .tiled-list-container .tiled-list-item .title {
           font-size: 1rem; } }
@@ -4417,9 +4496,29 @@ footer {
       white-space: pre; }
     .tiled-list-container .tiled-list-item .description {
       overflow: auto; }
+      .tiled-list-container .tiled-list-item .description a {
+        text-decoration: underline; }
+      .tiled-list-container .tiled-list-item .description a.button {
+        text-decoration: none; }
+      .tiled-list-container .tiled-list-item .description .button {
+        text-decoration: none; }
+      .tiled-list-container .tiled-list-item .description nav a {
+        text-decoration: none; }
+      .tiled-list-container .tiled-list-item .description header a {
+        text-decoration: none; }
     .tiled-list-container .tiled-list-item .description:after {
       content: "\000A";
       white-space: pre; }
+    .tiled-list-container .tiled-list-item a {
+      text-decoration: underline; }
+    .tiled-list-container .tiled-list-item a.button {
+      text-decoration: none; }
+    .tiled-list-container .tiled-list-item .button {
+      text-decoration: none; }
+    .tiled-list-container .tiled-list-item nav a {
+      text-decoration: none; }
+    .tiled-list-container .tiled-list-item header a {
+      text-decoration: none; }
     .tiled-list-container .tiled-list-item img {
       width: 100%; }
     .tiled-list-container .tiled-list-item hr {
@@ -4449,6 +4548,16 @@ footer {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .academics .title a {
+      text-decoration: underline; }
+    .academics .title a.button {
+      text-decoration: none; }
+    .academics .title .button {
+      text-decoration: none; }
+    .academics .title nav a {
+      text-decoration: none; }
+    .academics .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .academics .title {
         font-size: 1rem; } }
@@ -4462,6 +4571,16 @@ footer {
     white-space: pre; }
   .academics .description {
     overflow: auto; }
+    .academics .description a {
+      text-decoration: underline; }
+    .academics .description a.button {
+      text-decoration: none; }
+    .academics .description .button {
+      text-decoration: none; }
+    .academics .description nav a {
+      text-decoration: none; }
+    .academics .description header a {
+      text-decoration: none; }
   .academics .description:after {
     content: "\000A";
     white-space: pre; }
@@ -4502,6 +4621,16 @@ footer {
     margin: 1em 1em 1em 1em; }
   .academics .description {
     overflow-x: hidden; }
+    .academics .description a {
+      text-decoration: underline; }
+    .academics .description a.button {
+      text-decoration: none; }
+    .academics .description .button {
+      text-decoration: none; }
+    .academics .description nav a {
+      text-decoration: none; }
+    .academics .description header a {
+      text-decoration: none; }
 
 .research {
   overflow: hidden;
@@ -4512,6 +4641,16 @@ footer {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .research .title a {
+      text-decoration: underline; }
+    .research .title a.button {
+      text-decoration: none; }
+    .research .title .button {
+      text-decoration: none; }
+    .research .title nav a {
+      text-decoration: none; }
+    .research .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .research .title {
         font-size: 1rem; } }
@@ -4525,6 +4664,16 @@ footer {
     white-space: pre; }
   .research .description {
     overflow: auto; }
+    .research .description a {
+      text-decoration: underline; }
+    .research .description a.button {
+      text-decoration: none; }
+    .research .description .button {
+      text-decoration: none; }
+    .research .description nav a {
+      text-decoration: none; }
+    .research .description header a {
+      text-decoration: none; }
   .research .description:after {
     content: "\000A";
     white-space: pre; }
@@ -4565,6 +4714,16 @@ footer {
     margin: 1em 1em 1em 1em; }
   .research .description {
     overflow-x: hidden; }
+    .research .description a {
+      text-decoration: underline; }
+    .research .description a.button {
+      text-decoration: none; }
+    .research .description .button {
+      text-decoration: none; }
+    .research .description nav a {
+      text-decoration: none; }
+    .research .description header a {
+      text-decoration: none; }
 
 .extension {
   overflow: hidden;
@@ -4575,6 +4734,16 @@ footer {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .extension .title a {
+      text-decoration: underline; }
+    .extension .title a.button {
+      text-decoration: none; }
+    .extension .title .button {
+      text-decoration: none; }
+    .extension .title nav a {
+      text-decoration: none; }
+    .extension .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .extension .title {
         font-size: 1rem; } }
@@ -4588,6 +4757,16 @@ footer {
     white-space: pre; }
   .extension .description {
     overflow: auto; }
+    .extension .description a {
+      text-decoration: underline; }
+    .extension .description a.button {
+      text-decoration: none; }
+    .extension .description .button {
+      text-decoration: none; }
+    .extension .description nav a {
+      text-decoration: none; }
+    .extension .description header a {
+      text-decoration: none; }
   .extension .description:after {
     content: "\000A";
     white-space: pre; }
@@ -4628,6 +4807,16 @@ footer {
     margin: 1em 1em 1em 1em; }
   .extension .description {
     overflow-x: hidden; }
+    .extension .description a {
+      text-decoration: underline; }
+    .extension .description a.button {
+      text-decoration: none; }
+    .extension .description .button {
+      text-decoration: none; }
+    .extension .description nav a {
+      text-decoration: none; }
+    .extension .description header a {
+      text-decoration: none; }
 
 .blog-post-list .blog-post:after {
   height: 0;
@@ -5036,6 +5225,16 @@ figcaption {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .news-story-page .title a {
+      text-decoration: underline; }
+    .news-story-page .title a.button {
+      text-decoration: none; }
+    .news-story-page .title .button {
+      text-decoration: none; }
+    .news-story-page .title nav a {
+      text-decoration: none; }
+    .news-story-page .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .news-story-page .title {
         font-size: 1rem; } }
@@ -5049,6 +5248,16 @@ figcaption {
     white-space: pre; }
   .news-story-page .description {
     overflow: auto; }
+    .news-story-page .description a {
+      text-decoration: underline; }
+    .news-story-page .description a.button {
+      text-decoration: none; }
+    .news-story-page .description .button {
+      text-decoration: none; }
+    .news-story-page .description nav a {
+      text-decoration: none; }
+    .news-story-page .description header a {
+      text-decoration: none; }
   .news-story-page .description:after {
     content: "\000A";
     white-space: pre; }
@@ -5332,6 +5541,16 @@ cite {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .featured-blue .title a {
+      text-decoration: underline; }
+    .featured-blue .title a.button {
+      text-decoration: none; }
+    .featured-blue .title .button {
+      text-decoration: none; }
+    .featured-blue .title nav a {
+      text-decoration: none; }
+    .featured-blue .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .featured-blue .title {
         font-size: 1rem; } }
@@ -5345,6 +5564,16 @@ cite {
     white-space: pre; }
   .featured-blue .description {
     overflow: auto; }
+    .featured-blue .description a {
+      text-decoration: underline; }
+    .featured-blue .description a.button {
+      text-decoration: none; }
+    .featured-blue .description .button {
+      text-decoration: none; }
+    .featured-blue .description nav a {
+      text-decoration: none; }
+    .featured-blue .description header a {
+      text-decoration: none; }
   .featured-blue .description:after {
     content: "\000A";
     white-space: pre; }
@@ -5385,6 +5614,16 @@ cite {
     margin: 1em 1em 1em 1em; }
   .featured-blue .description {
     overflow-x: hidden; }
+    .featured-blue .description a {
+      text-decoration: underline; }
+    .featured-blue .description a.button {
+      text-decoration: none; }
+    .featured-blue .description .button {
+      text-decoration: none; }
+    .featured-blue .description nav a {
+      text-decoration: none; }
+    .featured-blue .description header a {
+      text-decoration: none; }
 
 .featured-red {
   overflow: hidden;
@@ -5395,6 +5634,16 @@ cite {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .featured-red .title a {
+      text-decoration: underline; }
+    .featured-red .title a.button {
+      text-decoration: none; }
+    .featured-red .title .button {
+      text-decoration: none; }
+    .featured-red .title nav a {
+      text-decoration: none; }
+    .featured-red .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .featured-red .title {
         font-size: 1rem; } }
@@ -5408,6 +5657,16 @@ cite {
     white-space: pre; }
   .featured-red .description {
     overflow: auto; }
+    .featured-red .description a {
+      text-decoration: underline; }
+    .featured-red .description a.button {
+      text-decoration: none; }
+    .featured-red .description .button {
+      text-decoration: none; }
+    .featured-red .description nav a {
+      text-decoration: none; }
+    .featured-red .description header a {
+      text-decoration: none; }
   .featured-red .description:after {
     content: "\000A";
     white-space: pre; }
@@ -5448,6 +5707,16 @@ cite {
     margin: 1em 1em 1em 1em; }
   .featured-red .description {
     overflow-x: hidden; }
+    .featured-red .description a {
+      text-decoration: underline; }
+    .featured-red .description a.button {
+      text-decoration: none; }
+    .featured-red .description .button {
+      text-decoration: none; }
+    .featured-red .description nav a {
+      text-decoration: none; }
+    .featured-red .description header a {
+      text-decoration: none; }
 
 .featured-green {
   overflow: hidden;
@@ -5458,6 +5727,16 @@ cite {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .featured-green .title a {
+      text-decoration: underline; }
+    .featured-green .title a.button {
+      text-decoration: none; }
+    .featured-green .title .button {
+      text-decoration: none; }
+    .featured-green .title nav a {
+      text-decoration: none; }
+    .featured-green .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .featured-green .title {
         font-size: 1rem; } }
@@ -5471,6 +5750,16 @@ cite {
     white-space: pre; }
   .featured-green .description {
     overflow: auto; }
+    .featured-green .description a {
+      text-decoration: underline; }
+    .featured-green .description a.button {
+      text-decoration: none; }
+    .featured-green .description .button {
+      text-decoration: none; }
+    .featured-green .description nav a {
+      text-decoration: none; }
+    .featured-green .description header a {
+      text-decoration: none; }
   .featured-green .description:after {
     content: "\000A";
     white-space: pre; }
@@ -5511,6 +5800,16 @@ cite {
     margin: 1em 1em 1em 1em; }
   .featured-green .description {
     overflow-x: hidden; }
+    .featured-green .description a {
+      text-decoration: underline; }
+    .featured-green .description a.button {
+      text-decoration: none; }
+    .featured-green .description .button {
+      text-decoration: none; }
+    .featured-green .description nav a {
+      text-decoration: none; }
+    .featured-green .description header a {
+      text-decoration: none; }
 
 .featured-yellow {
   overflow: hidden;
@@ -5521,6 +5820,16 @@ cite {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .featured-yellow .title a {
+      text-decoration: underline; }
+    .featured-yellow .title a.button {
+      text-decoration: none; }
+    .featured-yellow .title .button {
+      text-decoration: none; }
+    .featured-yellow .title nav a {
+      text-decoration: none; }
+    .featured-yellow .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .featured-yellow .title {
         font-size: 1rem; } }
@@ -5534,6 +5843,16 @@ cite {
     white-space: pre; }
   .featured-yellow .description {
     overflow: auto; }
+    .featured-yellow .description a {
+      text-decoration: underline; }
+    .featured-yellow .description a.button {
+      text-decoration: none; }
+    .featured-yellow .description .button {
+      text-decoration: none; }
+    .featured-yellow .description nav a {
+      text-decoration: none; }
+    .featured-yellow .description header a {
+      text-decoration: none; }
   .featured-yellow .description:after {
     content: "\000A";
     white-space: pre; }
@@ -5574,6 +5893,16 @@ cite {
     margin: 1em 1em 1em 1em; }
   .featured-yellow .description {
     overflow-x: hidden; }
+    .featured-yellow .description a {
+      text-decoration: underline; }
+    .featured-yellow .description a.button {
+      text-decoration: none; }
+    .featured-yellow .description .button {
+      text-decoration: none; }
+    .featured-yellow .description nav a {
+      text-decoration: none; }
+    .featured-yellow .description header a {
+      text-decoration: none; }
 
 .featured-gray {
   overflow: hidden;
@@ -5584,6 +5913,16 @@ cite {
     font-size: 1.125rem;
     font-weight: 700;
     display: block; }
+    .featured-gray .title a {
+      text-decoration: underline; }
+    .featured-gray .title a.button {
+      text-decoration: none; }
+    .featured-gray .title .button {
+      text-decoration: none; }
+    .featured-gray .title nav a {
+      text-decoration: none; }
+    .featured-gray .title header a {
+      text-decoration: none; }
     @media screen and (min-width: 0em) and (max-width: 39.9375em) {
       .featured-gray .title {
         font-size: 1rem; } }
@@ -5597,6 +5936,16 @@ cite {
     white-space: pre; }
   .featured-gray .description {
     overflow: auto; }
+    .featured-gray .description a {
+      text-decoration: underline; }
+    .featured-gray .description a.button {
+      text-decoration: none; }
+    .featured-gray .description .button {
+      text-decoration: none; }
+    .featured-gray .description nav a {
+      text-decoration: none; }
+    .featured-gray .description header a {
+      text-decoration: none; }
   .featured-gray .description:after {
     content: "\000A";
     white-space: pre; }
@@ -5637,6 +5986,16 @@ cite {
     margin: 1em 1em 1em 1em; }
   .featured-gray .description {
     overflow-x: hidden; }
+    .featured-gray .description a {
+      text-decoration: underline; }
+    .featured-gray .description a.button {
+      text-decoration: none; }
+    .featured-gray .description .button {
+      text-decoration: none; }
+    .featured-gray .description nav a {
+      text-decoration: none; }
+    .featured-gray .description header a {
+      text-decoration: none; }
 
 .spacer {
   height: 1000px; }
