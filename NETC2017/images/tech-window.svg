@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="1626 45 850.08 843.086">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8dc397;
+      }
+
+      .cls-2 {
+        fill: #77806a;
+      }
+
+      .cls-10, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #dd7f7f;
+      }
+
+      .cls-5 {
+        opacity: 0.1;
+      }
+
+      .cls-6 {
+        fill: #8ac8e8;
+      }
+
+      .cls-7 {
+        fill: #be5353;
+      }
+
+      .cls-8 {
+        fill: #5d97b5;
+      }
+
+      .cls-9 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-10 {
+        stroke: #95989a;
+        stroke-width: 1px;
+      }
+
+      .cls-11 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="path" class="cls-1" d="M0,0H106.922V106.922H0Z"/>
+    </clipPath>
+  </defs>
+  <g id="group-9" transform="translate(1377 -202)">
+    <g id="group-8" transform="translate(419.966 370.27)">
+      <g id="group-6">
+        <g id="group-5" transform="translate(6.266)">
+          <g id="ic_phone_iphone_black_24px" transform="translate(122.154)">
+            <path id="path-2" data-name="path" class="cls-2" d="M79.422,1h-56.7A17.726,17.726,0,0,0,5,18.719V139.212a17.726,17.726,0,0,0,17.719,17.719h56.7a17.726,17.726,0,0,0,17.719-17.719V18.719A17.726,17.726,0,0,0,79.422,1ZM51.071,149.843A10.632,10.632,0,1,1,61.7,139.212,10.617,10.617,0,0,1,51.071,149.843Zm31.9-28.351H19.176V22.263h63.79Z" transform="translate(30.439 6.088)"/>
+            <path id="path-3" data-name="path" class="cls-3" d="M0,0H170.107V170.107H0Z"/>
+          </g>
+          <g id="ic_keyboard_black_24px" transform="translate(222.46 155.567)">
+            <path id="path-4" data-name="path" class="cls-4" d="M107.747,5h-94A11.734,11.734,0,0,0,2.059,16.75L2,75.5a11.784,11.784,0,0,0,11.75,11.75h94A11.784,11.784,0,0,0,119.5,75.5V16.75A11.784,11.784,0,0,0,107.747,5ZM54.873,22.624h11.75v11.75H54.873Zm0,17.624h11.75V52H54.873ZM37.249,22.624H49v11.75H37.249Zm0,17.624H49V52H37.249ZM31.374,52H19.624V40.249h11.75Zm0-17.624H19.624V22.624h11.75ZM84.248,75.5h-47V63.748h47Zm0-23.5H72.5V40.249h11.75Zm0-17.624H72.5V22.624h11.75ZM101.872,52H90.122V40.249h11.75Zm0-17.624H90.122V22.624h11.75Z" transform="translate(9.75 24.374)"/>
+            <path id="path-5" data-name="path" class="cls-3" d="M0,0H141V141H0ZM0,0H141V141H0Z"/>
+          </g>
+          <g id="ic_headset_mic_black_24px" transform="translate(104.964 430.508)">
+            <path id="path-6" data-name="path" class="cls-5" d="M0,0H86.164V86.164H0Z"/>
+            <path id="path-7" data-name="path" class="cls-6" d="M35.312,1A32.314,32.314,0,0,0,3,33.312V58.443A10.756,10.756,0,0,0,13.771,69.213H24.541V40.492H10.18v-7.18a25.131,25.131,0,0,1,50.262,0v7.18H46.082V69.213H60.443V72.8H35.312v7.18H56.853A10.756,10.756,0,0,0,67.623,69.213v-35.9A32.314,32.314,0,0,0,35.312,1Z" transform="translate(7.771 2.59)"/>
+          </g>
+          <g id="ic_watch_black_24px" transform="translate(332.123 73.319)">
+            <path id="path-8" data-name="path" class="cls-5" d="M0,0H119.063V119.063H0Z"/>
+            <path id="path-9" data-name="path" class="cls-1" d="M83.375,59.532A39.569,39.569,0,0,0,68.294,28.426L63.532,0H23.844L19.131,28.426a39.538,39.538,0,0,0,0,62.21l4.713,28.426H63.532l4.763-28.426A39.569,39.569,0,0,0,83.375,59.532Zm-69.453,0A29.766,29.766,0,1,1,43.688,89.3,29.789,29.789,0,0,1,13.922,59.532Z" transform="translate(15.844)"/>
+          </g>
+          <g id="ic_phone_iphone_black_24px-2" data-name="ic_phone_iphone_black_24px" transform="translate(153.529 516.672)">
+            <path id="path-10" data-name="path" class="cls-7" d="M66,1H19.524A14.529,14.529,0,0,0,5,15.524v98.762A14.529,14.529,0,0,0,19.524,128.81H66a14.529,14.529,0,0,0,14.524-14.524V15.524A14.529,14.529,0,0,0,66,1ZM42.762,123a8.714,8.714,0,1,1,8.714-8.714A8.7,8.7,0,0,1,42.762,123ZM68.905,99.762H16.619V18.429H68.905Z" transform="translate(24.048 4.81)"/>
+            <path id="path-11" data-name="path" class="cls-3" d="M0,0H139.429V139.429H0Z"/>
+          </g>
+          <g id="ic_phone_android_black_24px" transform="translate(36.032 490.04)">
+            <path id="path-12" data-name="path" class="cls-4" d="M36.594,1H13.616A8.6,8.6,0,0,0,5,9.616V55.571a8.6,8.6,0,0,0,8.616,8.616H36.594a8.6,8.6,0,0,0,8.616-8.616V9.616A8.6,8.6,0,0,0,36.594,1ZM30.849,58.443H19.361V55.571H30.849Zm9.334-8.616H10.026V9.616H40.184Z" transform="translate(9.361 1.872)"/>
+            <path id="path-13" data-name="path" class="cls-3" d="M0,0H68.931V68.931H0Z"/>
+          </g>
+          <g id="ic_laptop_chromebook_black_24px" transform="translate(0 154.783)">
+            <path id="path-14" data-name="path" class="cls-3" d="M0,0H211.494V211.494H0Z"/>
+            <path id="path-15" data-name="path" class="cls-8" d="M193.869,135.184V3H17.624V135.184H0v17.624H211.494V135.184Zm-70.5,0H88.122v-8.812h35.249Zm52.873-26.437h-141V20.624h141Z" transform="translate(0 23.437)"/>
+          </g>
+          <g id="ic_laptop_black_24px" class="cls-9" transform="translate(222.46 276.588)">
+            <path id="path-16" data-name="path" class="cls-1" d="M89.1,66.371a8.936,8.936,0,0,0,8.91-8.91V12.91A8.936,8.936,0,0,0,89.1,4H17.82a8.936,8.936,0,0,0-8.91,8.91V57.461a8.936,8.936,0,0,0,8.91,8.91H0v8.91H106.922v-8.91ZM17.82,12.91H89.1V57.461H17.82Z" transform="translate(0 13.82)"/>
+          </g>
+          <g id="ic_headset_mic_black_24px-2" data-name="ic_headset_mic_black_24px" transform="translate(336.823 349.827)">
+            <path id="path-17" data-name="path" class="cls-5" d="M0,0H140.213V140.213H0Z"/>
+            <path id="path-18" data-name="path" class="cls-4" d="M55.58,1A52.584,52.584,0,0,0,3,53.58v40.9A17.5,17.5,0,0,0,20.527,112H38.053V65.264H14.684V53.58a40.9,40.9,0,0,1,81.791,0V65.264H73.106V112H96.475v5.842H55.58v11.684H90.633A17.5,17.5,0,0,0,108.159,112V53.58A52.584,52.584,0,0,0,55.58,1Z" transform="translate(14.527 4.842)"/>
+          </g>
+          <g id="ic_desktop_windows_black_24px" transform="translate(375.989 212.748)">
+            <path id="path-19" data-name="path" class="cls-3" d="M0,0H126.815V126.815H0Z"/>
+            <path id="path-20" data-name="path" class="cls-6" d="M106.679,2H11.568A10.6,10.6,0,0,0,1,12.568V75.975A10.6,10.6,0,0,0,11.568,86.543H48.555V97.111H37.988v10.568H80.259V97.111H69.691V86.543h36.988a10.6,10.6,0,0,0,10.568-10.568V12.568A10.6,10.6,0,0,0,106.679,2Zm0,73.975H11.568V12.568h95.111Z" transform="translate(4.284 8.568)"/>
+          </g>
+          <g id="ic_desktop_windows_black_24px-2" data-name="ic_desktop_windows_black_24px" transform="translate(198.961 383.51)">
+            <path id="path-21" data-name="path" class="cls-3" d="M0,0H122.2V122.2H0Z"/>
+            <path id="path-22" data-name="path" class="cls-2" d="M102.83,2H11.183A10.213,10.213,0,0,0,1,12.183v61.1A10.213,10.213,0,0,0,11.183,83.464H46.824V93.647H36.641V103.83H77.373V93.647H67.19V83.464H102.83a10.213,10.213,0,0,0,10.183-10.183v-61.1A10.213,10.213,0,0,0,102.83,2Zm0,71.281H11.183v-61.1H102.83Z" transform="translate(4.092 8.183)"/>
+          </g>
+          <g id="ic_computer_black_24px" transform="translate(283.558 490.04)">
+            <path id="path-23" data-name="path" class="cls-3" d="M0,0H133.163V133.163H0Z"/>
+            <path id="path-24" data-name="path" class="cls-6" d="M110.969,81.678a11.082,11.082,0,0,0,11.041-11.1l.055-55.484A11.13,11.13,0,0,0,110.969,4H22.194A11.13,11.13,0,0,0,11.1,15.1V70.581a11.13,11.13,0,0,0,11.1,11.1H0v11.1H133.163v-11.1ZM22.194,15.1h88.775V70.581H22.194Z" transform="translate(0 18.194)"/>
+          </g>
+        </g>
+        <g id="ic_desktop_mac_black_24px" transform="translate(0 366.195)">
+          <path id="path-25" data-name="path" class="cls-3" d="M0,0H103.479V103.479H0Z"/>
+          <path id="path-26" data-name="path" class="cls-2" d="M87.232,2H9.623A8.649,8.649,0,0,0,1,10.623V62.362a8.649,8.649,0,0,0,8.623,8.623H39.8L31.181,83.921v4.312H65.674V83.921L57.051,70.986H87.232a8.649,8.649,0,0,0,8.623-8.623V10.623A8.649,8.649,0,0,0,87.232,2Zm0,51.739H9.623V10.623H87.232Z" transform="translate(3.312 6.623)"/>
+        </g>
+      </g>
+    </g>
+    <g id="rectangle-12" class="cls-10" transform="translate(249 247)">
+      <rect class="cls-11" width="850.08" height="843.086" rx="9" ry="9"/>
+      <rect class="cls-3" x="0.5" y="0.5" width="849.08" height="842.086" rx="8.5" ry="8.5"/>
+    </g>
+    <line id="line-2" class="cls-10" x2="849.012" transform="translate(249.534 314.212)"/>
+    <circle id="ellipse-2" class="cls-4" cx="9.212" cy="9.212" r="9.212" transform="translate(268.576 271.797)"/>
+    <circle id="ellipse-2-2" data-name="ellipse-2" class="cls-6" cx="9.212" cy="9.212" r="9.212" transform="translate(296.213 271.797)"/>
+    <circle id="ellipse-2-3" data-name="ellipse-2" class="cls-1" cx="9.212" cy="9.212" r="9.212" transform="translate(323.849 271.797)"/>
+  </g>
+</svg>
