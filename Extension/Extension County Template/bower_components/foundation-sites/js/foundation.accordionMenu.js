@@ -187,11 +187,13 @@
    * @param {jQuery} $target - the submenu to toggle
    */
   AccordionMenu.prototype.toggle = function($target){
-    if (!$target.is(':hidden')) {
-      this.up($target);
-    }
-    else {
-      this.down($target);
+    if(!$target.is(':animated')) {
+      if (!$target.is(':hidden')) {
+        this.up($target);
+      }
+      else {
+        this.down($target);
+      }
     }
   };
   /**
@@ -201,9 +203,9 @@
    */
   AccordionMenu.prototype.down = function($target) {
     var _this = this;
-    console.log($target);
+
     if(!this.options.multiOpen){
-      this.up(this.$element.find('.is-active').not($target.parentsUntil(this.$element)));
+      this.up(this.$element.find('.is-active').not($target.parentsUntil(this.$element).add($target)));
     }
 
     $target.addClass('is-active').attr({'aria-hidden': false})
