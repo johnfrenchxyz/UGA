@@ -6,8 +6,12 @@
 // font-family: 'Roboto', sans-serif;
 
 // Nunito (Avenir Alternative)
-@import url(https://fonts.googleapis.com/css?family=Nunito:300,500);
+// @import url(https://fonts.googleapis.com/css?family=Nunito:300,500);
 // font-family: 'Nunito', sans-serif;
+
+// Montserrat
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+$montserrat: 'Montserrat', 'Roboto', sans-serif;
 
 // Roboto Slab
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
@@ -136,30 +140,30 @@ h2 {
 }
 
 // People Container
-.people-menu {
-   // Hide From 720px Down:
-   @media screen and (max-width: 720px) {
-   display: none !important;
-   }
-   float: right;
-   margin-right: 70px;
-   position: relative;
-   height: 56px;
-   line-height: 56px;
-   margin-bottom: -56px;
-   ul li {
-      padding-top: 10px;
-      padding-left: 0px;
-      padding-right: 0px;
-      font-size: rem-calc(14);
-      a {
-         color: $body-font-color;
-         font-weight: bold;
-         padding-right: .3em !important;
-         &:hover { text-decoration: underline; }
-      }
-   }
-}
+// .people-menu {
+//    // Hide From 720px Down:
+//    @media screen and (max-width: 720px) {
+//    display: none !important;
+//    }
+//    float: right;
+//    margin-right: 70px;
+//    position: relative;
+//    height: 56px;
+//    line-height: 56px;
+//    margin-bottom: -56px;
+//    ul li {
+//       padding-top: 10px;
+//       padding-left: 0px;
+//       padding-right: 0px;
+//       font-size: rem-calc(14);
+//       a {
+//          color: $body-font-color;
+//          font-weight: bold;
+//          padding-right: .3em !important;
+//          &:hover { text-decoration: underline; }
+//       }
+//    }
+// }
 
 // Search Container
 .sb-search {
@@ -454,7 +458,7 @@ main {
 // ---------------
 footer {
    margin-top: 5em;
-   font-family: 'Nunito', sans-serif;
+   font-family: 'Roboto', sans-serif;
    color: $nav-bg-color;
    .footer-links {
       margin-left: 0;

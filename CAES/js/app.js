@@ -1,19 +1,25 @@
 $(document).foundation();
 
-// UGA Branding Content Swap
-// -------------------------
-function ugaResizeCheck() {
-    if ($(window).width() < 650) {
-        $('#ugaText').html('UGA');
-    } else {
-        $('#ugaText').html('University of Georgia');
-    }
-}
-// Initial Run:
-ugaResizeCheck();
-// Run on Resize:
-$(window).resize(function() {
-    ugaResizeCheck();
+// Search
+//-------
+$('#searchTrigger').on('click', function() {
+    // Hide the "People" Menu
+    $('.homepage-people-menu').hide().addClass('is-hidden');
+    // Hide the Search Trigger
+    $('#searchTrigger').hide();
+    // Show the Search Form
+    $('.search-form').show();
+    // Focus the cursor in the search field
+    $('#searchField').focus();
+    // Close the Search
+    $('#searchClose').on('click', function() {
+        // Hide the search form
+        $('.search-form').hide();
+        // Show the "People" menu
+        $('.homepage-people-menu').show().removeClass('is-hidden');
+        // Show the Search Trigger
+        $('#searchTrigger').show();
+    });
 });
 
 // Drilldown Height Fix -- Not sure why this fix is needed, but it is.
