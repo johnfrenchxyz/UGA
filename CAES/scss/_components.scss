@@ -264,7 +264,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    ul { list-style: none; margin-left: 0; margin-bottom: 0; }
    img {
       @include breakpoint(medium down) { width: 50vm; width: 50vmin; }
-      @include breakpoint(large) { width: 50vm; width: 50vmin; margin: auto; }
+      @include breakpoint(large) { width: 50vm; width: 50vmin; }
    }
    .affiliations li {
       display: inline;
@@ -304,6 +304,10 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
 }
 
+// Personnel Page
+.personnel-page-image {
+
+}
 
 // Social Media Icons
 //-------------------
@@ -818,6 +822,7 @@ figcaption {
    padding: 1em;
    display: none;
    border: 1px solid $caes-light-gray;
+   overflow: auto;
 }
 .news-subscription-form {
 

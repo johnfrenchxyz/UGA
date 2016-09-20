@@ -2,122 +2,146 @@
 <html class="no-js" lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CAES News Subscription Template</title>
-   <link rel="stylesheet" href="../css/app.css">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAES News Subscription Template</title>
+    <link rel="stylesheet" href="../css/app.css">
 </head>
 
 <body>
 
-   <div class="row">
-      <div class="large-12 columns">
-         <h1>CAES News Subscription Template:</h1>
-         <!-- <p>Sidebar plain list news component.</p> -->
-         <hr />
-      </div>
-   </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <h1>CAES News Subscription Template:</h1>
+            <p>The purpose of this component is to allow users to subscribe to our news database.  While the code below is simply the front-end for the form itself, once the component is added to the larger template, it will give users the ability to select exactly what type of stories they would like to have delivered to them as new stories are added to the database weekly.</p>
+            <hr />
+        </div>
+    </div>
 
-   <div class="row">
-      <div class="large-12 columns">
-         <!-- News Subscription Form -->
-         <form class="news-subscription-form">
-            <div class="row">
-               <div class="large-12 columns">
-                  <h3>Basic Information:</h3>
-               </div>
-            </div>
-            <div class="row">
-               <div class="medium-4 columns">
-                  <label>First Name
+    <div class="row">
+        <div class="large-12 columns">
+            <!-- News Subscription Form -->
+            <form class="news-subscription-form">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <h3>Basic Information:</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-4 columns">
+                        <label>First Name
                      <input type="text" placeholder="">
                   </label>
-                  <label>Last Name
+                        <label>Last Name
                      <input type="text" placeholder="">
                   </label>
-               </div>
-            </div>
-            <div class="row">
-               <div class="medium-6 columns">
-                  <label>Email
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <label>Email
                      <input type="text" placeholder="">
                   </label>
-               </div>
-            </div>
-            <div class="row">
-               <div class="medium-6 columns">
-                  <fieldset class="fieldset">
-                     <legend>Identify yourself as a part of one or more groups</legend>
-                     <input id="industry" type="checkbox">
-                     <label for="industry">Industry</label>
-                     <br />
-                     <input id="media" type="checkbox">
-                     <label for="media">Media</label>
-                     <br />
-                     <input id="public" type="checkbox">
-                     <label for="public">Public</label>
-                     <br />
-                     <input id="ugaCheckbox" type="checkbox">
-                     <label for="ugaCheckbox">University of Georgia</label>
-                  </fieldset>
-               </div>
-            </div>
-            <div class="row">
-               <div class="large-12 columns">
-                  <h3>What Type of Stories Interest You?</h3>
-               </div>
-            </div>
-            <div class="row">
-               <div class="large-6 columns">
-                  <!-- News Accordion Item -->
-                  <div class="news-accordion-item">
-                     <div class="news-accordion-title">Title</div>
-                     <div class="news-accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                     </div>
-                  </div>
-                  <!-- News Accordion Item -->
-                  <div class="news-accordion-item">
-                     <div class="news-accordion-title">Title</div>
-                     <div class="news-accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                     </div>
-                  </div>
-                  <!-- News Accordion Item -->
-                  <div class="news-accordion-item">
-                     <div class="news-accordion-title">Title</div>
-                     <div class="news-accordion-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </form>
-      </div>
-   </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="medium-6 columns">
+                        <fieldset class="fieldset">
+                            <legend>Identify yourself as a part of one or more groups</legend>
+                            <input id="industry" type="checkbox">
+                            <label for="industry">Industry</label>
+                            <br />
+                            <input id="media" type="checkbox">
+                            <label for="media">Media</label>
+                            <br />
+                            <input id="public" type="checkbox">
+                            <label for="public">Public</label>
+                            <br />
+                            <input id="ugaCheckbox" type="checkbox">
+                            <label for="ugaCheckbox">University of Georgia</label>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-12 columns">
+                        <h3>What Type of Stories Interest You?</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <!-- News Accordion Item -->
+                        <div class="news-accordion-item">
+                            <div class="news-accordion-title">Category I</div>
+                            <div class="news-accordion-body">
+                                <p>Once the subcategories are finalized by our marketing team, they will be displayed here for user filering.</p>
+                                <fieldset class="large-12 columns">
+                                    <legend>Select subjects of interest:</legend>
+                                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Subcategory 1</label>
+                                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Subcategory 2</label>
+                                    <input id="checkbox3" type="checkbox"><label for="checkbox3">Subcateogry 3</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <!-- News Accordion Item -->
+                        <div class="news-accordion-item">
+                            <div class="news-accordion-title">Category II</div>
+                            <div class="news-accordion-body">
+                                <p>Once the subcategories are finalized by our marketing team, they will be displayed here for user filering.</p>
+                                <fieldset class="large-12 columns">
+                                    <legend>Select subjects of interest:</legend>
+                                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Subcategory 1</label>
+                                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Subcategory 2</label>
+                                    <input id="checkbox3" type="checkbox"><label for="checkbox3">Subcateogry 3</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <!-- News Accordion Item -->
+                        <div class="news-accordion-item">
+                            <div class="news-accordion-title">Category III</div>
+                            <div class="news-accordion-body">
+                                <p>Once the subcategories are finalized by our marketing team, they will be displayed here for user filering.</p>
+                                <fieldset class="large-12 columns">
+                                    <legend>Select subjects of interest:</legend>
+                                    <input id="checkbox1" type="checkbox"><label for="checkbox1">Subcategory 1</label>
+                                    <input id="checkbox2" type="checkbox"><label for="checkbox2">Subcategory 2</label>
+                                    <input id="checkbox3" type="checkbox"><label for="checkbox3">Subcateogry 3</label>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="large-6 columns">
+                        <hr />
+                        <input type="submit" class="button large" value="Subscribe" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-   <div class="row">
-      <div class="spacer">
+    <div class="row">
+        <div class="spacer">
 
-      </div>
-   </div>
-
-
+        </div>
+    </div>
 
 
 
 
-   <script src="../bower_components/jquery/dist/jquery.js"></script>
-   <script src="../bower_components/what-input/what-input.js"></script>
-   <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
-   <script src="../js/app.js"></script>
-   <!-- For Expanding Search -->
-   <script src="../js/search/classie.js"></script>
-   <script src="../js/search/uisearch.js"></script>
-   <script>
-      new UISearch(document.getElementById('sb-search'));
-   </script>
+
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <!-- For Expanding Search -->
+    <script src="../js/search/classie.js"></script>
+    <script src="../js/search/uisearch.js"></script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
 </body>
 
 </html>
