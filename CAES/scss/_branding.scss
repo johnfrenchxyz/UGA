@@ -1,111 +1,98 @@
-/*
-   Branding Elements for the CAES Template
-*/
+ /*
+ 	Branding Elements for the CAES Template
+	in the header section.
+ */
 
-$shield-menu-gray: #EBEBEB;
-$super-small-screen: "(min-width: 0px) and (max-width: 260px)";
-$caes-red: #c41039;
-
-.left-section {
-	background: #369 !important;
-	width: 100px;
-	height: 120px;
-	margin-left: 1em;
-	float: left;
-}
-
-#parent {
-    width: 56px;
-    height: 56px;
-	 margin: 3px -3px 0 0;
-	 float: right;
-}
-
-#shield {
-	margin-top: 1em;
-    position: relative;
-    transform: rotate(90deg);
-    width: 100%;
-    height: 90%;
-    background-color: $shield-menu-gray;
-    border-radius: 0 0 70% 70%;
-    display: inline-block;
-	@media #{$super-small-screen} {
-		display: none;
-	}
-}
-#shield:before, #shield:after {
-    position: absolute;
-    margin-top: 50%;
-    content:"";
-    left: 50%;
-    top: 0;
-    width: 50%;
-    height: 53%;
-    background: $shield-menu-gray;
-    border-radius: 70% 70% 0 0;
-    -webkit-transform: rotate(-61.5deg);
-    -moz-transform: rotate(-61.5deg);
-    -ms-transform: rotate(-61.5deg);
-    -o-transform: rotate(-61.5deg);
-    transform: rotate(-61.5deg);
-    -webkit-transform-origin: 0 100%;
-    -moz-transform-origin: 0 100%;
-    -ms-transform-origin: 0 100%;
-    -o-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-		@media #{$super-small-screen} {
-		display: none;
-	}
-}
-#shield:after {
-    background-color: $shield-menu-gray;
-    left: 0;
-    -webkit-transform: rotate(61.5deg);
-    -moz-transform: rotate(61.5deg);
-    -ms-transform: rotate(61.5deg);
-    -o-transform: rotate(61.5deg);
-    transform: rotate(61.5deg);
-    -webkit-transform-origin: 100% 100%;
-    -moz-transform-origin: 100% 100%;
-    -ms-transform-origin: 100% 100%;
-    -o-transform-origin: 100% 100%;
-    transform-origin :100% 100%;
-		@media #{$super-small-screen} {
-		display: none;
-	}
-}
-.shield-menu-container {
-	margin-top: 1em;
-	background: $shield-menu-gray;
-	height: 56px;
-	float: right;
+// UGA Branding Section
+//---------------------
+$uga-branding-bg-color: lighten($light-gray, 5%);
+$uga-branding-link-color: darken($dark-gray, 20%);
+.college-branding {
+	background: $uga-branding-bg-color;
+	height: 6em;
 	overflow: hidden;
-	ul {
-		list-style: none;
-		text-align: right;
+	.uga-logo {
+		float: left;
+		margin: 1em 0 1em 0;
 	}
-	ul li {
-		display: inline-block;
-	}
-	ul li a {
-		display: block;
-		padding: 0 .5em 0 .5em;
-		height: 56px;
-		line-height: 56px;
-		font-weight: bold;
-		font-size: .8rem;
-		// color: $caes-red;
-		color: #333333;
-		transition: 150ms ease;
-		&:hover {
-			// background: darken($shield-menu-gray, 5%);
-			border-bottom: 2px solid $caes-red;
+}
+
+// Homepage People Menu
+//---------------------
+.homepage-people-menu {
+	list-style: none;
+	float: right;
+	justify-content: center;
+    vertical-align: middle;
+    line-height: 6em;
+	display: inline-block;
+	li {
+		display: inline;
+		padding: 0 1em 0 1em;
+		// Collapse for Medium-Sized Screens
+		@include breakpoint(medium only) {
+			padding: 0 .5em 0 0;
+		}
+		a {
+			font-family: $montserrat;
+			font-size: .8rem;
+			color: $uga-branding-link-color;
+			text-transform: uppercase;
+		}
+		a:hover {
 			color: $caes-red;
 		}
 	}
-	.search {
-		vertical-align: middle;
-		padding: 0 .5em 0 .5em;
+}
+
+// Search
+//-------
+#searchTrigger {
+	float: right;
+	justify-content: center;
+	line-height: 3em;
+	font-size: 2rem;
+	display: block;
+	margin: 0;
+	color: $uga-branding-link-color;
+	&:hover {
+		color: $caes-red;
+	}
+}
+
+.search-form {
+	display: none;
+	float: right;
+	// Large Width
+	@include breakpoint(large) {
+		width: 70%;
+	}
+	// Medium & Small Width
+	width: calc(100% - 220px);
+	height: 6em;
+	label {
+		width: 100%;
+		float: right;
+		input[type="text"] {
+			width: 93%;
+			height: 3em;
+			margin: .5em 0 .5em 0;
+			background: none;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: solid 4px darken($uga-branding-bg-color, 20%);
+			box-shadow: none;
+		}
+	}
+	button {
+		float: right;
+		margin-top: -1.7em;
+		margin-right: 1.5em;
+	}
+	a {
+		float: right;
+		margin-top: -1.7em;
+		display: block;
 	}
 }

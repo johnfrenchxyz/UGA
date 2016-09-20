@@ -2,67 +2,60 @@
 <html class="no-js" lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CAES Subsite Template</title>
-   <link rel="stylesheet" href="css/app.css">
-   <!-- Subsite Stylesheet -->
-   <!-- <link rel="stylesheet" href="css/subsite-template.css" /> -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Crop &amp; Soil Sciences Mockup</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Skip Links -->
+    <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
+    <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
 
-   <!-- Skip Links -->
-   <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
-   <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
+    <!-- Header Section -->
+	<header>
+		<div class="college-branding">
+			<div class="row small-uncollapse medium-uncollapse large-uncollapse xxlarge-uncollapse">
+				<div class="large-12 columns">
+					<!-- UGA Logo -->
+					<a href=""><img class="uga-logo" src="img/uga-logo.png" alt="The UGA Arches Logo"</a>
+					<!-- Search Trigger Button -->
+					<a href="#" id="searchTrigger"><i class="material-icons">search</i></a>
+					<!-- Seach Input Form -->
+					<form class="search-form">
+						<label>
+							<input id="searchField" type="text" placeholder="Search..." />
+						</label>
+						<!-- Search Submit -->
+						<button type="submit"><i class="material-icons">search</i></button>
+						<!-- Search Close -->
+						<a href="#" id="searchClose"><i class="material-icons">clear</i></a>
+					</form>
+					<!-- Homepage People Menu -->
+					<ul class="homepage-people-menu hide-for-small-only">
+						<li><a href="#">Campuses</a></li>
+						<li><a href="#">Students</a></li>
+						<li><a href="#">Alumni</a></li>
+						<li><a href="#">Faculty/Staff</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-   <!-- Header Section -->
-   <header>
-      <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
-         <div class="large-12 columns">
+		<!-- CAES Branding Section -->
+		<div class="row">
+			<div class="large-12 columns">
+				<a href="index.html"><h1 id="caesBranding">Crop &amp; Soil Sciences</h1></a>
+			</div>
+		</div>
 
-
-
-            <!-- "People" Menu & Search Section -->
-            <div class="search-and-people-container">
-
-               <!-- UGA Branding Section -->
-               <a class="button uga-button float-left">
-                  <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
-               </a>
-
-               <div class="people-menu">
-                  <ul class="menu">
-                     <li><a href="google.com">Campuses</a></li>
-                     <li><a href="#">Students</a></li>
-                     <li><a href="#">Alumni</a></li>
-                     <li><a href="#">Faculty/Staff</a></li>
-                  </ul>
-               </div>
-               <div id="sb-search" class="sb-search">
-                  <form>
-                     <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-                     <input class="sb-search-submit" type="submit" value="">
-                     <span class="sb-icon-search"><i class="fi-magnifying-glass"></i></span>
-                  </form>
-               </div>
-            </div>
-
-         </div>
-      </div>
-
-      <!-- Main Branding Section -->
-      <div class="row">
-         <div class="large-12 columns">
-            <h1 id="caesBranding">Crop &#38; Soil Sciences</h1>
-         </div>
-      </div>
-
-   </header>
+	</header>
 
    <!-- Main Navigation -->
-   <nav class="">
+   <nav>
       <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
          <div class="large-12 columns">
 
@@ -71,71 +64,65 @@
                <div class="title-bar-title">Menu</div>
             </div>
             <ul class="vertical medium-horizontal menu" id="mainNav" data-responsive-menu="drilldown medium-dropdown" data-toptions="closingTime:100; closeOnClick: true;">
-               <!-- Academics -->
+               <!-- Undergraduate -->
                <li id="">
-                  <a id="jumpToMenu" href="#">Academics</a>
+                  <a id="jumpToMenu" href="#">Undergraduate</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Academics Home</a></li>
-                     <li><a href="#">Prospective Students</a></li>
-                     <li><a href="#">Current Students</a></li>
-                     <li><a href="#">Undergraduate Programs</a></li>
-                     <li><a href="#">Graduate Programs</a></li>
-                     <li><a href="#">Extended Campuses</a></li>
-                     <li><a href="#">News &#38; Events</a></li>
-                     <li><a href="#">Contact Academics</a></li>
+                     <li class="show-for-small-only"><a href="#">Undergraduate Home</a></li>
+                     <li><a href="#">Majors</a></li>
+                     <li><a href="#">Minors</a></li>
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Scholarships</a></li>
+                     <li><a href="#">Request Information</a></li>
+                     <li><a href="#">Student Forms</a></li>
                   </ul>
                </li>
-               <!-- Departments -->
-               <li id="employment">
-                  <a href="#">Employment</a>
+               <!-- Graduate -->
+               <li>
+                  <a href="#">Graduate</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Departments Home</a></li>
-                     <li><a href="#">Agricultural &#38; Applied Economics</a></li>
-                     <li><a href="#">Agricultural Leadership, Education &#38; Communication</a></li>
-                     <li><a href="#">Animal &#38; Dairy Science</a></li>
-                     <li><a href="#">Crop &#38; Soil Sciences</a></li>
-                     <li><a href="#">Entomology</a></li>
-                     <li><a href="#">Food Science &#38; Technology</a></li>
-                     <li><a href="#">Horticulture</a></li>
-                     <li><a href="#">Plant Pathology</a></li>
-                     <li><a href="#">Poultry Science</a></li>
+                     <li class="show-for-small-only"><a href="#">Graduate Home</a></li>
+                     <li><a href="#">Master's Degree Programs</a></li>
+                     <li><a href="#">Doctoral Degree Programs</a></li>
+                     <li><a href="#">Assistantships</a></li>
+                     <li><a href="#">Research Opportunities</a></li>
+                     <li><a href="#">Student Forms</a></li>
+                     <li><a href="#">Request Information</a></li>
                   </ul>
                </li>
                <!-- Research -->
-               <li id="research">
+               <li class="active" id="research">
                   <a href="#">Research</a>
                   <ul class="menu vertical">
                      <li class="show-for-small-only"><a href="#">Research Home</a></li>
-                     <li><a href="#">Active Research</a></li>
-                     <li><a href="#">Centers &#38; Institutes</a></li>
-                     <li><a href="#">Experiminet Stations</a></li>
-                     <li><a href="#">Farms</a></li>
-                     <li><a href="#">Labs</a></li>
-                     <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">Crop Management</a></li>
+                     <li><a href="#">Water, Soil, &amp; Air</a></li>
+                     <li><a href="#">Environmental Sciences</a></li>
+                     <li><a href="#">Plant Breeding &amp; Genetics</a></li>
+                     <li><a href="#">Statewide Variety Testing</a></li>
+                     <li><a href="#">Centers</a></li>
                   </ul>
                </li>
-               <!-- Extension & Outreach -->
+               <!-- Extension -->
                <li id="outreach">
-                  <a href="#">Extension &#38; Outreach</a>
+                  <a href="#">Extension</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Extension & Outreach Home</a></li>
-                     <li><a href="#">UGA Cooperative Extension</a></li>
-                     <li><a href="#">Center for Agribusiness &#38; Economic Development</a></li>
-                     <li><a href="#">Coastal Georgia Botanical Gardens</a></li>
-                     <li><a href="#">Food PIC</a></li>
-                     <li><a href="#">Office of Environmental Sciences</a></li>
+                     <li class="show-for-small-only"><a href="#">Extension</a></li>
+                     <li><a href="#">Georgia Commodities</a></li>
+                     <li><a href="#">Georgia Weather Network</a></li>
+                     <li><a href="#">UGA Extension Weed Science</a></li>
+                     <li><a href="#">Statewide Variety Testing</a></li>
+                     <li><a href="#">Publications</a></li>
                   </ul>
                </li>
-               <!-- Global -->
-               <li id="personnel">
-                  <a href="#">Personnel</a>
+               <!-- People -->
+               <li id="people">
+                  <a href="#">People</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Global Home</a></li>
-                     <li><a href="#">Study Abroad</a></li>
-                     <li><a href="#">Scholarships</a></li>
-                     <li><a href="#">Innovation Labs</a></li>
-                     <li><a href="#">International Ag Day</a></li>
-                     <li><a href="#">Contact Us</a></li>
+                     <li class="show-for-small-only"><a href="#">People Home</a></li>
+                     <li><a href="#">Faculty</a></li>
+                     <li><a href="#">Graduate Students</a></li>
+                     <li><a href="#">Support Staff</a></li>
                   </ul>
                </li>
                <!-- About -->
@@ -143,53 +130,141 @@
                   <a href="#">About</a>
                   <ul class="menu vertical">
                      <li class="show-for-small-only"><a href="#">About Home</a></li>
-                     <li><a href="#">Deans' Promise</a></li>
-                     <li><a href="#">Career</a></li>
-                     <li><a href="#">Personnel Directory</a></li>
-                     <li><a href="#">History</a></li>
-                     <li><a href="#">Administration</a></li>
-                     <li><a href="#">Offices</a></li>
-                     <li><a href="#">Athens Campus</a></li>
-                     <li><a href="#">Tifton Campus</a></li>
-                     <li><a href="#">Griffin Campus</a></li>
-                     <li><a href="#">Boards &#38; Committees</a></li>
-                     <li><a href="#">Signature Events</a></li>
-                  </ul>
-               </li>
-               <!-- People Menu Small -->
-               <li class="show-for-small-only" id="people">
-                  <a>Campuses & People</a>
-                  <ul class="menu vertical">
-                     <li><a href="google.com">Campuses</a></li>
-                     <li><a href="#">Students</a></li>
-                     <li><a href="#">Alumni</a></li>
-                     <li><a href="#">Faculty/Staff</a></li>
+                     <li><a href="#">Overview</a></li>
+                     <li><a href="#">Campuses</a></li>
+                     <li><a href="#">Facilities</a></li>
+                     <li><a href="#">Newsletter</a></li>
+                     <li><a href="#">Employment</a></li>
                   </ul>
                </li>
             </ul>
-
-
          </div>
       </div>
    </nav>
 
    <main>
-      <div class="row">
-         <!-- Page Content -->
-         <div class="large-12 columns">
-            <h2>Centers & Institutes</h2>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales justo vitae ornare pharetra. Nunc sed tortor vel arcu egestas sagittis. Donec a diam ac libero mollis efficitur ut dapibus nibh. Vivamus sodales urna id lectus vehicula, vitae commodo
-               augue sagittis. Proin interdum, lorem ac vulputate elementum, metus tortor vestibulum orci, vel ullamcorper lectus augue sed magna. In sit amet tellus et sem scelerisque aliquam. Aenean feugiat, nisl ac feugiat ultrices, odio leo porta
-               tellus, vel gravida lacus nibh mattis mauris. Etiam ac euismod leo. Curabitur non consequat arcu, sagittis lobortis velit. Pellentesque a pellentesque neque. Pellentesque ac diam vel quam feugiat pulvinar id ac libero. Aliquam luctus urna
-               ut luctus rhoncus. Sed scelerisque nec elit in tincidunt. Vestibulum dignissim, orci ac laoreet ultrices, velit magna dignissim nunc, ac accumsan ex elit et est. Mauris eu nulla at tortor vehicula ornare. Aenean nulla nisi, volutpat vel
-               vulputate ut, tincidunt gravida diam. Mauris eu velit elit. Nam at erat neque. Mauris ex neque, rutrum ut euismod ac, dignissim pretium odio. Nunc justo tortor, dignissim ut eros nec, suscipit rutrum ipsum. Mauris non porta purus. Ut faucibus
-               lacinia est non varius. Integer vel congue mi. Ut nec enim massa. Aenean bibendum scelerisque nulla, at gravida metus condimentum id. Curabitur sed dapibus quam. Nullam quis congue dolor. In condimentum odio sit amet lorem feugiat fringilla.
-               Etiam et sapien vulputate orci lacinia accumsan. Suspendisse quis augue lacus. Nam bibendum nibh in ultrices sagittis. Fusce accumsan odio nulla, in luctus lacus fringilla a. Duis arcu turpis, faucibus dapibus ultrices id, imperdiet eget
-               nulla. Phasellus lacinia risus est, quis lacinia orci tincidunt quis. Nunc aliquet leo elit, vitae pulvinar odio varius vel. Vestibulum dignissim aliquet aliquam. Mauris maximus dui nec commodo pulvinar. In pharetra ante in nibh pulvinar
-               vestibulum. Suspendisse ante est, dictum in arcu id, finibus convallis tortor. Duis interdum, mauris ut aliquam interdum, tortor ipsum pellentesque felis, consectetur tempus nibh augue vitae felis.
-            </p>
-         </div>
+       <div class="row">
+           <!-- Page Content -->
+           <div class="large-9 medium-8 small-12 columns">
+               <div class="row large-collapse xlarge-collapse medium-uncollapse small-uncollapse">
+                   <!-- Image Slider -->
+                   <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                       <ul class="orbit-container">
+                           <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                           <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                           <li class="is-active orbit-slide">
+                               <img class="orbit-image" src="img/buckwheat.jpg" alt="Space" />
+                               <figcaption class="orbit-caption">
+                                   <span>Discover the benefits of buckwheat</span>
+                                   <span class="caption-tagline">From beautiful flowers to delicious pancakes</span>
+                               </figcaption>
+                           </li>
+                           <li class="orbit-slide">
+                               <img class="orbit-image" src="img/farm.jpg" alt="Space" />
+                               <figcaption class="orbit-caption">
+                                   <span>August 7-13 is National Farmers Market Week</span>
+                                   <span class="caption-tagline">Bringing the farm to the table for generations. Find your local market.</span>
+                               </figcaption>
+                           </li>
+                           <li class="orbit-slide">
+                               <img class="orbit-image" src="img/cornstalk.jpg" alt="Space" />
+                               <figcaption class="orbit-caption">
+                                   <span>Lesser Cornstalk Borers</span>
+                                   <span class="caption-tagline">See how they are causing problems for Georgia Peanut farmers.</span>
+                               </figcaption>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+
+               <br />
+
+               <div class="row featured-row">
+                   <div class="large-6 medium-6 columns">
+                       <!-- Academics Section -->
+                       <div class="plain-list-container featured-red">
+                           <div class="component-title">
+                               Learn More
+                           </div>
+                           <img src="img/research-student.jpg" />
+                           <a class="title">Find Possible Career Paths</a>
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           <!-- Read More Section -->
+                           <hr />
+                           <a class="button small  read-more" href="#">Read More</a>
+                       </div>
+                   </div>
+                   <div class="large-6 medium-6 columns">
+                       <!-- Research Section -->
+                       <div class="plain-list-container featured-blue">
+                           <div class="component-title">
+                               Student Spotlight
+                           </div>
+                           <img src="img/research-student2.jpg" />
+                           <a class="title">Jane Doe is Breaking New Ground</a>
+                           <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                           <!-- Read More Section -->
+                           <hr />
+                           <a class="button small  read-more" href="#">Read More</a>
+                       </div>
+                   </div>
+               </div>
+
+           </div>
+
+         <div class="large-3 medium-4 small-12 columns side-nav-container">
+			 <!-- Latest News -->
+             <div class="plain-list-container news-list">
+				 <div class="component-title">
+                     Latest News
+                 </div>
+				 <!-- News Item -->
+                 <div class="plain-list-item NewsArticle" itemscope="" itemtype="http://schema.org/NewsArticle">
+                     <a class="title" href="?=5542">Class Reigistration Open</a>
+                     <span class="subtitle">Author: <span itemprop="author">Frank M Watson</span></span>
+                     <meta itemprop="datePublished" content="2016-03-10">
+                     <span class="subtitle">Published 03/10/2016 by <span itemprop="publisher">UGA FACES</span></span>
+                 </div>
+				 <!-- News Item -->
+                 <div class="plain-list-item NewsArticle" itemscope="" itemtype="http://schema.org/NewsArticle">
+                     <a class="title" href="?=5542">Soil Seminar Announced</a>
+                     <span class="subtitle">Author: <span itemprop="author">Frank M Watson</span></span>
+                     <meta itemprop="datePublished" content="2016-03-10">
+                     <span class="subtitle">Published 03/10/2016 by <span itemprop="publisher">UGA FACES</span></span>
+                 </div>
+				 <!-- News Item -->
+                 <div class="plain-list-item NewsArticle" itemscope="" itemtype="http://schema.org/NewsArticle">
+                     <a class="title" href="?=5542">Water Conservation Tips</a>
+                     <span class="subtitle">Author: <span itemprop="author">Frank M Watson</span></span>
+                     <meta itemprop="datePublished" content="2016-03-10">
+                     <span class="subtitle">Published 03/10/2016 by <span itemprop="publisher">UGA FACES</span></span>
+                 </div>
+                 <hr />
+                 <a class="button small read-more" href="">See More News</a>
+             </div>
+
+			 <!-- Social Media Icons -->
+			 <ul class="social-media-icons">
+				 <li class="title">CONNECT WITH US</li>
+				 <li title="fi-social-facebook"><a href="https://www.facebook.com/cropsoil" target="_blank"><i class="fi-social-facebook"></i></a></li>
+				 <li title="fi-social-twitter"><a href="https://twitter.com/CropSoilUGA" target="_blank"><i class="fi-social-twitter"></i></a></li>
+				 <li title="fi-social-flickr"><a href="https://www.flickr.com/photos/ugacropsoil" target="_blank"><i class="fi-social-flickr"></i></a></li>
+			 </ul>
+
+			 <!-- Map -->
+			 <iframe style="margin-top: 2em;" class="scrolloff" id="map" scrolling="no" marginheight="0" marginwidth="0" style="border:#ccc 1px solid;" src="http://maps.google.com/maps?q=33.942403,-83.375087+Crop &amp; Soil Sciences&amp;ll=33.942403,-83.375087&amp;iwloc=near&amp;z=12&amp;output=embed&amp;z=15" frameborder="0" height="auto" width="100%">
+			 </iframe>
+			 <a href="#">
+				 <strong>
+					 Crop &amp; Soil Sciences
+					 <br />
+					 Miller Plant Science Bldg;
+					 <br />
+					 Athens, GA 30602
+				 </strong>
+			 </a>
+<!-- </div>
+         </div> -->
       </div>
    </main>
 

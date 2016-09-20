@@ -2,64 +2,57 @@
 <html class="no-js" lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>CAES Subsite Template</title>
-   <link rel="stylesheet" href="css/app.css">
-   <!-- Subsite Stylesheet -->
-   <!-- <link rel="stylesheet" href="css/subsite-template.css" /> -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Minors Mockup - Crop &amp; Soil Sciences</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Skip Links -->
+    <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
+    <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
 
-   <!-- Skip Links -->
-   <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
-   <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
+    <!-- Header Section -->
+	<header>
+		<div class="college-branding">
+			<div class="row small-uncollapse medium-uncollapse large-uncollapse xxlarge-uncollapse">
+				<div class="large-12 columns">
+					<!-- UGA Logo -->
+					<a href=""><img class="uga-logo" src="img/uga-logo.png" alt="The UGA Arches Logo"</a>
+					<!-- Search Trigger Button -->
+					<a href="#" id="searchTrigger"><i class="material-icons">search</i></a>
+					<!-- Seach Input Form -->
+					<form class="search-form">
+						<label>
+							<input id="searchField" type="text" placeholder="Search..." />
+						</label>
+						<!-- Search Submit -->
+						<button type="submit"><i class="material-icons">search</i></button>
+						<!-- Search Close -->
+						<a href="#" id="searchClose"><i class="material-icons">clear</i></a>
+					</form>
+					<!-- Homepage People Menu -->
+					<ul class="homepage-people-menu hide-for-small-only">
+						<li><a href="#">Campuses</a></li>
+						<li><a href="#">Students</a></li>
+						<li><a href="#">Alumni</a></li>
+						<li><a href="#">Faculty/Staff</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 
-   <!-- Header Section -->
-   <header>
-      <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
-         <div class="large-12 columns">
+		<!-- CAES Branding Section -->
+		<div class="row">
+			<div class="large-12 columns">
+				<a href="index.html"><h1 id="caesBranding">Crop &amp; Soil Sciences</h1></a>
+			</div>
+		</div>
 
-
-
-            <!-- "People" Menu & Search Section -->
-            <div class="search-and-people-container">
-
-               <!-- UGA Branding Section -->
-               <a class="button uga-button float-left">
-                  <img src="img/arch.png" alt="UGA Logo" style="width: 18px;" /> <span id="ugaText">University of Georgia</span>
-               </a>
-
-               <div class="people-menu">
-                  <ul class="menu">
-                     <li><a href="google.com">Campuses</a></li>
-                     <li><a href="#">Students</a></li>
-                     <li><a href="#">Alumni</a></li>
-                     <li><a href="#">Faculty/Staff</a></li>
-                  </ul>
-               </div>
-               <div id="sb-search" class="sb-search">
-                  <form>
-                     <input class="sb-search-input" placeholder="Enter your search term..." type="text" value="" name="search" id="search">
-                     <input class="sb-search-submit" type="submit" value="">
-                     <span class="sb-icon-search"><i class="fi-magnifying-glass"></i></span>
-                  </form>
-               </div>
-            </div>
-
-         </div>
-      </div>
-
-      <!-- Main Branding Section -->
-      <div class="row">
-         <div class="large-12 columns">
-            <h1 id="caesBranding">Crop &#38; Soil Sciences</h1>
-         </div>
-      </div>
-
-   </header>
+	</header>
 
    <!-- Main Navigation -->
    <nav>
@@ -71,34 +64,30 @@
                <div class="title-bar-title">Menu</div>
             </div>
             <ul class="vertical medium-horizontal menu" id="mainNav" data-responsive-menu="drilldown medium-dropdown" data-toptions="closingTime:100; closeOnClick: true;">
-               <!-- Academics -->
+               <!-- Undergraduate -->
                <li id="">
-                  <a id="jumpToMenu" href="#">Academics</a>
+                  <a id="jumpToMenu" href="#">Undergraduate</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Academics Home</a></li>
-                     <li><a href="#">Prospective Students</a></li>
-                     <li><a href="#">Current Students</a></li>
-                     <li><a href="#">Undergraduate Programs</a></li>
-                     <li><a href="#">Graduate Programs</a></li>
-                     <li><a href="#">Extended Campuses</a></li>
-                     <li><a href="#">News &#38; Events</a></li>
-                     <li><a href="#">Contact Academics</a></li>
+                     <li class="show-for-small-only"><a href="#">Undergraduate Home</a></li>
+                     <li><a href="#">Majors</a></li>
+                     <li><a href="#">Minors</a></li>
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Scholarships</a></li>
+                     <li><a href="#">Request Information</a></li>
+                     <li><a href="#">Student Forms</a></li>
                   </ul>
                </li>
-               <!-- Departments -->
-               <li id="employment">
-                  <a href="#">Employment</a>
+               <!-- Graduate -->
+               <li>
+                  <a href="#">Graduate</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Departments Home</a></li>
-                     <li><a href="#">Agricultural &#38; Applied Economics</a></li>
-                     <li><a href="#">Agricultural Leadership, Education &#38; Communication</a></li>
-                     <li><a href="#">Animal &#38; Dairy Science</a></li>
-                     <li><a href="#">Crop &#38; Soil Sciences</a></li>
-                     <li><a href="#">Entomology</a></li>
-                     <li><a href="#">Food Science &#38; Technology</a></li>
-                     <li><a href="#">Horticulture</a></li>
-                     <li><a href="#">Plant Pathology</a></li>
-                     <li><a href="#">Poultry Science</a></li>
+                     <li class="show-for-small-only"><a href="#">Graduate Home</a></li>
+                     <li><a href="#">Master's Degree Programs</a></li>
+                     <li><a href="#">Doctoral Degree Programs</a></li>
+                     <li><a href="#">Assistantships</a></li>
+                     <li><a href="#">Research Opportunities</a></li>
+                     <li><a href="#">Student Forms</a></li>
+                     <li><a href="#">Request Information</a></li>
                   </ul>
                </li>
                <!-- Research -->
@@ -106,36 +95,34 @@
                   <a href="#">Research</a>
                   <ul class="menu vertical">
                      <li class="show-for-small-only"><a href="#">Research Home</a></li>
-                     <li><a href="#">Active Research</a></li>
-                     <li><a href="#">Centers &#38; Institutes</a></li>
-                     <li><a href="#">Experiminet Stations</a></li>
-                     <li><a href="#">Farms</a></li>
-                     <li><a href="#">Labs</a></li>
-                     <li><a href="#">Contact Us</a></li>
+                     <li><a href="#">Crop Management</a></li>
+                     <li><a href="#">Water, Soil, &amp; Air</a></li>
+                     <li><a href="#">Environmental Sciences</a></li>
+                     <li><a href="#">Plant Breeding &amp; Genetics</a></li>
+                     <li><a href="#">Statewide Variety Testing</a></li>
+                     <li><a href="#">Centers</a></li>
                   </ul>
                </li>
-               <!-- Extension & Outreach -->
+               <!-- Extension -->
                <li id="outreach">
-                  <a href="#">Extension &#38; Outreach</a>
+                  <a href="#">Extension</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Extension & Outreach Home</a></li>
-                     <li><a href="#">UGA Cooperative Extension</a></li>
-                     <li><a href="#">Center for Agribusiness &#38; Economic Development</a></li>
-                     <li><a href="#">Coastal Georgia Botanical Gardens</a></li>
-                     <li><a href="#">Food PIC</a></li>
-                     <li><a href="#">Office of Environmental Sciences</a></li>
+                     <li class="show-for-small-only"><a href="#">Extension</a></li>
+                     <li><a href="#">Georgia Commodities</a></li>
+                     <li><a href="#">Georgia Weather Network</a></li>
+                     <li><a href="#">UGA Extension Weed Science</a></li>
+                     <li><a href="#">Statewide Variety Testing</a></li>
+                     <li><a href="#">Publications</a></li>
                   </ul>
                </li>
-               <!-- Global -->
-               <li id="personnel">
-                  <a href="#">Personnel</a>
+               <!-- People -->
+               <li id="people">
+                  <a href="#">People</a>
                   <ul class="menu vertical">
-                     <li class="show-for-small-only"><a href="#">Global Home</a></li>
-                     <li><a href="#">Study Abroad</a></li>
-                     <li><a href="#">Scholarships</a></li>
-                     <li><a href="#">Innovation Labs</a></li>
-                     <li><a href="#">International Ag Day</a></li>
-                     <li><a href="#">Contact Us</a></li>
+                     <li class="show-for-small-only"><a href="#">People Home</a></li>
+                     <li><a href="#">Faculty</a></li>
+                     <li><a href="#">Graduate Students</a></li>
+                     <li><a href="#">Support Staff</a></li>
                   </ul>
                </li>
                <!-- About -->
@@ -143,86 +130,58 @@
                   <a href="#">About</a>
                   <ul class="menu vertical">
                      <li class="show-for-small-only"><a href="#">About Home</a></li>
-                     <li><a href="#">Deans' Promise</a></li>
-                     <li><a href="#">Career</a></li>
-                     <li><a href="#">Personnel Directory</a></li>
-                     <li><a href="#">History</a></li>
-                     <li><a href="#">Administration</a></li>
-                     <li><a href="#">Offices</a></li>
-                     <li><a href="#">Athens Campus</a></li>
-                     <li><a href="#">Tifton Campus</a></li>
-                     <li><a href="#">Griffin Campus</a></li>
-                     <li><a href="#">Boards &#38; Committees</a></li>
-                     <li><a href="#">Signature Events</a></li>
-                  </ul>
-               </li>
-               <!-- People Menu Small -->
-               <li class="show-for-small-only" id="people">
-                  <a>Campuses & People</a>
-                  <ul class="menu vertical">
-                     <li><a href="google.com">Campuses</a></li>
-                     <li><a href="#">Students</a></li>
-                     <li><a href="#">Alumni</a></li>
-                     <li><a href="#">Faculty/Staff</a></li>
+                     <li><a href="#">Overview</a></li>
+                     <li><a href="#">Campuses</a></li>
+                     <li><a href="#">Facilities</a></li>
+                     <li><a href="#">Newsletter</a></li>
+                     <li><a href="#">Employment</a></li>
                   </ul>
                </li>
             </ul>
-
-
          </div>
       </div>
    </nav>
 
    <main>
-      <div class="row">
-         <!-- Page Content -->
-         <div class="large-9 medium-8 small-12 columns">
-            <h2>Centers & Institutes</h2>
-            <p>
-               Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sodales justo vitae ornare pharetra. Nunc sed tortor vel arcu egestas sagittis. Donec a diam ac libero mollis efficitur ut dapibus nibh. Vivamus sodales urna id lectus vehicula, vitae commodo
-               augue sagittis. Proin interdum, lorem ac vulputate elementum, metus tortor vestibulum orci, vel ullamcorper lectus augue sed magna. In sit amet tellus et sem scelerisque aliquam. Aenean feugiat, nisl ac feugiat ultrices, odio leo porta
-               tellus, vel gravida lacus nibh mattis mauris. Etiam ac euismod leo. Curabitur non consequat arcu, sagittis lobortis velit. Pellentesque a pellentesque neque. Pellentesque ac diam vel quam feugiat pulvinar id ac libero. Aliquam luctus urna
-               ut luctus rhoncus. Sed scelerisque nec elit in tincidunt. Vestibulum dignissim, orci ac laoreet ultrices, velit magna dignissim nunc, ac accumsan ex elit et est. Mauris eu nulla at tortor vehicula ornare. Aenean nulla nisi, volutpat vel
-               vulputate ut, tincidunt gravida diam. Mauris eu velit elit. Nam at erat neque. Mauris ex neque, rutrum ut euismod ac, dignissim pretium odio. Nunc justo tortor, dignissim ut eros nec, suscipit rutrum ipsum. Mauris non porta purus. Ut faucibus
-               lacinia est non varius. Integer vel congue mi. Ut nec enim massa. Aenean bibendum scelerisque nulla, at gravida metus condimentum id. Curabitur sed dapibus quam. Nullam quis congue dolor. In condimentum odio sit amet lorem feugiat fringilla.
-               Etiam et sapien vulputate orci lacinia accumsan. Suspendisse quis augue lacus. Nam bibendum nibh in ultrices sagittis. Fusce accumsan odio nulla, in luctus lacus fringilla a. Duis arcu turpis, faucibus dapibus ultrices id, imperdiet eget
-               nulla. Phasellus lacinia risus est, quis lacinia orci tincidunt quis. Nunc aliquet leo elit, vitae pulvinar odio varius vel. Vestibulum dignissim aliquet aliquam. Mauris maximus dui nec commodo pulvinar. In pharetra ante in nibh pulvinar
-               vestibulum. Suspendisse ante est, dictum in arcu id, finibus convallis tortor. Duis interdum, mauris ut aliquam interdum, tortor ipsum pellentesque felis, consectetur tempus nibh augue vitae felis.
-            </p>
-         </div>
+       <div class="row">
+           <!-- Page Content -->
+           <div class="large-9 medium-8 small-12 columns">
+               <h2>Minors</h2>
+               <p>With three different minor progams to choose from, you can tailor your supplemental program to fit your specific needs and interest.  Look at the programs below and feel free to contact our office with any questions.</p>
+               <img src="img/crop-science.jpg" alt="a rolling field of crops with a bard behind them" />
+               <!-- Crop Science -->
+               <h3><a href="Crop Science:">Crop Science:</a></h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               <!-- Environmental Soil Science -->
+               <img src="img/soil-science.jpg" alt="a soil scientist collecting a sample from a field" />
+               <h3><a href="#">Environmental Soil Science:</a></h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+               <img src="img/turfgrass.jpg" alt="a field of healthy grass up close" />
+               <h3><a href="#">Turfgrass Management:</a></h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+           </div>
+
+
+
          <div class="large-3 medium-4 small-12 columns side-nav-container">
-            <nav class="side-nav">
-               <ul>
-                  <li><a class="parent" href="#">Research</a></li>
-                  <li><a href="#">Sibling 1</a></li>
-                  <li><a class="has-more" href="#">Centers &amp; Institutes</a></li>
-                  <li><a href="#">Sibling 2</a></li>
-                  <li><a class="active" href="#">Sibling 3</a></li>
-                  <li><a href="#">Sibling 4</a></li>
-               </ul>
-            </nav>
-
-            <br /><br />
-
-            <nav class="side-nav">
-               <ul>
-                  <li><a class="parent" href="#">Research</a></li>
-                  <li><a href="#">Sibling 1</a></li>
-                  <li>
-                     <a class="has-more-expanded active" href="#">Centers &amp; Institutes</a>
-                     <!-- Children -->
-                     <ul class="children">
-                        <li><a href="#">Child 1</a></li>
-                        <li><a href="#">Child 2</a></li>
-                        <li><a href="#">Child 3</a></li>
-                        <li><a href="#">Child 4</a></li>
-                     </ul>
-                  </li>
-                  <li><a href="#">Sibling 2</a></li>
-                  <li><a class="" href="#">Sibling 3</a></li>
-                  <li><a href="#">Sibling 4</a></li>
-               </ul>
-            </nav>
+             <nav class="side-nav">
+                 <ul>
+                     <li><a class="parent" href="#">Undergraduate</a></li>
+                     <li><a class="has-more" href="#">Majors</a></li>
+                     <li>
+                         <a class="has-more-expanded active" href="#">Minors</a>
+                         <ul class="children">
+                             <li><a href="#">Crop Science</a></li>
+                             <li><a href="#">Environmental Soil Science</a></li>
+                             <li><a href="#">Turfgrass Management</a></li>
+                         </ul>
+                     </li>
+                     <li><a class="" href="#">Careers</a></li>
+                     <li><a class="" href="#">Scholarships</a></li>
+                     <li><a class="" href="#">Request Information</a></li>
+                     <li><a class="" href="#">Student Forms</a></li>
+                 </ul>
+             </nav>
          </div>
       </div>
    </main>
