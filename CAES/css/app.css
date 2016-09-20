@@ -4843,8 +4843,7 @@ header a {
 @media screen and (min-width: 64em) {
   .profile img {
     width: 50vm;
-    width: 50vmin;
-    margin: auto; } }
+    width: 50vmin; } }
 
 .profile .affiliations li {
   display: inline;
@@ -5433,7 +5432,8 @@ figcaption {
 .news-accordion-body {
   padding: 1em;
   display: none;
-  border: 1px solid #e4e4e4; }
+  border: 1px solid #e4e4e4;
+  overflow: auto; }
 
 .personnel-directory .title {
   font-family: 'Roboto Slab', serif;
