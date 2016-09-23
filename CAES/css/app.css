@@ -5460,6 +5460,19 @@ figcaption {
         -ms-flex-pack: center;
             justify-content: center; }
 
+.panel-strong {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  padding: 1em; }
+  .panel-strong p.image {
+    padding: 0;
+    background: #e4e4e4;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
 .quote {
   background: #BA0C2F;
   color: #fefefe; }
