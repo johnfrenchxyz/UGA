@@ -9,11 +9,11 @@ $uga-branding-bg-color: lighten($light-gray, 5%);
 $uga-branding-link-color: darken($dark-gray, 20%);
 .college-branding {
 	background: $uga-branding-bg-color;
-	height: 6em;
-	overflow: hidden;
+	// height: 6em;
+	// overflow: hidden;
 	.uga-logo {
 		float: left;
-		margin: 1em 0 1em 0;
+		margin: 1em 0 0em 0;
 	}
 }
 
@@ -24,11 +24,12 @@ $uga-branding-link-color: darken($dark-gray, 20%);
 	float: right;
 	justify-content: center;
     vertical-align: middle;
-    line-height: 6em;
+    line-height: 5em;
 	display: inline-block;
+	margin-top: .5em;
 	li {
 		display: inline;
-		padding: 0 1em 0 1em;
+		padding: 0em 1em 0 1em;
 		// Collapse for Medium-Sized Screens
 		@include breakpoint(medium only) {
 			padding: 0 .5em 0 0;
@@ -62,21 +63,19 @@ $uga-branding-link-color: darken($dark-gray, 20%);
 
 .search-form {
 	display: none;
-	float: right;
-	// Large Width
-	@include breakpoint(large) {
-		width: 70%;
-	}
-	// Medium & Small Width
-	width: calc(100% - 220px);
+	background: $uga-branding-bg-color;
+	width: 100%;
 	height: 6em;
 	label {
 		width: 100%;
 		float: right;
+		@include breakpoint(small only) {
+			margin-right: 1em;
+		}
 		input[type="text"] {
 			width: 93%;
 			height: 3em;
-			margin: .5em 0 .5em 0;
+			margin: .5em 1em .5em 0;
 			background: none;
 			border-top: none;
 			border-left: none;
@@ -87,12 +86,10 @@ $uga-branding-link-color: darken($dark-gray, 20%);
 	}
 	button {
 		float: right;
-		margin-top: -1.7em;
-		margin-right: 1.5em;
-	}
-	a {
-		float: right;
-		margin-top: -1.7em;
-		display: block;
+		margin-top: -2.5em;
+		i {
+			font-size: 2rem;
+		}
+		// margin-right: 1.5em;
 	}
 }
