@@ -2,26 +2,6 @@ $(document).foundation();
 
 // Search
 //-------
-// $('#searchTrigger').on('click', function() {
-//     // Hide the "People" Menu
-//     $('.homepage-people-menu').hide().addClass('is-hidden');
-//     // Hide the Search Trigger
-//     $('#searchTrigger').hide();
-//     // Show the Search Form
-//     $('.search-form').show();
-//     // Focus the cursor in the search field
-//     $('#searchField').focus();
-//     // Close the Search
-//     $('#searchClose').on('click', function() {
-//         // Hide the search form
-//         $('.search-form').hide();
-//         // Show the "People" menu
-//         $('.homepage-people-menu').show().removeClass('is-hidden');
-//         // Show the Search Trigger
-//         $('#searchTrigger').show();
-//     });
-// });
-
 $('#searchTrigger').on('click', function() {
     var $icon = $('#searchTrigger i');
     $icon.toggleClass('is-active')
