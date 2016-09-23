@@ -970,6 +970,21 @@ img.float-center {
 }
 
 
+// Dialog Links
+.component-instructions {
+    a {
+        color: $caes-red;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    ul li a {
+        color: $caes-red;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+
+
 
 
 

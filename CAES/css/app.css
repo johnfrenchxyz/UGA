@@ -4211,12 +4211,9 @@ footer {
         footer .footer-links li a:hover {
           color: #0a0a0a; }
 
-@media screen and (min-width: 64em) {
-  .side-nav-container {
-    margin-right: -15px; } }
-
 .side-nav ul {
-  list-style: none; }
+  list-style: none;
+  margin-left: 0; }
 
 .side-nav ul li a {
   line-height: 1em;
@@ -5989,6 +5986,16 @@ img.float-center {
       text-decoration: none; }
     .featured-gray .description header a {
       text-decoration: none; }
+
+.component-instructions a {
+  color: #BA0C2F;
+  text-decoration: underline;
+  cursor: pointer; }
+
+.component-instructions ul li a {
+  color: #BA0C2F;
+  text-decoration: underline;
+  cursor: pointer; }
 
 .spacer {
   height: 1000px; }
