@@ -940,14 +940,22 @@ cite {
 
 img.float-left {
     margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 img.float-right {
     margin-right: 1em;
+    margin-bottom: 1em;
 }
 
 img.float-center {
-    margin: 0 1em 0 1em;
+    margin: 0 auto 0 auto;
+}
+
+div.float-center {
+    img {
+        margin: 0 auto 0 auto;
+    }
 }
 
 
