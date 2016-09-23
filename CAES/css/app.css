@@ -5976,12 +5976,10 @@ cite {
 	in the header section.
  */
 .college-branding {
-  background: #f3f3f3;
-  height: 6em;
-  overflow: hidden; }
+  background: #f3f3f3; }
   .college-branding .uga-logo {
     float: left;
-    margin: 1em 0 1em 0; }
+    margin: 1em 0 0em 0; }
 
 .homepage-people-menu {
   list-style: none;
@@ -5990,11 +5988,12 @@ cite {
       -ms-flex-pack: center;
           justify-content: center;
   vertical-align: middle;
-  line-height: 6em;
-  display: inline-block; }
+  line-height: 5em;
+  display: inline-block;
+  margin-top: .5em; }
   .homepage-people-menu li {
     display: inline;
-    padding: 0 1em 0 1em; }
+    padding: 0em 1em 0 1em; }
     @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       .homepage-people-menu li {
         padding: 0 .5em 0 0; } }
@@ -6021,19 +6020,19 @@ cite {
 
 .search-form {
   display: none;
-  float: right;
-  width: calc(100% - 220px);
+  background: #f3f3f3;
+  width: 100%;
   height: 6em; }
-  @media screen and (min-width: 64em) {
-    .search-form {
-      width: 70%; } }
   .search-form label {
     width: 100%;
     float: right; }
+    @media screen and (min-width: 0em) and (max-width: 39.9375em) {
+      .search-form label {
+        margin-right: 1em; } }
     .search-form label input[type="text"] {
       width: 93%;
       height: 3em;
-      margin: .5em 0 .5em 0;
+      margin: .5em 1em .5em 0;
       background: none;
       border-top: none;
       border-left: none;
@@ -6042,9 +6041,6 @@ cite {
       box-shadow: none; }
   .search-form button {
     float: right;
-    margin-top: -1.7em;
-    margin-right: 1.5em; }
-  .search-form a {
-    float: right;
-    margin-top: -1.7em;
-    display: block; }
+    margin-top: -2.5em; }
+    .search-form button i {
+      font-size: 2rem; }
