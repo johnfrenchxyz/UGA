@@ -938,6 +938,18 @@ cite {
    color: $white;
 }
 
+img.float-left {
+    margin-right: 1em;
+}
+
+img.float-right {
+    margin-right: 1em;
+}
+
+img.float-center {
+    margin: 0 1em 0 1em;
+}
+
 
 // Featured Content Component
 //---------------------------
