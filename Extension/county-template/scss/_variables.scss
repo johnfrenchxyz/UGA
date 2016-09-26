@@ -1,0 +1,84 @@
+/*
+UGA Extension County Template
+Variables
+*/
+
+// Color Variables
+$red: #c41039;
+$light-gray: #f3f3f3;
+$medium-gray: #cacaca;
+$dark-gray: #666666;
+$black: #3e3e3e;
+$white: #ffffff;
+
+// Foundation Color Overrides
+$primary-color: $red;
+$secondary-color: $light-gray;
+
+// Element Specific Variables
+$body-background: $white;
+$body-font-color: $black;
+
+// Typography
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:400,700';
+$roboto: 'Roboto', sans-serif;
+$roboto-slab: 'Roboto Slab', serif;
+$body-font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$regular: 400;
+$bold: 700;
+
+// Heading Variables
+// h1
+$h1-color: $black;
+$h1-large: 3rem;
+$h1-small: 2rem;
+// h2
+$h2-color: $black;
+$h2-large: 2rem;
+$h2-small: 1.6rem;
+// p
+$p-color: $dark-gray;
+$p-large: 1.2rem;
+$p-small: 1rem;
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    font-family: $roboto;
+    font-family: $h1-color;
+    font-weight: $bold;
+    font-size: $h1-large;
+    @include breakpoint(small only) {
+        font-size: $h1-small;
+    }
+}
+
+h2 {
+    font-family: $roboto-slab;
+    color: $h2-color;
+    font-size: $h2-large;
+    @include breakpoint(small only) {
+        font-size: $h2-small;
+    }
+}
+
+p {
+    font-family: $roboto;
+    font-weight: $regular;
+    color: $p-color;
+    font-size: $p-large;
+    @include breakpoint(small only) {
+        font-size: $p-small;
+    }
+}
+
+
+// Flexbox
+@mixin flex {
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
