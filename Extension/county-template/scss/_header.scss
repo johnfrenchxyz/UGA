@@ -2,44 +2,98 @@
 UGA Extension County Template
 Header Styles
 */
+
 header {
     position: relative;
-    // UGA Gray Header Bar
-    .uga-header-row {
-        background: $light-gray;
-        height: 4em;
-        // Extension Logo
-        .extension-logo {
-            height: 2.5em;
-            margin: 0.75em 0;
-        }
-        // Search Button
-        .search-trigger {
-            float: right;
-            a {
-                color: $dark-gray;
-                display: block;
-                height: 4em;
-                padding: 1.3em 1em 1em 1em;
-            }
-        }
-        // Gray Down Arrow
-        .down-arrow {
-            width: 0;
-            height: 0;
-            margin-left: 3.5em;
-            border-left: 15px solid transparent;
-            border-right: 15px solid transparent;
-            border-top: 15px solid $light-gray;
+}
+
+// UGA Gray Header Bar
+.uga-header-row {
+    background: $light-gray;
+    height: 4em;
+
+    // Extension Logo
+    .extension-logo {
+        height: 2.5em;
+        margin: 0.75em 0;
+    }
+
+    // Search Button
+    .search-trigger {
+        float: right;
+        a {
+            color: $dark-gray;
+            display: block;
+            height: 4em;
+            padding: 1.3em 1em 1em 1em;
         }
     }
-    // Red County Bar
-    .county-header-row {
-        background: $red;
-        padding: 1.5em;
-        line-height: 1;
-        h1 {
-            color: $white;
+}
+
+// Dropdown Extension Sub-Menu
+.sub-menu {
+    background: $light-gray;
+    display: none;
+    .search-form {
+        input[type="text"] {
+            width: 93%;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: solid 2px darken($light-gray, 20%);
+            box-shadow: none;
+            font-family: $roboto;
+            font-weight: $bold;
+            font-size: 1.5rem;
+            height: 2em;
+            &:focus {
+                border-bottom: solid 2px green;
+            }
         }
+        button {
+            float: right;
+            margin-top: -2.5em;
+            i {
+                font-size: 2rem;
+                color: darken($light-gray, 40%);
+            }
+        }
+    }
+    // Extension Menu (Nav items from Extension Main Site)
+    .extension-menu {
+        margin-left: -1.5em;
+        list-style: none;
+        font-family: $roboto;
+        font-weight: $bold;
+        font-size: 1.5rem;
+        a {
+            color: $dark-gray;
+            text-decoration: none;
+            transition: 200ms ease;
+        }
+        a:hover {
+            color: $black;
+        }
+    }
+}
+
+// Gray Down Arrow
+.down-arrow {
+    width: 0;
+    height: 0;
+    margin-left: 3.5em;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid $light-gray;
+}
+
+// Red County Bar
+.county-header-row {
+    background: $red;
+    padding: 1.5em;
+    line-height: 1;
+    h1 {
+        color: $white;
     }
 }
