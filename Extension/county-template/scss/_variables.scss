@@ -49,7 +49,7 @@ h1, h2, h3, p {
 
 h1 {
     font-family: $roboto;
-    font-family: $h1-color;
+    color: $h1-color;
     font-weight: $bold;
     font-size: $h1-large;
     @include breakpoint(small only) {

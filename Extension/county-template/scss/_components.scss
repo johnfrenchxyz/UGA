@@ -2,3 +2,140 @@
 UGA Extension County Template
 Footer Styles
 */
+// Plain List Mixin
+@mixin plainList($bg: $light-gray, $color: $black) {
+    .container {
+        // background: $bg;
+        color: $color;
+        border: 1px solid $bg;
+        margin: 2em 0;
+        font-family: $roboto;
+
+        .title {
+            background: $bg;
+            color: $color;
+            padding: 0 1em 0 1em;
+            height: 4.5em;
+            display: flex;
+            align-items: center;
+            span {
+                // display: inline-flex;
+                // vertical-align: middle;
+                font-size: 1.2rem;
+                font-weight: $bold;
+            }
+        }
+
+        .content {
+            padding: 1em;
+            color: $black;
+            .img-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                align-self: center;
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .see-more a {
+        color: $color;
+        text-decoration: none;
+        font-weight: $bold;
+        display: block;
+        padding: 1em;
+        text-align: center;
+        background: $bg;
+        transition: 200ms ease;
+
+        &:hover {
+            background: darken($bg, 10%);
+        }
+    }
+}
+
+// Event List Component
+.events-container {
+    border: 1px solid $light-gray;
+    margin: 2em 0;
+    font-family: $roboto;
+
+    .title {
+        background: $light-gray;
+        padding: 1em;
+        font-weight: 700;
+        font-size: 1.2rem;
+
+        i,
+        span {
+            display: inline-flex;
+            vertical-align: middle;
+        }
+
+        i {
+            font-size: 2rem;
+        }
+    }
+
+    .content {
+        padding: 1em;
+
+        .event {
+            margin: 1em 0;
+            font-family: $roboto;
+        }
+
+        .month {
+            font-weight: $bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: $dark-gray;
+        }
+
+        .day {
+            font-size: 1.2rem;
+        }
+
+        .event-title a {
+            font-size: 1.3rem;
+            font-weight: $bold;
+            text-decoration: none;
+            color: $red;
+
+            &:hover {
+                color: darken($red, 10%);
+            }
+        }
+
+        .event-info {
+            color: $dark-gray;
+
+            .time {
+                font-weight: $bold;
+            }
+        }
+    }
+
+    .see-more a {
+        color: $black;
+        text-decoration: none;
+        font-weight: $bold;
+        display: block;
+        padding: 1em;
+        text-align: center;
+        background: $light-gray;
+        transition: 200ms ease;
+
+        &:hover {
+            background: darken($light-gray, 10%);
+        }
+    }
+}
+
+// Featured Component
+.featured-content {
+    @include plainList($red, $white);
+}

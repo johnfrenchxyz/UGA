@@ -2,3 +2,53 @@
 UGA Extension County Template
 Footer Styles
 */
+
+footer {
+    a {
+        text-decoration: none;
+    }
+}
+
+.our-impact {
+   background: darken($secondary-color, 40%);
+   line-height: 4em;
+   color: $secondary-color;
+   width: 100%;
+   @include breakpoint(small only) { text-align: center; }
+   .impact-button {
+      @include button-style( darken($secondary-color, 50%), darken($secondary-color, 60%), $secondary-color );
+      margin-left: 1em;
+      padding: .5em 1.5em .5em 1.5em;
+      display: inline-block;
+      font-weight: 700;
+      @include breakpoint (small only) {
+         display: block;
+         width: 100%;
+         text-align: center;
+         margin: 0;
+      }
+   }
+}
+.footer-top {
+   padding-top: 1em;
+   padding-bottom: 1em;
+   background: $light-gray;
+   color: darken($light-gray, 50%);
+   a {
+       color: $red;
+   }
+   ul {
+      list-style: none;
+      font-size: 1rem;
+      margin-left: -2.5em;
+   }
+   i {
+      margin-right: 0.2em;
+   }
+}
+.footer-bottom {
+   padding: 1em 0 0;
+   margin: 0 0 3em;
+   font-size: 1rem;
+   color: darken($light-gray, 40%);
+}

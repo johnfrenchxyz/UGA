@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+    <div class="off-canvas-wrapper">
     <header>
         <!-- UGA Extension Branding -->
         <div class="uga-header-row">
@@ -41,8 +41,7 @@
                                 <li><a href="#">4-H</a></li>
                                 <li><a href="#">About</a></li>
                             </ul>
-                            <br />
-                            <br />
+
                         </div>
                     </div>
                     <!-- Down Arrow -->
@@ -55,15 +54,167 @@
             <div class="row">
                 <div class="large-12 columns">
                     <h1>Athens-Clarke County</h1>
+                    <a href="#" class="hamburger hide-for-large" data-toggle="offCanvas"><i class="material-icons">menu</i></a>
                 </div>
             </div>
         </div>
     </header>
 
-    <main>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </main>
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <div class="off-canvas position-right" id="offCanvas" data-off-canvas data-position="right">
+        </div>
+        <div class="off-canvas-content" data-off-canvas-content>
+        <main>
+            <div class="row">
+                <div class="large-3 show-for-large columns">
+                    <nav class="side-nav" role="menu">
+                       <!-- First Level -->
+                       <a role="menuitem" class="first-level active" href="#">Home</a>
+                       <a role="menuitem" class="first-level" href="#">Agriculture & Natural Resources</a>
+                       <a role="menuitem" class="first-level" href="#">Family & Consumer Sciences</a>
+                       <a role="menuitem" class="first-level" href="#">4-H Youth</a>
+                       <a role="menuitem" class="first-level" href="#">Contact Us</a>
+                    </nav>
+                </div>
+                <div class="large-9 columns">
+                    <div class="main-content">
+                        <img src="images/cows.jpg" alt="cows standing in the field" />
+                        <h2>Research &amp; Outreach:</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                        <div class="row">
+                            <div class="large-6 columns">
+                                <div class="events-container">
+                                    <div class="title"><i class="material-icons">event</i> <span>Upcoming Events:<span></div>
+                                        <div class="content">
+
+                                            <div class="event">
+                                                <div class="date">
+                                                    <span class="month">Sep</span>
+                                                    <span class="day">21</span>
+                                                </div>
+                                                <div class="event-title"><a href="#">Free Monthly Gardening Class</a></div>
+                                                <div class="event-info">
+                                                    <span class="time">6:00pm</span>
+                                                    <span class="location">Athens, GA</span>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                            <div class="event">
+                                                <div class="date">
+                                                    <span class="month">Nov</span>
+                                                    <span class="day">10</span>
+                                                </div>
+                                                <div class="event-title"><a href="#">Soil Testing Workshop</a></div>
+                                                <div class="event-info">
+                                                    <span class="time">6:00pm</span>
+                                                    <span class="location">Athens, GA</span>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                            <div class="event">
+                                                <div class="date">
+                                                    <span class="month">Dec</span>
+                                                    <span class="day">02</span>
+                                                </div>
+                                                <div class="event-title"><a href="#">How to Prepare for Summer Pests</a></div>
+                                                <div class="event-info">
+                                                    <span class="time">6:00pm</span>
+                                                    <span class="location">Athens, GA</span>
+                                                </div>
+                                                <div class="description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="see-more">
+                                            <a href=#>See More Events</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="large-6 columns">
+                                    <div class="featured-content">
+                                        <div class="container">
+                                            <div class="title">
+                                                <span>Have a Question?</span>
+                                            </div>
+                                            <div class="content">
+                                                <div class="img-container">
+                                                    <img src="https://secure.caes.uga.edu/personnel/photos/2016_JMcAllister.jpg" />
+                                                </div>
+                                                <br />
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                            <div class="see-more">
+                                                <a href="#">Contact Our Office</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="our-impact">
+               <div class="row small-collapse medium-uncollapse">
+                  <div class="large-12 columns">
+                     Find Out What We Do <a href="#" class="impact-button"><i class="fi-page-multiple"></i> View Our Impact</a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-top">
+               <div class="row">
+                  <!-- County Contact Information Section -->
+                  <div class="large-4 medium-6 columns">
+                     <h3 class="subheader">Office Information:</h3>
+                     <ul>
+                        <li><a><i class="fi-map"></i> 123 Easy Street | City, State 30607</a></li>
+                        <li><a><i class="fi-telephone"></i> 706-867-5309</a></li>
+                        <li><a><i class="fi-mail"></i> mail@emailaddress.com</a></li>
+                     </ul>
+                  </div>
+                  <!-- Affiliates & Partners Section-->
+                  <div class="large-4 medium-6 columns">
+                     <h3 class="subheader">Affiliates & Partners:</h3>
+                     <ul>
+                        <li><a href="http://www.uga.edu" target="_blank">The University of Georgia</a></li>
+                        <li><a href="http://www.caes.uga.edu" target="_blank">The College of Agricultural & Environmental Sciences</a></li>
+                        <li><a href="http://www.fcs.uga.edu" target="_blank">The College of Family & Consumer Scnences</a></li>
+                     </ul>
+                  </div>
+                  <!-- Intranet Section -->
+                  <div class="large-4 medium-6 end columns">
+                     <h3 class="subheader">For Faculty/Staff:</h3>
+                     <a class="button small round">Staff Intranet</a>
+                  </div>
+               </div>
+            </div>
+            <div class="footer-bottom">
+               <div class="row">
+                  <div class="large-12 columns">
+                     All Content Property of University of Georgia
+                  </div>
+               </div>
+            </div>
+        </footer>
+
+
+        </div>
+
+    </div>
+
+    </div>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/what-input.js"></script>
