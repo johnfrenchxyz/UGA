@@ -1,0 +1,73 @@
+/*
+    Navigation Styles for Extension County Template
+*/
+
+$side-nav-border: solid 1px darken($light-gray, 5%);
+
+.side-nav {
+   height: 100%;
+   min-height: 100%;
+   padding-top: 1em;
+   padding-bottom: 1em;
+   border-left: $side-nav-border;
+   border-right: $side-nav-border;
+   background: $white;
+   border-bottom: solid 5px darken($light-gray, 5%);
+   border-radius: 5px;
+   a {
+       text-decoration: none;
+       transition: 200ms ease;
+   }
+   @mixin nav-states {
+      // Hover State:
+      &:hover {
+        background: $light-gray;
+      }
+      // Active State (Page Indication):
+      &.active {
+         background: $primary-color !important;
+         color: $white;
+      }
+      &:active,
+      &:focus {
+         background: $light-gray;
+      }
+   }
+   // First Level
+   .first-level {
+      display: block;
+      color: $dark-gray;
+      font-size: rem-calc(20);
+      padding: 0.5em;
+      border-top: $side-nav-border;
+      @include nav-states;
+      // Creates a bottom border for the last first level menu item:
+      &:last-child {
+         border-bottom: $side-nav-border;
+      }
+   }
+   // Second Level
+   .second-level {
+      //background: $light-gray;
+      display: block;
+      color: $dark-gray;
+      font-size: rem-calc(16);
+      padding: 0.4em 0.4em 0.4em 2em;
+      @include nav-states;
+   }
+   // Third Level
+   .third-level {
+      display: block;
+      //background: $light-gray;
+      color: $dark-gray;
+      padding: 0.4em;
+      margin-left: 3em;
+      padding-left: 1em;
+      font-size: rem-calc(14);
+      border-left: $side-nav-border;
+      @include nav-states;
+      &.active {
+         border-left: solid 1px $primary-color;
+      }
+   }
+}
