@@ -4154,8 +4154,10 @@ h2 {
   .title-bar .menu-icon {
     vertical-align: middle;
     margin-top: -15px; }
-  .title-bar .menu-icon::after {
-    box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
+    .title-bar .menu-icon::after {
+      box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
+    .title-bar .menu-icon:hover::after {
+      box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
 
 @media screen and (min-width: 40em) {
   .medium-horizontal .is-dropdown-submenu {
@@ -4283,7 +4285,7 @@ header a {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -4391,7 +4393,7 @@ header a {
   width: calc(100% + 2px);
   margin-left: -1px;
   min-height: 56px;
-  padding: 1.3% 10px;
+  padding: 14px 10px;
   -webkit-align-items: center;
       -ms-flex-align: center;
               -ms-grid-row-align: center;
@@ -4574,7 +4576,7 @@ header a {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -4671,7 +4673,7 @@ header a {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -4768,7 +4770,7 @@ header a {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -5079,7 +5081,7 @@ figcaption {
   width: calc(100% + 2px);
   margin-left: -1px;
   min-height: 56px;
-  padding: 1.3% 10px;
+  padding: 14px 10px;
   -webkit-align-items: center;
       -ms-flex-align: center;
               -ms-grid-row-align: center;
@@ -5159,6 +5161,9 @@ figcaption {
 .event-page h2 {
   margin-bottom: 0; }
 
+.event-page .date-and-time {
+  margin-bottom: 3em; }
+
 .event-page .date, .event-page .time, .event-page .contact .title {
   color: #BA0C2F;
   font-family: 'Roboto Slab', serif;
@@ -5175,7 +5180,7 @@ figcaption {
   float: left; }
 
 .event-page .address {
-  margin-top: 3em;
+  margin-top: 1em;
   margin-bottom: 1em; }
   .event-page .address .place {
     font-weight: 700;
@@ -5329,7 +5334,7 @@ figcaption {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -5380,7 +5385,7 @@ figcaption {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -5427,7 +5432,7 @@ figcaption {
   width: calc(100% + 2px);
   margin-left: -1px;
   min-height: 56px;
-  padding: 1.3% 10px;
+  padding: 14px 10px;
   -webkit-align-items: center;
       -ms-flex-align: center;
               -ms-grid-row-align: center;
@@ -5618,7 +5623,7 @@ div.float-center img {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -5715,7 +5720,7 @@ div.float-center img {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -5812,7 +5817,7 @@ div.float-center img {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -5909,7 +5914,7 @@ div.float-center img {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
@@ -6006,7 +6011,7 @@ div.float-center img {
     width: calc(100% + 2px);
     margin-left: -1px;
     min-height: 56px;
-    padding: 1.3% 10px;
+    padding: 14px 10px;
     -webkit-align-items: center;
         -ms-flex-align: center;
                 -ms-grid-row-align: center;

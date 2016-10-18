@@ -391,8 +391,13 @@ $nav-arrow-color: $nav-link-color;
    // Menu Text
    .title-bar-title { @include headerLinks; vertical-align: middle; margin-top: -17px; }
    // Hamburger Icon
-   .menu-icon { vertical-align: middle; margin-top: -15px; }
-   .menu-icon::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
+   .menu-icon {
+       vertical-align: middle; margin-top: -15px;
+       &::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
+       &:hover {
+           &::after { box-shadow: 0 6px 0 #fefefe, 0 12px 0 #fefefe; }
+       }
+   }
 }
 
 // Fix for dropdown direction
