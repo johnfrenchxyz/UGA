@@ -17,8 +17,9 @@ $component-title-default-color: darken($caes-gray, 10%);
    color: $color;
    width: calc(100% + 2px);
    margin-left: -1px;
-   height: 56px;
-   line-height: 56px;
+   min-height: 56px;
+   padding: 1.3% 10px;
+   align-items: center;
    vertical-align: middle;
    font-weight: 700;
    font-size: rem-calc(14);
@@ -258,8 +259,8 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
 }
 
-// Profile
-//--------
+// Profile Page Template
+//----------------------
 .profile {
    ul { list-style: none; margin-left: 0; margin-bottom: 0; }
    img {
@@ -291,17 +292,18 @@ $component-title-default-color: darken($caes-gray, 10%);
    }
 }
 
+// Profile Plain List Component
+//-----------------------------
 .profile-component {
-   .affiliations { margin-left: 0; margin-bottom: 0; }
-   .description { margin-top: 0; }
-   .profile-contact-items {
-      margin-left: 0;
-      li {
-         display: block;
-         // padding-right: 1em;
-         // @include breakpoint(small down) { display: block; margin-left: 0; }
-      }
-   }
+    .jobTitle { font-size: .8rem; }
+    .affiliations { margin-left: 0; margin-bottom: 0; }
+    .description { margin-top: 0; }
+    .profile-contact-items {
+        margin-left: 0;
+        li {
+            display: block;
+        }
+    }
 }
 
 // Personnel Page
