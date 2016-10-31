@@ -745,13 +745,6 @@ figcaption {
          }
       }
    }
-   // For the Media
-   .for-the-media {
-      .component-title { @include component-title( $body-font-color, $white ); }
-      ul {
-         list-style: none;
-      }
-   }
 }
 
 // News Main Page
