@@ -5,13 +5,13 @@
 // Header Mixin
 @mixin newsAndEventsHeader($background) {
     background: $background;
-    padding: .5em 1em .5em 1em;
+    padding: .5em 1em 2em 1em;
     margin: 0 0 2em 0;
     position: relative;
     h2 {
         color: white;
         font-size: 2.5rem;
-        padding: .5em 0 .5em 0;
+        padding: .5em 0 0em 0;
         margin: 0;
         @include breakpoint(small only) {
             font-size: 1.5em;
@@ -169,4 +169,67 @@
    // Read More Section
    hr { border-bottom: 1px solid #d6d6d6; }
    .read-more { margin-left: 1em; }
+}
+
+
+// CAES News Story Page Template & Styles
+//---------------------------------------
+.header-story-date, .header-author {
+    display: block;
+    font-weight: bold;
+    font-size: .7rem;
+    color: $white;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.story-title {
+    margin: 0;
+    color: $white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+// Image Container
+.story-image-container {
+    background: $light-gray;
+    padding: 1em;
+}
+
+// Social Media Icons (for story sharing)
+.story-sharing {
+   @include breakpoint(medium up) {
+      margin-top: 5em;
+   }
+   margin-top: 1em;
+   margin-bottom: 1em;
+   padding-top: .5em;
+   text-align: center;
+   background: $body-font-color;
+   color: $white;
+   span {
+      font-weight: bold;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+   }
+   a {
+      color: $white;
+      transition: 250ms ease;
+      &:hover {
+         color: darken($white, 20%);
+      }
+   }
+}
+
+.subtitle {
+   font-weight: 500;
+   // color: $dark-gray;
+   text-transform: uppercase;
+   font-size: rem-calc(12);
+   display: block;
+}
+
+.author {
+   font-size: rem-calc(18);
+   font-weight: bold;
 }

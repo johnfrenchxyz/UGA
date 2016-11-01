@@ -721,30 +721,7 @@ figcaption {
    .read-more {
       margin-top: 1em;
    }
-   // Social Media Icons (for story sharing)
-   .story-sharing {
-      @include breakpoint(medium up) {
-         margin-top: 5em;
-      }
-      margin-top: 1em;
-      margin-bottom: 1em;
-      padding-top: .5em;
-      text-align: center;
-      background: $body-font-color;
-      color: $white;
-      span {
-         font-weight: bold;
-         font-size: 0.875rem;
-         text-transform: uppercase;
-      }
-      a {
-         color: $white;
-         transition: 250ms ease;
-         &:hover {
-            color: darken($white, 20%);
-         }
-      }
-   }
+
 }
 
 // News Main Page
