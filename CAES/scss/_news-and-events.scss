@@ -139,6 +139,12 @@
     @include newsAndEventsHeader($caes-newswire-color);
 }
 
+.about-newswire {
+    p {
+        margin: 1em;
+    }
+}
+
 // Newswire Plain List
 .newswire-plain-list-container {
    margin-bottom: 3em;

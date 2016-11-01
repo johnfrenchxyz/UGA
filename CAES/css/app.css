@@ -6285,6 +6285,9 @@ div.float-center img {
         border-width: 20px;
         margin-left: -20px; } }
 
+.about-newswire p {
+  margin: 1em; }
+
 .newswire-plain-list-container {
   margin-bottom: 3em; }
   .newswire-plain-list-container:after {
