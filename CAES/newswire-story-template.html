@@ -1,0 +1,258 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News Story Template Mockup</title>
+	<link rel="stylesheet" href="css/app.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Skip Links -->
+    <a tabindex="1" class="show-on-focus" href="#jumpToMenu">Skip to Main Menu</a>
+    <a tabindex="2" class="show-on-focus" href="#mainContent">Skip to Content</a>
+
+    <!-- Header Section -->
+	<header>
+		<div class="college-branding">
+			<div class="row small-uncollapse medium-uncollapse large-uncollapse xxlarge-uncollapse">
+				<div class="large-12 columns">
+					<!-- UGA Logo -->
+					<a href=""><img class="uga-logo" src="img/caes-logo-small.png" alt="The UGA Arches Logo"</a>
+					<!-- Search Trigger Button -->
+					<a href="#" id="searchTrigger"><i class="material-icons">search</i></a>
+					<!-- Homepage People Menu -->
+					<ul class="homepage-people-menu hide-for-small-only">
+						<li><a href="#">Campuses</a></li>
+						<li><a href="#">Students</a></li>
+						<li><a href="#">Alumni</a></li>
+						<li><a href="#">Faculty/Staff</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Seach Input Form -->
+			<div class="search-form">
+				<div class="row">
+					<div class="large-12 columns">
+						<form>
+							<label>
+								<input id="searchField" type="text" placeholder="Search..." />
+							</label>
+							<!-- Search Submit -->
+							<button type="submit"><i class="material-icons">search</i></button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- CAES Branding Section -->
+		<div class="row">
+			<div class="large-12 columns">
+				<a href="index.html"><h1 id="caesBranding">Crop &amp; Soil Sciences</h1></a>
+			</div>
+		</div>
+
+	</header>
+
+   <!-- Main Navigation -->
+   <nav>
+      <div class="row small-collapse medium-collapse large-collapse xxlarge-uncollapse">
+         <div class="large-12 columns">
+
+            <div class="title-bar" data-responsive-toggle="subsiteNav" data-hide-for="medium">
+               <button class="menu-icon" type="button" data-toggle></button>
+               <div class="title-bar-title">Menu</div>
+            </div>
+            <ul class="vertical medium-horizontal menu" id="mainNav" data-responsive-menu="drilldown medium-dropdown" data-toptions="closingTime:100; closeOnClick: true;">
+               <!-- Undergraduate -->
+               <li id="">
+                  <a id="jumpToMenu" href="#">Undergraduate</a>
+                  <ul class="menu vertical">
+                     <li class="show-for-small-only"><a href="#">Undergraduate Home</a></li>
+                     <li><a href="#">Majors</a></li>
+                     <li><a href="#">Minors</a></li>
+                     <li><a href="#">Careers</a></li>
+                     <li><a href="#">Scholarships</a></li>
+                     <li><a href="#">Request Information</a></li>
+                     <li><a href="#">Student Forms</a></li>
+                  </ul>
+               </li>
+               <!-- Graduate -->
+               <li>
+                  <a href="#">Graduate</a>
+                  <ul class="menu vertical">
+                     <li class="show-for-small-only"><a href="#">Graduate Home</a></li>
+                     <li><a href="#">Master's Degree Programs</a></li>
+                     <li><a href="#">Doctoral Degree Programs</a></li>
+                     <li><a href="#">Assistantships</a></li>
+                     <li><a href="#">Research Opportunities</a></li>
+                     <li><a href="#">Student Forms</a></li>
+                     <li><a href="#">Request Information</a></li>
+                  </ul>
+               </li>
+               <!-- Research -->
+               <li class="active" id="research">
+                  <a href="#">Research</a>
+                  <ul class="menu vertical">
+                     <li class="show-for-small-only"><a href="#">Research Home</a></li>
+                     <li><a href="#">Crop Management</a></li>
+                     <li><a href="#">Water, Soil, &amp; Air</a></li>
+                     <li><a href="#">Environmental Sciences</a></li>
+                     <li><a href="#">Plant Breeding &amp; Genetics</a></li>
+                     <li><a href="#">Statewide Variety Testing</a></li>
+                     <li><a href="#">Centers</a></li>
+                  </ul>
+               </li>
+               <!-- Extension -->
+               <li id="outreach">
+                  <a href="#">Extension</a>
+                  <ul class="menu vertical">
+                     <li class="show-for-small-only"><a href="#">Extension</a></li>
+                     <li><a href="#">Georgia Commodities</a></li>
+                     <li><a href="#">Georgia Weather Network</a></li>
+                     <li><a href="#">UGA Extension Weed Science</a></li>
+                     <li><a href="#">Statewide Variety Testing</a></li>
+                     <li><a href="#">Publications</a></li>
+                  </ul>
+               </li>
+               <!-- People -->
+               <li id="people">
+                  <a href="#">People</a>
+                  <ul class="menu vertical">
+                     <li class="show-for-small-only"><a href="#">People Home</a></li>
+                     <li><a href="#">Faculty</a></li>
+                     <li><a href="#">Graduate Students</a></li>
+                     <li><a href="#">Support Staff</a></li>
+                  </ul>
+               </li>
+               <!-- About -->
+               <li id="about">
+                  <a href="#">About</a>
+                  <ul class="menu vertical">
+                     <li class="show-for-small-only"><a href="#">About Home</a></li>
+                     <li><a href="#">Overview</a></li>
+                     <li><a href="#">Campuses</a></li>
+                     <li><a href="#">Facilities</a></li>
+                     <li><a href="#">Newsletter</a></li>
+                     <li><a href="#">Employment</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+
+   <!-- News Header -->
+   <div class="row large-collapse xlarge-collapse medium-collapse small-collapse">
+	   <div class="large-12 columns">
+		   <div class="newswire-header">
+			   <h2>Media Newswire</h2>
+			   <span class="header-story-date">11/12/16</span>
+			   <span class="story-title">This is the Story Title</span>
+			   <span class="header-author">By John Doe</span>
+		   </div>
+	   </div>
+   </div>
+
+   <main>
+       <div class="row">
+           <!-- Page Content -->
+           <div class="large-7 medium-8 small-12 columns">
+
+               <div class="row large-collapse xlarge-collapse medium-uncollapse small-uncollapse">
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				   <br />
+				   <br />
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				   <br />
+				   <br />
+				   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				   <br />
+				   <br />
+				   <div class="callout">
+					   <span class="subtitle">Published 05/08/1931 by <span itemprop="publisher">CAES NEWS</span></span>
+					   <div class="author">
+						   Author: <a itemprop="author">Merrit Melancon</a> ( <a><i class="fi-telephone"></i></a> <a><i class="fi-mail"></i></a> )
+					   </div>
+					   <div class="author">
+						   Experts/Sources: <a itemprop="author">Kyle Dawson</a>, <a itemprop="author">John Doe</a> )
+					   </div>
+				   </div>
+               </div>
+           </div>
+
+         <div class="large-5 medium-4 small-12 columns side-nav-container">
+			 <div class="story-image-container">
+				<img src="http://apps.caes.uga.edu/gafaces/Multimedia/Images/THUMB_AND_LOW_RES_2413/CalibrochaCabaret.jpg" />
+			 </div>
+			 <div class="story-sharing">
+               <span>Share Story:</span>
+               <!-- Social Media Icons -->
+               <ul class="social-media-icons">
+                  <li title="facebook">
+                     <a href="https://www.facebook.com/sharer/sharer.php?u=http://johnfrenchxyz.github.io/UGA/CAES/components/news-story-page.html" onclick="return !window.open(this.href, 'Share CAES News', 'width=500,height=500')" target="_blank">
+                        <i class="fi-social-facebook"></i>
+                     </a>
+                  </li>
+                  <li title="twitter">
+                     <a href="https://twitter.com/intent/tweet?text=Ridiculously%20Responsive%20Social%20Sharing%20Buttons%3A%20http%3A%2F%2Fjohnfrenchxyz.github.io/UGA/CAES/components/news-story-page.html" onclick="return !window.open(this.href, 'Share CAES News', 'width=500,height=500')" target="_blank">
+                        <i class="fi-social-twitter"></i>
+                     </a>
+                  </li>
+                  <li title="email">
+                     <a href="mailto:?subject=New%20story%20from%20CAES%20news&amp;body=http%3A%2F%2Fjohnfrenchxyz.github.io/UGA/CAES/components/news-story-page.html">
+                        <i class="fi-mail"></i>
+                     </a>
+                  </li>
+               </ul>
+            </div>
+		 </div>
+
+   </main>
+
+   <footer>
+	   <div class="row large-collapse medium-uncollapse">
+		   <div class="large-8 medium-8 columns">
+			   <!-- Footer Links -->
+			   <ul class="footer-links">
+				   <li><a>Contact</a></li>
+				   <li><a>About this Site</a></li>
+				   <li><a>Privacy Policy</a></li>
+				   <li><a>Accessiblity Statement</a></li>
+			   </ul>
+			   <!-- Footer Text -->
+			   <p>&#xA9; 2016 <a href="#">University of Georgia</a> College of Agricultural and Environmental Sciences</p>
+			   <!-- Social Media Icons -->
+			   <strong>Connect with CAES:</strong>
+			   <ul class="social-media-icons">
+				   <li title="facebook"><a><i class="fi-social-facebook"></i></a></li>
+				   <li title="twitter"><a><i class="fi-social-twitter"></i></a></li>
+				   <li title="instagram"><a><i class="fi-social-instagram"></i></a></li>
+				   <li title="linkedin"><a><i class="fi-social-linkedin"></i></a></li>
+				   <li title="youtube"><a><i class="fi-social-youtube"></i></a></li>
+				   <li title="tumblr"><a><i class="fi-social-tumblr"></i></a></li>
+			   </ul>
+		   </div>
+		   <div class="large-4 medium-4 columns">
+			   <a href="#"><img src="img/uga-logo-small.png" alt="uga logo" /></a>
+		   </div>
+	   </div>
+   </footer>
+
+
+
+
+   <script src="bower_components/jquery/dist/jquery.js"></script>
+   <script src="bower_components/what-input/what-input.js"></script>
+   <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+   <script src="js/app.js"></script>
+   <script>
+      new UISearch(document.getElementById('sb-search'));
+   </script>
+</body>
+
+</html>
