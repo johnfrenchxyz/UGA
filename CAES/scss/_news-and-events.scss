@@ -194,6 +194,20 @@
 .story-image-container {
     background: $light-gray;
     padding: 1em;
+    .image-caption {
+        display: block;
+        font-size: .8rem;
+    }
+    .thumbnail {
+        width: 50px;
+        height: 50px;
+        overflow: hidden;
+        margin: .5em;
+        img {
+            height: 100%;
+            width: auto;
+        }
+    }
 }
 
 // Social Media Icons (for story sharing)
