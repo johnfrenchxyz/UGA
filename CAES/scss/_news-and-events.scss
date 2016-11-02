@@ -126,12 +126,34 @@
 }
 
 // Filter / For the Media Coloring
-// For the Media
 .for-the-media {
    .component-title { @include component-title( $body-font-color, $white ); }
    ul {
       list-style: none;
    }
+}
+
+// Accordion Filter Styles
+.filter-container {
+  margin: 0;
+  li {
+    // background: #e6e6e6;
+    display: block;
+    padding: 1em;
+    font-size: 1.5rem;
+  }
+  .subfilter-container {
+    list-style: none;
+    li {
+      padding: 0;
+      font-size: 1rem;
+    }
+  }
+}
+
+
+body {
+  font-family: sans-serif;
 }
 
 // Media Newswire Template
