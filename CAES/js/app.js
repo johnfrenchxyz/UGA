@@ -150,3 +150,37 @@ $(document).ready(function() {
         }
     });
 });
+
+// Filter Accordion for CAES News Page
+$('.subfilter-container').hide();
+$('.top-filter').on('change', function(){
+  $('.subfilter-container').slideToggle('fast');
+  if ( $('.plus-minus').text() === '+' ) {
+    $('.plus-minus').text("-");
+  } else {
+    $('.plus-minus').text("+");
+  }
+});
+
+$(function(){
+  $('.selectAll').on('click', function(evt){
+    var group = $(this).attr('data-group'),
+        isChecked = !!($(this).prop('checked'));
+    $('input[value="' + group + '"]').prop('checked', isChecked);
+  })
+
+  $('.entity').on('click', function(evt){
+    var group = $(this).attr('value'),
+        siblings = $('input[value="' + group + '"]'),
+        isChecked = true;
+    siblings.each(function(idx, el){
+      if(!$(el).prop('checked')) {
+        isChecked = false;
+        return;
+      }
+    })
+
+    $('.selectAll[data-group="' + group + '"]').prop('checked', isChecked);
+
+  })
+})

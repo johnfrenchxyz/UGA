@@ -6236,6 +6236,21 @@ div.float-center img {
 .for-the-media ul {
   list-style: none; }
 
+.filter-container {
+  margin: 0; }
+  .filter-container li {
+    display: block;
+    padding: 1em;
+    font-size: 1.5rem; }
+  .filter-container .subfilter-container {
+    list-style: none; }
+    .filter-container .subfilter-container li {
+      padding: 0;
+      font-size: 1rem; }
+
+body {
+  font-family: sans-serif; }
+
 .newswire-header {
   background: #4b4b4b;
   padding: .5em 1em 2em 1em;
