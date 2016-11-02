@@ -6269,6 +6269,19 @@ div.float-center img {
 .about-newswire p {
   margin: 1em; }
 
+.media-kit {
+  overflow: auto; }
+  .media-kit img {
+    float: right;
+    max-width: 300px;
+    margin-left: 2em; }
+    @media screen and (max-width: 63.9375em) {
+      .media-kit img {
+        float: none;
+        margin: 0; } }
+  .media-kit .media-kit-info {
+    text-align: left; }
+
 .newswire-plain-list-container {
   margin-bottom: 3em; }
   .newswire-plain-list-container:after {
