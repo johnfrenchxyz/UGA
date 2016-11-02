@@ -134,7 +134,8 @@
    }
 }
 
-// Newswire
+// Media Newswire Template
+//------------------------
 .newswire-header {
     @include newsAndEventsHeader($caes-newswire-color);
 }
@@ -142,6 +143,26 @@
 .about-newswire {
     p {
         margin: 1em;
+    }
+}
+
+// Media Kit
+.media-kit {
+    overflow: auto;
+    img {
+        float: right;
+        max-width: 300px;
+        margin-left: 2em;
+        @include breakpoint(medium down) {
+            float: none;
+            margin: 0;
+        }
+    }
+    .media-kit-info {
+        text-align: left;
+        ul li {
+            // list-style: none;
+        }
     }
 }
 
