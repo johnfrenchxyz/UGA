@@ -135,20 +135,37 @@
 
 // Accordion Filter Styles
 .filter-container {
-  margin: 0;
+  margin: .5em;
   li {
-    // background: #e6e6e6;
-    display: block;
-    padding: 1em;
-    font-size: 1.5rem;
+      input {
+          cursor: pointer;
+      }
+      margin-top: .5em;
+      background: #e6e6e6;
+      display: block;
+      padding: 1em;
+      font-size: 1.5rem;
+      label {
+          font-weight: bold;
+          cursor: pointer;
+      }
   }
   .subfilter-container {
-    list-style: none;
-    li {
-      padding: 0;
-      font-size: 1rem;
-    }
+      list-style: none;
+      li {
+          padding: 0;
+          font-size: 1rem;
+      }
   }
+}
+
+// Accordion Functionality
+.subfilter-container {
+    display: none;
+    transition: 250ms ease;
+}
+.top-filter:checked ~ .subfilter-container {
+    display: block;
 }
 
 
