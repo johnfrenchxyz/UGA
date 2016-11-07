@@ -167,8 +167,10 @@ $('.filter-toggle').on('click', function(e){
 // Agriculture
 $('.top-filter').click(function(){
     if ( $(this).is(':checked') ) {
-        $('.ag-entity').prop('checked', true);
+        // $('.entity').prop('checked', true);
+        $(this).nextAll('.subfilter-container').find('input').prop('checked', true);
     } else {
-        $('.ag-entity').prop('checked', false);
+        // $('.entity').prop('checked', false);
+        $(this).nextAll('.subfilter-container').find('input').prop('checked', false);
     }
 });
