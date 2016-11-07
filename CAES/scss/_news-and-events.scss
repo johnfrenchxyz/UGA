@@ -135,42 +135,14 @@
 
 // Accordion Filter Styles
 .filter-container {
-  margin: .5em;
-  li {
-      input {
-          cursor: pointer;
-      }
-      margin-top: .5em;
-      background: #e6e6e6;
-      display: block;
-      padding: 1em;
-      font-size: 1.5rem;
-      label {
-          font-weight: bold;
-          cursor: pointer;
-      }
-  }
-  .subfilter-container {
-      list-style: none;
-      li {
-          padding: 0;
-          font-size: 1rem;
-      }
-  }
-}
-
-// Accordion Functionality
-.subfilter-container {
-    display: none;
-    transition: 250ms ease;
-}
-.top-filter:checked ~ .subfilter-container {
-    display: block;
-}
-
-
-body {
-  font-family: sans-serif;
+    .top-label {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+    .material-icons {
+        float: right;
+        margin: .25em .5em 0 0;
+    }
 }
 
 // Media Newswire Template
