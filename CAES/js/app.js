@@ -163,3 +163,12 @@ $('.filter-toggle').on('click', function(e){
         $(this).html('<i class="material-icons">keyboard_arrow_down</i>');
     }
 });
+
+// Agriculture
+$('.top-filter').click(function(){
+    if ( $(this).is(':checked') ) {
+        $('.ag-entity').prop('checked', true);
+    } else {
+        $('.ag-entity').prop('checked', false);
+    }
+});

@@ -149,6 +149,9 @@
 //------------------------
 .newswire-header {
     @include newsAndEventsHeader($caes-newswire-color);
+    a {
+        text-decoration: none;
+    }
 }
 
 .about-newswire {
