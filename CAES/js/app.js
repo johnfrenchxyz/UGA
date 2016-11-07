@@ -164,7 +164,7 @@ $('.filter-toggle').on('click', function(e){
     }
 });
 
-// Agriculture
+// Accordion
 $('.top-filter').click(function(){
     if ( $(this).is(':checked') ) {
         // $('.entity').prop('checked', true);
@@ -173,4 +173,9 @@ $('.top-filter').click(function(){
         // $('.entity').prop('checked', false);
         $(this).nextAll('.subfilter-container').find('input').prop('checked', false);
     }
+});
+
+// Apply Filter
+$('input').on('change', function(){
+    $('.apply-filter').removeClass('disabled');
 });
