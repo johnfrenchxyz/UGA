@@ -6273,6 +6273,8 @@ div.float-center img {
       .newswire-header:after {
         border-width: 20px;
         margin-left: -20px; } }
+  .newswire-header a {
+    text-decoration: none; }
 
 .about-newswire p {
   margin: 1em; }
