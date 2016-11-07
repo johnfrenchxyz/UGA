@@ -6236,34 +6236,13 @@ div.float-center img {
 .for-the-media ul {
   list-style: none; }
 
-.filter-container {
-  margin: .5em; }
-  .filter-container li {
-    margin-top: .5em;
-    background: #e6e6e6;
-    display: block;
-    padding: 1em;
-    font-size: 1.5rem; }
-    .filter-container li input {
-      cursor: pointer; }
-    .filter-container li label {
-      font-weight: bold;
-      cursor: pointer; }
-  .filter-container .subfilter-container {
-    list-style: none; }
-    .filter-container .subfilter-container li {
-      padding: 0;
-      font-size: 1rem; }
+.filter-container .top-label {
+  font-weight: bold;
+  font-size: 1.2rem; }
 
-.subfilter-container {
-  display: none;
-  transition: 250ms ease; }
-
-.top-filter:checked ~ .subfilter-container {
-  display: block; }
-
-body {
-  font-family: sans-serif; }
+.filter-container .material-icons {
+  float: right;
+  margin: .25em .5em 0 0; }
 
 .newswire-header {
   background: #4b4b4b;
