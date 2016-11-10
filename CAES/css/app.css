@@ -6375,6 +6375,21 @@ div.float-center img {
   .newswire-plain-list-container .read-more {
     margin-left: 1em; }
 
+.pagination-previous a::before, .pagination-previous.disabled::before {
+  content: '«';
+  display: inline-block;
+  margin-right: 0.5rem; }
+
+.pagination .ellipsis::after {
+  content: '…';
+  padding: 0.1875rem 0.625rem;
+  color: #0a0a0a; }
+
+.pagination-next a::after, .pagination-next.disabled::after {
+  content: '»';
+  display: inline-block;
+  margin-left: 0.5rem; }
+
 .header-story-date, .header-author {
   display: block;
   font-weight: bold;
