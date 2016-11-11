@@ -4212,6 +4212,12 @@ footer {
         text-decoration: underline; }
         footer .footer-links li a:hover {
           color: #0a0a0a; }
+  footer .footer-buttons {
+    margin-left: 0; }
+    footer .footer-buttons li {
+      display: inline-block;
+      padding-right: .5em;
+      padding-left: .5em; }
 
 .side-nav ul {
   list-style: none;
