@@ -5466,7 +5466,10 @@ figcaption {
     display: flex;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    overflow: hidden; }
+    .content-panel p.image img {
+      max-width: 5000px; }
 
 .panel-strong {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -5479,7 +5482,10 @@ figcaption {
     display: flex;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    overflow: hidden; }
+  .panel-strong img {
+    max-width: 5000px; }
 
 .quote {
   background: #BA0C2F;
