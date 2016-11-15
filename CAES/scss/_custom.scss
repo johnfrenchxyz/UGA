@@ -7,6 +7,7 @@ $caes-dark-gray: #3e3e3e;
 $medium-gray: #cacaca;
 $caes-light-gray: lighten($medium-gray, 10%);
 $caes-newswire-color: #4b4b4b;
+$footer-bg-color: lighten($light-gray, 5%);
 
 // Typography
 // ----------
@@ -472,27 +473,45 @@ main {
 // Footer Section
 // ---------------
 footer {
-   margin-top: 5em;
-   font-family: 'Roboto', sans-serif;
-   color: $nav-bg-color;
-   .footer-links {
-      margin-left: 0;
-      li {
-         display: inline-block;
-         padding-right: .5em;
-         padding-left: .5em;
-         border-right: solid 1px $light-gray;
-         a { color: $nav-bg-color; text-decoration: underline; &:hover { color: $black; } }
-      }
-   }
-   .footer-buttons {
-       margin-left: 0;
-       li {
-           display: inline-block;
-           padding-right: .5em;
-           padding-left: .5em;
-       }
-   }
+    margin-top: 5em;
+    font-family: 'Roboto', sans-serif;
+    color: $nav-bg-color;
+    border-top: solid 1px darken($footer-bg-color, 10%);
+    // Top Footer Section:
+    .footer-top {
+        width: 100%;
+        background: $footer-bg-color;
+        padding: 2em 0 1em 0;
+    }
+    .footer-links {
+        margin-left: 0;
+        list-style: none;
+        li {
+            font-size: .9rem;
+            a { color: $nav-bg-color; text-decoration: underline; &:hover { color: $black; } }
+        }
+    }
+    // Middle Footer Section
+    .footer-middle {
+        background: $caes-dark-gray;
+        .footer-buttons {
+            margin: 0;
+            li {
+                display: inline-block;
+            }
+            li a {
+                color: $white;
+                text-decoration: none;
+                display: block;
+                height: 4em;
+                padding: 1em 1em 1em 0;
+                font-size: .9rem;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
 
 
