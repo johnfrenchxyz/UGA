@@ -6494,3 +6494,12 @@ div.float-center img {
   content: '...';
   padding: 0.1875rem 0.625rem;
   color: #0a0a0a; }
+
+.float-center {
+  text-align: center; }
+
+.float-left {
+  text-align: left; }
+
+.float-right {
+  text-align: right; }
