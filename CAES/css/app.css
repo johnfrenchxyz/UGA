@@ -6479,3 +6479,18 @@ div.float-center img {
 
 .writer-detail {
   overflow: hidden; }
+
+.pagination-next a::after, .pagination-next.disabled::after {
+  content: '\00bb';
+  display: inline-block;
+  margin-left: 0.5rem; }
+
+.pagination-previous a::before, .pagination-previous.disabled::before {
+  content: '\00ab';
+  display: inline-block;
+  margin-right: 0.5rem; }
+
+.pagination .ellipsis::after {
+  content: '...';
+  padding: 0.1875rem 0.625rem;
+  color: #0a0a0a; }
