@@ -4230,6 +4230,9 @@ footer {
         font-size: .9rem; }
         footer .footer-middle .footer-buttons li a:hover {
           text-decoration: underline; }
+  footer .copyright-text {
+    font-size: .9rem;
+    margin-top: .5em; }
 
 .side-nav ul {
   list-style: none;
