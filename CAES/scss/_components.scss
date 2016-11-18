@@ -834,34 +834,31 @@ figcaption {
    padding: .5em;
    margin-bottom: 2em;
    p.image {
-      padding: 0;
-      background: $caes-light-gray;
-      display: flex;
-      justify-content: center;
-      overflow: hidden;
-      img {
-          max-width: 5000px;
-      }
+    //   padding: 0;
+    //   background: $caes-light-gray;
+    //   display: flex;
+    //   justify-content: center;
+    //   overflow: hidden;
+    //   img {
+    //       max-width: 5000px;
+    //   }
    }
 }
 
 // Panel
 .panel-strong {
-    // border: 1px solid darken($caes-light-gray, 10%);
-    // border: 5px solid $caes-red;
-    // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     padding: 1em;
-    p.image {
-       padding: 0;
-       background: $caes-light-gray;
-       display: flex;
-       justify-content: center;
-       overflow: hidden;
-    }
-    img {
-        max-width: 5000px;
-    }
+    // p.image {
+    //    padding: 0;
+    //    background: $caes-light-gray;
+    //    display: flex;
+    //    justify-content: center;
+    //    overflow: hidden;
+    // }
+    // img {
+    //     max-width: 5000px;
+    // }
 }
 
 // Panel Quote Styles:

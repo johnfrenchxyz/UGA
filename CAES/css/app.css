@@ -5461,34 +5461,10 @@ figcaption {
   font-family: 'Roboto', sans-serif;
   padding: .5em;
   margin-bottom: 2em; }
-  .content-panel p.image {
-    padding: 0;
-    background: #e4e4e4;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: hidden; }
-    .content-panel p.image img {
-      max-width: 5000px; }
 
 .panel-strong {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   padding: 1em; }
-  .panel-strong p.image {
-    padding: 0;
-    background: #e4e4e4;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    overflow: hidden; }
-  .panel-strong img {
-    max-width: 5000px; }
 
 .quote {
   background: #BA0C2F;
