@@ -194,10 +194,13 @@ $component-title-default-color: darken($caes-gray, 10%);
       // margin-bottom: 1em;
    }
    .title, .subtitle, .description {
-      margin: 1em 1em 1em 1em;
+    //   margin: 1em 1em 1em 1em;
+    padding: 1em 1em 0em 1em;
    }
    .description {
        overflow-x: hidden;
+       padding-right: 2em;
+    //    margin-right: 1em;
        @include link-underline;
    }
 }

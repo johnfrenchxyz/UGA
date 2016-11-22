@@ -4628,9 +4628,10 @@ header a {
     height: auto;
     padding-right: 0; }
   .academics .title, .academics .subtitle, .academics .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .academics .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .academics .description a {
       text-decoration: underline; }
     .academics .description a.button {
@@ -4725,9 +4726,10 @@ header a {
     height: auto;
     padding-right: 0; }
   .research .title, .research .subtitle, .research .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .research .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .research .description a {
       text-decoration: underline; }
     .research .description a.button {
@@ -4822,9 +4824,10 @@ header a {
     height: auto;
     padding-right: 0; }
   .extension .title, .extension .subtitle, .extension .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .extension .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .extension .description a {
       text-decoration: underline; }
     .extension .description a.button {
@@ -5606,9 +5609,10 @@ div.float-center img {
     height: auto;
     padding-right: 0; }
   .featured-blue .title, .featured-blue .subtitle, .featured-blue .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .featured-blue .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .featured-blue .description a {
       text-decoration: underline; }
     .featured-blue .description a.button {
@@ -5703,9 +5707,10 @@ div.float-center img {
     height: auto;
     padding-right: 0; }
   .featured-red .title, .featured-red .subtitle, .featured-red .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .featured-red .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .featured-red .description a {
       text-decoration: underline; }
     .featured-red .description a.button {
@@ -5800,9 +5805,10 @@ div.float-center img {
     height: auto;
     padding-right: 0; }
   .featured-green .title, .featured-green .subtitle, .featured-green .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .featured-green .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .featured-green .description a {
       text-decoration: underline; }
     .featured-green .description a.button {
@@ -5897,9 +5903,10 @@ div.float-center img {
     height: auto;
     padding-right: 0; }
   .featured-yellow .title, .featured-yellow .subtitle, .featured-yellow .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .featured-yellow .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .featured-yellow .description a {
       text-decoration: underline; }
     .featured-yellow .description a.button {
@@ -5994,9 +6001,10 @@ div.float-center img {
     height: auto;
     padding-right: 0; }
   .featured-gray .title, .featured-gray .subtitle, .featured-gray .description {
-    margin: 1em 1em 1em 1em; }
+    padding: 1em 1em 0em 1em; }
   .featured-gray .description {
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    padding-right: 2em; }
     .featured-gray .description a {
       text-decoration: underline; }
     .featured-gray .description a.button {

@@ -1,0 +1,100 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel Modal</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="large-12 columns">
+
+            <p><a data-open="exampleModal1">Employee Name</a></p>
+
+            <div class="reveal" id="exampleModal1" data-reveal>
+                <div class="row">
+                    <div class="large-12 columns">
+
+                        <!-- Profile -->
+                        <div class="profile" itemscope itemtype="http://schema.org/Person">
+                            <!-- Name -->
+                            <h1 class="title" itemprop="name">John Doe</h1>
+                            <!-- Image -->
+                            <img src="https://secure.caes.uga.edu/personnel/photos/2014_BWatson.jpg" class="personnel-page-image" itemprop="image" />
+                            <!-- Affiliations -->
+                            <ul class="affiliations">
+                                <li class="subtitle" itemprop="affiliation">4-H Youth Development</li>
+                                <li class="subtitle" itemprop="affiliation">Family & Consumer Science</li>
+                            </ul>
+                            <!-- Job Title -->
+                            <span class="job-title" itemprop="jobTitle">FACS/4-H County Extension Agent</span>
+                            <!-- Contact Info -->
+                            <ul class="profile-contact-items">
+                                <li class=""><a><i class="fi-mail"></i> <span itemprop="email">mkellett.edu</span></a></li>
+                                <li class=""><a><i class="fi-telephone"></i> <span itemprop="telephone">706-867-5309</span></a></li>
+                                <li class=""><a><i class="fi-print"></i> <span itemprop="fax">706-867-5000</span></a></li>
+                            </ul>
+                            <!-- Mailing Address -->
+                            <div class="profile-address">
+                                <span><strong>Mailing Address:</strong></span>
+                                <div class="">Athens Campus - Hoke Smith Bldg</div>
+                                <div>
+                                    <a href="">
+                                        <i class="fi-map"></i>
+                                        <span>1234 Easy Peasey Street,</span>
+                                        <span>Athens, Georgia</span>
+                                        <span>30602</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Shipping Address -->
+                            <div class="profile-address">
+                                <span><strong>Shipping Address:</strong></span>
+                                <div class="">Athens Campus - Hoke Smith Bldg</div>
+                                <div>
+                                    <a href="">
+                                        <i class="fi-map"></i>
+                                        <span>1234 Easy Peasey Street,</span>
+                                        <span>Athens, Georgia</span>
+                                        <span>30602</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="close-button" data-close aria-label="Close modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/what-input/what-input.js"></script>
+    <script src="../bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="../js/app.js"></script>
+    <!-- For Expanding Search -->
+    <script src="../js/search/classie.js"></script>
+    <script src="../js/search/uisearch.js"></script>
+    <script>
+        new UISearch(document.getElementById('sb-search'));
+    </script>
+</body>
+
+</html>
