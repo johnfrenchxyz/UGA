@@ -16,28 +16,20 @@ $('#searchTrigger').on('click', function() {
     $('#searchField').focus();
 });
 
-// Drilldown Height Fix -- Not sure why this fix is needed, but it is.
+// Drilldown Height Fix for Mobile Menu
 //--------------------------------------------------------------------
-$('.is-drilldown').css('height', 'auto');
-$(window).resize(function() {
-    $('.is-drilldown').css('height', 'auto');
+
+$('.is-drilldown').css('display', 'none');
+$(window).on('resize', function(){
+    $('.is-drilldown').css('display', 'none');
 });
-
-var drilldownToggle = function() {
-    $('.is-drilldown').addClass('drilldown-toggle-height');
-    $('.menu-icon').click(function() {
-        $('.is-drilldown').toggleClass('drilldown-toggle-height');
-    });
-};
-
-// Initial Run
-drilldownToggle();
-// Run on Resize:
-$(window).resize(function() {
-    drilldownToggle();
+$('.menu-icon').on('click', function(){
+    if ( $('.is-drilldown').css('display') === 'none' ) {
+        $('.is-drilldown').css('display', 'block');
+    } else {
+        $('.is-drilldown').css('display', 'none');
+    }
 });
-
-
 
 // Plain List Responsive Column Control
 //-------------------------------------
