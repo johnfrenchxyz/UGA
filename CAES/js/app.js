@@ -23,7 +23,7 @@ $('.is-drilldown').css('display', 'none');
 $(window).on('resize', function(){
     $('.is-drilldown').css('display', 'none');
 });
-$('.menu-icon').on('click', function(){
+$('button.menu-icon').on('click', function(){
     if ( $('.is-drilldown').css('display') === 'none' ) {
         $('.is-drilldown').css('display', 'block');
     } else {
