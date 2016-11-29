@@ -4182,12 +4182,6 @@ h2 {
 .is-dropdown-submenu {
   z-index: 2; }
 
-.is-drilldown {
-  height: 355.5px !important; }
-
-.drilldown-toggle-height {
-  height: 0 !important; }
-
 main {
   margin-top: 1em; }
   main .large-9 {
