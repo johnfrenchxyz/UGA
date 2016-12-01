@@ -18,18 +18,27 @@ $('#searchTrigger').on('click', function() {
 
 // Drilldown Height Fix for Mobile Menu
 //--------------------------------------------------------------------
-
-$('.is-drilldown').css('display', 'none');
-$(window).on('resize', function(){
-    $('.is-drilldown').css('display', 'none');
-});
-$('button.menu-icon').on('click', function(){
-    if ( $('.is-drilldown').css('display') === 'none' ) {
-        $('.is-drilldown').css('display', 'block');
-    } else {
+var navHeight = function() {
+    if ( $('#mainNav').css('display') === 'none' ) {
         $('.is-drilldown').css('display', 'none');
+    } else {
+        $('.is-drilldown').css('display', 'block');
     }
+
+}
+
+$('.is-drilldown').hide();
+
+$(window).on('resize', function(){
+    $('.is-drilldown').hide();
 });
+
+$('.menu-icon').on('click', function(){
+    navHeight();
+});
+
+
+
 
 // Plain List Responsive Column Control
 //-------------------------------------
