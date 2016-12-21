@@ -99,6 +99,7 @@ $component-title-default-color: darken($caes-gray, 10%);
    .plain-list-item {
       display: block;
       margin-bottom: 1em;
+      clear: both;
       @include caes-list-style;
       .subtitle {
          max-width: 90%;

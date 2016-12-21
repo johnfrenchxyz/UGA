@@ -4332,6 +4332,7 @@ header a {
   .plain-list-container .plain-list-item {
     display: block;
     margin-bottom: 1em;
+    clear: both;
     padding: 1em; }
     .plain-list-container .plain-list-item .title {
       font-family: 'Roboto Slab', serif;
@@ -6311,6 +6312,7 @@ div.float-center img {
   .newswire-plain-list-container .plain-list-item {
     display: block;
     margin-bottom: 1em;
+    clear: both;
     padding: 1em; }
     .newswire-plain-list-container .plain-list-item .title {
       font-family: 'Roboto Slab', serif;
