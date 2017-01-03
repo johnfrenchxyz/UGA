@@ -323,7 +323,7 @@ $nav-arrow-color: $nav-link-color;
 
 #mainNav {
    background: $nav-bg-color;
-   height: 56px;
+   height: 100%;
    line-height: 56px;
    @include breakpoint(small only) {
       li ul { overflow: scroll !important; }
